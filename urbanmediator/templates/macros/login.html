@@ -1,0 +1,16 @@
+$def with (context, msg, come_back='')
+
+<div class="input-wrapper"> 
+<p>$msg</p>
+<form id="form1" name="form1" method="post" action="$mobile_links.login">
+<label><span class="input_field_label">$_("Username")</span>
+<span class="input_label">$_("Login")</span>
+$if come_back:
+    <input name="come_back" type="hidden" value="$come_back" /></label><br />
+<input name="username" class="textfield_full" type="text" value="" /></label><br />
+<label><span class="input_field_label">$_("Password")</span>
+<span class="input_label">$_("Password")</span>                
+<input name="password" class="textfield_full" type="password" /></label><br />
+<label><input type="submit" name="button" class="button_full" value="$_('submit')" /></label>
+</form>
+</div>

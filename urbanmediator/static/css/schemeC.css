@@ -1,0 +1,38 @@
+/* -------------------------------------------------------------------- */
+/* 							COLOR SCHEME C 								*/
+/*							(Bulgur Beige)								*/
+/* -------------------------------------------------------------------- */
+
+#context_header_holder {
+	background: url(../img/background_topic_header_schemeC.gif) repeat-x;
+	color: #FFF;
+}
+
+#context_header_holder a {
+	color: #FFF;
+}
+
+#display_controls,
+.pagination_bar h5,
+.schemedemo {
+	background-color: #cb7;
+	color: #123;
+}
+
+#display_controls ul.list_order_selector li.selected,
+ul.display_type_selector li.selected {
+	background-color: #cb7;
+}
+
+#display_controls a,
+#display_controls a:link,
+#display_controls a:visited,
+#display_controls a:hover {
+	color: #FFF;
+}
+
+#schemeC_demo {
+	padding: 4px;
+	background: #CB7;
+	color: #FFF;
+}

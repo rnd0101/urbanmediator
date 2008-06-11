@@ -1,0 +1,45 @@
+$def with (context, params=None)
+$var title: $_("Sign up")
+$:macro.header_desktop(context, level=0, link=1)
+
+<div id="container">
+
+	<div id="main_one_col">
+    	
+        <div id="page_header">
+            <h1>$_('Sign up.')</h1>
+        </div>
+        
+        <form class="big_form" method="$context.method" action="$context.form_action.lower()">
+            <fieldset>
+                <legend>$_('Choose a username and password')</legend>
+                $if params:
+                    $for key, value in params.items():
+                        <input type="hidden" name="$key" value="$value" style="display:none;"/>
+                <div class="required">
+                    <label>$_('Choose a username'):</label>
+                    <input type="text" name="username" class="inputText" />
+                </div>
+                <div class="required">
+                    <label>$_('Enter a password'):</label>
+                    <input type="password" name="password" class="text" />
+                </div>
+                <div class="required">
+                    <label>$_('Repeat password'):</label>
+                    <input type="password" class="text" name="password2" />
+                </div>
+                <div class="optional">
+                    <label>$_('Email') ($_('optional')):</label>
+                    <input type="text" class="text" name="email" />
+                </div>
+                $if context.captcha_key:
+                    $:macro.captcha(context)
+            </fieldset>
+            <div class="submit">
+            	<button type="submit" class="normal" />$_("Sign up")</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>

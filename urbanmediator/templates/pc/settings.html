@@ -1,0 +1,32 @@
+$def with (context, settings, form, error_message="")
+
+$:macro.header_desktop(context, level=1, link=1)
+
+<div id="container" 
+
+	<div id="main_one_col">
+
+        <table border="1">
+        <tr><th align="left" valign="middle">$_("Actions")</th>
+        <th align="left" valign="middle">$_("Key")</th>
+        <th align="center" valign="middle">$_("Value")</th>
+        <th align="center" valign="middle">$_("Language")</th>
+        </tr>
+        $for s in settings:
+            <tr><td align="center" valign="middle"><a href="$pc_links('settings', s)#param_form">$_("edit")</a> <a href="$pc_links('settings', s, default=1)#param_form">$_("default")</a></td><td align="left" valign="middle">$s.key</td><td align="left" valign="middle">$s.value</td><td align="center" valign="middle">$s.language</td>
+            \
+            
+          </tr>
+        </table>
+        
+<a name="param_form"></a>
+<form name="main" class="tools" action="$pc_links.settings" method="post" enctype="multipart/form-data">
+$if error_message:
+    <p class="error">$error_message</p>
+
+$:form.render()
+<input type="submit" value="$_('Change value')"/>
+</form>
+</div>
+
+</div>

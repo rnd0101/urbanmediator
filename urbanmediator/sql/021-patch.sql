@@ -1,0 +1,8 @@
+CREATE TABLE version (
+    id INT NOT NULL AUTO_INCREMENT,
+    version VARCHAR(100),
+    added TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO version (version) VALUES ('021-patch');

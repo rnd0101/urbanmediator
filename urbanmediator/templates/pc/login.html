@@ -1,0 +1,56 @@
+$def with (context, user, params=None)
+$var title: $_("login")
+$:macro.header_desktop(context, level=0, link=1)
+
+<div id="container">
+	
+    <div id="main_one_col">
+    
+    	<div id="page_header">
+            <h1>$_('Use of this feature requires registration and log in.')</h1>
+        </div>
+        
+        <form class="big_form" action="$context.form_action" method="$context.method.lower()">
+            <fieldset>
+                <legend>$_("Normal Login")</legend>
+                <div class="notes">
+                    $if ("came_from" in params):
+                        <p><strong>$_('New users'):</strong> <a href="$pc_links.signup?came_from=$params.came_from">$_('sign up here')</a></p>
+                    $else:
+                        <p><strong>$_('New users'):</strong> <a href="$pc_links.signup">$_('sign up here')</a></p>
+                </div>
+                <div>
+                    <label for="username" class="inline">$_('Username'):</label>
+                    <input type="text" class="inputText" name="username" id="username" value="$context.username_hint" />
+                </div>
+                <div>
+                    <label for="password" class="inline">$_('Password'):</label>
+                    <input id="password" type="password" class="inputPassword" name="password" />
+                </div>
+                <div class="submit_login">
+                    $if params:
+                        $for key, value in params.items():
+                            <input type="hidden" name="$key" value="$value" style="display:none;" />
+                    <button type="submit" class="login">$_('Login')</button>
+                </div>
+            </fieldset>
+        </form>
+
+        $if (context.show_visitor_login):
+            <form class="big_form" action="$context.form_action" method="$context.method.lower()">
+                <fieldset>
+                    <legend>$_("Guest Login")</legend>
+                    <div class="notes">$_('Your username will appear as:') ${user.username}. $_("This username will be valid until you log out or shut  down your browser.")</div>
+                    $:macro.captcha(context)
+                    <div class="submit_login">
+                        $if params:
+                            $for key, value in params.items():
+                                <input type="hidden" name="$key" value="$value" style="display:none;" />
+                        <button type="submit" class="login">$_('Login')</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+    </div>
+    
+</div>

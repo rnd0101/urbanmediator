@@ -1,0 +1,117 @@
+$def with (context)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+  <title>UM Map Search Beta</title>
+  
+  <link rel="shortcut icon" href="${schema_base_url}/favicon.ico" type="image/x-icon" />
+  
+  <link rel="stylesheet" href="${schema_base_url}/map_search/styles/map.css" type="text/css" />
+
+<script type="text/javascript" src="${schema_base_url}/ol/lib/OpenLayers.js">
+</script>
+<script type="text/javascript"><!--
+var JSON_URL="$feed_links.json_search",
+FORM_ACTION="$pc_links.map_search",
+MARKER_URL="${schema_base_url}/img/marker.png",
+SEARCH_TAGS_PARAM="search_tags=true";
+
+var NEW_POINT_ICON_URL="${schema_base_url}/img/point.gold.png",
+NEW_POINT_ICON_X=21, 
+NEW_POINT_ICON_Y=21,
+POINT_ICON_URL="${schema_base_url}/img/marker.png",
+POINT_ICON_X=21, 
+POINT_ICON_Y=28,
+MAP_PARAMS=$:context.map_context.map_params,
+GETMAP_URL="$context.map_context.getmap_url",
+GETMAP_LAYERS="$context.map_context.getmap_layers",
+GETMAP_LAYERS1="$context.map_context.getmap_layers1",
+GETMAP_LAYERS2="$context.map_context.getmap_layers2",
+GETMAP_ZOOM2=$context.map_context.getmap_zoom2,
+GETMAP_ZOOM1=$context.map_context.getmap_zoom1,
+GETMAP_UNTILED=$config.getmap_untiled,
+CENTER_LON=$context.map_context.repr_lon,
+CENTER_LAT=$context.map_context.repr_lat,
+INITIAL_ZOOM=$context.map_context.zoom,
+INITIAL_FEED="$context.map_context.initial_feed";
+
+// -->
+</script>
+<script type="text/javascript" src="${schema_base_url}/map_search/js/components/MapEngine.js">
+</script>
+
+  
+</head>
+
+<body onload="init();">
+
+	<div id="um_header">
+    
+    	<h1><a href="$pc_links.index">Urban Mediator</a></h1>
+        
+        <h2>Map Search Beta</h2>
+        
+    </div>
+    
+    <div id="container">
+    
+    	<div id="col1">
+        
+        	<div class="search_form">
+            
+            	<div id="searchform">
+                
+                	<div>
+                    <!--empty-->
+                    </div>
+                    
+                    <div class="search_form_background">
+                    <!--search_form-->
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        	<h3 class="title_search_results">Topic filter</h3><br />
+        
+        	<div class="checkbox_list" id="list_of_topics">
+        
+        		<div id="topiclist">
+            	<!--the list of topics-->
+            	</div>
+            
+        	</div>
+    
+    	</div>
+    
+    	<div id="col2">
+    
+            <div id="map">
+            <!--the map-->
+            </div>
+        
+    	</div>
+    
+    	<div id="col3">
+    
+    		<h3 class="title_search_results">Search results</h3><br />
+        
+        	<div class="point_list">
+        
+        		<div id="list_of_points">
+            	<!--the list of points-->
+            	</div>
+            
+        	</div>
+        
+    	</div>
+    
+	</div>
+
+
+</body>
+</html>

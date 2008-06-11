@@ -1,0 +1,9 @@
+$def with (context, presets, widget_urls)
+
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+$for widget_url in widget_urls:
+    $if widget_url:
+        <!-- $widget_url -->
+        $:get_widget_code(widget_url)

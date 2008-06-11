@@ -1,0 +1,53 @@
+$def with (context, topic, presets)
+
+$:macro.header_desktop(context, 1, 1)
+
+	$:macro.header_topic(topic, level=1, link=1)
+
+		<div id="container">
+        
+        	<div id="main_one_col">
+        	
+                <div id="page_header">
+                    <h1>$context.title</h1>
+                </div>
+    
+                <form class="user_loc" action="" method="POST">
+                <fieldset>
+                    <legend>\
+                    $if presets.form_title:
+                        $presets.form_title
+                    $else:
+                        $:_('Set/update topic's central location'):
+                    </legend>
+                    <p>$_("Choose a center point and zoom level.")</p>
+                    $:macro.location_setter(context, _("Location:"), context.form_params)
+                </fieldset>
+                </form>
+        
+                <form class="user_loc" id="input_location" action="$context.form_action" method="post">
+                    <fieldset>
+                        <div>
+                            <label for="autozoom">$:_('Automatic zoom'):</label>
+                            <input type="radio" id="autozoom" name="autozoom" value="0" 
+                            $if presets.autozoom == "0": checked
+                            /> $_("no")
+                            <input type="radio" id="autozoom" name="autozoom" value="1" 
+                            $if presets.autozoom == "1": checked
+                            /> $_("yes")
+                            <small>$_("Whether to calculate zoom level automatically from available points")
+                            </small>
+                        </div>
+                    <div class="submit">
+                            <input type="hidden" name="op" style="display:none;" value="create" />
+                            <input type="hidden" id="lon" name="lon" style="display:none;" value="$presets.repr_lon" />
+                            <input type="hidden" id="lat" name="lat" style="display:none;" value="$presets.repr_lat" />
+                            <input type="hidden" id="zoom" name="zoom" style="display:none;" value="$presets.zoom" />
+                            <button type="submit">$_("submit")</button>
+                    </div>
+                    </fieldset>
+                </form>
+	
+    		</div>
+            
+		</div>

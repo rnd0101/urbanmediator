@@ -1,0 +1,8 @@
+$def with (context, presets, topic)
+
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+<div class="wmain">
+$:macro.list_links(context, topic)
+</div>

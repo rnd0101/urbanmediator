@@ -1,0 +1,18 @@
+$def with (context)
+
+$if context.pagination_data:
+    <div class="pagination_bar">
+        <h5>$_("Page:")</h5>
+        <ul>
+            $for page_info in context.pagination_data:
+                $if page_info.page_number == 0:
+                    <li class="spacer">...</li>
+                $elif not page_info.link:
+                    <li class="current_page">$page_info.page_number</li>
+                $else:
+                    <li><a href="$page_info.link">$page_info.page_number</a></li>
+        </ul>
+    </div><!-- /.pagination_bar -->
+
+$#if context.paginate:
+$#	$:macro.pagination_bar(context.paginate)

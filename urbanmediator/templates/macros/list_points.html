@@ -1,0 +1,42 @@
+$def with (context, points, topic, to_show, widget=False)
+
+$if points:
+    $if widget:
+        <ul class="point_list_widget">
+    $else:
+        <ul class="point_list">        
+    $for point in points:
+        <li>\
+        $if ("title" in to_show):
+            <h3><a$:context.lnktgt href="$pc_links("point", topic.id, point.id)">$point.title</a></h3><br />\
+        
+        $if ("special:inappropriate" in point.tags.set()):
+    	    <div class="inapropriate_small">$_("This point is marked as inapropriate")</div>
+        
+        $if ("added" in to_show):
+            <span class="update_time">$rel_date(point.added)</span><br />\
+        $if ("url" in to_show):
+            $if point.url:
+                <p class="point_metadata"><a$:context.linktarget class="point_link" href="$point.url" title="$point.url"><span>URL</span></a></p>\
+        <div class="point_description">
+        $if ("description-full" in to_show):
+            $:render_text(point.first.text)
+        $if ("description-abbr" in to_show):
+            $:first_line(point.first.text)
+        $if ("more" in to_show):
+            <a$:context.lnktgt href="$pc_links("point", topic.id, point.id)">$_("more")</a>
+        </div>
+        <div class="point_user">\
+        $if ("distance" in to_show) and ("user_location" in context) and context.user_location:
+            $dist_meters(point.distance),
+        $if ("author" in to_show):
+            $_('posted by'): <a$:context.lnktgt href="$pc_links("user", point.author)">$point.author</a>\
+        $if ("comments" in to_show) and point.comments.count() > 1:
+            <span> $_("comments: ") ${point.comments.count() - 1}</span>\
+        $if ("tags" in to_show) and point.tags:
+            &nbsp; $_('tags'):
+            $for tag in point.tags:
+                <a$:context.lnktgt href="$pc_links("topic", topic.id, search=tag.safe_tag, search_tags='on')" class="tag">$tag.tag</a> \
+        </div>		
+        </li>
+    </ul>

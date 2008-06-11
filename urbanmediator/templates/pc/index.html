@@ -1,0 +1,57 @@
+$def with (context, topics, topics_highlighted, tags)
+
+$:macro.header_desktop(context, level=0, link=0)
+
+<div id="container">
+
+    <div id="main_normal">
+    $if topics_highlighted:
+        <div class="topic_list_header">
+            <h2>$_("Highlighted Topics")</h2>
+        </div>
+        $:macro.list_topics(context, topics_highlighted)
+
+        <div class="topic_list_header">
+            <h2>$_("Recently updated Topics")</h2>
+            $:macro.ordering_bar(context)
+        </div>
+
+    $:macro.list_topics(context, topics)
+
+    $:macro.pagination_bar(context)
+    $for feed in context.feeds:
+    	<ul class="rss_holder">
+        	<li><a href="$feed.url">$_("Subscribe to the newsfeed")</a></li>
+        </ul>
+    
+    </div>
+    
+    <div id="aside_normal">
+    $if acl.recommend.show_login():
+        $:macro.login_box(context)
+        <hr />
+    $for page_el in config.main_page_elements.split(","):
+        $if page_el == "search":
+            <form action="$pc_links.search" method="get" name="search" id="search">
+				<p>
+				<input id="search-text-home" name="search" type="text" value="$_('search')" class="search-text-input" onfocus="this.value='';this.onfocus=function (){}">
+				<input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search">
+				<input type="hidden" name="mode" style="display:none;" value="list" />
+                </p>
+            </form>
+        $elif page_el == "tagcloud":
+            $:macro.tag_cloud(context, tags)
+        $elif page_el == "hr":
+            <hr />
+        $elif page_el == "add new topic":
+            <ul class="new_topic_button">
+            <li><a href="$pc_links.new_topic">$_("Add new topic")</a></li>
+            </ul>
+        $elif page_el == "edit settings":
+            <ul class="controls">
+            $if acl.authorize.change_um_settings():
+                <li class="advan_set"><a href="$pc_links.settings">$_("Edit settings")</a></li>
+            </ul>
+</div>
+
+</div>

@@ -1,0 +1,14 @@
+$def with (context, doc)
+
+$:macro.header_desktop(context, 1, 1)
+<div id="container" class="one-col">
+    <div id="page_header">
+        <h1></h1>
+    </div>
+    <div id="page_content">
+        <!-- UM's standard content( -->
+        $:doc
+        <!-- )UM's standard content -->
+        <div class="clear">&nbsp;</div>
+    </div><!--  /#page_content -->
+</div><!-- /#container -->

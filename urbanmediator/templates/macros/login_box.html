@@ -1,0 +1,11 @@
+$def with (context)
+
+<form class="login_form" action="$pc_links.login" method="post" enctype="multipart/form-data">
+<h3>$_("Login")</h3>
+<label for="username">$_("Username"):</label>
+<input name="username" type="text" value="" id="username" />
+<label for="username">$_("Password"):</label>
+<input name="password" type="password" value="" id="password" /><br />
+<button type="submit">$_("login")</button>
+<p><strong>$_("New user?")</strong> <a href="$pc_links.signup">$_("sign up")</a></p>
+</form>

@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------------- */
+/*																		*/
+/* 							COLOR SCHEME A								*/
+/*							(Bunny Green)								*/
+/*																		*/
+/* -------------------------------------------------------------------- */
+
+#context_header_holder {
+	background: url(../img/background_topic_header_schemeA.gif) repeat-x;
+	color: #FFF;
+}
+
+#context_header_holder a {
+	color: #FFF;
+}
+
+#display_controls,
+.pagination_bar h5,
+.schemedemo {
+	background-color: #364;
+	color: #fff;
+}
+
+#display_controls ul.list_order_selector li.selected,
+ul.display_type_selector li.selected {
+	background-color: #364;
+}
+
+#display_controls a,
+#display_controls a:link,
+#display_controls a:visited,
+#display_controls a:hover {
+	color: #FFF;
+}
+
+#schemeA_demo {
+	padding: 4px;
+	background: #364;
+	color: #FFF;
+}

@@ -1,0 +1,11 @@
+$def with (context, topics)
+
+<?xml version="1.0" encoding='utf-8'?>
+<service xmlns="http://www.w3.org/2007/app"
+         xmlns:atom="http://www.w3.org/2005/Atom">
+<workspace>
+<atom:title>$context.title</atom:title>
+$for topic in topics:
+    <collection href="$pc_links("topic", topic.id)"><atom:title><![CDATA[$:topic.title]]></atom:title></collection>
+</workspace>
+</service>

@@ -1,0 +1,23 @@
+$def with (context, topic, point, comment)
+
+$:macro.header_desktop(context, 1, 1)
+	
+    $:macro.header_topic(topic, level=1, link=1)
+    
+    	<div id="container">
+        
+        	<div id="main_one_col">
+            
+            	$:macro.header_point(topic, point, level=1, link=1)
+                
+                	<div class="comment_edit">
+                        $:macro.comment(context, topic, point, comment, show_actions=False)
+                        $if acl.authorize.edit_comment(topic, point, comment):
+                            $:macro.edit_comment(context, topic, point, pc_links('point_editcomment', topic.id, point.id, comment.id))
+                        $else:
+                            $_("You do not have permission to edit this comment.")
+                    </div>
+
+        		</div>
+                
+            </div>

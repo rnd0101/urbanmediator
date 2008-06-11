@@ -1,0 +1,17 @@
+$def with (context, presets)
+
+$:macro.header_desktop(context, 0, 1)
+
+	<div id="container">
+    
+    	<div id="main_one_col">
+           
+            <div id="page_header">
+                <h1>$_('Open a new topic')</h1>
+            </div>
+            
+            $:macro.edit_topic(context, presets)
+            
+		</div>
+    
+	</div>

@@ -1,0 +1,41 @@
+$def with (context, level=0, link=1)
+
+<div class="header">
+
+    <div id="um_header">
+
+        <div id="selectors">
+            
+            <ul id="version_selector" class="selector">
+                <li><a href="$mobile_links.index">$_("mobile")</a></li>
+                <li class="selected">$_("desktop")</li>
+            </ul>
+
+            $if config.show_language_selector:
+                <ul id="language_selector" class="selector">
+                $for lang in config.LANGUAGES:
+                    $if lang == LANG():
+                        <li class="selected">$_(lang)</li>
+                    $else:
+                        <li><a href="$pc_links.set_language_action?lang=$lang">$_(lang)</a></li>
+                </ul>
+        </div>
+        
+        <h1>
+            $if link != 0:
+                <a href="$pc_links('index')">${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}</a>
+            $else:
+                ${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}
+        </h1>
+        
+        <div id="user_status">
+            $if acl.recommend.show_login():
+                <p><a href="$pc_links.login">$_("log in")</a> | <a href="$pc_links.signup">$_("sign up")</a> 
+            $else:
+                <p><a href="$pc_links('user', context.user.username)">$context.user.username</a> | <a href="$pc_links.logout">$_('logout')</a> 
+            | <a href="$pc_links.about">$_("about")</a> | <a href="$pc_links.help">$_("help")</a> | <a href="$pc_links.feedback">$_("feedback")</a></p>
+        </div>
+
+    </div>
+    
+</div>

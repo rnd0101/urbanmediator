@@ -1,0 +1,63 @@
+$def with (context, point)
+
+<div id="header">
+  <div id="header-inner">
+    <div id="nav">
+    $:macro.mobile_nav(context)
+    </div>
+  </div>
+</div>
+
+        <div id="content">
+          <div id="page_header">
+            <strong>$_("MAP: SET LOCATION")</strong>
+          </div>
+          <div id="content-wrapper">
+          $if config.getmap_custom_wms == "osm":
+              <div id="map-wrapper" style="width: 256px;">
+          $else:
+              <div id="map-wrapper">
+          <div id="map-nav-wrapper">
+              <span class="map-arrow-wrapper">
+                 <a href="${context.map_context.left()}"><img class="mapnav1" src="${schema_base_url}/img/mob/left.png" alt="Left" /></a>
+                 <a href="${context.map_context.right()}"><img class="mapnav2" src="${schema_base_url}/img/mob/right.png" alt="Right" /></a>
+                 <a href="${context.map_context.up()}"><img class="mapnav1" src="${schema_base_url}/img/mob/up.png" alt="Up" /></a>
+                 <a href="${context.map_context.down()}"><img class="mapnav2" src="${schema_base_url}/img/mob/down.png" alt="down" /></a></span>
+                 <span class="map-zoom-wrapper">
+                 $#<a href="${context.map_context.zoomout(2)}"><img alt="zoom out" src="$schema_base_url/img/mob/minus.png" />2</a>
+                 <a href="${context.map_context.zoomout()}"><img alt="zoom out" src="$schema_base_url/img/mob/minus.png" /></a>
+                 <a href="${context.map_context.zoomin()}"><img alt="zoom in" src="$schema_base_url/img/mob/plus.png" /></a>
+                 $#<a href="${context.map_context.zoomin(2)}"><img alt="zoom in" src="$schema_base_url/img/mob/plus.png" />2</a>
+                 </span>
+            </div>
+            <a href="${mobile_links("map_action", context.map_context.tile_id)}"><img ISMAP src="${mobile_links('locationmapclean', zoom=context.map_context.zoom, lat=point.lat, lon=point.lon)}" alt="[$point.lat, $point.lon]" width="${context.map_context.map_width}px" height="${context.map_context.map_height}px"/></a>
+
+            </div>
+            <div class="input-wrapper">
+              $if context.get("gps", ""):
+                  <span class="info_label_gps"><strong>$_("GPS")</strong></span><br/>
+              <a href="${mobile_links('map', lat=point.lat, lon=point.lon)}"><small>permalink</small></a>
+              <span class="input_label">$_("Choose the location on the map or lookup a street address:")</span><br/>
+              $if context.address_lookup == 'failed':
+                  <span class="info_label">$_("> Address lookup failed.")</span>
+              <form id="form1" name="form1" method="get" action="$mobile_links.map">
+                <input name="lat" style="display:none;" type="hidden" value="$point.lat" />
+                <input name="lon" style="display:none;" type="hidden" value="$point.lon" />
+                <label><span class="input_field_label">$_("Street address")</span>
+                <input name="address" class="textfield_full" type="text" value="$context.address" /></label>
+                <label><input type="submit" name="find" class="button_lookup" value="$_('Lookup')" /></label>
+                <br />
+                <label><input type="submit" name="submit" class="button_full" value="$_('Continue')" /></label>
+                <label><input type="submit" name="forget" class="button_full" value="$_('Clear position')" /></label>
+              </form>
+            
+          </div>
+          </div>
+          </div>
+
+
+    <div id="nav2" class="group">
+    $:macro.mobile_nav(context)
+    </div>
+  </div>
+</div>

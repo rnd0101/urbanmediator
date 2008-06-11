@@ -1,0 +1,64 @@
+body {
+    line-height:1.1em;
+    overflow:auto;
+    }
+
+#widget {
+    background-color:#fff;
+    font-size:0.875em;
+    }
+
+/* Styles for framed widgets */
+
+    /* header area styles */ 		
+    #um_header {
+	    }	
+	    #um_header h1 {
+            font-weight:normal;
+    		padding:3px 2px 2px 23px;	
+            font-size:18px;
+		    background: url("../img/umlogo.small.png") no-repeat 5px 4px;
+		    min-height:23px;
+		    }
+        #um_header h2 {
+            padding:3px 3px 5px 22px;
+            background-color:#46a;
+            font-size:12px;
+            }
+
+    .framed #main {
+        border:3px solid #56b;
+        padding:2px;
+        overflow:auto;
+       }
+    body.framed {
+        height:100%;
+        background-color:#56b;
+        }
+
+/* STYLES FOR CONTENT BLOCKS */ 
+
+/* new point buttons (overrides for style in um_base.css) */
+ul.new_point_buttons {
+    }
+    .new_point_buttons li {
+        margin-bottom:3px;
+        font-size:12px;
+        }
+    .new_point_buttons a {
+        padding:6px;
+        background-position: 6px 6px;
+        padding-left:30px;
+        border-bottom:2px solid #fff;
+        }
+
+/* normal point list (overrides for style in um_base.css) */
+    .point_list li {
+        background: url("../img/point.blue.tiny.png") no-repeat 3px 3px;
+        padding-left:1.3em;
+        margin-bottom:0.3em;
+        font-size:1em;
+        }
+        .point_list p {
+            margin:0;
+            }

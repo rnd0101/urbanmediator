@@ -1,0 +1,11 @@
+$def with (context)
+
+$if context.order_data:
+    <h5 class="selector_title">$_("Order by:")</h5>
+    <ul class="list_order_selector">
+        $for o in context.order_data:
+            $if o.link:
+                <li><a href="$o.link">$o.order_name</a></li>
+            $else:
+                <li class="selected">$o.order_name</li>
+    </ul>

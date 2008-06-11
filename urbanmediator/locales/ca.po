@@ -1,0 +1,2048 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Language-code: ca\n"
+"Language-name: Catalan\n"
+"Preferred-encodings: utf-8\n"
+"Domain: urban_mediator\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+# MSGIDS FOR THE NEW UI STARTS
+# TRANSLATIONS FOR NEW UI
+msgid "um_version"
+msgstr "beta"
+
+# index.html
+msgid ""
+"<strong>Urban Mediator</strong> is a tool for connecting people, places and "
+"information."
+msgstr ""
+"<strong>Urban Mediator</strong> és una eina per a connectar persones, llocs "
+"i informació. Feu-la servir per compartir els vostres coneixements del barri "
+"i accedir a la informació provinent d'altres residents, visitants i oficines "
+"municipals. També podeu crear taulons per tractar assumptes locals juntament "
+"amb altra gent interessada."
+
+# tools.html
+msgid "Import points tool description"
+msgstr ""
+"Importar punts provinents d'altres taulons a Urban Mediator i agregar-los a "
+"aquest."
+
+msgid "Import newsfeed tool description"
+msgstr ""
+"Importar noticies des d'un feed (RSS/ATOM) i afegir-les a la secció de "
+"noticies d'aquest tauló."
+
+msgid "GeoRSS tool description"
+msgstr ""
+"Importar punts des d'un feed GeoRSS i afegir-los al mapa d'aquest tauló."
+
+msgid "Scrape tool description"
+msgstr ""
+"Busca en un lloc web informació relacionada amb el tauló i afegeix els "
+"resultats."
+
+msgid ""
+"Attachment added by <a class='author' href='%(link_base)s%(link_home)s'>%"
+"(user)s</a> at <span class='datetime'>%(time)s</span>"
+msgstr ""
+"Fitxer adjunt agregat per <a class=\"author\" href=\"%(link_base)s%"
+"(link_home)s\">%(user)s</a> el <span class=\"datetime\">%(time)s</span>"
+
+msgid ""
+"1. Click a location on the map <strong>or</strong> give a street <a href='#' "
+"onClick='ap()'>address...</a>"
+msgstr ""
+"1. Fes clic al mapa sobre la posició desitjada <strong>or</strong> escriu "
+"l'adreça <a href=\"#\" onClick=\"ap()\">del carrer...</a>"
+
+msgid ""
+"1. Click a location on the <a href='#' onClick='mp()'>map</a> <strong>or</"
+"strong> give a street address:</a>"
+msgstr ""
+"1. Fes clic <a href=\"#\" onClick=\"mp()\">sobre el mapa</a> <strong>or</"
+"strong> escriu una direcció:</a>"
+
+# #-#-#-#-#  ca.po (UrbanMediator-0-0-1)  #-#-#-#-#
+# MSGIDS FOR THE NEW UI ENDS
+msgid "example"
+msgstr "exemple"
+
+msgid "Home"
+msgstr "Inici"
+
+msgid "Map"
+msgstr "Mapa"
+
+msgid "Show points"
+msgstr "Mostrar punts"
+
+msgid "Add new point"
+msgstr "Afegeix un nou punt"
+
+msgid "Flag as inappropriate"
+msgstr "Marcar com inadequat"
+
+msgid "Delete comment"
+msgstr "Esborra el comentari"
+
+msgid "Inappropriate comments"
+msgstr "Comentaris inadequats"
+
+msgid "Delete point"
+msgstr "Elimina aquest punt"
+
+msgid "Inappropriate points"
+msgstr "Punts inadequats"
+
+msgid "Attach file"
+msgstr "Afegeix un fitxer"
+
+msgid "Please enter your point title."
+msgstr "Siusplau escriu el títol del punt."
+
+msgid "Please enter your comment."
+msgstr "Siusplau escriu el teu comentari."
+
+msgid "Close menu"
+msgstr "Tanca el menu"
+
+msgid "Hide point"
+msgstr "Amaga el punt"
+
+msgid "Restore point"
+msgstr "Restaura el punt"
+
+msgid "Hide note"
+msgstr "Amaga el comentari"
+
+msgid "Edit note"
+msgstr "Edita el comentari"
+
+msgid "Choose place from the map"
+msgstr "Tria una posició del mapa"
+
+msgid "New point"
+msgstr "Punt nou"
+
+msgid "Create new point"
+msgstr "Crea un punt nou"
+
+msgid "My points and comments"
+msgstr "Els meus punts i comentaris"
+
+msgid "Tags"
+msgstr "Etiquetes"
+
+msgid "user profile"
+msgstr "Perfil d'usuari"
+
+msgid "points and comments"
+msgstr "Punts i comentaris"
+
+msgid "Points"
+msgstr "Punts"
+
+msgid "No points."
+msgstr "No hi ha punts."
+
+msgid "Comments"
+msgstr "Comentaris"
+
+msgid "No comments."
+msgstr "No hi ha comentaris."
+
+msgid "Places"
+msgstr "Llocs"
+
+msgid "Messages"
+msgstr "Missatges"
+
+msgid "m "
+msgstr "m "
+
+msgid "logout"
+msgstr "tancar sessió"
+
+msgid "Logout done."
+msgstr "Sortida confirmada."
+
+msgid "Mainpage"
+msgstr "Pàgina principal"
+
+msgid "Browse points or add new point"
+msgstr "Navega per els punts o afegeix un nou"
+
+msgid "Recent points"
+msgstr "Darrers punts"
+
+msgid "Recent comments"
+msgstr "Darrers comentaris"
+
+msgid "Keywords"
+msgstr "Paraules clau"
+
+msgid "Own points and comments"
+msgstr "Els meus punts i comentaris"
+
+msgid "Logout"
+msgstr "Sortir"
+
+msgid "add keywords to all points"
+msgstr "afegeix paraules clau a tots els punts"
+
+msgid "Login"
+msgstr "Iniciar sessió"
+
+msgid "User manual"
+msgstr "Manual d'usuari"
+
+msgid "Send feedback"
+msgstr "Enviar la teva opinió"
+
+msgid "login"
+msgstr "iniciar sessió"
+
+msgid "Choose username"
+msgstr "Tria nom d'usuari"
+
+msgid "Begin session"
+msgstr "Comença la sessió"
+
+msgid "Add keywords"
+msgstr "Afegeix paraules clau"
+
+msgid "Send"
+msgstr "Envia"
+
+msgid "Comment edit"
+msgstr "Edita el comentari"
+
+msgid "Save comment"
+msgstr "Guarda el comentari"
+
+msgid "Write comment"
+msgstr "Escriu un comentari"
+
+msgid "Fine! You have added keywords to all points."
+msgstr "Excel·lent! Has afegit paraules clau a tots els punts."
+
+msgid "Show on the map"
+msgstr "Mostra al mapa"
+
+msgid "File"
+msgstr "Fitxer"
+
+msgid "datetime_format"
+msgstr "%d.%m.%y %H:%M"
+
+msgid "Nearest points"
+msgstr "Punts més propers"
+
+msgid "Comment suppressed by administrator."
+msgstr "Comentari eliminat per l'administrador."
+
+msgid "Actions"
+msgstr "Accions"
+
+msgid "Notes"
+msgstr "Notes"
+
+# MOBILE
+msgid "Sign in"
+msgstr "Entrar"
+
+msgid "Search"
+msgstr "Cercar"
+
+msgid "Main"
+msgstr "Inici"
+
+msgid "Tag cloud"
+msgstr "Etiquetes més utilitzades"
+
+msgid "?"
+msgstr "?"
+
+msgid "X"
+msgstr "X"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "About"
+msgstr "Qui som"
+
+msgid "Recent entries"
+msgstr "Darreres entrades"
+
+msgid "Points by tag"
+msgstr "Punts per etiqueta"
+
+msgid "Newer"
+msgstr "Darrers"
+
+msgid "Older"
+msgstr "Més antics"
+
+msgid "Comment"
+msgstr "Comentari"
+
+msgid "No tags"
+msgstr "No hi ha etiquetes"
+
+msgid "Add"
+msgstr "Afegeix"
+
+msgid "Your username"
+msgstr "Nom d'usuari"
+
+msgid "Tag(s)"
+msgstr "Etiqueta(es)"
+
+msgid "Mobile"
+msgstr "Mòbil"
+
+msgid "Considered inappropriate by someone"
+msgstr "Considerat inadequat"
+
+msgid "Project"
+msgstr "Projecte"
+
+msgid "This site runs"
+msgstr "Aquesta web utilitza"
+
+msgid "%s from now"
+msgstr "En %s"
+
+msgid "%s ago"
+msgstr "Fa %s"
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s dia"
+msgstr[1] "%s dies"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s hora"
+msgstr[1] "%s hores"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minut"
+msgstr[1] "%s minuts"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s segon"
+msgstr[1] "%s segons"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s mil·lèsima"
+msgstr[1] "%s mil·lèsimes"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s microsegon"
+msgstr[1] "%s microsegons"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s %(monthname)s, %(year)s"
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s %(monthname)s"
+
+msgid "1_month"
+msgstr "Gener"
+
+msgid "2_month"
+msgstr "Febrer"
+
+msgid "3_month"
+msgstr "Març"
+
+msgid "4_month"
+msgstr "Abril"
+
+msgid "5_month"
+msgstr "Maig"
+
+msgid "6_month"
+msgstr "Juny"
+
+msgid "7_month"
+msgstr "Juliol"
+
+msgid "8_month"
+msgstr "Agost"
+
+msgid "9_month"
+msgstr "Setembre"
+
+msgid "10_month"
+msgstr "Octubre"
+
+msgid "11_month"
+msgstr "Novembre"
+
+msgid "12_month"
+msgstr "Desembre"
+
+msgid "Add points to"
+msgstr "Afegeix punts a"
+
+msgid "Available points"
+msgstr "Punts disponibles"
+
+msgid "Choose points to be added to the board:"
+msgstr "Selecciona els punts per afegir al tauló:"
+
+msgid "subscribe"
+msgstr "subscriu-te"
+
+msgid "tools"
+msgstr "eines"
+
+msgid "settings"
+msgstr "configuració"
+
+msgid "Point import"
+msgstr "Importar punts"
+
+msgid "keywords"
+msgstr "paraules clau"
+
+msgid "1. Select a keyword"
+msgstr "1. Selecciona una paraula clau"
+
+msgid "Choose a keyword from the left to view points associated with it."
+msgstr ""
+"Escull una paraula clau de l'esquerra per veure els punts associats a ella."
+
+msgid "2. Select points to import"
+msgstr "2. Selecciona punts per importar"
+
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgid "2. No new points"
+msgstr "2. No hi ha punts nous"
+
+msgid ""
+"There is no new points to add to the board with this keyword. Please, select "
+"another keyword."
+msgstr ""
+"No hi han nous punts per afegir al tauló amb aquesta paraula clau. Siusplau, "
+"selecciona un altre paraula clau."
+
+msgid "register"
+msgstr "registrar-se"
+
+msgid "Choose a username and password."
+msgstr "Escull un nom d'usuari i una clau."
+
+msgid "Choose a username"
+msgstr "Escull un nom d'usuari"
+
+msgid "Enter a password"
+msgstr "Introdueix la contrasenya"
+
+msgid "Repeat password"
+msgstr "Repeteix la contrasenya"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "optional"
+msgstr "opcional"
+
+msgid "Security"
+msgstr "Seguretat"
+
+msgid "Register"
+msgstr "Registrar-se"
+
+msgid "Tools"
+msgstr "Eines"
+
+msgid "Toolbox"
+msgstr "Capsa d'eines"
+
+msgid "Newsfeed import"
+msgstr "Importar notícies feed"
+
+msgid "Post to Urban Mediator"
+msgstr "Portar a Urban Mediator"
+
+msgid "Bookmark this link in order to post web pages as points to this board"
+msgstr ""
+"Guarda aquest enllaç a les adreces d'interès per ficar pàgines web com a "
+"punts en aquest tauló"
+
+msgid "GeoRSS"
+msgstr "GeoRSS"
+
+msgid "Delete this board"
+msgstr "Suprimeix aquest tauló"
+
+msgid "Scrape"
+msgstr "Extreure informació d'un altre web"
+
+msgid ""
+"Scrape %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Search "
+"Helsinki Virtual Village for relevant information and add it to this board."
+msgstr ""
+"Extreure %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Busca a la "
+"ciutat virtual de Barcelona informació relevant i afegeix-la a aquest tauló."
+
+msgid "Newsfeed import: news.bbc.co.uk"
+msgstr "Importar feeds: news.bbc.co.uk"
+
+msgid "GeoRSS: hel.fi"
+msgstr "GeoRSS: hel.fi"
+
+msgid "Currently active tools"
+msgstr "Eines actives actualment"
+
+msgid "Add point to Urban Mediator?"
+msgstr "Afegir punt al Urban Mediator?"
+
+msgid "Your name:"
+msgstr "El teu nom:"
+
+msgid ""
+"1. Click a location on the map <strong>or</strong> give a street address:"
+msgstr ""
+"1. Fes clic a un lloc sobre el mapa <strong>o</strong> dona una adreça:"
+
+msgid "<em>example:</em> Arabiankatu 2"
+msgstr "<em>exemple:</em> Passeig de Gracia 23"
+
+msgid ""
+"1. Click a location on the <a href='javascript:mp()'>map</a> <strong>or</"
+"strong> give a street address:</a>"
+msgstr ""
+"1. Fes clic a un lloc sobre el <a href='javascript:mp()'>mapa</a> <strong>o</"
+"strong> dona una adreça:</a>"
+
+msgid "Give it a name"
+msgstr "Posa-li un nom"
+
+msgid "<em>example:</em> Dangerous concrete blocks"
+msgstr "<em>exemple:</em> Blocs de ciment perillosos"
+
+msgid "External url"
+msgstr "Url externa"
+
+msgid "Tag it"
+msgstr "Posa-li etiqueta"
+
+msgid "<em>example:</em> dangerous ugly disturbing question complaint"
+msgstr "<em>exemple:</em> perillós lleig molest qüestió queixa"
+
+msgid "Select location >>"
+msgstr "Escull una posició >>"
+
+msgid "Newsfeed of points from this board"
+msgstr "Feeds dels punts d'aquest tauló"
+
+msgid "Add feed"
+msgstr "Afegeix feed"
+
+msgid "New feed for"
+msgstr "Nou feed per"
+
+msgid "Select type of feed"
+msgstr "Escull el tipus de feed"
+
+msgid "RSS Feed"
+msgstr "RSS feed"
+
+msgid "Type the URL of the Feed"
+msgstr "Escriu la URL del feed"
+
+msgid "Enter the feed adress (URL):"
+msgstr "Introdueix l'adreça del feed (URL):"
+
+msgid "help"
+msgstr "ajuda"
+
+msgid "Write a description of the link"
+msgstr "Escriu una descripció del link"
+
+msgid "Please type the text in the picture"
+msgstr "Siusplau escriu el text que apareix a la finestra"
+
+msgid "attached to:"
+msgstr "adjunt a:"
+
+msgid "Really delete "
+msgstr "Desitja suprimir "
+
+msgid "Filter points by keyword:"
+msgstr "Filtrar punts per paraula clau:"
+
+msgid "all"
+msgstr "tot"
+
+msgid "none"
+msgstr "cap"
+
+msgid "show on map"
+msgstr "mostrar al mapa"
+
+msgid "point page"
+msgstr "pàgina del punt"
+
+msgid "attachments"
+msgstr "fitxers adjunts"
+
+msgid "map"
+msgstr "mapa"
+
+msgid "link"
+msgstr "link"
+
+msgid "tags"
+msgstr "etiquetes"
+
+msgid "m"
+msgstr "m"
+
+msgid "No boards"
+msgstr "No hi han taulons"
+
+msgid "External URL"
+msgstr "URL externa"
+
+msgid "Last update"
+msgstr "Darrera actualització"
+
+msgid "Created by"
+msgstr "Creat per"
+
+msgid "Associated boards"
+msgstr "Taulons associats"
+
+msgid "show position on map"
+msgstr "mostrar la posició al mapa"
+
+msgid "External Website"
+msgstr "Web externa"
+
+msgid "Attachments"
+msgstr "Fitxers adjunts"
+
+msgid "Add attachment"
+msgstr "Afegeix fitxer adjunt"
+
+msgid "show all points"
+msgstr "mostra tots els punts"
+
+msgid "hide points"
+msgstr "amagar els punts"
+
+msgid "<strong>+</strong> new note"
+msgstr "<strong>+</strong> nova nota"
+
+msgid "<strong>+</strong> new note in here"
+msgstr "<strong>+</strong> nova nota aqui"
+
+msgid "Points on this board"
+msgstr "Punts en aquest tauló"
+
+msgid "on:"
+msgstr "a:"
+
+msgid "No Points"
+msgstr "No hi ha punts"
+
+msgid "website"
+msgstr "lloc web"
+
+msgid "new news feed"
+msgstr "nou feed de notícies"
+
+msgid "Give your username"
+msgstr "Dona el teu nom d'usauri"
+
+msgid "Select location"
+msgstr "Escull una posició"
+
+msgid ""
+"Click a location on the map <strong>or</strong> give a street <a "
+"href='javascript:ap()'>address...</a>"
+msgstr ""
+"Fes clic a una posició sobre el mapa <strong>o</strong> dona una <a "
+"href='javascript:ap()'>adreça...</a>"
+
+msgid ""
+"Click a location on the <a href='javascript:mp()'>map</a> <strong>or</"
+"strong> give a street address:"
+msgstr ""
+"Fes clic a una posició sobre el <a href='javascript:mp()'>mapa</a> "
+"<strong>o</strong> dona una adreça:"
+
+msgid "Give it a name:"
+msgstr "Posa-li un nom:"
+
+msgid "Tag it:"
+msgstr "Etiquetes:"
+
+msgid "keywords:"
+msgstr "paraules clau:"
+
+msgid "view on full map"
+msgstr "mostrar al mapa complert"
+
+msgid "Delete this point"
+msgstr "Suprimeix aquest punt"
+
+msgid "Search Urban Mediator"
+msgstr "Cerca a Urban Mediator"
+
+msgid "Write words you want to use for search in here"
+msgstr "Introdueix les pauraules de cerca aqui"
+
+msgid "Search results for"
+msgstr "Resultats de la cerca per"
+
+msgid "Boards"
+msgstr "Taulons"
+
+msgid "No boards found"
+msgstr "No s'ha trobat cap tauló"
+
+msgid "No points found"
+msgstr "No s'ha trobat cap punt"
+
+msgid "New attachment for the point"
+msgstr "Nou fitxer adjunt per al punt"
+
+msgid "New note for the board"
+msgstr "Nova nota per al tauló"
+
+msgid "1. Choose type"
+msgstr "1. Escull el tipus"
+
+msgid "Text Comment"
+msgstr "Comentari de text"
+
+msgid "Web Link"
+msgstr "Link web"
+
+msgid "Picture"
+msgstr "Imatge"
+
+msgid "2. Write a text comment"
+msgstr "2. Escriu un comentari de text"
+
+msgid "2. Add a web link"
+msgstr "2. Afegeix un link web"
+
+msgid "Enter the website adress (URL)"
+msgstr "Introdueix l'adreça web (URL)"
+
+msgid "2. Upload a picture"
+msgstr "2. Puja la imatge"
+
+msgid "Choose a file to upload"
+msgstr "Selecciona un arxiu per pujar"
+
+msgid "Browse..."
+msgstr "Navega..."
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Show all points"
+msgstr "Mostra tots els punts"
+
+msgid "Hide points"
+msgstr "Amaga els punts"
+
+msgid "Newest points"
+msgstr "Darrers punts"
+
+msgid "Create a new board"
+msgstr "Crea un nou tauló"
+
+msgid "1. Name"
+msgstr "1. Nom"
+
+msgid "Name your bulletin board"
+msgstr "Posa un nom al teu tauló"
+
+msgid "<em>example:</em> kindergartens"
+msgstr "<em>exemple:</em> escoles bressol"
+
+msgid "2. Category"
+msgstr "2. Categoria"
+
+msgid "Choose the category that your board will appear in:"
+msgstr "Escull la categoria on apareixerà el teu taulò:"
+
+msgid "category"
+msgstr "categoria"
+
+msgid "3. Keywords"
+msgstr "3. Paraules clau"
+
+msgid "Write some keywords to identify your board, separated by spaces:"
+msgstr ""
+"Escriu paraules clau que identifiquin el teu tauló, separades per espais:"
+
+msgid "<em>example:</em> kids children kindergarten preschool"
+msgstr "<em>exemple:</em> nens escoles bressol infancia"
+
+msgid "4. Description"
+msgstr "4. Descripció"
+
+msgid "Write a short text describing your Bulletin Board:"
+msgstr "Escriu un text curt descrivint el teu tauló:"
+
+msgid ""
+"<em>example:</em> A place for parents to share information about "
+"Kindergartens in Arabianranta."
+msgstr ""
+"<em>exemple:</em> Un espai on els pares poden compartir informació sobre les "
+"escoles bressol al 22@."
+
+msgid "Find by address"
+msgstr "Cercar per adreça"
+
+msgid "Find"
+msgstr "Cerca"
+
+msgid "Dangerous concrete blocks"
+msgstr "Blocs de ciment perillosos"
+
+msgid "Link to related website"
+msgstr "Enllaç a web relacionada"
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "perillós lleig molest qüestió queixa"
+
+msgid "Search Urban Mediator:"
+msgstr "Cerca a Urban Mediator:"
+
+msgid "What do you want to do?"
+msgstr "Que vols fer?"
+
+msgid "View map"
+msgstr "Veure el mapa"
+
+msgid "View points"
+msgstr "Veure els punts"
+
+msgid "Browse boards"
+msgstr "Navega pels taulons"
+
+msgid "Personalize"
+msgstr "Personalitzar"
+
+msgid "What's happening?"
+msgstr "Que succeeix?"
+
+msgid "Active boards"
+msgstr "Taulons actius"
+
+msgid "Add points to this board"
+msgstr "Afegeix punts a aquest tauló"
+
+msgid "Add feed to this board"
+msgstr "Afegeix un feed a aquest tauló"
+
+msgid "No feeds."
+msgstr "No hi ha feeds."
+
+msgid "keyword"
+msgstr "paraula clau"
+
+msgid "Newsfeed of points with this keyword"
+msgstr "Feeds de punts amb aquesta paraula clau"
+
+msgid "You are being logged out."
+msgstr "Estàs sortint de la sessió."
+
+msgid "You are being logged out..."
+msgstr "Terminant la sessió..."
+
+msgid "Username"
+msgstr "Nom d'usuari"
+
+msgid "Front page"
+msgstr "Pàgina principal"
+
+msgid "My UM"
+msgstr "El meu UM"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Privacy policy"
+msgstr "Política de privacitat"
+
+msgid "Contact"
+msgstr "Contacte"
+
+msgid "Terms of use"
+msgstr "Condicions d'ús"
+
+msgid "Use of this feature requires registration and log in."
+msgstr "L'ús d'aquesta funció requereix registrar-se i iniciar una sessió."
+
+msgid "Guest Login"
+msgstr "Entrar com a visitant"
+
+msgid "Your username will appear as:"
+msgstr "El teu nom d'usuari serà:"
+
+msgid ""
+"This username will be valid until you log out or shut  down your browser."
+msgstr ""
+"Aquest nom d'usuari serà vàlid fins que surtis de la sessió o tanquis el "
+"navegador."
+
+msgid "or"
+msgstr "o"
+
+msgid "Normal Login"
+msgstr "Inici de sessió normal"
+
+msgid "Password"
+msgstr "Contrasenya"
+
+msgid "New users"
+msgstr "Usuaris nous"
+
+msgid "sign up here"
+msgstr "registra't aquí"
+
+msgid "Write your username"
+msgstr "Escriu el teu nom d'usuari"
+
+msgid "My boards"
+msgstr "Els meus taulons"
+
+msgid "boards"
+msgstr "taulons"
+
+msgid "My notes"
+msgstr "Les meves notes"
+
+msgid "notes"
+msgstr "notes"
+
+msgid "My points"
+msgstr "Els meus punts"
+
+msgid "points"
+msgstr "punts"
+
+msgid "My attachments"
+msgstr "Els meus fitxers adjunts"
+
+msgid "Not implemented"
+msgstr "en construcció"
+
+msgid "This feature has not been implemented yet."
+msgstr "Aquesta funcionalitat encara no ha estat implementada."
+
+msgid "Desktop version"
+msgstr "Versió de PC"
+
+msgid "Your feedback"
+msgstr "La teva opinió"
+
+msgid "Earlier feedback"
+msgstr "La teva opinió anterior"
+
+msgid "No points"
+msgstr "No hi ha punts"
+
+msgid "Please specify location on the map which will appear shortly."
+msgstr ""
+"Siusplau especifica una posició del mapa que apareixerà en breus instants."
+
+msgid "Urban Mediator"
+msgstr "Urban Mediator"
+
+msgid "Recent projects"
+msgstr "Darrers projectes"
+
+msgid "Batch edit"
+msgstr "Edició en grup"
+
+msgid "Post to UrbanMediator"
+msgstr "Portar a UrbanMediator"
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Description"
+msgstr "Descripció"
+
+msgid "Read once"
+msgstr "Llegeix un cop"
+
+msgid "Login as"
+msgstr "Entrar com"
+
+msgid "Describe resource"
+msgstr "Descriure el recurs"
+
+msgid "Place on the map"
+msgstr "Situar al mapa"
+
+msgid "OR"
+msgstr "O"
+
+msgid "Give address"
+msgstr "Donar adreça"
+
+msgid "example: koreankatu 2"
+msgstr "exemple: diagonal 234"
+
+msgid "Street and number"
+msgstr "Carrer i número"
+
+msgid "Submit point"
+msgstr "Enviar punt"
+
+msgid "Give street and house number"
+msgstr "Donar carrer i número de la casa"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Add new point at star position"
+msgstr "Afegeix un nou punt a la posició de la estrella"
+
+msgid "Attachment"
+msgstr "Fitxer adjunt"
+
+msgid "New attachment for"
+msgstr "Nou fitxer adjunt per"
+
+msgid "points found for"
+msgstr "punts trobats per"
+
+msgid "ERROR: point has no title."
+msgstr "ERROR: el punt no té títol."
+
+msgid "ERROR: point has no coordinates."
+msgstr "ERROR: el punt no té coordenades."
+
+msgid "ERROR: Unknown map action."
+msgstr "ERROR: acció no reconeguda per el mapa."
+
+msgid "Not found"
+msgstr "No s'ha trobat"
+
+msgid "Visual code is wrong"
+msgstr "El codi visual és incorrecte"
+
+msgid "Passwords do not match"
+msgstr "Les claus no coincideixen"
+
+msgid "No such user - error occured"
+msgstr "No existeix l'usuari - error"
+
+msgid "Login failed"
+msgstr "L'inici de sessió ha fallat"
+
+msgid "Visual code is wrong. Try again"
+msgstr "Codi visual incorrecte. Prova un altre cop"
+
+msgid "No description"
+msgstr "No hi ha descripció"
+
+msgid "ERROR: Board has no title."
+msgstr "ERROR: el tauló no té títol."
+
+msgid "ERROR: Board has no description."
+msgstr "ERROR: el tauló no té descripció."
+
+msgid "No summary"
+msgstr "No hi ha sumari"
+
+msgid "ERROR: Point has no title."
+msgstr "ERROR: el punt no té títol."
+
+msgid "No such point. Update your bookmarks."
+msgstr "No existeix aquest punt. Actualitza els teus marcadors."
+
+msgid "Point"
+msgstr "Punt"
+
+msgid "Add point"
+msgstr "Afegir punt"
+
+msgid "ERROR: Location not specified."
+msgstr "ERROR: Posició no especificada."
+
+msgid "Address is wrong"
+msgstr "L'adreça és incorrecte"
+
+msgid "Point name not given"
+msgstr "Aquest punt no té un títol"
+
+msgid "No such board. Update your bookmarks."
+msgstr "No existeix aquest taulò. Actualitza els teus marcadors."
+
+msgid "Add points to the board"
+msgstr "Afegeix punts al taulò"
+
+msgid "Add news feed to the board"
+msgstr "Afegeix feeds al taulò"
+
+msgid "Settings"
+msgstr "Configuració"
+
+msgid "Subscribe"
+msgstr "Subscriu-te"
+
+msgid "Added points to the board"
+msgstr "Punts afegits al taulò"
+
+msgid "Thank you for adding the point!"
+msgstr "Gràcies per afegir el punt!"
+
+msgid "Search results"
+msgstr "Resultats de la cerca"
+
+msgid "ERROR: No user."
+msgstr "ERROR: L'usuari no existeix."
+
+msgid "ERROR: Point has no description."
+msgstr "ERROR: El punt no té descripció."
+
+msgid "Attachment addition cancelled."
+msgstr "Cancel·lada l'addició del fitxer adjunt."
+
+msgid "Note addition cancelled."
+msgstr "Cancel·lada l'addició de la nota."
+
+msgid "User name is reserved or forbidden"
+msgstr "Aquest nom d'usuari està reservat o no disponible"
+
+msgid "Bad user name"
+msgstr "Nom d'usuari incorrecte"
+
+msgid "Feedback"
+msgstr "Donans la teva opinió"
+
+msgid "Attachments from this point"
+msgstr "Fitxer adjunts a aquest punt"
+
+msgid "all contributions"
+msgstr "totes les contribucions"
+
+msgid "Please login prior to attaching files."
+msgstr "Siusplau entra abans de penjar fitxers adjunts."
+
+msgid "add point"
+msgstr "afegeix punt"
+
+msgid "Point addition disabled."
+msgstr "No es poden afegir punts."
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "No existeix el tòpic. Actualitza els teus marcadors."
+
+msgid "Links"
+msgstr "Enllaços"
+
+msgid "Setting database"
+msgstr "Configurant base de dades"
+
+msgid "Enter some values to start with the database setup"
+msgstr ""
+"Introdueix alguns valors per començar amb la configuració de la base de dades"
+
+msgid "Widget appearance"
+msgstr "Aspecte del widget"
+
+msgid "Show header?"
+msgstr "Mostrar capçalera?"
+
+msgid "Show logo?"
+msgstr "Mostrar logo?"
+
+msgid "Title"
+msgstr "Títol"
+
+msgid "Link for title (URL)"
+msgstr "Enllaç per al títol (URL)"
+
+msgid "Subtitle"
+msgstr "Subtítol"
+
+msgid "Must be a number"
+msgstr "Ha de ser un número"
+
+msgid "Height (pixels)"
+msgstr "Alçada (píxels)"
+
+msgid "Width (pixels)"
+msgstr "Amplada (píxels)"
+
+msgid "Widget Basic Settings"
+msgstr "Configuració bàsica del widget"
+
+msgid "Must be filled"
+msgstr "Ha de ser omplert"
+
+msgid "Text that will show on button"
+msgstr "Text que es mostrarà al polsador"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Text que es mostrarà quan la creació de punts estigui desactivada"
+
+msgid "Adding point disabled"
+msgstr "Està desactivat l'afegir punts"
+
+msgid "Add Point page Basic Settings"
+msgstr "Configuració bàsica de la creació de punts"
+
+msgid "Point title example"
+msgstr "Exemple de títol del punt"
+
+msgid "List of fixed hidden tags"
+msgstr "Etiquetes fixes ocultes"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "Etiquetes predefinides (en cas de cap deixar buit)"
+
+msgid "Allow"
+msgstr "Permetre"
+
+msgid "Disallow"
+msgstr "Prohibir"
+
+msgid "Free tags (user's own)"
+msgstr "Etiquetes lliures (pròpies de l'usuari)"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Buit la majoria dels casos. Pot ser: oficial"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Exemple d'etiquetes de punt (per etiquetes lliures)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Configuració avançada de la creació de punts (opcional)"
+
+msgid "Form title"
+msgstr "Forma del títol"
+
+msgid "Latitude"
+msgstr "Latitud"
+
+msgid "Longitude"
+msgstr "Longitud"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Ha de ser un número de l'1 al 20 o automàtic"
+
+msgid "Must be 1-20"
+msgstr "Ha de ser 1-20"
+
+msgid "Zoom level"
+msgstr "Nivell de zoom"
+
+msgid "Must be a number or empty"
+msgstr "Ha de ser un número o buit"
+
+msgid "Template point ID"
+msgstr "ID de plantilla del punt"
+
+msgid "Note widget information"
+msgstr "Informació sobre el widget de nota"
+
+msgid "Note title (not shown)"
+msgstr "Títol de la nota (no es mostrarà)"
+
+msgid "Note text"
+msgstr "Text de la nota"
+
+msgid "Container widget information"
+msgstr "Contingut de la informació del widget"
+
+msgid "Submit widget information"
+msgstr "Envia informació del widget"
+
+msgid "Must be a number 1-20"
+msgstr "Ha de ser un número de l'1 al 20"
+
+msgid "Number of points to show"
+msgstr "Número de punts a mostrar"
+
+msgid "Point information display in point list"
+msgstr "Visualitzar informació dels punts a la llista"
+
+msgid "Width of the map"
+msgstr "Amplada del mapa"
+
+msgid "Height of the map"
+msgstr "Alçada del mapa"
+
+msgid "Number of links to show"
+msgstr "Número d'enllaços a mostrar"
+
+msgid "Widget Editor"
+msgstr "Editor de widgets"
+
+msgid "newest"
+msgstr "més recents"
+
+msgid "oldest"
+msgstr "més antics"
+
+msgid "recently updated"
+msgstr "actualitzat recentment"
+
+msgid "most points"
+msgstr "més punts"
+
+msgid "This information is stored at:"
+msgstr "Aquesta informació ha estat emmagatzemada a:"
+
+msgid "Also stored at"
+msgstr "També emmagatzemat a"
+
+msgid "from external sources"
+msgstr "provinent de fonts externes"
+
+msgid "Topic points"
+msgstr "Punts del tòpic"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "No existeix el tòpic. Esborra'l dels marcadors: "
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "No existeix el punt. Esborra'l dels marcadors: "
+
+msgid "Point: "
+msgstr "Punt: "
+
+msgid "Topics"
+msgstr "Tòpics"
+
+msgid "Search for '%s'"
+msgstr "Cerca per '%s'"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "Login page"
+msgstr "Pàgina d'inici de sessió"
+
+msgid "Front Page"
+msgstr "Pàgina principal"
+
+msgid "Advanced search: "
+msgstr "Cerca avançada: "
+
+msgid "User: "
+msgstr "usuari: "
+
+msgid "Old password"
+msgstr "Contrasenya antiga"
+
+msgid "You do not have rights to access user information."
+msgstr "No tens drets per accedir a informació d'usuari."
+
+msgid "Change settings"
+msgstr "Modificar la configuració"
+
+msgid "You do not have rights to change user information."
+msgstr "No tens drets per modificar la informació d'usuari."
+
+msgid ""
+"You do not have rights to change user information. Old password not given."
+msgstr ""
+"No tens drets per modificar la informació d'usuari. No s'ha proporcionat la "
+"contrasenya antiga."
+
+msgid "Password mismatch or empty password."
+msgstr "Les contrasenyes no coincideixen o està buida."
+
+msgid "Password changed."
+msgstr "S'ha modificat la contrasenya."
+
+msgid "Profile updated."
+msgstr "Perfil actualitzat."
+
+msgid "Set user location"
+msgstr "Establir la posició d'usuari"
+
+msgid "Topic: "
+msgstr "Tòpic: "
+
+msgid "New Topic"
+msgstr "Nou tòpic"
+
+msgid "a topic"
+msgstr "un tòpic"
+
+msgid "Point created! "
+msgstr "Punt creat! "
+
+msgid "Add comment"
+msgstr "Afegir comentari"
+
+msgid "Comment text"
+msgstr "Comentar text"
+
+msgid "Related website URL"
+msgstr "URL de web relacionada"
+
+msgid "Related website description"
+msgstr "Descripció de web relacionada"
+
+msgid "You do not have rights to edit the comment."
+msgstr "No tens drets per editar el comentari."
+
+msgid "Edit comment"
+msgstr "Editar comentari"
+
+msgid "You do not have rights to delete the comment."
+msgstr "No tens drets per eliminar el comentari."
+
+msgid "Edit point settings"
+msgstr "Configuració de l'edició de punts"
+
+msgid "You do not have rights for that."
+msgstr "No tens drets per realitzar l'acció."
+
+msgid "Set topic map"
+msgstr "Establir el mapa del tòpic"
+
+msgid "Add Point"
+msgstr "Afegir punt"
+
+msgid "Topic tools"
+msgstr "Eines del tòpic"
+
+msgid "Topic widgets"
+msgstr "Widget del tòpic"
+
+msgid "Subscription"
+msgstr "Subscription"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Topic subscription"
+msgstr "Subscripció al tòpic"
+
+msgid "Topic settings"
+msgstr "Configuració del tòpic"
+
+msgid "Administrator's extras"
+msgstr "Extras de l'administrador"
+
+msgid "Topic origin"
+msgstr "Origen del tòpic"
+
+msgid "Topic tags"
+msgstr "Etiquetes del tòpic"
+
+msgid "Topic only"
+msgstr "Només tòpic"
+
+msgid "Topics and points"
+msgstr "Tòpics i punts"
+
+msgid "Topic owners management rights"
+msgstr "Permisos dels creadors del tòpic"
+
+msgid "Topic page elements"
+msgstr "Element de la pàgina del tòpic"
+
+msgid "Point information display on point list"
+msgstr "Visualitzar informació dels punts a la llista"
+
+msgid "list"
+msgstr "llista"
+
+msgid "Default view mode"
+msgstr "Visualització per defecte"
+
+msgid "Default view order for point list"
+msgstr "Ordre de la llista de punts per defecte"
+
+msgid "Who can add points"
+msgstr "Qui pot afegir punts"
+
+msgid "Advanced topic settings"
+msgstr "Configuracó avançada del tòpic"
+
+msgid "Sign up"
+msgstr "Registra't"
+
+msgid "Visual code is wrong."
+msgstr "Codi visual incorrecte."
+
+msgid "Passwords do not match."
+msgstr "Les contrasenyes no coincideixen."
+
+msgid "Error occured. User not added."
+msgstr "Error. L'usuari no s'ha creat."
+
+msgid "User created."
+msgstr "Usuari creat."
+
+msgid "Add user role in this topic"
+msgstr "Afegir el rol d'usuari en aquest tòpic"
+
+msgid "Username of a registered user"
+msgstr "Nom d'usuari d'un usuari ja registrat"
+
+msgid "Manager?"
+msgstr "Administrador?"
+
+msgid "User manager?"
+msgstr "Usuari administrador?"
+
+msgid "Subscriber?"
+msgstr "Subscriptor?"
+
+msgid "List of administrators for "
+msgstr "Llista d'administradors per "
+
+msgid "User managed successfully."
+msgstr "Usuari assignat amb èxit."
+
+msgid "Enter feed for importing"
+msgstr "Introduir feed per importar"
+
+msgid "Feed address (URL)"
+msgstr "Adreça del feed (URL)"
+
+msgid "Describe the feed"
+msgstr "Descripció del feed"
+
+msgid "Feed for issues?"
+msgstr "Feed per a publicacions?"
+
+msgid "Check interval in seconds"
+msgstr "Interval de comprovació en segons"
+
+msgid "New feed for "
+msgstr "Nou feed per "
+
+msgid "external"
+msgstr "extern"
+
+msgid "Edit feed "
+msgstr "Editar feed "
+
+msgid "Edit feed for "
+msgstr "Editar feed per "
+
+msgid "Enter configuration parameter"
+msgstr "Introduir paràmetres de configuració"
+
+msgid "Parameter name"
+msgstr "Nom del paràmetre"
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "Language not supported"
+msgstr "Idioma no admès"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "You do not have rights to edit settings."
+msgstr "No tens drets per editar la configuració."
+
+msgid "Urban Mediator Settings"
+msgstr "Configuració de Urban Mediator"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Alguns camps no s'han introduit correctament:"
+
+msgid "You do not have rights to delete the widget."
+msgstr "No tens drets per eliminar el widget."
+
+msgid "You do not have rights to change the widget."
+msgstr "No tens drets per modificar el widget."
+
+msgid "Enter trigger information"
+msgstr "Introduir informació per la reacció"
+
+msgid "Describe the trigger"
+msgstr "Descriure la reacció"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Condició (p.ex. afegirpunt)"
+
+msgid "Action"
+msgstr "Acció"
+
+msgid "Adapter"
+msgstr "Adaptador"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (com a paràmetre per a l'adaptador)"
+
+msgid "Edit trigger "
+msgstr "Editar reacció "
+
+msgid "Edit trigger for "
+msgstr "Editar reacció per "
+
+msgid "New trigger for "
+msgstr "Nova reacció per "
+
+msgid "Error adding trigger"
+msgstr "Error al afegir la reacció"
+
+msgid "UM Front Page"
+msgstr "Pàgina principal de UM"
+
+# ignore label_ in translation!
+msgid "label_Add"
+msgstr "label_Afegir"
+
+msgid "label_Place"
+msgstr "label_Posició"
+
+msgid "label_Home"
+msgstr "label_Inici"
+
+msgid "label_Search"
+msgstr "label_Cerca"
+
+msgid "label_Info"
+msgstr "label_Informació"
+
+msgid "List of points"
+msgstr "Llista de punts"
+
+msgid "Number verification:"
+msgstr "Verificació de números:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr "Sis plau introdueix els caràcters que observes a la imatge superior."
+
+msgid "Text:"
+msgstr "Text:"
+
+msgid "Name & description"
+msgstr "Nom & descripció"
+
+msgid "Topic Name"
+msgstr "Nom del tòpic"
+
+msgid "The name of your topic."
+msgstr "El nom del teu tòpic."
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "La descripció no hauria d'ocupar més de 3-4 línies."
+
+msgid "Topic Description"
+msgstr "Descripció del tòpic"
+
+msgid ""
+"A brief description of your topic. You can edit this later, and add photos "
+"or links to it."
+msgstr ""
+"Breu descripció del teu tòpic. Pots editar-ho més tard, i afegir imatges i "
+"enllaços."
+
+msgid "Appearance"
+msgstr "Aspecte"
+
+msgid "Colour Scheme"
+msgstr "Combinació de colors"
+
+msgid "Topic Colour Scheme"
+msgstr "Combinació de colors del tòpic"
+
+msgid "Colours used to give your topic a unique appearance."
+msgstr "Fes servir els colors per donar un aspecte únic al teu tòpic."
+
+msgid "Choose an icon"
+msgstr "Escull una icona"
+
+msgid "Icons"
+msgstr "Icones"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr ""
+"L'icona es visualitza a la pàgina principal i a les pàgines dels tòpics"
+
+msgid "upload a picture"
+msgstr "puja una imatge"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "La imatge (~ 60x60 píxels) s'utilitzarà com a icona del tòpic"
+
+msgid "Latest addition"
+msgstr "Afegits recentment"
+
+msgid "posted by:"
+msgstr "publicat per:"
+
+msgid "No points yet."
+msgstr "No hi han punts."
+
+msgid "No topics"
+msgstr "No hi han tòpics"
+
+msgid "Topic Icon"
+msgstr "Icona del tòpic"
+
+msgid "official"
+msgstr "oficial"
+
+msgid "more"
+msgstr "més"
+
+msgid "posted by"
+msgstr "publicat per"
+
+msgid "comments: "
+msgstr "comentaris: "
+
+msgid "User:"
+msgstr "Usuari:"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr ""
+"Sis plau, inicia sessió com a convidat, almenys, per introduir comentaris:"
+
+msgid "log in"
+msgstr "iniciar sessió"
+
+msgid "Order by:"
+msgstr "Ordena per:"
+
+msgid "sign up"
+msgstr "registra't"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "delete"
+msgstr "eliminar"
+
+msgid "New user?"
+msgstr "Usuari nou?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Ho sentim. La cerca de l'adreça ha fallat."
+
+msgid "Add a new point"
+msgstr "Afegeix un punt nou"
+
+msgid "1. Location:"
+msgstr "1. Posició:"
+
+msgid "Category:"
+msgstr "Categoria:"
+
+msgid "Info added here will also go to:"
+msgstr "La informació que s'afegeix aquí, també anirà a:"
+
+msgid "submit"
+msgstr "enviar"
+
+msgid "You do not have permission to edit this comment."
+msgstr "No tens drets per editar aquest comentari."
+
+msgid "search this topic"
+msgstr "cerca aquest tòpic"
+
+msgid "Only tags"
+msgstr "Només etiquetes"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "El tòpic no permet nous punts en aquest moment."
+
+msgid "Connection:"
+msgstr "Connexió:"
+
+# do not translate inside %()
+msgid ""
+"Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr ""
+"Cerca resultats per '%%s', página %(current_page)s de %(total_num_of_pages)s"
+
+msgid "Showing all points in topic"
+msgstr "S'estan mostrant tots els punts del tòpic"
+
+msgid "Search result for "
+msgstr "Cerca resultats per "
+
+msgid "Open a new topic"
+msgstr "Obre un nou tòpic"
+
+msgid ""
+"You are about to permanently delete the topic %s. This action cannot be "
+"undone later."
+msgstr ""
+"Estàs a punt d'eliminar completament aquest tòpic %s. No podràs tornar "
+"enrere."
+
+msgid "DELETE"
+msgstr "ELIMINA"
+
+msgid "delete topic"
+msgstr "elminar tòpic"
+
+msgid "set topic map"
+msgstr "establir el mapa del tòpic"
+
+msgid "Set/update topic's central location"
+msgstr "Estableix/actualitza la posició central del tòpic"
+
+msgid "Location:"
+msgstr "Posició:"
+
+msgid "Automatic zoom"
+msgstr "Zoom automàtic"
+
+msgid "yes"
+msgstr "sí"
+
+msgid "no"
+msgstr "no"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr ""
+"calcular el nivell de zoom automàticament a partir dels punts disponibles"
+
+msgid "Topic subscription."
+msgstr "Subscripció al tòpic."
+
+msgid "Change subscription"
+msgstr "Modificar subscripció"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "vols marcar com a inadequat %s"
+
+msgid "MARK"
+msgstr "MARCAR"
+
+msgid "mark as inapproapriate"
+msgstr "marcar com a inadequat"
+
+msgid "Would you like to delete %s"
+msgstr "Vols eliminar %s"
+
+msgid "Other topics with this point"
+msgstr "Altres tòpics amb aquest punt"
+
+msgid "Nearby points"
+msgstr "Punts propers"
+
+msgid "tags:"
+msgstr "etiquetes:"
+
+msgid "Add Tag"
+msgstr "Afegir etiqueta"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Ho sentim. El tòpic no permet afegir nous punts en aquest moment."
+
+msgid "Set/update user's location"
+msgstr "estableix/actualita la posició d'usuari"
+
+msgid "set location"
+msgstr "establir posició"
+
+msgid "forget location"
+msgstr "oblidar posició"
+
+msgid "Widgets for topic."
+msgstr "Widgets per al topic."
+
+msgid "Currently shown widgets"
+msgstr "Widgets que es mostren actualment"
+
+msgid "Would you like to delete the widget?"
+msgstr "Vols eliminar el widget?"
+
+msgid ""
+"The following widgetizers let you create Urban Mediator web widgets for your "
+"topic. These web widgets can be added to the topic page itself and can be "
+"imbedded in other websites' pages."
+msgstr ""
+"Els següents constructors de widgets et permeten crear widgets de l'Urban "
+"Mediator per al teu tòpic. Aquests widgets poden ser afegits a la pàgina del "
+"tòpic i insertats a altres webs."
+
+msgid "Add point button"
+msgstr "Polsador d'afegir punt"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Crear un widget que envii punts a aquest tòpic"
+
+msgid "Topic's point list"
+msgstr "Llista de punts del tòpic"
+
+msgid "Widget to show topic's points"
+msgstr "Widget per mostrar els punts del tòpic"
+
+msgid "Topic's list of links"
+msgstr "Llista d'enllaços del tòpic"
+
+msgid "Widget to show topic's links"
+msgstr "Widget per mostrar els enllaços del tòpic"
+
+msgid "A map"
+msgstr "Un mapa"
+
+msgid "Widget to show topic on the map"
+msgstr "Widget per mostrar el tòpic al mapa"
+
+msgid "Make combo widget"
+msgstr "Crear un combo widget"
+
+msgid ""
+"Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr ""
+"Crear un widget que contingui diversos widgets (prepara les urls per als "
+"widgets en primer lloc)"
+
+msgid "Make note"
+msgstr "Crear una nota"
+
+msgid "Make a widget to show a note"
+msgstr "Crear un widget per mostrar una nota"
+
+msgid "Please, confirm your action"
+msgstr "Sis plau, confirmar l'acció"
+
+msgid "Sign up."
+msgstr "Registrar-se."
+
+msgid "Choose a username and password"
+msgstr "Escull un nom d'usuari i contrasenya"
+
+msgid "Tools for topic."
+msgstr "Eines per al tòpic."
+
+msgid "Add trigger"
+msgstr "Afegir reacció"
+
+msgid "Manage topic administrators"
+msgstr "Gestiona els administradors del tòpic"
+
+msgid "CSV Export"
+msgstr "Exportar CSV"
+
+msgid "Export points as CSV"
+msgstr "Exportar punts com a CSV"
+
+msgid "Currently active triggers"
+msgstr "Reaccions actives actualment"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Vols eliminar la reacció?"
+
+msgid "Redirecting"
+msgstr "Redirecció"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "Si el teu navegador no redirecciona automàticament:"
+
+msgid "search"
+msgstr "cercar"
+
+msgid "Add new topic"
+msgstr "Afegir un tòpic nou"
+
+msgid "edit settings"
+msgstr "editar configuració"
+
+msgid "Highlighted Topics"
+msgstr "Tòpics rellevants"
+
+msgid "Recently updated Topics"
+msgstr "Tòpics actualitzats recentment"
+
+msgid "Make HTML"
+msgstr "Crear HTML"
+
+msgid "Update on the topic page"
+msgstr "Actualitzar a la pàgina del tòpic"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr ""
+"Enrecorda't de crear l'HTML en primer lloc perque els canvis siguin efectius"
+
+msgid "Add to the topic page"
+msgstr "Afegir a la pàgina del tòpic"
+
+msgid "The widget will look like:"
+msgstr "El widget tindrà el següent aspecte:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr ""
+"La següent URL es pot fer servir per crear un combo widget (Copiar/Enganxar):"
+
+msgid "Key"
+msgstr "Clau"
+
+msgid "default"
+msgstr "per defecte"
+
+msgid "Change value"
+msgstr "Modificar valor"
+
+msgid "Manage user"
+msgstr "Gestionar usuari"
+
+msgid "advanced settings"
+msgstr "configuració avançada"
+
+msgid "OR: Guest Login"
+msgstr "O: inici de sessió com a convidat"
+
+msgid ""
+"This username will be valid until you log out or shut  down your browser."
+msgstr ""
+"Aquest nom d'usuari serà vàlid fins que surtis de la sessió o tanquis el "
+"navegador."
+
+msgid "my location"
+msgstr "la meva posició"
+
+msgid "Topics created or moderated by %s"
+msgstr "Tòpics creats o moderats per %s"
+
+msgid "Topics the user has been subscribed to"
+msgstr "L'usuari està subscrit als següents tòpics "
+
+msgid "Contributions by %s"
+msgstr "Contribucions per %s"
+
+msgid "whole map"
+msgstr "el mapa sencer"
+
+msgid "My topics"
+msgstr "Els meus tòpics"

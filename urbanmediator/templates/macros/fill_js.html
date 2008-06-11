@@ -1,0 +1,21 @@
+$def with (context)
+
+<script type="text/javascript" ><!--
+    $if ('offset' in context):
+        var OFFSET_PX = $context.offset;
+    $else:
+        var OFFSET_PX = 0;
+    function runOnLoad() {
+    if (e = document.getElementById('main')) {
+        scrollBox(e);
+    }
+    if (e = document.getElementById('widget_fillframe')) {
+        fillFrame(e);
+    }
+//          // links lead outside widget
+//          var i, tgs = document.getElementsByTagName("a");
+//          for (i=0; i < tgs.length; i++) {
+//              tgs[i].setAttribute("target", "_top");
+//          }    
+    }
+//--></script>

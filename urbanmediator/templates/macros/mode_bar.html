@@ -1,0 +1,10 @@
+$def with (context)
+
+$if context.mode_data:
+    <ul class="display_type_selector">
+        $for m in context.mode_data:
+            $if m.link:
+                <li class="$m.mode"><a href="$m.link">$_(m.mode)</a></li>
+            $else:
+                <li class="$m.mode selected">$_(m.mode)</li>
+    </ul>

@@ -1,0 +1,1420 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Language-code: ru\n"
+"Language-name: Russian\n"
+"Preferred-encodings: utf-8\n"
+"Domain: urban_mediator\n"
+"Plural-Forms: nplurals=3; \
+    plural=n==1 ? 0 : \
+           n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+
+msgid "%s from now"
+msgstr "через %s"
+
+msgid "%s ago"
+msgstr "%s назад"
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s день"
+msgstr[1] "%s дня"
+msgstr[2] "%s дней"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s час"
+msgstr[1] "%s часа"
+msgstr[2] "%s часов"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s минута"
+msgstr[1] "%s минуты"
+msgstr[2] "%s минут"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s секунда"
+msgstr[1] "%s секунды"
+msgstr[2] "%s секунд"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s миллисекунда"
+msgstr[1] "%s миллисекунды"
+msgstr[2] "%s миллисекунд"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s микросекунда"
+msgstr[1] "%s микросекунды"
+msgstr[2] "%s микросекунд"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s %(monthname)s %(year)s г."
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s %(monthname)s"
+
+msgid "1_month"
+msgstr "января"
+
+msgid "2_month"
+msgstr "февраля"
+
+msgid "3_month"
+msgstr "марта"
+
+msgid "4_month"
+msgstr "апреля"
+
+msgid "5_month"
+msgstr "мая"
+
+msgid "6_month"
+msgstr "июня"
+
+msgid "7_month"
+msgstr "июля"
+
+msgid "8_month"
+msgstr "августа"
+
+msgid "9_month"
+msgstr "сентября"
+
+msgid "10_month"
+msgstr "октября"
+
+msgid "11_month"
+msgstr "ноября"
+
+msgid "12_month"
+msgstr "декабря"
+
+
+
+msgid "point"
+msgid_plural "points"
+msgstr[0] "точка"
+msgstr[1] "точки"
+msgstr[2] "точек"
+
+
+
+msgid "Point addition disabled."
+msgstr "Новые точки не принимаются."
+
+msgid "Add point"
+msgstr "Добавить точке"
+
+msgid "Note"
+msgstr "Добавить текст"
+
+msgid "Points"
+msgstr "Точки"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "Нет такой темы. Исправьте закладку."
+
+msgid "Links"
+msgstr "Ссылки"
+
+msgid "Setting database"
+msgstr "Настройки БД"
+# "Aseta tietokanta"
+
+msgid "Enter some values to start with the database setup"
+msgstr "Задайте значения для начальной настройки БД"
+
+msgid "Widget appearance"
+msgstr "Внешний вид виджета"
+
+msgid "Show header?"
+msgstr "Показывать заголовок?"
+
+msgid "Show logo?"
+msgstr "Показывать лого?"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Link for title (URL)"
+msgstr "Ссылка для заголовка (URL)"
+
+msgid "Subtitle"
+msgstr "Подзаголовок"
+
+msgid "Must be a number"
+msgstr "Должно быть числом"
+
+msgid "Height(pixels)"
+msgstr "Высота (пиксели)"
+
+msgid "Width (pixels)"
+msgstr "Ширина (пиксели)"
+
+msgid "Widget Basic Settings"
+msgstr "Базовые настройки виджета"
+
+msgid "Must be filled"
+msgstr "Поле должно быть заполнено"
+
+msgid "Text that will show on button"
+msgstr "Текст на кнопке"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Текст, показываемый при запрете на создание точек"
+
+msgid "Adding point disabled"
+msgstr "Создание новых точек запрещено"
+
+msgid "Add Point page Basic Settings"
+msgstr "Базовые настройки страницы создания точки"
+
+msgid "Point title example"
+msgstr "Пример названия точки"
+
+msgid "List of fixed hidden tags"
+msgstr "Список фиксированных скрытых тегов"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "Список готовых тегов (оставить пустым, если не нужен)"
+
+msgid "Allow"
+msgstr "Разрешить"
+
+msgid "Disallow"
+msgstr "Запретить"
+
+msgid "Free tags (user's own)"
+msgstr "Заданные пользователем теги"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Обычно пустой. Может быть: official"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Примеры тегов (для тегов пользователя)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Доп. настройки страницы создания точки (необязательно)"
+
+msgid "Form title"
+msgstr "Заголовок формы"
+#(does this mean to create?)
+
+msgid "Latitude"
+msgstr "Широта"
+
+msgid "Longitude"
+msgstr "Долгота"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Должно быть числом от 1 до 20 или auto"
+
+msgid "Must be 1-20"
+msgstr "Должно быть числом от 1 до 20"
+
+msgid "Zoom level"
+msgstr "Увеличение"
+
+msgid "Must be a number or empty"
+msgstr "Должно быть число или пусто"
+
+msgid "Template point ID"
+msgstr "ID шаблона точки"
+
+msgid "Note widget information"
+msgstr "Информация текстового виждета"
+#iDoes this mean notice widget infromation or that there is additional information?
+#if first then huomaa nappulaan liittyvää tietoa. second: Nappulaan liittyvää lisätietoa
+
+msgid "Note title (not shown)"
+msgstr "Заголовок текста (не показывается)"
+
+msgid "Note text"
+msgstr "Текст"
+
+msgid "Container widget information"
+msgstr "Информация комбинированного виджета"
+
+msgid "Submit widget information"
+msgstr "Информация о кнопке"
+
+msgid "Must be a number 1-20"
+msgstr "Должно быть числом от 1 до 20"
+
+msgid "Number of points to show"
+msgstr "Сколько точек показывать"
+
+msgid "Point information display in point list"
+msgstr "Какиу данные о точке показывать в списке точек"
+
+msgid "Width of the map"
+msgstr "Ширина карты"
+
+msgid "Height of the map"
+msgstr "Высота карты"
+
+msgid "Number of links to show"
+msgstr "Сколько ссылок показывать?"
+
+msgid "Widget Editor"
+msgstr "Редактор виджетов"
+
+msgid "newest"
+msgstr "новые"
+
+msgid "oldest"
+msgstr "старые"
+
+msgid "recently updated"
+msgstr "недавно обновленные"
+# or uusimmat päivitetyt
+
+msgid "title"
+msgstr "название"
+
+msgid "most points"
+msgstr "больше точек"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "This information is stored at:"
+msgstr "Данные сохранены:"
+
+msgid "Also stored at"
+msgstr "Таже храниться:"
+
+msgid "No description"
+msgstr "Нет описания"
+
+msgid "No summary"
+msgstr "Нет сводки"
+
+msgid "from external sources"
+msgstr "из внешних источников"
+
+msgid "Topic points"
+msgstr "Точки темы"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "Нет такой темы. Удалите закладку: "
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "Нет такой точки. Удалите закладку: "
+
+msgid "Point: "
+msgstr "Точка: "
+
+msgid "Topics"
+msgstr "Темы"
+
+msgid "Search for '%s'"
+msgstr "Поиск '%s'"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "Login failed"
+msgstr "Вход не удался"
+
+msgid "Visual code is wrong. Try again"
+msgstr "Код неверен. Повторите"
+
+msgid "No such user - error occured"
+msgstr "Ошибка - нет такого пользователя"
+
+msgid "Login page"
+msgstr "Вход"
+
+msgid "Front Page"
+msgstr "Главная"
+
+msgid "Advanced search: "
+msgstr "Поиск: "
+
+msgid "User: "
+msgstr "Пользователь: "
+
+msgid "Old password"
+msgstr "Старый пароль"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Repeat password"
+msgstr "Повтор пароля"
+
+msgid "Email"
+msgstr "Эл. почта"
+
+msgid "You do not have rights to access user information."
+msgstr "У Вас нет прав для доступа к данным пользователя"
+
+msgid "Change settings"
+msgstr "Изменить настройки"
+
+msgid "You do not have rights to change user information."
+msgstr "У Вас нет прав для изменения данных пользователя."
+
+msgid "You do not have rights to change user information. Old password not given."
+msgstr "У Вас нет прав для изменения данных пользователя. Старый пароль не задан"
+
+msgid "Password mismatch or empty password."
+msgstr "Пароли не совпадают или пусты"
+
+msgid "Password changed."
+msgstr "Пароль изменен."
+
+msgid "Profile updated."
+msgstr "Профиль обновлен."
+
+msgid "Set user location"
+msgstr "Задать местонахождение пользователя"
+
+msgid "Topic: "
+msgstr "Тема: "
+
+msgid "New Topic"
+msgstr "Новая тема"
+
+msgid "a topic"
+msgstr "тема"
+
+msgid "Point created! "
+msgstr "Точка создана! "
+
+msgid "Add comment"
+msgstr "Добавить комментарий"
+
+msgid "Comment text"
+msgstr "Комментарий"
+
+msgid "Picture"
+msgstr "Изображение"
+
+msgid "Related website URL"
+msgstr "Связанный с точкой URL сайта"
+
+msgid "Related website description"
+msgstr "Описание связанного с точкой сайта"
+
+msgid "You do not have rights to edit the comment."
+msgstr "У Вас нет прав на редактирование комментария."
+
+msgid "Edit comment"
+msgstr "Редактирование комментария"
+
+msgid "You do not have rights to delete the comment."
+msgstr "У Вас нет прав на удаление комментария."
+
+msgid "Edit point settings"
+msgstr "Редактировать настройки точки"
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "опасный вопрос жалоба"
+
+msgid "Dangerous concrete blocks"
+msgstr "Опасные бетонные конструкции"
+
+msgid "You do not have rights for that."
+msgstr "У Вас нет прав на это действие."
+
+msgid "Set topic map"
+msgstr "Настроить карты темы"
+
+msgid "Add Point"
+msgstr "Добавить точку"
+
+msgid "Topic tools"
+msgstr "Aiheen työkalut"
+
+msgid "Topic widgets"
+msgstr "Виджеты точки"
+
+msgid "Subscription"
+msgstr "Заказ"
+
+msgid "Active"
+msgstr "Активен"
+
+msgid "Topic subscription"
+msgstr "Подписка на тему"
+
+msgid "Topic settings"
+msgstr "Настройки темы"
+
+msgid "Administrator's extras"
+msgstr "Настройки, доступные только администратору"
+
+msgid "Topic origin"
+msgstr "Происхождение темы"
+
+msgid "Topic tags"
+msgstr "Aiheen asiasanat"
+
+msgid "Topic only"
+msgstr "Только тема"
+
+msgid "Topics and points"
+msgstr "Темы и точки"
+
+msgid "Topic owners management rights"
+msgstr "Права управления владельцев темы"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Topic page elements"
+msgstr "Элементы страницы темы"
+
+msgid "Point information display on point list"
+msgstr "Данные о точки в списке точек"
+
+msgid "list"
+msgstr "список"
+
+msgid "map"
+msgstr "карта"
+
+msgid "Default view mode"
+msgstr "Режим просмотра по умолчанию"
+
+msgid "Default view order for point list"
+msgstr "Упорядочивание списка точек по умолчанию"
+
+msgid "Who can add points"
+msgstr "Кто может добавлять точки"
+
+msgid "Advanced topic settings"
+msgstr "Доп. настройки темы"
+
+msgid "Not found"
+msgstr "Не найдено"
+
+msgid "Sign up"
+msgstr "Регистрация"
+
+msgid "Visual code is wrong."
+msgstr "Код неверен."
+
+msgid "Passwords do not match."
+msgstr "Пароли не совпадают."
+
+msgid "Error occured. User not added."
+msgstr "Случилась ошибка. Пользователь не добавлен."
+
+msgid "User created."
+msgstr "Käyttäjä luotu."
+
+msgid "Add user role in this topic"
+msgstr "Добавить роль пользователя к этой теме"
+
+msgid "Username of a registered user"
+msgstr "Имя зарегистрированного пользователя"
+
+msgid "Manager?"
+msgstr "Управляющий?"
+
+msgid "User manager?"
+msgstr "Управляющий пользователями?"
+
+msgid "Subscriber?"
+msgstr "Подписчик?"
+
+msgid "List of administrators for "
+msgstr "Список администратором для "
+
+msgid "User managed successfully."
+msgstr "Данные пользователя успешно изменены."
+
+msgid "Enter feed for importing"
+msgstr "Введите фид для импорта"
+
+msgid "Feed address (URL)"
+msgstr "Адрес фида (URL)"
+
+msgid "Describe the feed"
+msgstr "Описание фида"
+
+msgid "Feed for issues?"
+msgstr "Фид для (issues)?"
+
+msgid "Check interval in seconds"
+msgstr "Интервал обновления"
+
+msgid "New feed for "
+msgstr "Новый фид "
+
+msgid "external"
+msgstr "ulkoinen"
+
+msgid "Edit feed "
+msgstr "Редактировать фид"
+
+msgid "Edit feed for "
+msgstr "Редактировать фид для "
+
+msgid "Enter configuration parameter"
+msgstr "Введите конфигурационные параметры"
+
+msgid "Parameter name"
+msgstr "Имя параметра"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Language not supported"
+msgstr "Язык не поддерживается"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "You do not have rights to edit settings."
+msgstr "У Вас нет прав для редактирования настроек."
+
+msgid "Urban Mediator Settings"
+msgstr "Настройка Urban Mediator"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Некоторые поля не были заданы правильно:"
+
+msgid "You do not have rights to delete the widget."
+msgstr "Sinulla ei ole oikeuksia poistaa vempainta."
+
+msgid "You do not have rights to change the widget."
+msgstr "У Вас нет прав для изменение виджета."
+
+msgid "Enter trigger information"
+msgstr "Введите данные о триггере"
+
+msgid "Describe the trigger"
+msgstr "Описание триггера"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Услование (например: addpoint)"
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Adapter"
+msgstr "Адаптер"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (параметр адаптера)"
+
+msgid "Edit trigger "
+msgstr "Редактировать триггер"
+
+msgid "Edit trigger for "
+msgstr "Редактировать триггер для "
+
+msgid "New trigger for "
+msgstr "Новый триггер для "
+
+msgid "Error adding trigger"
+msgstr "Ошибка при добавлении триггера"
+
+msgid "UM Front Page"
+msgstr "Главная страница"
+
+msgid "label_Add"
+msgstr "Доб."
+
+msgid "label_Place"
+msgstr "Место"
+
+msgid "label_Home"
+msgstr "Список"
+
+msgid "label_Search"
+msgstr "Поиск"
+
+msgid "label_Info"
+msgstr "Инфо"
+
+msgid "List of points"
+msgstr "Список точек"
+
+msgid "Number verification:"
+msgstr "Проверка номера:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr "Впишите знаки на картинке выше."
+
+msgid "Text:"
+msgstr "Текст:"
+
+msgid "Name & description"
+msgstr "Название и описание"
+
+msgid "Topic Name"
+msgstr "Название темы"
+
+msgid "The name of your topic."
+msgstr "Название Вашей темы."
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "Описание (не более 3-4 строк)."
+
+msgid "Topic Description"
+msgstr "Описание темы"
+
+msgid "A brief description of your topic. You can edit this later, and add photos or links to it."
+msgstr "Краткое описание темы, которое можно будет отредактировать позже, добавить картинки и ссылки."
+
+msgid "Appearance"
+msgstr "Внешний вид"
+
+msgid "Colour Scheme"
+msgstr "Цвета"
+
+msgid "Topic Colour Scheme"
+msgstr "Цвета темы"
+
+msgid "Colours used to give your topic a unique appearance."
+msgstr "Цвета для украшения темы."
+
+msgid "Choose an icon"
+msgstr "Выберите иконку"
+
+msgid "Icons"
+msgstr "Иконки"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr "Иконка видна на главной странице и на странице темы"
+
+msgid "or"
+msgstr "или"
+
+msgid "upload a picture"
+msgstr "загрузить изображение"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "Изображение (~ 60x60 покселов) в качестве иконки для темы"
+
+msgid "Latest addition"
+msgstr "Последнее добавление"
+
+msgid "posted by:"
+msgstr "написано:"
+
+msgid "No points yet."
+msgstr "Еще нет точек."
+
+msgid "No topics"
+msgstr "Нет тем"
+
+msgid "Topic Icon"
+msgstr "Иконка темы"
+
+msgid "official"
+msgstr "официальный"
+
+msgid "more"
+msgstr "еще"
+
+msgid "m"
+msgstr "м"
+
+msgid "posted by"
+msgstr "написано"
+
+msgid "comments: "
+msgstr "комментарии: "
+
+msgid "tags"
+msgstr "теги"
+
+msgid "User:"
+msgstr "Пользователь:"
+
+msgid "Submit"
+msgstr "Добавить"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr "Пожалуйста, для добавления комментариев:"
+
+msgid "log in"
+msgstr "вход"
+
+msgid "Order by:"
+msgstr "Порядок:"
+
+msgid "sign up"
+msgstr "регистрация"
+
+msgid "logout"
+msgstr "выход"
+
+msgid "edit"
+msgstr "ред."
+
+msgid "delete"
+msgstr "удалить"
+
+msgid "New user?"
+msgstr "Новый пользователь?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Извините, адрес не найден."
+
+msgid "Find by address"
+msgstr "Найти по адресу"
+
+msgid "example"
+msgstr "пример"
+
+msgid "Find"
+msgstr "Искать"
+
+msgid "Add a new point"
+msgstr "Добавить новую точку"
+
+msgid "1. Location:"
+msgstr "1. Местонахождения:"
+
+msgid "Link to related website"
+msgstr "Ссылка на вебсайт"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Tags"
+msgstr "Теги"
+
+msgid "Category:"
+msgstr "Категория:"
+
+msgid "Info added here will also go to:"
+msgstr "Добавляемая здесь информация идет также сюда:"
+
+msgid "You do not have permission to edit this comment."
+msgstr "У Вас нет прав редактировать этот комментарий."
+
+msgid "Search this topic"
+msgstr "Искать в этой теме"
+
+msgid "Only tags"
+msgstr "Только теги"
+
+msgid "Add new point"
+msgstr "Добавить новую точку"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "Тема не позволяет добавление новых точек."
+
+msgid "Connection:"
+msgstr "Связанное:"
+
+#do not translate inside %()
+msgid "Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr "Поиск '%%s', стр. %(current_page)s из %(total_num_of_pages)s"
+
+msgid "show all points"
+msgstr "показать все точки"
+
+msgid "Showing all points in topic"
+msgstr "Показать все точки темы"
+
+msgid "Search result for "
+msgstr "Результат поиска для "
+
+msgid "Open a new topic"
+msgstr "Открыть новую тему"
+
+msgid "You are about to permanently delete the topic %s. This action cannot be undone later."
+msgstr "Вы собираетесь удалить %s насовсем. Действие нельзя будет отменить."
+
+msgid "DELETE"
+msgstr "УДАЛИТЬ"
+
+msgid "delete topic"
+msgstr "удалить тему"
+
+msgid "set topic map"
+msgstr "настроить карту темы"
+
+msgid "settings"
+msgstr "настройки"
+
+msgid "Set/update topic's central location"
+msgstr "Установить центр темы"
+
+msgid "Location:"
+msgstr "Положение:"
+
+msgid "Automatic zoom"
+msgstr "Автоувеличение"
+
+msgid "yes"
+msgstr "да"
+
+msgid "no"
+msgstr "нет"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr "(вычислять ли увеличение автоматически по имеющимся точкам)"
+
+msgid "Topic subscription."
+msgstr "Описание темы."
+
+msgid "Change subscription"
+msgstr "Изменить подписку"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "Хотите ли отметить как неподходящее: %s"
+
+msgid "MARK"
+msgstr "ОТМЕТИТЬ"
+
+msgid "mark as inapproapriate"
+msgstr "Отм. как неподходящее"
+
+
+msgid "Other topics with this point"
+msgstr "Другие темы, содержащие эту точку"
+
+msgid "External URL"
+msgstr "Внешний URL"
+
+msgid "Nearby points"
+msgstr "Ближайшие точки"
+
+msgid "tags:"
+msgstr "теги:"
+
+msgid "Add Tag"
+msgstr "Добавить тег"
+
+msgid "Comments"
+msgstr "Комментарии"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Извините, тема не принимает новые точки."
+
+msgid "Set/update user's location"
+msgstr "Установить местонахождение пользователя"
+
+msgid "set location"
+msgstr "уст. местонахождение"
+
+msgid "forget location"
+msgstr "забыть местонахождение"
+
+msgid "Widgets for topic."
+msgstr "Виждеты темы."
+
+msgid "Currently shown widgets"
+msgstr "Виджеты в настоящий момент"
+
+msgid "Would you like to delete the widget?"
+msgstr "Хотители удалить виджет?"
+
+msgid "The following widgetizers let you create Urban Mediator web widgets for your topic. These web widgets can be added to the topic page itself and can be imbedded in other websites' pages."
+msgstr "Создание виджетов для встраивания в другие веб-страницы."
+
+msgid "Add point button"
+msgstr "Кнопка создания точки"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Создать кнопку для создания точек темы"
+
+msgid "Topic's point list"
+msgstr "Список точек темы"
+
+msgid "Widget to show topic's points"
+msgstr "Виджет список точек темы"
+
+msgid "Topic's list of links"
+msgstr "Список ссылок темы"
+
+msgid "Widget to show topic's links"
+msgstr "Виджет для показа списка ссылок темы"
+
+msgid "A map"
+msgstr "Карта"
+
+msgid "Widget to show topic on the map"
+msgstr "Виджет для показа карты темы"
+
+msgid "Make combo widget"
+msgstr "Комбинированный виджет"
+
+msgid "Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr "Создание комбинированного виджета (заготовьте URL виджетов-компонентов)"
+
+msgid "Make note"
+msgstr "Добавить текст"
+
+msgid "Make a widget to show a note"
+msgstr "Создание виджета для показа текста"
+
+msgid "Please, confirm your action"
+msgstr "Пожалуйста, подтвердите Ваше действие"
+
+msgid "Sign up."
+msgstr "Регистрация."
+
+msgid "Choose a username and password"
+msgstr "Выберите имя пользователя и пароль"
+
+msgid "Choose a username"
+msgstr "Выберите имя пользователя"
+
+msgid "Enter a password"
+msgstr "Введите пароль"
+
+msgid "optional"
+msgstr "необязательный"
+
+msgid "Tools for topic."
+msgstr "Инструменты темы"
+
+msgid "Newsfeed import"
+msgstr "Импорт фида"
+
+msgid "Add trigger"
+msgstr "Добавить триггер"
+
+msgid "Manage topic administrators"
+msgstr "Задание администраторов темы"
+
+msgid "CSV Export"
+msgstr "CSV-экспорт"
+
+msgid "Export points as CSV"
+msgstr "Экспорт точек в CVS-формате"
+
+msgid "Currently active tools"
+msgstr "Активные инструменты"
+
+msgid "Would you like to delete %s"
+msgstr "Хотите ли удалить %s"
+
+msgid "Currently active triggers"
+msgstr "Активные триггеры"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Хотите ли удалить триггер?"
+
+msgid "Redirecting"
+msgstr "Перенаправление"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "Если браузер не перенаправится автоматически:"
+
+msgid "search"
+msgstr "поиск"
+
+msgid "Add new topic"
+msgstr "Добавить новую тему"
+
+msgid "edit settings"
+msgstr "редактировать настройки"
+
+msgid "Highlighted Topics"
+msgstr "Важные темы"
+
+msgid "Recently updated Topics"
+msgstr "Недавно обновленные темы"
+
+msgid "Make HTML"
+msgstr "Создать HTML"
+
+msgid "Update on the topic page"
+msgstr "Обновить на странице темы"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr "Сначала необзодимо Создать HTML, иначе изменения не вступят в силу"
+
+msgid "Add to the topic page"
+msgstr "Добавить на страницу темы"
+
+msgid "The widget will look like:"
+msgstr "Виджет будет выглядеть так:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr "Следующий URL может быть использован в комбинированном виджете:"
+
+msgid "Key"
+msgstr "Ключ"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "default"
+msgstr "умолчание"
+
+msgid "Change value"
+msgstr "Изменить значение"
+
+msgid "Manage user"
+msgstr "Править пользователя"
+
+msgid "You are being logged out."
+msgstr "Выход."
+
+msgid "You are being logged out..."
+msgstr "Выход..."
+
+msgid "This site runs"
+msgstr "Сайт работает на"
+
+msgid "Terms of use"
+msgstr "Условия использования"
+
+msgid "Contact"
+msgstr "Связаться с нами"
+
+msgid "advanced settings"
+msgstr "доп. настройки"
+
+msgid "login"
+msgstr "вход"
+
+msgid "Use of this feature requires registration and log in."
+msgstr "Действие требует регистрации и входа."
+
+msgid "Normal Login"
+msgstr "Нормальный вход"
+
+msgid "New users"
+msgstr "Новые пользователи"
+
+msgid "sign up here"
+msgstr "зарегистрироваться здесь"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Login"
+msgstr "Вход"
+
+msgid "OR: Guest Login"
+msgstr "ИЛИ: Гостевой вход"
+
+msgid "Your username will appear as:"
+msgstr "Ваше имя пользователя будет выглядеть как:"
+
+msgid "This username will be valid until you log out or shut  down your browser."
+msgstr "Это имя будет действительно до выхода или завершения работы браузера."
+
+msgid "my location"
+msgstr "мое местонахождение"
+
+msgid "Topics created or moderated by %s"
+msgstr "Темы, созданные или модерируемые %s"
+
+msgid "Topics the user has been subscribed to"
+msgstr "Подписка на темы"
+
+msgid "Contributions by %s"
+msgstr "Добавлено %s"
+
+msgid "whole map"
+msgstr "вся карта"
+
+msgid "My topics"
+msgstr "Мои темы"
+
+msgid "This feature has not been implemented yet."
+msgstr "Это еще не реализовано."
+
+
+######################
+
+msgid "Height (pixels)"
+msgstr "Высота (пиксели)"
+
+msgid "Topic Points widget information"
+msgstr "Данные виджета Точки темы"
+
+msgid "Point order"
+msgstr "Порядок точек"
+
+msgid "Map widget information"
+msgstr "Данные виджета Карта"
+
+msgid "Topic Links widget information"
+msgstr "Данные виджета Ссылки темы"
+
+msgid "No such user"
+msgstr "Нет такого пользователя"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Point: details"
+msgstr "Точки: данные"
+
+msgid "User location"
+msgstr "Местонахождение пользователя"
+
+msgid "Add a new point to the current location"
+msgstr "Добавить точку"
+
+msgid "change"
+msgstr "изм."
+
+msgid "Topic"
+msgstr "Тема"
+
+msgid "Topic:"
+msgstr "Тема:"
+
+msgid "Title:"
+msgstr "Имя:"
+
+msgid "Description:"
+msgstr "Описание:"
+
+msgid "Tags:"
+msgstr "Теги:"
+
+msgid "submit"
+msgstr "отправить"
+
+msgid "cancel"
+msgstr "отменить"
+
+msgid "POINT: DETAILS"
+msgstr "ТОЧКА: ДАННЫЕ"
+
+msgid "Distance"
+msgstr "Расстояние"
+
+msgid "Created "
+msgstr "Создано "
+
+msgid "by"
+msgstr " "
+# !!!
+
+msgid "Please, login to be able to comment."
+msgstr "Войдите для возможности комментирования."
+
+msgid "New comment"
+msgstr "Новый коммент"
+
+msgid "Add a comment"
+msgstr "Добавить коммент"
+
+msgid "Search local area points"
+msgstr "Искать среди ближайших точек"
+
+msgid "Search terms"
+msgstr "Термины для поиска"
+
+msgid "MAP: SET LOCATION"
+msgstr "КАРТА: УСТ. МЕСТОПОЛОЖЕНИЕ"
+
+msgid "GPS location not available."
+msgstr "GPS данные не доступны."
+
+msgid "Choose the location on the map or lookup a street address:"
+msgstr "Выберите местонахождение с помощью карты или задайте адрес:"
+
+msgid "> Address lookup failed."
+msgstr "> Поиск по адресу неудачен."
+
+msgid "Street address"
+msgstr "Адрес"
+
+msgid "Lookup"
+msgstr "Поиск"
+
+msgid "Continue"
+msgstr "Продолжить"
+
+msgid "Clear position"
+msgstr "Стереть положение"
+
+msgid "Info"
+msgstr "Инфо"
+
+msgid "Point list"
+msgstr "Список точек"
+
+msgid "All Points in %s m"
+msgstr "Все точки в радиусе %s м"
+
+msgid "Color Scheme"
+msgstr "Цвета"
+
+msgid "Use colors to give your topic a unique appearance."
+msgstr "Используйте цвета для украшения темы."
+
+msgid "Tools"
+msgstr "Инструменты"
+
+msgid "Widgets"
+msgstr "Виджеты"
+
+msgid "Logged in as %s"
+msgstr "Вход под именем %s"
+
+msgid "mobile"
+msgstr "КПК"
+
+msgid "desktop"
+msgstr "ПК"
+
+msgid "about"
+msgstr "о"
+#!!!
+
+msgid "help"
+msgstr "помощь"
+
+msgid "feedback"
+msgstr "обр.связь"
+
+msgid "Page:"
+msgstr "Стр.:"
+
+msgid "Location"
+msgstr "Положение"
+
+msgid "Details of the new point"
+msgstr "Данные новой точки"
+
+msgid "Setup DB"
+msgstr "Настроить БД"
+
+msgid "Subscribe to the newsfeed"
+msgstr "Заказать фид"
+
+msgid "About this topic"
+msgstr "Об этой теме"
+
+msgid "Delete topic"
+msgstr "Удалить тему"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid "make this topic feedback topic"
+msgstr "сделать темой для обратной связи"
+
+msgid "Choose a center point and zoom level."
+msgstr "Выберите центральную точку и уровень увеличения."
+
+msgid "Thank you for your contribution!"
+msgstr "Спасибо за Вашу информацию!"
+
+msgid "Return to the site you came from"
+msgstr "Перейти на страницу, с которой Вы пришли"
+
+msgid "By"
+msgstr ""
+#!!!
+
+msgid "New tag:"
+msgstr "Новый тег:"
+
+msgid "Edit point"
+msgstr "Ред. точку"
+
+msgid "Delete point"
+msgstr "Удалить точку"
+
+msgid "Toolbox"
+msgstr "Инструменты"
+
+msgid "Edit settings"
+msgstr "Редактировать настройки"
+
+msgid "You can:"
+msgstr "Вы можете:"
+
+msgid "Copy the resulting HTML and insert it into your page's HTML code:"
+msgstr "Скопируйте HTML и вставьте его в Вашу HTML страницу:"
+
+msgid "Advanced settings"
+msgstr "Доп. настройки"
+
+msgid "Set location"
+msgstr "Уст. местонахождение"
+
+msgid "km"
+msgstr "км"
+
+msgid "No such user."
+msgstr "Нет такого пользователя."
+
+msgid "Point page content"
+msgstr "Содержимое страницы точки"
+
+msgid "Point page comment section elements"
+msgstr "Элементы раздела комментариев на странице точки"
+
+msgid "This point is marked as inapropriate"
+msgstr "Эта точка отмечена как неподходящая"
+
+msgid "See other contributions to this topic"
+msgstr "См. вклад других на эту тему"
+
+msgid "Posted by"
+msgstr "Отправлено"
+
+msgid "Characters:"
+msgstr "Знаки:"
+
+msgid "Warning:"
+msgstr "Предупреждение:"
+
+msgid "the resulting URL is too long for some browsers (IE 6 / 7)."
+msgstr "URL стал слишком длинным для некоторых браузеров (IE 6 / 7)."
+
+msgid "Guest Login"
+msgstr "Гостевой вход"
+
+msgid "Picture:"
+msgstr "Изображение:"
+
+msgid "BACK TO SEARCH RESULTS"
+msgstr "НАЗАД К РЕЗУЛЬТАТАМ ПОИСКА"
+
+msgid "BACK TO TOPIC"
+msgstr "НАЗАД К ТЕМЕ"
+
+msgid "BACK TO POINT LIST"
+msgstr "НАЗАД К СПИСКУ ТОЧЕК"
+
+msgid "go there"
+msgstr "идти туда"
+
+msgid "Search points"
+msgstr "Искать точки"
+
+msgid "GPS"
+msgstr "GPS"
+
+msgid "ADD POINT"
+msgstr "ДОБАВИТЬ ТОЧКУ"
+
+msgid "All Points in %s"
+msgstr "Все точки в радиусе %s"
+
+msgid "All Points"
+msgstr "Все точки"
+

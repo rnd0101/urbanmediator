@@ -1,0 +1,12 @@
+$def with (context)
+
+<ul>
+$for nav_tab in context.page_nav_data.nav_data:
+    $if nav_tab.link is None:
+        <li><a href="" class="active">\
+    $else:
+        <li><a href="$nav_tab.link" class="$nav_tab.key">\
+    <span class="nav_img_wrapper">
+        <img class="nav_img" src="${schema_base_url}/img/mob/${context.status[nav_tab.key]}.png" alt="$nav_tab.label" />
+    <span><strong>$nav_tab.label</strong></span></span></li></a>
+</ul>

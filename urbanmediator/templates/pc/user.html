@@ -1,0 +1,37 @@
+$def with (context, user, topics_subs)
+
+$:macro.header_desktop(context, 1, 1)
+
+   $:macro.header_user(user, level=0, link=0)
+   
+       <div id="container">
+       	
+        <div id="page_content">
+        
+        	<div id="main_normal">
+                <!--id: $user.id -->
+            
+            <h2>$(_("Topics created or moderated by %s") % user.username):</h2>
+            $:macro.list_topics(context, user.projects)
+
+            <h2>$_("Topics the user has been subscribed to"):</h2>
+            $:macro.list_topics(context, topics_subs)
+
+            <h2>$(_("Contributions by %s") % user.username):</h2>
+            $:macro.list_points2(context, user.points)
+
+            </div>
+            
+            <div id="aside_normal">            	
+                <div id="splitter">
+                </div>
+                $if acl.authorize.is_current_user(user):
+                    <ul class="controls">
+                    $if context.user_location:
+                        <li class="edit"><a href="$pc_links('user_location', context.user.username)">$_("my location")</a></li>
+                    $else:
+                        <li class="set_map"><a href="$pc_links('user_location', context.user.username)">$_("Set location")</a></li>
+                    </ul>
+            </div>
+        </div>        
+    </div>

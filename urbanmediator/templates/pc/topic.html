@@ -1,0 +1,106 @@
+$def with (context, topic, points, tags)
+
+$:macro.header_desktop(context, 1, 1)
+$if context.nav_data.search:
+    $:macro.header_topic(topic, level=0, link=1)
+$else:
+    $:macro.header_topic(topic, level=0, link=0)
+
+<div id="container">    
+            $if context.display_type == "list":
+                <div id="main">                    
+                    <div id="display_controls">
+                        $if context.nav_data.search:
+                            <h2>$_("Search result for ") '$context.nav_data.search' ($topic.points_count), page $context.current_page of $context.total_num_of_pages
+                            &nbsp; (<a href="$pc_links('topic', topic.id)" class="showall">$_('show all points')</a>)
+                            </h2>
+                        $else:
+                            <h2>$_("Showing all points in topic") ($topic.points_count), page $context.current_page of $context.total_num_of_pages</h2>
+                    </div>
+                    <div id="control_holder_2">
+                        $:macro.mode_bar(context)
+                    </div>
+                    <div id="control_holder_3">
+                        $:macro.ordering_bar(context)
+                    </div>
+                    $:macro.list_points(context, points, topic, topic.profile.point_list_show)
+                    $:macro.pagination_bar(context)
+                    $for feed in context.feeds:
+                    <ul class="rss_holder">
+                        <li><a href="$feed.url">$_("Subscribe to the newsfeed")</a></li>
+                    </ul>
+                </div>
+            $elif context.display_type == "about":
+                <div id="main">
+                    <div id="display_controls">
+                        $:macro.mode_bar(context)
+                        $if context.nav_data.search:
+                            <h2>$((_("Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s") % context) % context.nav_data.search)
+                            &nbsp; (<a href="$pc_links('topic', topic.id)" class="showall">$_('show all points')</a>)
+                            </h2>
+                        $else:
+                            <h2>$_("Showing all points in topic") ($topic.points_count), page $context.current_page of $context.total_num_of_pages</h2>
+                    </div>
+                    $:render_text(topic.first.text)
+                </div>
+            $else:
+                <div id="main">                    
+                    <div id="display_controls">
+                        $if context.nav_data.search:
+                            <h2>$_("Search result for ") '$context.nav_data.search' ($topic.points_count)
+                            &nbsp; (<a href="$pc_links('topic', topic.id, mode='map')" class="showall">$_('show all points')</a>)
+                            </h2>
+                        $else:
+                            <h2>$_("Showing all points in topic") ($topic.points_count)</h2>
+                    </div>
+                    <div id="control_holder_2">    
+                        $:macro.mode_bar(context)
+                    </div>
+                    <div id="map"></div>
+                    <input type="hidden" id="lon" name="lon" style="display:none;"/>
+                    <input type="hidden" id="lat" name="lat" style="display:none;"/>
+                </div>            
+            <div id="aside">
+            $for page_el in topic.profile.topic_page_elements.split(","):
+                $if page_el == "search":
+                    <form id="search" action="" method="get">
+                    $if ("mode" in context.nav_data):
+                        <input type="hidden" name="mode" style="display:none;" value="$context.nav_data.mode" />
+                    $if context.nav_data.search:
+                        <input id="search-text" class="search-text-input" type="text" name="search" value="$context.nav_data.search" /><input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search"><br />
+                    $else:
+                        <input id="search-text" class="search-text-input" type="text" name="search" value="$_('Search')" onfocus="this.value=''" /><input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search"><br />
+                    $if context.nav_data.search_tags:
+                        <input type="checkbox" checked="checked" id="search_tags" name="search_tags" /><label for="search_tags">$_("Only tags")</label>
+                    $else:
+                        <input type="checkbox" id="search_tags" name="search_tags" /><label for="search_tags">$_("Only tags")</label>
+                    </form>
+                $elif page_el == "tagcloud":
+                    $:macro.topic_tag_cloud(context, topic, tags)
+                $elif page_el == "hr":
+                    <hr />
+                $elif page_el == "new point button":
+                    $if acl.authorize.show_add_point(topic):
+                        <ul class="new_point_buttons">
+                        <li><a href="$pc_links('topic_newpoint', topic.id)">$_("Add new point")</a></li>
+                        </ul>
+                    $else:
+                        $_("Topic doesn't allow new points at the moment.")
+                $elif page_el == "widgets":
+                    $for t in topic.comments:
+                        $if t.type == "widget":
+                            $:render_widget(t.text)
+                $elif page_el == "triggers":
+                    $if (("triggers" in topic) and topic.triggers):
+                        <h3>$_('Connection:')</h3>
+                        <ul class="triggers">
+                        $for tr in topic.triggers:
+                            <li>$tr.description</li>
+                        </ul>
+                $elif page_el == "about":
+                	<div class="note">
+                    <h3>$_("About this topic")</h3>
+                    <p>$:render_text(topic.first.text)</p>
+                    </div>
+            </div>
+</div>

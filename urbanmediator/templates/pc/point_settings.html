@@ -1,0 +1,15 @@
+$def with (context, topic, point, presets)
+
+$:macro.header_desktop(context, 1, 1)
+
+	 $:macro.header_topic(topic, level=1, link=1)
+     
+    	<div id="container">
+       
+	        <div id="main_one_col">
+            	$:macro.header_point(topic, point, level=1, link=0)
+
+            	$:macro.edit_point(context, topic, presets)
+        	</div>
+            
+        </div>

@@ -1,0 +1,11 @@
+$def with (context)
+    <div>
+        <input type="hidden" name="captcha_key" value="$context.captcha_key" />
+        <label for="catchpa">$_('Number verification:')</label>
+        <img src="$context.captcha_url" id="catchpa" alt="secret" />
+        <small>$_('Please type the characters you see in the picture above.')</small>
+    </div>
+    <div class="required">
+        <label for="user_word">$_('Text:')</label>
+        <input class="inputText" id="user_word" size="5" maxlength="5" type="text" name="user_word" />
+    </div>

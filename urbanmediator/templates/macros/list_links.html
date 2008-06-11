@@ -1,0 +1,9 @@
+$def with (context, topic, title=None)
+
+$if topic.datasources:
+    $if title:
+        <h3>$title</h3>
+    <ul class="bulleted">
+    $for tool in topic.datasources:
+        <li><a href="$tool.url" title="$_('type_' + tool.type)">$tool.description</a>  &nbsp; </li>
+    </ul>

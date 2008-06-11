@@ -1,0 +1,58 @@
+$def with (context, topic=0)
+
+$:macro.header_desktop(context, level=1, link=1)
+
+    $:macro.header_topic(topic, level=1, link=1)
+    
+    <div id="container">
+        
+        <div id="main_one_col">
+        
+            <div id="page_header">
+                <h1>$_('Tools for topic.')</h1>
+            </div>
+    	
+        	<div id="tool_head">
+            	<h3>$_("Toolbox")</h3>
+            </div>
+        
+        	<div id="tool_text">
+            	<ul class="toollist">
+                    $if acl.authorize.change_topic_settings(topic):
+                        <li><a href="$pc_links('tools_feed_import', topic.id)">$_("Newsfeed import")</a> <span>Import news from a newsfeed (RSS/ATOM) as points.</span></li>
+                        <li><a href="$pc_links('topic_addtrigger', topic.id)">$_("Add trigger")</a> <span>Describe a trigger to be fired on certain event.</span></li>
+                    $if acl.authorize.manage_topic_admins(topic):
+                        <li><a href="$pc_links('topic_adminlist', topic.id)">$_("Manage topic administrators")</a> <span>Add/remove topic administrators.</span></li>
+                    <li><a href="javascript:location.href='$pc_links('topic_newpoint', topic.id)?url='+encodeURIComponent(location.href)+';title='+encodeURIComponent(document.title)">Post to Urban Mediator</a> <span>Bookmark this link in order to post web pages as points to this board</span></li>
+                    <li><a href="$feed_links('topic_as_csv', topic.id)">$_("CSV Export")</a> <span>$_("Export points as CSV")</span></li>
+                </ul>
+            </div>
+            
+			<div id="tool_holder">
+$if acl.authorize.change_topic_settings(topic):
+    $if topic.datasources:
+    	<div id="tool_head">
+        <h3>$_('Currently active tools')</h3>
+        </div>
+        <ul class="activetools">
+        $for tool in topic.datasources:
+            <li>$tool.type: <a href="$tool.url">$tool.description</a>  &nbsp; \
+            <a class="del" title="delete" href="$pc_links('alert', message=(_('Would you like to delete %s') % tool.description), url1=pc_links('topic_ds_delete', topic.id, tool.id), m1=_('DELETE'), url2=pc_links('topic_tools', topic.id), m2=_('Cancel'))">$_("delete")</a> \
+            <a class="edit" title="edit" href="$pc_links('topic_ds_edit', topic.id, tool.id)">$_("edit")</a> \
+            </li>
+        </ul>
+    $if (("triggers" in topic) and topic.triggers):
+        <h3>$_('Currently active triggers')</h3>
+        <ul class="activetools">
+        $for tr in topic.triggers:
+            <li>$tr.description ($tr.trigger_condition : $tr.adapter : $tr.trigger_action : $tr.url)&nbsp;
+                <a class="del" title="delete" href="$pc_links('alert', message=_('Would you like to delete the trigger?'), url1=pc_links('topic_deltrigger', topic.id, tr.id), m1=_('DELETE'), url2=pc_links('topic_tools', topic.id), m2=_('Cancel'))">$_("delete")</a> \
+                <a class="edit" title="edit" href="$pc_links('topic_edittrigger', topic.id, tr.id)">$_("edit")</a> \
+            </li>
+        </ul>
+        
+</div>
+
+</div>
+
+</div>

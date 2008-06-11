@@ -1,0 +1,43 @@
+$def with (context, topic=0)
+$:macro.header_desktop(context, level=1, link=1)
+
+    $:macro.header_topic(topic, level=1, link=1)
+    
+    <div id="container">
+    
+        <div id="main">
+            
+            <div id="page_header">
+                <h1>$_('Widgets for topic.')</h1>
+            </div>
+            
+            <div id="widget_head">
+                <h3>Widgetizers</h3>
+            </div>
+            
+            <div id="widget_text">
+            	<ul class="toollist">
+                	<li><a href="$pc_links("tools_submit_widgetize", topic.id)">$_("Add point button")</a> <span>$_("Make a widget to submit points to this topic")</span></li>
+                    <li><a href="$pc_links("tools_topic_points_widgetize", topic.id)">$_("Topic's point list")</a> <span>$_("Widget to show topic's points")</span></li>
+                    <li><a href="$pc_links("tools_topic_links_widgetize", topic.id)">$_("Topic's list of links")</a> <span>$_("Widget to show topic's links")</span></li>
+                    <li><a href="$pc_links("tools_map_widgetize", topic.id)">$_("A map")</a> <span>$_("Widget to show topic on the map")</span></li>
+                    <li><a href="$pc_links("tools_container_widgetize", topic.id)">$_("Make combo widget")</a> <span>$_("Make a widget which contains several widgets (prepare urls for widgets first)")</span></li>
+                    <li><a href="$pc_links("tools_note_widgetize", topic.id)">$_("Make note")</a> <span>$_("Make a widget to show a note")</span></li>               
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div id="aside">
+            $if acl.authorize.change_topic_settings(topic):
+                $if topic.comments:
+                    <h3>$_('Currently shown widgets')</h3>
+                    $for t in topic.comments:
+                        $if t.type == "widget":
+                            $:render_widget(t.text)
+                            <a class="del" title="delete" href="$pc_links('alert', message=_('Would you like to delete the widget?'), url1=pc_links('topic_delcomment', topic.id, t.id), m1=_('DELETE'), url2=pc_links('topic_tools', topic.id), m2=_('Cancel'))">$_("delete")</a> \
+                            <a class="edit" title="edit" href="$pc_links('tools_widget_editor', topic.id, url=get_widget_url(t.text), id=t.id)">$_("edit")</a>
+                            <a class="edit" title="up" href="$pc_links('tools_widget_move', topic.id, dir='up', id=t.id)">&uarr;</a>
+                            <a class="edit" title="down" href="$pc_links('tools_widget_move', topic.id, dir='down', id=t.id)">&darr;</a>
+    	</div>
+	</div>

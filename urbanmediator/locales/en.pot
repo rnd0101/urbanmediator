@@ -1,0 +1,2402 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Language-code: en\n"
+"Language-name: English\n"
+"Preferred-encodings: utf-8\n"
+"Domain: urban_mediator\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+# MSGIDS FOR THE NEW UI STARTS
+# TRANSLATIONS FOR NEW UI
+
+msgid "um_version"
+msgstr "alpha"
+
+#index.html
+msgid "<strong>Urban Mediator</strong> is a tool for connecting people, places and information."
+msgstr ""
+"<strong>Urban Mediator</strong> is a tool for connecting people, places and information. "
+"Use it to share your knowledge of your neighborhood and connect to information "
+"coming from other residents, visitors and city offices. You can also start a bulletin board "
+"to address local issues along with other interested people."
+
+#tools.html
+msgid "Import points tool description"
+msgstr "Import points from other boards in Urban Mediator and add them to this board's map."
+
+msgid "Import newsfeed tool description"
+msgstr "Import news from a newsfeed (RSS/ATOM) and add them to this board's news."
+
+msgid "GeoRSS tool description"
+msgstr "Import points from a GeoRSS feed and add them to this board's map."
+
+msgid "Scrape tool description"
+msgstr "Search the website for relevant information and add the results to this board."
+
+msgid "Attachment added by <a class='author' href='%(link_base)s%(link_home)s'>%(user)s</a> at <span class='datetime'>%(time)s</span>"
+msgstr "Attachment added by <a class=\"author\" href=\"%(link_base)s%(link_home)s\">%(user)s</a> at <span class=\"datetime\">%(time)s</span>"
+
+msgid "1. Click a location on the map <strong>or</strong> give a street <a href='#' onClick='ap()'>address...</a>"
+msgstr "1. Click a location on the map <strong>or</strong> give a street <a href=\"#\" onClick=\"ap()\">address...</a>"
+
+msgid "1. Click a location on the <a href='#' onClick='mp()'>map</a> <strong>or</strong> give a street address:</a>"
+msgstr "1. Click a location on the <a href=\"#\" onClick=\"mp()\">map</a> <strong>or</strong> give a street address:</a>"
+
+# MSGIDS FOR THE NEW UI ENDS
+
+msgid "example"
+msgstr "example"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Map"
+msgstr "Map"
+
+msgid "Show points"
+msgstr "Show points"
+
+msgid "Add new point"
+msgstr "Add new point"
+
+msgid "Flag as inappropriate"
+msgstr "Flag as inappropriate"
+
+msgid "Delete comment"
+msgstr "Delete comment"
+
+msgid "Inappropriate comments"
+msgstr "Inappropriate comments"
+
+msgid "Delete point"
+msgstr "Delete point"
+
+msgid "Inappropriate points"
+msgstr "Inappropriate points"
+
+msgid "Attach file"
+msgstr "Attach file"
+
+msgid "Please enter your point title."
+msgstr "Please enter your point title."
+
+msgid "Please enter your comment."
+msgstr "Please enter your comment."
+
+msgid "Close menu"
+msgstr "Close menu"
+
+msgid "Hide point"
+msgstr "Hide point"
+
+msgid "Restore point"
+msgstr "Restore point"
+
+msgid "Hide note"
+msgstr "Hide comment"
+
+msgid "Edit note"
+msgstr "Edit comment"
+
+msgid "Choose place from the map"
+msgstr "Choose place from the map"
+
+msgid "New point"
+msgstr "New point"
+
+msgid "Create new point"
+msgstr "Create new point"
+
+msgid "My points and comments"
+msgstr "My points and comments"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "user profile"
+msgstr "user profile"
+
+msgid "points and comments"
+msgstr "points and comments"
+
+msgid "Points"
+msgstr "Points"
+
+msgid "No points."
+msgstr "No points."
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "No comments."
+msgstr "No comments."
+
+msgid "Places"
+msgstr "Places"
+
+msgid "Messages"
+msgstr "Messages"
+
+msgid "m "
+msgstr "m "
+
+msgid "logout"
+msgstr "logout"
+
+msgid "Logout done."
+msgstr "Logout done."
+
+msgid "Mainpage"
+msgstr "Mainpage"
+
+msgid "Browse points or add new point"
+msgstr "Browse points or add new point"
+
+msgid "Recent points"
+msgstr "Recent points"
+
+msgid "Recent comments"
+msgstr "Recent comments"
+
+msgid "Keywords"
+msgstr "Keywords"
+
+msgid "Own points and comments"
+msgstr "Own points and comments"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "add keywords to all points"
+msgstr "add keywords to all points"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "User manual"
+msgstr "User manual"
+
+msgid "Send feedback"
+msgstr "Send feedback"
+
+msgid "login"
+msgstr "login"
+
+msgid "Choose username"
+msgstr "Choose username"
+
+msgid "Begin session"
+msgstr "Begin session"
+
+msgid "Add keywords"
+msgstr "Add keywords"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Comment edit"
+msgstr "Comment edit"
+
+msgid "Save comment"
+msgstr "Save comment"
+
+msgid "Write comment"
+msgstr "Write comment"
+
+msgid "Fine! You have added keywords to all points."
+msgstr "Fine! You have added keywords to all points."
+
+msgid "Show on the map"
+msgstr "Show on the map"
+
+msgid "File"
+msgstr "File"
+
+msgid "datetime_format"
+msgstr "%d.%m.%y %H:%M"
+
+msgid "Nearest points"
+msgstr "Nearest points"
+
+msgid "Comment suppressed by administrator."
+msgstr "Comment suppressed by administrator."
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Notes"
+msgstr "Notes"
+
+#MOBILE
+msgid "Sign in"
+msgstr "Login"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Main"
+msgstr "Main"
+
+msgid "Tag cloud"
+msgstr "Tag cloud"
+
+msgid "?"
+msgstr "?"
+
+msgid "X"
+msgstr "X"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "About"
+msgstr "About"
+
+msgid "Recent entries"
+msgstr "Recent points"
+
+msgid "Points by tag"
+msgstr "Points by tag"
+
+msgid "Newer"
+msgstr "Newer"
+
+msgid "Older"
+msgstr "Older"
+
+msgid "Comment"
+msgstr "Comment"
+
+msgid "No tags"
+msgstr "No tags"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Your username"
+msgstr "Your username"
+
+msgid "Tag(s)"
+msgstr "Tag(s)"
+
+msgid "Mobile"
+msgstr "Mobile"
+
+msgid "Considered inappropriate by someone"
+msgstr "Considered inappropriate by someone"
+
+msgid "Project"
+msgstr "Project"
+
+msgid "This site runs"
+msgstr "This site runs"
+
+msgid "%s from now"
+msgstr "%s from now"
+
+msgid "%s ago"
+msgstr "%s ago"
+
+msgid "point"
+msgid_plural "points"
+msgstr[0] "point"
+msgstr[1] "points"
+
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s day"
+msgstr[1] "%s days"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s hour"
+msgstr[1] "%s hours"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minute"
+msgstr[1] "%s minutes"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s second"
+msgstr[1] "%s seconds"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s millisecond"
+msgstr[1] "%s milliseconds"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s microsecond"
+msgstr[1] "%s microseconds"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s %(monthname)s, %(year)s"
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s %(monthname)s"
+
+msgid "1_month"
+msgstr "January"
+
+msgid "2_month"
+msgstr "February"
+
+msgid "3_month"
+msgstr "March"
+
+msgid "4_month"
+msgstr "April"
+
+msgid "5_month"
+msgstr "May"
+
+msgid "6_month"
+msgstr "June"
+
+msgid "7_month"
+msgstr "July"
+
+msgid "8_month"
+msgstr "August"
+
+msgid "9_month"
+msgstr "September"
+
+msgid "10_month"
+msgstr "October"
+
+msgid "11_month"
+msgstr "November"
+
+msgid "12_month"
+msgstr "December"
+
+msgid "Add points to"
+msgstr "Add points to"
+
+
+msgid "Available points"
+msgstr "Available points"
+
+
+msgid "Choose points to be added to the board:"
+msgstr "Choose points to be added to the board:"
+
+
+msgid "subscribe"
+msgstr "subscribe"
+
+
+msgid "tools"
+msgstr "tools"
+
+
+msgid "settings"
+msgstr "settings"
+
+
+msgid "Point import"
+msgstr "Point import"
+
+
+msgid "keywords"
+msgstr "keywords"
+
+
+msgid "1. Select a keyword"
+msgstr "1. Select a keyword"
+
+
+msgid "Choose a keyword from the left to view points associated with it."
+msgstr "Choose a keyword from the left to view points associated with it."
+
+
+msgid "2. Select points to import"
+msgstr "2. Select points to import"
+
+
+msgid "Cancel"
+msgstr "Cancel"
+
+
+msgid "2. No new points"
+msgstr "2. No new points"
+
+
+msgid "There is no new points to add to the board with this keyword. Please, select another keyword."
+msgstr "There is no new points to add to the board with this keyword. Please, select another keyword."
+
+
+msgid "register"
+msgstr "register"
+
+
+msgid "Choose a username and password."
+msgstr "Choose a username and password."
+
+
+msgid "Choose a username"
+msgstr "Choose a username"
+
+
+msgid "Enter a password"
+msgstr "Enter a password"
+
+
+msgid "Repeat password"
+msgstr "Repeat password"
+
+
+msgid "Email"
+msgstr "Email"
+
+
+msgid "optional"
+msgstr "optional"
+
+
+msgid "Security"
+msgstr "Security"
+
+
+msgid "Register"
+msgstr "Register"
+
+
+msgid "Tools"
+msgstr "Tools"
+
+
+msgid "Toolbox"
+msgstr "Toolbox"
+
+
+msgid "Newsfeed import"
+msgstr "Newsfeed import"
+
+
+msgid "Post to Urban Mediator"
+msgstr "Post to Urban Mediator"
+
+
+msgid "Bookmark this link in order to post web pages as points to this board"
+msgstr "Bookmark this link in order to post web pages as points to this board"
+
+
+msgid "GeoRSS"
+msgstr "GeoRSS"
+
+
+msgid "Delete this board"
+msgstr "Delete this board"
+
+
+msgid "Scrape"
+msgstr "Scrape"
+
+
+msgid "Scrape %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Search Helsinki Virtual Village for relevant information and add it to this board."
+msgstr "Scrape %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Search Helsinki Virtual Village for relevant information and add it to this board."
+
+
+msgid "Newsfeed import: news.bbc.co.uk"
+msgstr "Newsfeed import: news.bbc.co.uk"
+
+
+msgid "GeoRSS: hel.fi"
+msgstr "GeoRSS: hel.fi"
+
+
+msgid "Currently active tools"
+msgstr "Currently active tools"
+
+
+msgid "Add point to Urban Mediator?"
+msgstr "Add point to Urban Mediator?"
+
+
+msgid "Your name:"
+msgstr "Your name:"
+
+
+msgid "1. Click a location on the map <strong>or</strong> give a street address:"
+msgstr "1. Click a location on the map <strong>or</strong> give a street address:"
+
+
+msgid "<em>example:</em> Arabiankatu 2"
+msgstr "<em>example:</em> Arabiankatu 2"
+
+
+msgid "1. Click a location on the <a href='javascript:mp()'>map</a> <strong>or</strong> give a street address:</a>"
+msgstr "1. Click a location on the <a href='javascript:mp()'>map</a> <strong>or</strong> give a street address:</a>"
+
+
+msgid "Give it a name"
+msgstr "Title"
+
+
+msgid "<em>example:</em> Dangerous concrete blocks"
+msgstr "<em>example:</em> Dangerous concrete blocks"
+
+
+msgid "External url"
+msgstr "External url"
+
+
+msgid "Tag it"
+msgstr "Tags"
+
+
+msgid "<em>example:</em> dangerous ugly disturbing question complaint"
+msgstr "<em>example:</em> dangerous ugly disturbing question complaint"
+
+
+msgid "Select location >>"
+msgstr "Select location >>"
+
+
+msgid "Newsfeed of points from this board"
+msgstr "Newsfeed of points from this board"
+
+
+msgid "Add feed"
+msgstr "Add feed"
+
+
+msgid "New feed for"
+msgstr "New feed for"
+
+
+msgid "Select type of feed"
+msgstr "Select type of feed"
+
+
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+
+msgid "Type the URL of the Feed"
+msgstr "Type the URL of the Feed"
+
+
+msgid "Enter the feed adress (URL):"
+msgstr "Enter the feed adress (URL):"
+
+
+msgid "help"
+msgstr "help"
+
+
+msgid "Write a description of the link"
+msgstr "Write a description of the link"
+
+
+msgid "Please type the text in the picture"
+msgstr "Please type the text in the picture"
+
+
+msgid "attached to:"
+msgstr "attached to:"
+
+
+msgid "Really delete "
+msgstr "Really delete "
+
+
+msgid "Filter points by keyword:"
+msgstr "Filter points by keyword:"
+
+
+msgid "all"
+msgstr "all"
+
+
+msgid "none"
+msgstr "none"
+
+
+msgid "show on map"
+msgstr "show on map"
+
+
+msgid "point page"
+msgstr "point page"
+
+
+msgid "attachments"
+msgstr "attachments"
+
+
+msgid "map"
+msgstr "map"
+
+
+msgid "link"
+msgstr "link"
+
+
+msgid "tags"
+msgstr "tags"
+
+
+msgid "m"
+msgstr "m"
+
+
+msgid "No boards"
+msgstr "No boards"
+
+
+msgid "External URL"
+msgstr "External URL"
+
+
+msgid "Last update"
+msgstr "Last update"
+
+
+msgid "Created by"
+msgstr "Created by"
+
+
+msgid "Associated boards"
+msgstr "Associated boards"
+
+
+msgid "show position on map"
+msgstr "show position on map"
+
+
+msgid "External Website"
+msgstr "External Website"
+
+
+msgid "Attachments"
+msgstr "Attachments"
+
+
+msgid "Add attachment"
+msgstr "Add attachment"
+
+
+msgid "show all points"
+msgstr "show all points"
+
+
+msgid "hide points"
+msgstr "hide points"
+
+
+msgid "<strong>+</strong> new note"
+msgstr "<strong>+</strong> new note"
+
+
+msgid "<strong>+</strong> new note in here"
+msgstr "<strong>+</strong> new note in here"
+
+
+msgid "Points on this board"
+msgstr "Points on this board"
+
+
+msgid "on:"
+msgstr "on:"
+
+
+msgid "No Points"
+msgstr "No Points"
+
+
+msgid "website"
+msgstr "website"
+
+
+msgid "new news feed"
+msgstr "new news feed"
+
+
+msgid "Give your username"
+msgstr "Give your username"
+
+
+msgid "Select location"
+msgstr "Location"
+
+
+msgid "Click a location on the map <strong>or</strong> give a street <a href='javascript:ap()'>address...</a>"
+msgstr "Click a location on the map <strong>or</strong> give a street <a href='javascript:ap()'>address...</a>"
+
+
+msgid "Click a location on the <a href='javascript:mp()'>map</a> <strong>or</strong> give a street address:"
+msgstr "Click a location on the <a href='javascript:mp()'>map</a> <strong>or</strong> give a street address:"
+
+
+msgid "Give it a name:"
+msgstr "Title:"
+
+
+msgid "Tag it:"
+msgstr "Tags:"
+
+
+msgid "keywords:"
+msgstr "keywords:"
+
+
+msgid "view on full map"
+msgstr "view on full map"
+
+
+msgid "Delete this point"
+msgstr "Delete this point"
+
+
+msgid "Search Urban Mediator"
+msgstr "Search Urban Mediator"
+
+
+msgid "Write words you want to use for search in here"
+msgstr "Write words you want to use for search in here"
+
+
+msgid "Search results for"
+msgstr "Search results for"
+
+
+msgid "Boards"
+msgstr "Boards"
+
+
+msgid "No boards found"
+msgstr "No boards found"
+
+
+msgid "No points found"
+msgstr "No points found"
+
+
+msgid "New attachment for the point"
+msgstr "New attachment for the point"
+
+
+msgid "New note for the board"
+msgstr "New note for the board"
+
+
+msgid "1. Choose type"
+msgstr "1. Choose type"
+
+
+msgid "Text Comment"
+msgstr "Text Comment"
+
+
+msgid "Web Link"
+msgstr "Web Link"
+
+
+msgid "Picture"
+msgstr "Picture (less than 2Mb)"
+
+
+msgid "2. Write a text comment"
+msgstr "2. Write a text comment"
+
+
+msgid "2. Add a web link"
+msgstr "2. Add a web link"
+
+
+msgid "Enter the website adress (URL)"
+msgstr "Enter the website adress (URL)"
+
+
+msgid "2. Upload a picture"
+msgstr "2. Upload a picture"
+
+
+msgid "Choose a file to upload"
+msgstr "Choose a file to upload"
+
+
+msgid "Browse..."
+msgstr "Browse..."
+
+
+msgid "Submit"
+msgstr "Submit"
+
+
+msgid "Show all points"
+msgstr "Show all points"
+
+
+msgid "Hide points"
+msgstr "Hide points"
+
+
+msgid "Newest points"
+msgstr "Newest points"
+
+
+msgid "Create a new board"
+msgstr "Create a new board"
+
+
+msgid "1. Name"
+msgstr "1. Title"
+
+
+msgid "Name your bulletin board"
+msgstr "Name your bulletin board"
+
+
+msgid "<em>example:</em> kindergartens"
+msgstr "<em>example:</em> kindergartens"
+
+
+msgid "2. Category"
+msgstr "2. Category"
+
+
+msgid "Choose the category that your board will appear in:"
+msgstr "Choose the category that your board will appear in:"
+
+
+msgid "category"
+msgstr "category"
+
+
+msgid "3. Keywords"
+msgstr "3. Keywords"
+
+
+msgid "Write some keywords to identify your board, separated by spaces:"
+msgstr "Write some keywords to identify your board, separated by spaces:"
+
+
+msgid "<em>example:</em> kids children kindergarten preschool"
+msgstr "<em>example:</em> kids children kindergarten preschool"
+
+
+msgid "4. Description"
+msgstr "4. Description"
+
+
+msgid "Write a short text describing your Bulletin Board:"
+msgstr "Write a short text describing your Bulletin Board:"
+
+
+msgid "<em>example:</em> A place for parents to share information about Kindergartens in Arabianranta."
+msgstr "<em>example:</em> A place for parents to share information about Kindergartens in Arabianranta."
+
+
+msgid "Find by address"
+msgstr "Find by address"
+
+
+msgid "Find"
+msgstr "Find"
+
+
+msgid "Dangerous concrete blocks"
+msgstr "Dangerous concrete blocks"
+
+
+msgid "Link to related website"
+msgstr "Link to related website"
+
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "dangerous ugly disturbing question complaint"
+
+
+msgid "Search Urban Mediator:"
+msgstr "Search Urban Mediator:"
+
+
+msgid "What do you want to do?"
+msgstr "What do you want to do?"
+
+
+msgid "View map"
+msgstr "View map"
+
+
+msgid "View points"
+msgstr "View points"
+
+
+msgid "Browse boards"
+msgstr "Browse boards"
+
+
+msgid "Personalize"
+msgstr "Personalize"
+
+
+msgid "What's happening?"
+msgstr "What's happening?"
+
+
+msgid "Active boards"
+msgstr "Active boards"
+
+
+msgid "Add points to this board"
+msgstr "Add points to this board"
+
+
+msgid "Add feed to this board"
+msgstr "Add feed to this board"
+
+
+msgid "No feeds."
+msgstr "No feeds."
+
+
+msgid "keyword"
+msgstr "keyword"
+
+
+msgid "Newsfeed of points with this keyword"
+msgstr "Newsfeed of points with this keyword"
+
+
+msgid "You are being logged out."
+msgstr "You are being logged out."
+
+
+msgid "You are being logged out..."
+msgstr "You are being logged out..."
+
+
+msgid "Username"
+msgstr "Username"
+
+
+msgid "Front page"
+msgstr "Front page"
+
+
+msgid "My UM"
+msgstr "My UM"
+
+
+msgid "Copyright"
+msgstr "Copyright"
+
+
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+
+msgid "Contact"
+msgstr "Contact"
+
+
+msgid "Terms of use"
+msgstr "Terms of use"
+
+
+msgid "Use of this feature requires registration and log in."
+msgstr "Use of this feature requires registration and log in."
+
+
+msgid "Guest Login"
+msgstr "Guest Login"
+
+
+msgid "Your username will appear as:"
+msgstr "Your username will appear as:"
+
+msgid "This username will be valid until you log out or shut  down your browser."
+msgstr "This username will be valid until you log out or shut  down your browser."
+
+
+msgid "or"
+msgstr "or"
+
+
+msgid "Normal Login"
+msgstr "Normal Login"
+
+
+msgid "Password"
+msgstr "Password"
+
+
+msgid "New users"
+msgstr "New users"
+
+
+msgid "sign up here"
+msgstr "sign up here"
+
+
+msgid "Write your username"
+msgstr "Write your username"
+
+
+msgid "My boards"
+msgstr "My boards"
+
+
+msgid "boards"
+msgstr "boards"
+
+
+msgid "My notes"
+msgstr "My notes"
+
+
+msgid "notes"
+msgstr "notes"
+
+
+msgid "My points"
+msgstr "My points"
+
+
+msgid "points"
+msgstr "points"
+
+
+msgid "My attachments"
+msgstr "My attachments"
+
+
+msgid "Not implemented"
+msgstr "Not implemented"
+
+
+msgid "This feature has not been implemented yet."
+msgstr "This feature has not been implemented yet."
+
+
+msgid "Desktop version"
+msgstr "Desktop version"
+
+
+msgid "Your feedback"
+msgstr "Your feedback"
+
+
+msgid "Earlier feedback"
+msgstr "Earlier feedback"
+
+
+msgid "No points"
+msgstr "No points"
+
+
+msgid "Please specify location on the map which will appear shortly."
+msgstr "Please specify location on the map which will appear shortly."
+
+
+msgid "Urban Mediator"
+msgstr "Urban Mediator"
+
+
+msgid "Recent projects"
+msgstr "Recent projects"
+
+
+msgid "Batch edit"
+msgstr "Batch edit"
+
+
+msgid "Post to UrbanMediator"
+msgstr "Post to UrbanMediator"
+
+
+msgid "Categories"
+msgstr "Categories"
+
+
+msgid "URL"
+msgstr "URL"
+
+
+msgid "Description"
+msgstr "Description"
+
+
+msgid "Read once"
+msgstr "Read once"
+
+
+msgid "Login as"
+msgstr "Login as"
+
+
+msgid "Describe resource"
+msgstr "Describe resource"
+
+
+msgid "Place on the map"
+msgstr "Place on the map"
+
+
+msgid "OR"
+msgstr "OR"
+
+
+msgid "Give address"
+msgstr "Give address"
+
+
+msgid "example: koreankatu 2"
+msgstr "example: koreankatu 2"
+
+
+msgid "Street and number"
+msgstr "Street and number"
+
+
+msgid "Submit point"
+msgstr "Submit point"
+
+
+msgid "Give street and house number"
+msgstr "Give street and house number"
+
+
+msgid "Author"
+msgstr "Author"
+
+
+msgid "Add new point at star position"
+msgstr "Add new point at star position"
+
+
+msgid "Attachment"
+msgstr "Attachment"
+
+
+msgid "New attachment for"
+msgstr "New attachment for"
+
+
+msgid "points found for"
+msgstr "points found for"
+
+
+msgid "ERROR: point has no title."
+msgstr "ERROR: point has no title."
+
+
+msgid "ERROR: point has no coordinates."
+msgstr "ERROR: point has no coordinates."
+
+
+msgid "ERROR: Unknown map action."
+msgstr "ERROR: Unknown map action."
+
+
+msgid "Not found"
+msgstr "Not found"
+
+
+msgid "Visual code is wrong"
+msgstr "Visual code is wrong"
+
+
+msgid "Passwords do not match"
+msgstr "Passwords do not match"
+
+
+msgid "No such user - error occured"
+msgstr "No such user - error occured"
+
+
+msgid "Login failed"
+msgstr "Login failed. Wrong username or password."
+
+
+msgid "Visual code is wrong. Try again"
+msgstr "Visual code is wrong. Try again"
+
+
+msgid "No description"
+msgstr "No description"
+
+
+msgid "ERROR: Board has no title."
+msgstr "ERROR: Board has no title."
+
+
+msgid "ERROR: Board has no description."
+msgstr "ERROR: Board has no description."
+
+
+msgid "No summary"
+msgstr "No summary"
+
+
+msgid "ERROR: Point has no title."
+msgstr "ERROR: Point has no title."
+
+
+msgid "No such point. Update your bookmarks."
+msgstr "No such point. Update your bookmarks."
+
+
+msgid "Point"
+msgstr "Point"
+
+
+msgid "Add point"
+msgstr "Add point"
+
+
+msgid "ERROR: Location not specified."
+msgstr "ERROR: Location not specified."
+
+
+msgid "Address is wrong"
+msgstr "Address is wrong"
+
+
+msgid "Point name not given"
+msgstr "Point name not given"
+
+
+msgid "No such board. Update your bookmarks."
+msgstr "No such board. Update your bookmarks."
+
+
+msgid "Add points to the board"
+msgstr "Add points to the board"
+
+
+msgid "Add news feed to the board"
+msgstr "Add news feed to the board"
+
+
+msgid "Settings"
+msgstr "Settings"
+
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+
+msgid "Added points to the board"
+msgstr "Added points to the board"
+
+
+msgid "Thank you for adding the point!"
+msgstr "Thank you for adding the point!"
+
+
+msgid "Search results"
+msgstr "Search results"
+
+
+msgid "ERROR: No user."
+msgstr "ERROR: No user."
+
+
+msgid "ERROR: Point has no description."
+msgstr "ERROR: Point has no description."
+
+msgid "Attachment addition cancelled."
+msgstr "Attachment addition cancelled."
+
+msgid "Note addition cancelled."
+msgstr "Note addition cancelled."
+
+msgid "User name is reserved or forbidden"
+msgstr "User name is reserved or forbidden"
+
+msgid "Bad user name"
+msgstr "Bad user name"
+
+msgid "Feedback"
+msgstr "Feedback"
+
+msgid "Attachments from this point"
+msgstr "Attachments from this point"
+
+msgid "all contributions"
+msgstr "all contributions"
+
+msgid "Please login prior to attaching files."
+msgstr "Please login prior to attaching files."
+
+msgid "more"
+msgstr "more"
+
+msgid "label_subscribed"
+msgstr "subscribed"
+
+msgid "label_manage_users"
+msgstr "topic user manager"
+
+msgid "label_manage_project"
+msgstr "topic manager"
+
+msgid "label_Add"
+msgstr "Add"
+
+msgid "label_Place"
+msgstr "Place"
+
+msgid "label_Home"
+msgstr "Home"
+
+msgid "label_Search"
+msgstr "Search"
+
+msgid "label_Info"
+msgstr "Info"
+
+msgid "Point addition disabled."
+msgstr "Point addition disabled."
+
+msgid "Note"
+msgstr "Note"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "No such topic. Update your bookmarks."
+
+msgid "Links"
+msgstr "Links"
+
+msgid "Setting database"
+msgstr "Setting database"
+
+msgid "Enter some values to start with the database setup"
+msgstr "Enter some values to start with the database setup"
+
+msgid "Widget appearance"
+msgstr "Widget appearance"
+
+msgid "Show header?"
+msgstr "Show header?"
+
+msgid "Show logo?"
+msgstr "Show logo?"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "Link for title (URL)"
+msgstr "Link for title (URL)"
+
+msgid "Subtitle"
+msgstr "Subtitle"
+
+msgid "Must be a number"
+msgstr "Must be a number"
+
+msgid "Height (pixels)"
+msgstr "Height (pixels)"
+
+msgid "Width (pixels)"
+msgstr "Width (pixels)"
+
+msgid "Widget Basic Settings"
+msgstr "Widget Basic Settings"
+
+msgid "Must be filled"
+msgstr "Must be filled"
+
+msgid "Text that will show on button"
+msgstr "Text that will show on button"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Text to show when point creation is disabled"
+
+msgid "Adding point disabled"
+msgstr "Adding point disabled"
+
+msgid "Add Point page Basic Settings"
+msgstr "Add Point page Basic Settings"
+
+msgid "Point title example"
+msgstr "Point title example"
+
+msgid "List of fixed hidden tags"
+msgstr "List of fixed hidden tags"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "List of predefined tags (leave empty for none)"
+
+msgid "Allow"
+msgstr "Allow"
+
+msgid "Disallow"
+msgstr "Disallow"
+
+msgid "Free tags (user's own)"
+msgstr "Free tags (user's own)"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Empty for most cases. May be: official"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Point Tags example (for free tags)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Add Point page Advanced Settings (optional)"
+
+msgid "Form title"
+msgstr "Form title"
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Must be a number 1-20 or auto"
+
+msgid "Must be 1-20"
+msgstr "Must be 1-20"
+
+msgid "Zoom level"
+msgstr "Zoom level"
+
+msgid "Must be a number or empty"
+msgstr "Must be a number or empty"
+
+msgid "Template point ID"
+msgstr "Template point ID"
+
+msgid "Note widget information"
+msgstr "Note widget information"
+
+msgid "Note title (not shown)"
+msgstr "Note title (not shown)"
+
+msgid "Note text"
+msgstr "Note text"
+
+msgid "Container widget information"
+msgstr "Container widget information"
+
+msgid "URL1"
+msgstr "URL1"
+
+msgid "URL2"
+msgstr "URL2"
+
+msgid "URL3"
+msgstr "URL3"
+
+msgid "URL4"
+msgstr "URL4"
+
+msgid "URL5"
+msgstr "URL5"
+
+msgid "URL6"
+msgstr "URL6"
+
+msgid "URL7"
+msgstr "URL7"
+
+msgid "URL8"
+msgstr "URL8"
+
+msgid "Topic Points widget information"
+msgstr "Topic Points widget information"
+
+msgid "Must be a number 1-20"
+msgstr "Must be a number 1-20"
+
+msgid "Number of points to show"
+msgstr "Number of points to show"
+
+msgid "Point information display in point list"
+msgstr "Point information display in point list"
+
+msgid "Point order"
+msgstr "Point order"
+
+msgid "Map widget information"
+msgstr "Map widget information"
+
+msgid "Width of the map"
+msgstr "Width of the map"
+
+msgid "Height of the map"
+msgstr "Height of the map"
+
+msgid "Topic Links widget information"
+msgstr "Topic Links widget information"
+
+msgid "Number of links to show"
+msgstr "Number of links to show"
+
+msgid "Widget Editor"
+msgstr "Widget Editor"
+
+msgid "newest"
+msgstr "newest"
+
+msgid "oldest"
+msgstr "oldest"
+
+msgid "recently updated"
+msgstr "recently updated"
+
+msgid "most points"
+msgstr "most points"
+
+msgid "km"
+msgstr "km"
+
+msgid "This information is stored at:"
+msgstr "This information is stored at:"
+
+msgid "Also stored at"
+msgstr "Also stored at"
+
+msgid "from external sources"
+msgstr "from external sources"
+
+msgid "Topic points"
+msgstr "Topic points"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "No such topic. Delete from your bookmarks: "
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "No such point. Delete from your bookmarks: "
+
+msgid "Point: "
+msgstr "Point: "
+
+msgid "Topics"
+msgstr "Topics"
+
+msgid "No such user"
+msgstr "No such user"
+
+msgid "User"
+msgstr "User"
+
+msgid "Search for '%s'"
+msgstr "Search for '%s'"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "Login page"
+msgstr "Login page"
+
+msgid "Front Page"
+msgstr "Front Page"
+
+msgid "Advanced search: "
+msgstr "Advanced search: "
+
+msgid "User: "
+msgstr "User: "
+
+msgid "No such user."
+msgstr "No such user."
+
+msgid "Old password"
+msgstr "Old password"
+
+msgid "You do not have rights to access user information."
+msgstr "You do not have rights to access user information."
+
+msgid "Change settings"
+msgstr "Change settings"
+
+msgid "You do not have rights to change user information."
+msgstr "You do not have rights to change user information."
+
+msgid "You do not have rights to change user information. Old password not given."
+msgstr "You do not have rights to change user information. Old password not given."
+
+msgid "Password mismatch or empty password."
+msgstr "Password mismatch or empty password."
+
+msgid "Password changed."
+msgstr "Password changed."
+
+msgid "Profile updated."
+msgstr "Profile updated."
+
+msgid "Set user location"
+msgstr "Set user location"
+
+msgid "Topic: "
+msgstr "Topic: "
+
+msgid "New Topic"
+msgstr "New Topic"
+
+msgid "a topic"
+msgstr "a topic"
+
+msgid "Point created! "
+msgstr "Point created! "
+
+msgid "Add comment"
+msgstr "Add comment"
+
+msgid "Comment text"
+msgstr "Comment text"
+
+msgid "Related website URL"
+msgstr "Related website URL"
+
+msgid "Related website description"
+msgstr "Related website description"
+
+msgid "You do not have rights to edit the comment."
+msgstr "You do not have rights to edit the comment."
+
+msgid "Edit comment"
+msgstr "Edit comment"
+
+msgid "You do not have rights to delete the comment."
+msgstr "You do not have rights to delete the comment."
+
+msgid "Edit point settings"
+msgstr "Edit point settings"
+
+msgid "You do not have rights for that."
+msgstr "You do not have rights for that."
+
+msgid "Set topic map"
+msgstr "Set topic map"
+
+msgid "Add Point"
+msgstr "Add Point"
+
+msgid "Topic tools"
+msgstr "Topic tools"
+
+msgid "Topic widgets"
+msgstr "Topic widgets"
+
+msgid "Subscription"
+msgstr "Subscription"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Topic subscription"
+msgstr "Topic subscription"
+
+msgid "Topic settings"
+msgstr "Topic settings"
+
+msgid "Administrator's extras"
+msgstr "Administrator's extras"
+
+msgid "Topic origin"
+msgstr "Topic origin"
+
+msgid "Topic tags"
+msgstr "Topic tags"
+
+msgid "Topic only"
+msgstr "Topic only"
+
+msgid "Topics and points"
+msgstr "Topics and points"
+
+msgid "Topic owners management rights"
+msgstr "Topic owners management rights"
+
+msgid "Topic page elements"
+msgstr "Topic page elements"
+
+msgid "Point page content"
+msgstr "Point page content"
+
+msgid "Point page comment section elements"
+msgstr "Point page comment section elements"
+
+msgid "Point information display on point list"
+msgstr "Point information display on point list"
+
+msgid "list"
+msgstr "list"
+
+msgid "Default view mode"
+msgstr "Default view mode"
+
+msgid "Default view order for point list"
+msgstr "Default view order for point list"
+
+msgid "Who can add points"
+msgstr "Who can add points"
+
+msgid "Advanced topic settings"
+msgstr "Advanced topic settings"
+
+msgid "Sign up"
+msgstr "Sign up"
+
+msgid "Visual code is wrong."
+msgstr "Visual code is wrong."
+
+msgid "Passwords do not match."
+msgstr "Passwords do not match."
+
+msgid "Error occured. User not added."
+msgstr "Error occured. User not added."
+
+msgid "User created."
+msgstr "User created."
+
+msgid "Add user role in this topic"
+msgstr "Add user role in this topic"
+
+msgid "Username of a registered user"
+msgstr "Username of a registered user"
+
+msgid "Manager?"
+msgstr "Manager?"
+
+msgid "User manager?"
+msgstr "User manager?"
+
+msgid "Subscriber?"
+msgstr "Subscriber?"
+
+msgid "List of administrators for "
+msgstr "List of administrators for "
+
+msgid "User managed successfully."
+msgstr "User managed successfully."
+
+msgid "Enter feed for importing"
+msgstr "Enter feed for importing"
+
+msgid "Feed address (URL)"
+msgstr "Feed address (URL)"
+
+msgid "Describe the feed"
+msgstr "Describe the feed"
+
+msgid "Feed for issues?"
+msgstr "Feed for issues?"
+
+msgid "Check interval in seconds"
+msgstr "Check interval in seconds"
+
+msgid "New feed for "
+msgstr "New feed for "
+
+msgid "external"
+msgstr "external"
+
+msgid "Edit feed "
+msgstr "Edit feed "
+
+msgid "Edit feed for "
+msgstr "Edit feed for "
+
+msgid "Enter configuration parameter"
+msgstr "Enter configuration parameter"
+
+msgid "Parameter name"
+msgstr "Parameter name"
+
+msgid "Value"
+msgstr "Value"
+
+msgid "Language not supported"
+msgstr "Language not supported"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "You do not have rights to edit settings."
+msgstr "You do not have rights to edit settings."
+
+msgid "Urban Mediator Settings"
+msgstr "Urban Mediator Settings"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Some fields were not entered correctly:"
+
+msgid "You do not have rights to delete the widget."
+msgstr "You do not have rights to delete the widget."
+
+msgid "You do not have rights to change the widget."
+msgstr "You do not have rights to change the widget."
+
+msgid "Enter trigger information"
+msgstr "Enter trigger information"
+
+msgid "Describe the trigger"
+msgstr "Describe the trigger"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Condition (e.g. addpoint)"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Adapter"
+msgstr "Adapter"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (as a parameter for the adapter)"
+
+msgid "Edit trigger "
+msgstr "Edit trigger "
+
+msgid "Edit trigger for "
+msgstr "Edit trigger for "
+
+msgid "New trigger for "
+msgstr "New trigger for "
+
+msgid "Error adding trigger"
+msgstr "Error adding trigger"
+
+msgid "UM Front Page"
+msgstr "UM Front Page"
+
+msgid "List of points"
+msgstr "List of points"
+
+msgid "Point: details"
+msgstr "Point: details"
+
+msgid "User location"
+msgstr "User location"
+
+msgid "Number verification:"
+msgstr "Number verification:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr "Please type the characters you see in the picture above."
+
+msgid "Text:"
+msgstr "Text:"
+
+msgid "Name & description"
+msgstr "Name & description"
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "Description should not be longer than 3-4 lines."
+
+msgid "Topic Name"
+msgstr "Topic Name"
+
+msgid "The name of your topic."
+msgstr "The name of your topic."
+
+msgid "Topic Description"
+msgstr "Topic Description"
+
+msgid "A brief description of your topic. You can edit this later, and add photos or links to it."
+msgstr "A brief description of your topic. You can edit this later, and add photos or links to it."
+
+msgid "Color Scheme"
+msgstr "Color Scheme"
+
+msgid "Use colors to give your topic a unique appearance."
+msgstr "Use colors to give your topic a unique appearance."
+
+msgid "Choose an icon"
+msgstr "Choose an icon"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr "An icon displayed on the front page and on the topic's pages"
+
+msgid "upload a picture"
+msgstr "upload a picture"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "The image (~ 60x60 pixels) will be used as the topic's icon"
+
+msgid "Latest addition"
+msgstr "Latest addition"
+
+msgid "posted by:"
+msgstr "posted by:"
+
+msgid "No points yet."
+msgstr "No points yet."
+
+msgid "No topics"
+msgstr "No topics"
+
+msgid "Topic Icon"
+msgstr "Topic Icon"
+
+msgid "official"
+msgstr "official"
+
+msgid "Widgets"
+msgstr "Widgets"
+
+msgid "Logged in as %s"
+msgstr "Logged in as %s"
+
+msgid "This point is marked as inapropriate"
+msgstr "This point is marked as inapropriate"
+
+msgid "posted by"
+msgstr "posted by"
+
+msgid "comments: "
+msgstr "comments: "
+
+msgid "User:"
+msgstr "User:"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr "Please, login at least as guest to add comments here:"
+
+msgid "log in"
+msgstr "log in"
+
+msgid "Order by:"
+msgstr "Order by:"
+
+msgid "mobile"
+msgstr "mobile"
+
+msgid "desktop"
+msgstr "desktop"
+
+msgid "sign up"
+msgstr "sign up"
+
+msgid "about"
+msgstr "about"
+
+msgid "feedback"
+msgstr "feedback"
+
+msgid "edit"
+msgstr "edit"
+
+msgid "delete"
+msgstr "delete"
+
+msgid "Page:"
+msgstr "Page:"
+
+msgid "New user?"
+msgstr "New user?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Sorry. Address lookup failed."
+
+msgid "Location"
+msgstr "Location"
+
+msgid "1. Location:"
+msgstr "1. Location:"
+
+msgid "Details of the new point"
+msgstr "Details of the new point"
+
+msgid "Category:"
+msgstr "Category:"
+
+msgid "Info added here will also go to:"
+msgstr "Info added here will also go to:"
+
+msgid "submit"
+msgstr "submit"
+
+msgid "Setup DB"
+msgstr "Setup DB"
+
+msgid "You do not have permission to edit this comment."
+msgstr "You do not have permission to edit this comment."
+
+msgid "Search result for "
+msgstr "Search result for "
+
+msgid "Showing all points in topic"
+msgstr "Showing all points in topic"
+
+msgid "Subscribe to the newsfeed"
+msgstr "Subscribe to the newsfeed"
+
+msgid "Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr "Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+
+msgid "Only tags"
+msgstr "Only tags"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "Topic doesn't allow new points at the moment."
+
+msgid "Connection:"
+msgstr "Connection:"
+
+msgid "About this topic"
+msgstr "About this topic"
+
+msgid "Open a new topic"
+msgstr "Open a new topic"
+
+msgid "You are about to permanently delete the topic %s. This action cannot be undone later."
+msgstr "You are about to permanently delete the topic %s. This action cannot be undone later."
+
+msgid "DELETE"
+msgstr "DELETE"
+
+msgid "Delete topic"
+msgstr "Delete topic"
+
+msgid "make this topic feedback topic"
+msgstr "make this topic feedback topic"
+
+msgid "Set/update topic's central location"
+msgstr "Set/update topic's central location"
+
+msgid "Choose a center point and zoom level."
+msgstr "Choose a center point and zoom level."
+
+msgid "Location:"
+msgstr "Location:"
+
+msgid "Automatic zoom"
+msgstr "Automatic zoom"
+
+msgid "no"
+msgstr "no"
+
+msgid "yes"
+msgstr "yes"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr "Whether to calculate zoom level automatically from available points"
+
+msgid "Topic subscription."
+msgstr "Topic subscription."
+
+msgid "Change subscription"
+msgstr "Change subscription"
+
+msgid "Thank you for your contribution!"
+msgstr "Thank you for your contribution!"
+
+msgid "Return to the site you came from"
+msgstr "Return to the site you came from"
+
+msgid "See other contributions to this topic"
+msgstr "See other contributions to this topic"
+
+msgid "Posted by"
+msgstr "Posted by"
+
+msgid "tags:"
+msgstr "tags:"
+
+msgid "Add Tag"
+msgstr "Add Tag"
+
+msgid "Edit point"
+msgstr "Edit point"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "Would you like to mark as inappropriate %s"
+
+msgid "MARK"
+msgstr "MARK"
+
+msgid "mark as inapproapriate"
+msgstr "mark as inapproapriate"
+
+msgid "Would you like to delete %s"
+msgstr "Would you like to delete %s"
+
+msgid "Other topics with this point"
+msgstr "Other topics with this point"
+
+msgid "Nearby points"
+msgstr "Nearby points"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Sorry. The topic doesn't allow new points at the moment."
+
+msgid "Set/update user's location"
+msgstr "Set/update user's location"
+
+msgid "set location"
+msgstr "set location"
+
+msgid "forget location"
+msgstr "forget location"
+
+msgid "Widgets for topic."
+msgstr "Widgets for topic."
+
+msgid "Add point button"
+msgstr "Add point button"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Make a widget to submit points to this topic"
+
+msgid "Topic's point list"
+msgstr "Topic's point list"
+
+msgid "Widget to show topic's points"
+msgstr "Widget to show topic's points"
+
+msgid "Topic's list of links"
+msgstr "Topic's list of links"
+
+msgid "Widget to show topic's links"
+msgstr "Widget to show topic's links"
+
+msgid "A map"
+msgstr "A map"
+
+msgid "Widget to show topic on the map"
+msgstr "Widget to show topic on the map"
+
+msgid "Make combo widget"
+msgstr "Make combo widget"
+
+msgid "Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr "Make a widget which contains several widgets (prepare urls for widgets first)"
+
+msgid "Make note"
+msgstr "Make note"
+
+msgid "Make a widget to show a note"
+msgstr "Make a widget to show a note"
+
+msgid "Currently shown widgets"
+msgstr "Currently shown widgets"
+
+msgid "Would you like to delete the widget?"
+msgstr "Would you like to delete the widget?"
+
+msgid "Please, confirm your action"
+msgstr "Please, confirm your action"
+
+msgid "Sign up."
+msgstr "Sign up."
+
+msgid "Choose a username and password"
+msgstr "Choose a username and password"
+
+msgid "Tools for topic."
+msgstr "Tools for topic."
+
+msgid "Add trigger"
+msgstr "Add trigger"
+
+msgid "Manage topic administrators"
+msgstr "Manage topic administrators"
+
+msgid "CSV Export"
+msgstr "CSV Export"
+
+msgid "Export points as CSV"
+msgstr "Export points as CSV"
+
+msgid "Currently active triggers"
+msgstr "Currently active triggers"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Would you like to delete the trigger?"
+
+msgid "Redirecting"
+msgstr "Redirecting"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "If your browser does not automatically re-direct:"
+
+msgid "Highlighted Topics"
+msgstr "Highlighted Topics"
+
+msgid "Recently updated Topics"
+msgstr "Recently updated Topics"
+
+msgid "search"
+msgstr "search"
+
+msgid "Add new topic"
+msgstr "Add new topic"
+
+msgid "Edit settings"
+msgstr "Edit settings"
+
+msgid "Make HTML"
+msgstr "Make HTML"
+
+msgid "The widget will look like:"
+msgstr "The widget will look like:"
+
+msgid "You can:"
+msgstr "You can:"
+
+msgid "Update on the topic page"
+msgstr "Update on the topic page"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr "Remember to Make HTML first for the changes to be effective"
+
+msgid "Add to the topic page"
+msgstr "Add to the topic page"
+
+msgid "Copy the resulting HTML and insert it into your page's HTML code:"
+msgstr "Copy the resulting HTML and insert it into your page's HTML code:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr "The following URL can be used for creating combo widget (Copy/Paste):"
+
+msgid "Characters:"
+msgstr "Characters:"
+
+msgid "Warning:"
+msgstr "Warning:"
+
+msgid "the resulting URL is too long for some browsers (IE 6 / 7)."
+msgstr "the resulting URL is too long for some browsers (IE 6 / 7)."
+
+msgid "Key"
+msgstr "Key"
+
+msgid "default"
+msgstr "default"
+
+msgid "Change value"
+msgstr "Change value"
+
+msgid "Manage user"
+msgstr "Manage user"
+
+msgid "Advanced settings"
+msgstr "Advanced settings"
+
+msgid "Topics created or moderated by %s"
+msgstr "Topics created or moderated by %s"
+
+msgid "Topics the user has been subscribed to"
+msgstr "Topics the user has been subscribed to"
+
+msgid "Contributions by %s"
+msgstr "Contributions by %s"
+
+msgid "my location"
+msgstr "my location"
+
+msgid "Set location"
+msgstr "Set location"
+
+msgid "Topic"
+msgstr "Topic"
+
+msgid "Topic:"
+msgstr "Topic:"
+
+msgid "Title:"
+msgstr "Title:"
+
+msgid "Description:"
+msgstr "Description:"
+
+msgid "Tags:"
+msgstr "Tags:"
+
+msgid "Picture:"
+msgstr "Picture:"
+
+msgid "BACK TO SEARCH RESULTS"
+msgstr "BACK TO SEARCH RESULTS"
+
+msgid "BACK TO TOPIC"
+msgstr "BACK TO TOPIC"
+
+msgid "BACK TO POINT LIST"
+msgstr "BACK TO POINT LIST"
+
+msgid "POINT: DETAILS"
+msgstr "POINT: DETAILS"
+
+msgid "Distance"
+msgstr "Distance"
+
+msgid "Created "
+msgstr "Created "
+
+msgid "by"
+msgstr "by"
+
+msgid "go there"
+msgstr "go there"
+
+msgid "Please, login to be able to comment."
+msgstr "Please, login to be able to comment."
+
+msgid "New comment"
+msgstr "New comment"
+
+msgid "Add a comment"
+msgstr "Add a comment"
+
+msgid "Search points"
+msgstr "Search points"
+
+msgid "Search terms"
+msgstr "Search terms"
+
+msgid "MAP: SET LOCATION"
+msgstr "MAP: SET LOCATION"
+
+msgid "GPS"
+msgstr "GPS"
+
+msgid "Choose the location on the map or lookup a street address:"
+msgstr "Choose the location on the map or lookup a street address:"
+
+msgid "> Address lookup failed."
+msgstr "> Address lookup failed."
+
+msgid "Street address"
+msgstr "Street address"
+
+msgid "Lookup"
+msgstr "Lookup"
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "Clear position"
+msgstr "Clear position"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "ADD POINT"
+msgstr "ADD POINT"
+
+msgid "Point list"
+msgstr "Point list"
+
+msgid "All Points in %s"
+msgstr "All Points in %s"
+
+msgid "All Points"
+msgstr "All Points"
+

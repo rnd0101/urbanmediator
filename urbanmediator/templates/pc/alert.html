@@ -1,0 +1,38 @@
+$def with (context, message, actions)
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>$_("Please, confirm your action")</title>
+<style type="text/css">
+body {
+    font-family: tahoma, sans-serif;
+    background-color:#049;
+    padding:1em;
+}
+#message {
+    margin:auto;
+    width:18em;
+    padding:2em;
+    color:#334;
+    background-color:#fff;
+}
+#message h1 {
+    color:#633;
+    font-size:1.2em;
+    }
+</style>
+</head>
+<body>
+
+<div id="message">
+    <h1>$message</h1>
+    <ul>
+    $for a in actions:
+        <li><a href="$a.url">$(a.message)</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

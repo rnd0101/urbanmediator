@@ -1,0 +1,236 @@
+body {
+	text-align: center;
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	font-family: tahoma,helvetica,arial,sans-serif;
+}
+
+body,div,span,p,h1,h2,h3,h4,h5,h6,ul,ol,li,img,form,fieldset,label, adress {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-align: left;
+}
+
+#um_header {
+	width: 1030px;
+	text-align: left;
+	background: #359;
+	margin: 0 auto;
+}
+
+#um_header h1 {
+	font-family: "trebuchet MS", tahoma, helvetica, arial, sans-serif;
+	font-size: 30px;
+	color: #88DDAA;
+	padding-top: 14px;
+	padding-left: 20px;
+}
+
+#um_header h1 a {
+	color: #88DDAA;
+	text-decoration: none;
+}
+
+#um_header h2 {
+	font-family: "trebuchet MS", tahoma, helvetica, arial, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+	padding-top: 4px;
+	padding-left: 20px;
+	padding-bottom: 14px;
+}
+
+#container {
+	width: 1000px;
+  	height: 480px;  
+    text-align: left;
+	margin: 0 auto;
+	padding: 15px ;
+    background: #79c;
+}
+
+div#col1 {
+	width: 230px;
+	height: 480px;
+	float: left;
+	background: #FFF;
+}
+
+div#col2 {
+	width: 540px;
+	height: 480px;
+	float: left;
+	background: #FFF;
+}
+
+div#col3 {
+	width: 230px;
+	height: 480px;
+	float: right;
+	background: #FFF;
+}
+	
+
+#map {
+	width: 540px;
+	height: 480px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("../images/loader2.gif");
+}
+
+	
+/* SEARCH FORM */
+
+#searchform { 
+	text-align: center;
+}
+
+div.search_form {
+	margin: 0;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 0;	
+	width: 200px;
+	height: 100px;
+	background: #EEE;
+}
+
+.title_search_results {
+	margin: 0;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 0;	
+	width: 200px;
+}
+
+
+
+/* POPUP THINGS */
+.map_popup_title {	
+	font-size: 14px !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	color: #000000 !important;	
+	line-height: 16px !important;	
+}
+
+
+.olPopup {
+	width: 144px !important;
+	height: 16px !important;
+	border: 1px solid #7799cc !important;
+	background-color: #FFF !important;
+	display: table !important;
+	background: url("../images/corner1.gif") left top no-repeat;	
+}
+
+.olPopupChosen {
+	width: 144px !important;
+	height: 16px !important;
+	border: 1px solid #335599 !important;
+	background-color: #FFF !important;
+	display: table !important;
+	background-image: url("../images/corner2.gif") left top no-repeat;		
+}
+
+.olPopupContent {
+	overflow: visible !important;
+	width: 140px !important;
+	height: 18px !important;	
+	display: table !important;	
+}
+
+/* LIST OF POINTS THINGS */
+.point_list {
+	margin: 0;
+	margin-left: 15px;
+	padding: 0;	
+	width: 200px;
+	height: 408px;
+	overflow: auto;
+}
+
+p.lop_point_name {
+	margin: 0px 0px 0px 18px !important;
+	font-weight: bold !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+}
+
+p.lop_point_description {
+	margin: 0px 8px 0px 18px !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	line-height: 13px !important;
+	color: #333333;
+}
+
+p.lop_point_metadata {
+	margin: 0px 0px 0px 18px !important;
+	font-size: 10px !important;
+	line-height: 12px !important;
+	color: #888888;
+	font-weight:	bold;
+}
+
+.lop_block {
+	width: 180px;
+	height: 12px;	
+	background: url("../../img/bullet.point.png") 3px 5px no-repeat;	
+	background-color: #ffffff;
+	display: table;	
+	cursor: default;	
+}
+
+.lop_block_hover {
+	width: 180px;
+	height: 12px;
+	background: url("../../img/bullet.point.png") 3px 5px no-repeat;
+	background-color: #7799cc;
+	display: table;	
+	cursor: default;		
+}
+
+.lop_block_on {
+	width: 164px;
+	height: 12px;
+	background: url("../../img/bullet.point.png") 3px 5px no-repeat;	
+	background-color: #ffffff;
+	display: table;	
+	cursor: default;
+	border: 1px solid #335599 !important;	
+	padding: 4px;	
+}
+
+.lop_block_data {
+	width: 180px;
+	height: 1px;	
+	display: none;
+	cursor: default;
+}
+
+.lop_block_data_on {
+	width: 180px;
+	height: 1px;	
+	display: table;
+	cursor: default;		
+}
+
+/* LIST OF TOPICS */
+
+div.checkbox_list {
+	width: 180px;
+	height: 330px;
+	overflow: auto;
+}
+
+p.p_topics_checkbox {
+	margin: 		0px 0px 0px 18px !important;
+	font-size: 		10px !important;
+	line-height: 	12px !important;
+	color: 			#888888;
+	font-weight:	bold;	
+}

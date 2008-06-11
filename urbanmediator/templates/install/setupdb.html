@@ -1,0 +1,8 @@
+$def with (context, form)
+
+<form name="main" action="setupdb" method="post" class="wideform" enctype="multipart/form-data">
+$if not form.valid: <p class="error">Try again:</p>
+
+$:form.render()
+<input type="submit" value="$_('Setup DB')"/>
+</form>

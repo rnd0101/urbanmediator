@@ -1,0 +1,2 @@
+ALTER TABLE locations ADD ranking INT DEFAULT 0;
+ALTER TABLE notes ADD ranking INT DEFAULT 0;

@@ -1,0 +1,32 @@
+$def with (context, topic, form)
+
+$:macro.header_desktop(context, 1, 1)
+
+	$:macro.header_topic(topic, level=1, link=1)
+    
+    	<div id="container">
+   
+            <div id="page_header">
+                <h1>$context.title</h1>
+            </div>
+            
+            <div id="main_one_col">
+
+                <ul>
+                $for u in topic.users:
+                    <li>$u.username: $u.roles</li>
+                </ul>
+                
+                <form name="add_topic_user_form" class="tools" action="" method="post" enctype="multipart/form-data">
+                
+                $if not form.valid: <p class="error">$_("Some fields were not entered correctly:")</p>
+                
+                $:form.render()
+                <div class="submit">
+                    <button type="submit">$_('Manage user')</button>
+                </div>
+                </form>
+
+    		</div>
+    
+		</div>

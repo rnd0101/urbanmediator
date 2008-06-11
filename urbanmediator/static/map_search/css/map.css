@@ -1,0 +1,255 @@
+body {
+    text-align:center;
+    background-color:#57a;
+    }
+
+#um_header
+{
+    width:			1000px;
+    text-align:		left;
+    margin-left:	auto;
+    margin-right:	auto;
+}
+
+#container 
+{
+    width:			1000px;
+  	height: 		500px;  
+    text-align:		left;
+    margin-left:	auto;
+    margin-right:	auto;
+    	
+    padding: 		0px;
+    border:			15px #79c solid;
+}
+
+div.clear
+{
+	background-color:#fff !important;
+}
+
+div#col1
+{
+	width: 220px;
+	height: 500px;
+	padding: 10px 0px 0px 10px;
+	margin: 0px;
+	float: left;
+}
+
+div#col2
+{
+	width: 540px;
+	height: 500px;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+	float: left;
+}
+
+div#col3
+{
+	width: 220px;
+	height: 500px;
+	padding: 10px 0px 0px 10px;
+	margin: 0px;
+	float: right;
+}
+	
+
+#map 
+{
+	width:					540px;
+	height:					480px;
+	background-repeat: 		no-repeat;
+	background-position: 	center center;
+	background-image: 		url("../images/loader2.gif");
+}
+
+	
+/* SEARCH FORM */
+
+#searchform
+{ 
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+div.search_form
+{
+	margin: 0px;
+	padding: 0px;	
+	width: 200px;
+	height: 100px;
+	background-repeat: both;
+	backgrund-position: center;
+	background-image: url("../images/search_form_back.jpg");
+}
+
+div.search_form_background
+{
+	margin: 0px 0px 0px 76px;	
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* background-image: url("../images/loader.gif"); */
+}
+
+/* POPUP THINGS */
+.map_popup_title
+{
+	font-family: 		verdana !important;	
+	padding: 			0px !important;
+	border: 			0px !important;		
+	font-size: 			14px !important;
+	font-weight: 		bold !important;
+	text-decoration: 	none !important;
+	color: 				#000000 !important;	
+	line-height:		16px !important;	
+}
+
+
+.olPopup
+{
+	margin: 			0px;
+	padding: 			0px;
+	width: 				144px !important;
+	height: 			16px !important;
+	border:				3px solid #7799cc !important;
+	background-color: 	#7799cc !important;
+	display: 			table !important;
+	opacity: 			0.9 !important;
+	background-repeat: 		no-repeat;
+	background-position: 	left top;
+	background-image: 		url("../images/corner1.gif");	
+}
+
+.olPopupChosen
+{
+	margin: 			0px;
+	padding: 			0px;
+	width: 				144px !important;
+	height: 			16px !important;
+	border:				3px solid #335599 !important;
+	background-color: 	#ffffff !important;
+	display: 			table !important;
+	opacity: 			1.0 !important;
+	background-repeat: 		no-repeat;
+	background-position: 	left top;
+	background-image: 		url("../images/corner2.gif");		
+}
+
+.olPopupContent
+{
+	overflow: 			visible !important;
+	width: 				140px !important;
+	height: 			18px !important;	
+	display: 			table !important;	
+}
+
+/* LIST OF POINTS THINGS */
+.point_list
+{
+	width: 220px;
+	height: 445px;
+	overflow: auto;
+}
+
+p.lop_point_name
+{
+	margin: 		0px 0px 0px 18px !important;
+	font-family: 	verdana !important;
+	font-weight: 	bold !important;
+	font-size: 		14px !important;
+	line-height: 	18px !important;
+}
+
+p.lop_point_description
+{
+	margin: 		0px 0px 0px 18px !important;
+	font-family: 	verdana !important;
+	font-weight: 	regular !important;
+	font-size: 		10px !important;
+	line-height: 	12px !important;
+	color: 			#333333;
+	font-weight:	bold;
+}
+
+p.lop_point_metadata
+{
+	margin: 		0px 0px 0px 18px !important;
+	font-family: 	verdana !important;
+	font-weight: 	regular !important;
+	font-size: 		10px !important;
+	line-height: 	12px !important;
+	color: 			#888888;
+	font-weight:	bold;
+}
+
+.lop_block
+{
+	width: 				180px;
+	height: 			12px;	
+	background: 		url("../../img/bullet.point.png") 3px 5px no-repeat;	
+	background-color: 	#ffffff;
+	display: 			table;	
+	cursor: 			default;	
+}
+
+.lop_block_hover
+{
+	width: 				180px;
+	height: 			12px;
+	background: 		url("../../img/bullet.point.png") 3px 5px no-repeat;	
+	background-color: 	#7799cc;
+	display: 			table;	
+	cursor: 			default;		
+}
+
+.lop_block_on
+{
+	width: 				172px;
+	height: 			12px;	
+	background: 		url("../../img/bullet.point.png") 3px 5px no-repeat;	
+	background-color: 	#ffffff;
+	display: 			table;	
+	cursor: 			default;
+	border:				4px solid #335599 !important;		
+}
+
+.lop_block_data
+{
+	width: 		180px;
+	height: 	1px;	
+	display: 	none;
+	cursor: 	default;
+}
+
+.lop_block_data_on
+{
+	width: 		180px;
+	height: 	1px;	
+	display: 	table;
+	cursor: 	default;		
+}
+
+/* LIST OF TOPICS */
+
+div.checkbox_list
+{
+	width: 180px;
+	height: 330px;
+	overflow: auto;
+}
+
+p.p_topics_checkbox
+{
+	margin: 		0px 0px 0px 18px !important;
+	font-family: 	verdana !important;
+	font-weight: 	regular !important;
+	font-size: 		10px !important;
+	line-height: 	12px !important;
+	color: 			#888888;
+	font-weight:	bold;	
+}

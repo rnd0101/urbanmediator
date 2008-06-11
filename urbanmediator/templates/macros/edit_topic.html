@@ -1,0 +1,80 @@
+$def with (context, presets)
+
+<form id="edit_topic" class="small_form" method="post" action="" enctype="multipart/form-data">
+    
+    <fieldset>
+        
+        <legend>$_('Name & description')</legend>
+        
+        <div class="notes">
+            <p><strong>$_('Description should not be longer than 3-4 lines.')</strong></p>
+        </div>
+
+        
+        <div class="required">
+            <label for="topic_name">$_('Topic Name')</label>
+            <input id="topic_name" name="topic_name" value="$presets.get('topic_name', '')" type="text" class="inputText" />
+            <small>$_("The name of your topic.")</small>
+        </div>
+        
+                
+        <div class="required">
+            <label for="topic_description">$_('Topic Description')</label>
+            
+            <div class="div_form_part">
+            $:render_editor('topic_description', presets.get('topic_description', ''))
+            </div>
+            
+            <small>$_('A brief description of your topic. You can edit this later, and add photos or links to it.')</small>
+        </div>
+        
+        <div>
+            
+            <label for="topic_colour_scheme">$_("Color Scheme")</label>
+            
+            <div class="div_form_part">
+                $for ti in context.topic_colours_data:
+                    <div class="input_colour_holder">
+                    <input name="topic_colour_scheme" type="radio" value="$ti.name"\
+                    $if ti.checked: checked="checked" \
+                    class="inputRadio">
+                    <iframe class="scheme_name" src="$pc_links('skindemo', scheme_name=ti.name)" scrolling="no" frameborder="0" width="200" height="40"></iframe>
+                    </div>
+                    
+            </div>
+            
+            <small>$_("Use colors to give your topic a unique appearance.")</small>
+        
+        </div>
+        
+        <div>
+        
+        	<label>$_("Choose an icon")</label>
+            
+            <div class="div_form_part">   
+                $#IDEALLY we should scan topic icon dir and output whatever icons
+                $for ti in context.topic_icons_data:
+                	<div class="input_icon_holder">
+                    <input \
+                    $if ti.checked: checked="checked" \
+                    name="topic_icon" type="radio" class="inputRadioIcon" value="$ti.url">
+                    <img class="input_icon_icon" src="$ti.url" alt="$ti.name" width="60px" height="60px"/>
+                    </div>
+            </div>
+            
+            <small>$_("An icon displayed on the front page and on the topic's pages")</small>
+            
+        </div>
+            
+            <div>
+                <label><strong>$_("or")</strong> $_("upload a picture")</label>
+                <input name="user_icon" id="user_icon" type="file" class="inputFile" />
+                <small>$_("The image (~ 60x60 pixels) will be used as the topic's icon")</small>
+            </div>
+            
+        </fieldset>
+        
+        <div class="submit_topic">
+            <button type="submit">submit</button>
+        </div>
+</form>

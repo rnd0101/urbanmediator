@@ -1,0 +1,24 @@
+$def with (context, topic, form)
+
+$:macro.header_desktop(context, level=1, link=1)
+	
+    $:macro.header_topic(topic, level=1, link=1)
+    
+		<div id="container">
+        	
+            <div id="main_one_col">
+            
+            	<div id="page_header">
+                	<h1>$_('Topic subscription.')</h1>
+            	</div>
+                
+                <form name="subscription_form" class="subscription_form" action="$pc_links('topic_subscription', topic.id)" method="post" enctype="multipart/form-data">
+                $:form.render()
+                <div class="submit">
+                	<button type="submit">$_("Change subscription")</button>
+                </div>
+                </form>
+
+			</div>
+            
+        </div>

@@ -1,0 +1,33 @@
+$def with (context)
+
+<script type="text/javascript" src="${schema_base_url}/ol/OpenLayers.js"></script>
+<script type="text/javascript"><!--
+var NEW_POINT_ICON_URL="${schema_base_url}/img/point.gold.png",
+NEW_POINT_ICON_X=21, 
+NEW_POINT_ICON_Y=21,
+POINT_ICON_URL="${schema_base_url}/img/marker.png",
+POINT_ICON_X=21, 
+POINT_ICON_Y=28,
+MAP_PARAMS=$:context.map_params,
+GETMAP_URL="$context.getmap_url",
+GETMAP_LAYERS="$context.getmap_layers",
+GETMAP_LAYERS1="$context.getmap_layers1",
+GETMAP_LAYERS2="$context.getmap_layers2",
+GETMAP_ZOOM2=$context.getmap_zoom2,
+GETMAP_ZOOM1=$context.getmap_zoom1,
+GETMAP_UNTILED=$config.getmap_untiled,
+CENTER_LON="$context.repr_lon",
+CENTER_LAT="$context.repr_lat",
+INITIAL_ZOOM=$context.zoom,
+INITIAL_FEED="$context.initial_feed";
+var HAS_NEW_POINT=$context.has_new_point;
+$if (("getmap_custom" in context) and context.getmap_custom):
+    function custom_init() {
+    $:context.getmap_custom_init
+    };
+    var GETMAP_CUSTOM = "1";
+$else:
+    var GETMAP_CUSTOM = "0";
+// -->
+</script>
+<script type="text/javascript" src="${schema_base_url}/ol_utils.js"></script>

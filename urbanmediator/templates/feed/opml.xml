@@ -1,0 +1,21 @@
+$def with (context, categories)
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+<head>
+<title>${config.instance_name[LANG()]}</title>
+</head>
+<body>
+<outline text="${config.instance_name[LANG()]}">
+$for category in categories:
+    $if category.projects:
+        <outline text="$category.title">
+        $for topic in category.projects:
+            <outline text="$topic.title">
+            $for point in topic.points:
+                <outline text="$point.title" type="link" url="${pc_links('point', topic.id, point.id)}"/>
+                <outline text="$point.title $_('comments')" type="include" url="${feed_links("point_comments", topic.id, point.id)}" />
+            </outline>
+        </outline>
+</outline>
+</body>
+</opml>

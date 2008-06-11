@@ -1,0 +1,95 @@
+$def with (context, topic, point, comments, related_topics)
+
+$:macro.header_desktop(context, 1, 1)
+$:macro.header_topic_point(topic, level=1, link=1)
+    
+<div id="container">
+    <div id="main">
+$#title,description,author,tags,addtag,comments
+    $if (("point_referer" in context) and context.point_referer):
+        <div class="point_ex_div">
+        <h1>$_("Thank you for your contribution!")</h1>
+        <ul class="point_ex">
+        <li><a href="$context.point_referer">$_("Return to the site you came from")</a></li>
+        <li><a href="$pc_links('topic', topic.id)">$_("See other contributions to this topic")</a></li>
+        </ul>
+        </div>
+    $:macro.header_point(topic, point, level=1, link=0)
+    <div class="point_description">
+    $if ("author" in topic.profile.topic_point_page_contents):
+        <p class="point_by">$_("Posted by") <a href="$pc_links('user', point.author)">$point.author</a>,
+    $if ("added" in topic.profile.topic_point_page_contents):
+        <span class="time">$rel_date(point.added)</span></p>
+    $if ("description" in topic.profile.topic_point_page_contents):
+        <div class="point_description_text">$:render_text(point.first.text)</div>
+    $if point.url and ("url" in topic.profile.topic_point_page_contents):
+        <p class="point_metadata"><a href="$point.url">$_("External URL")</a></p>
+    $if ("tags" in topic.profile.topic_point_page_contents):
+        <p class="point_tags">$_("tags:")
+        $for tag in point.tags:
+            <a href="$pc_links("topic", topic.id, search=tag.safe_tag, search_tags='on')">$tag.tag</a>
+        </p>
+    $if (acl.authorize.tag_point(topic, point)) and ("addtag" in topic.profile.topic_point_page_contents):
+        <form class="tag_form" action="$pc_links('point_addtag', topic.id, point.id)" method="get">
+        <input type="text" name="tags" class="inputText" /><button type="submit">$_("Add Tag")</button>
+        </form>
+    </div>
+
+    $if ("comments" in topic.profile.topic_point_page_contents.split(",")):
+        <div class="comments">
+        $for page_el in topic.profile.topic_point_comments_elements.split(","):
+            $if page_el == "comments":
+                $if comments.len() > 1:
+                    <h3>$_("Comments")</h3>
+                    <div id="comment_holder">
+                    $for c in comments:
+                        $if c.id != point.first.id:
+                            $:macro.comment(context, topic, point, c, show_actions=True)
+                    </div>
+            $elif page_el == "pagination":
+                $:macro.pagination_bar(context)
+            $elif page_el == "addcomment":
+                $:macro.edit_comment(context, topic, point, pc_links('point_addcomment', topic.id, point.id))
+            $elif page_el == "feed":
+                $for feed in context.feeds:
+                    <ul class="rss_holder">
+                    <li><a href="$feed.url">$_("Subscribe to the newsfeed")</a></li>
+                    </ul>        
+        </div>
+
+    </div>
+            
+            <div id="aside">
+                
+                <ul class="controls">
+                    $if acl.authorize.edit_point(topic, point):
+                        <li class="edit_point"><a href="$pc_links('point_settings', topic.id, point.id)">$_("Edit point")</a></li>
+                    $if acl.authorize.mark_inappropriate_point(topic, point):
+                        <li class="mark_in"><a href="$pc_links('alert', message=_('Would you like to mark as inappropriate %s') % point.title, url1=pc_links('point_addtag', topic.id, point.id, tags='special:inappropriate'), m1=_('MARK'), url2=pc_links('point', topic.id, point.id), m2=_('Cancel'))">$_("mark as inapproapriate")</a></li>
+                    $if acl.authorize.delete_point(topic, point):
+                        <li class="delete_point"><a href="$pc_links('alert', message=_('Would you like to delete %s') % point.title, url1=pc_links('point_delete', topic.id, point.id), m1=_('DELETE'), url2=pc_links('point', topic.id, point.id), m2=_('Cancel'))">$_("Delete point")</a></li>
+                </ul>
+                <a href="$pc_links('topic', topic.id, mode='map')"><img src="${mobile_links('locationmapclean', zoom=context.map_context.zoom, lat=point.lat, lon=point.lon, mapx=context.map_context.mapx, mapy=context.map_context.mapy, draft=1, marker=1)}" width="220px" height="220px" alt="[map]"/></a>
+                <div class="coordinate_display">$point.lat, $point.lon / $point.repr_lat, $point.repr_lon</div>
+                <hr />
+                $if related_topics.count() > 1:
+                    <h3>$_("Other topics with this point")</h3>
+                    <ul class="topic_list_compact">
+                        $for rt in related_topics:
+                            $if rt.id != topic.id:
+                                <li><a href="$pc_links('topic', rt.id)"><img src="$rt.profile.topic_icon" />$rt.title</a></li>
+                    </ul>
+                $if point.url:
+                    <h3>$_("Links")</h3>
+                    <a href="$point.url">$_("External URL")</a>
+                <h3>$_("Nearby points")</h3>
+                <ul class="mixed_list">
+                    $for np in context.nearby_points:
+                        $if np.id != point.id:
+                            $if np.main_topic:
+                                <li class="point"><p class="point_metadata"><a href="$pc_links('point', np.main_topic.id, np.id)">$np.title</a> (${dist_meters(np.distance)})</p></li>
+                            $else:
+                                <li class="point"><p class="point_metadata"><a href="$pc_links('point', topic.id, np.id)">$np.title</a> (${dist_meters(np.distance)})</p></li>
+                </ul>
+            </div>
+</div>

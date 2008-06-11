@@ -1,0 +1,22 @@
+$def with (context, points)
+
+$if points:
+    <ul class="point_list">
+    $for point in points:
+        $if point.projects_count > 0:
+            <li>\
+            <h3><a$:context.lnktgt href="$pc_links("point", point.first_project.id, point.id)">$point.title</a></h3>\
+            <span class="update_time">, $rel_date(point.added)</span>\
+            <br />\
+            $if point.url:
+                <p class="point_metadata"><a$:context.linktarget class="point_link" href="$point.url" title="$point.url"><span>URL</span></a></p>
+            <p class="point_description">$:first_line(point.first.text) \
+            <a$:context.lnktgt href="$pc_links("point", point.first_project.id, point.id)">$_("more")</a>\
+            </p>
+            <!-- <p class="point_metadata">$_('posted by'): <a$:context.lnktgt href="$pc_links("user", point.author)">$point.author</a> \ --> 
+            &nbsp; $_('tags'): \
+            $for tag in point.tags:
+                <a$:context.lnktgt href="$pc_links("topic", point.first_project.id, search=tag.safe_tag, search_tags='on')" class="tag">$tag.tag</a>
+            </p>
+            </li>
+    </ul>

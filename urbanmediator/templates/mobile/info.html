@@ -1,0 +1,40 @@
+$def with (context)
+
+<div id="header">
+  <div id="header-inner">
+    <div id="nav">
+    $:macro.mobile_nav(context)
+    </div>
+
+        <div id="content">
+
+            <div id="page_header">
+              <strong>$_("Info")</strong>
+            </div>
+            <hr />
+
+          <div id="content-inner">
+            $:context.about
+          </div>
+
+        $if acl.recommend.show_login():
+            <div class="input-wrapper"> 
+              <form id="form1" name="form1" method="post" action="$mobile_links.login">
+                <label><span class="input_field_label">$_("Username")</span>
+                <span class="input_label">$_("Login")</span>
+                <input name="username" class="textfield_full" type="text" value="" /></label><br />
+                <label><span class="input_field_label">$_("Password")</span>
+                <span class="input_label">$_("Password")</span>                
+                <input name="password" class="textfield_full" type="password" /></label><br />
+                <label><input type="submit" name="button" class="button_full" value="$_('Continue')" /></label>
+              </form>
+            </div>
+
+
+        </div>
+
+    <div id="nav2" class="group">
+    $:macro.mobile_nav(context)
+    </div>
+  </div>
+</div>

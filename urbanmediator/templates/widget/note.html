@@ -1,0 +1,6 @@
+$def with (context, topic, presets=None)
+
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+<p>$:render_text(presets.text)</p>

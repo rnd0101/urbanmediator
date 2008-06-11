@@ -1,0 +1,36 @@
+$def with (topic, level=0, link=1)
+
+<div id="context_header_holder">
+
+    $if level == 1:
+        <div id="context_header">
+    $else:
+        <div id="context_header">
+    
+    $if link == 1:
+        <a href="$pc_links('topic', topic.id)"><img id="context_header_img_point" src="$topic.profile.topic_icon" alt="$_('Topic Icon')" /></a>
+    $else:
+        <img id="context_header_img" src="$topic.profile.topic_icon" alt="$_('Topic Icon')" />
+    $if topic.origin == 'official':
+        <img id="official" src="$official_icon()" alt="[$_('official')]"/>\
+    
+    <ul class="topic_buttons">
+        $if acl.authorize.subscribe_topic(topic):
+            <li><a href="$pc_links('topic_subscription', topic.id)">$_("Subscription")</a></li>
+        $if acl.authorize.change_topic_settings(topic):
+            <li><a href="$pc_links('topic_settings', topic.id)">$_("Settings")</a></li>
+        $if acl.recommend.show_topic_tools(topic):
+            <li><a href="$pc_links('topic_tools', topic.id)">$_("Tools")</a></li>
+            <li><a href="$pc_links('topic_widgets', topic.id)">$_("Widgets")</a></li>
+    </ul>
+    
+    <h1>\
+    $if link == 1:
+        <a href="$pc_links('topic', topic.id)">$topic.title</a>\
+    $else:
+        $topic.title
+    </h1>
+
+    </div>
+
+</div>

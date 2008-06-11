@@ -1,0 +1,12 @@
+$def with (context, categories)
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
+<url><loc>$pc_links.base_url</loc></url>
+<url><loc>$feed_links.topics</loc></url>
+$for category in categories:
+    $if category.projects:
+        $for topic in category.projects:
+            <url><loc>${feed_links("topic_points", topic.id)}</loc></url>
+            $for point in topic.points:
+                <url><loc>${feed_links("point_comments", topic.id, point.id)}</loc></url>
+</urlset>

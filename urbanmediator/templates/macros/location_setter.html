@@ -1,0 +1,22 @@
+$def with (context, label, params, presets={})
+
+<div id="map_selloc">
+	<div id="map"></div>
+</div>
+
+$if (("geocoding" in presets) and presets.geocoding == "failed"):
+    <div class="notes" id="note_title"><p class="last"><strong class="error">$_("Sorry. Address lookup failed.")</strong></p></div>
+
+<div>
+    <label for="address">$_("Find by address"):</label>
+    <input type="text"  class="inputText"  id="address" name="address" value="$presets.get('address', '')"/>
+    $if params:
+        $for key, value in params.items():
+            $if key != 'description':
+                <input type="hidden" name="$key" value="$value" style="display:none;" />
+            $else:
+                <input type="hidden" name="${key}_hidden" value="$value" style="display:none;" />
+    <button type="submit" name="find">$_("Find")</button>
+    $if (("geocoding_example" in context) and context.geocoding_example):
+        <small><em>$:_('example')</em>: $context.geocoding_example</small>
+</div>

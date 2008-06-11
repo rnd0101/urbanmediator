@@ -1,0 +1,73 @@
+$def with (context, topic, presets)
+
+<form class="user_loc" action="" method="post">
+    <fieldset id="location_fieldset"><legend>$:_('Location'):</legend>
+        $:macro.location_setter(context, _("1. Location:"), context.form_params, presets=presets)
+    </fieldset>
+</form>
+
+<form id="edit_point" class="big_form" id="input_newpoint" action="$context.form_action" method="post" enctype="multipart/form-data">
+    <fieldset id="point_details"><legend>$:_('Details of the new point'):</legend>
+        <div class="required">
+            <label for="name">$:_('Title'):</label>
+            <input type="text" class="inputText" id="name" name="name" value="$presets.get('name', '')" />
+            <small><em>$:_('example')</em>: $presets.title_example</small>
+        </div>
+
+        $if presets.get("url", ""):
+            <div>
+                <label for="url">$:_('Link to related website')</label>
+                <input type="text" class="inputText"  id="url" name="url" value="$presets.url"/>
+            </div>
+
+        <div class="required">
+            <label for="description">$_("Description"):</label>
+            <div class="inputElement">$:render_editor("description", presets.get('description', ''))</div>
+        </div>
+
+        <div class="optional">
+            <label for="file">$_("Picture")</label>
+            <input type="file" name="file" id="file" />
+        </div>
+
+        $if (("disallow_free_tags" not in presets) or not presets.disallow_free_tags):
+            <div class="required">
+            <label for="tags">$_('Tags'):</label>
+            <input class="inputText" type="text" id="tags" name="tags" value="$presets.get('tags', '')"/>
+            <small><em>$:_('example')</em>: $presets.tags_example </small>
+            </div>
+
+        $if presets.menu_tags:
+            <div class="required">
+            <label for="menu_tags">$_("Category:")</label>
+            <select id="menu_tags" name="tag_from_menu">
+            $for t in presets.menu_tags:
+                $if presets.get("tag_from_menu", "") == t.safe_ns_tag:
+                    <option value ="$t.safe_ns_tag" selected>$t.safe_tag</option>
+                $else:
+                    <option value ="$t.safe_ns_tag">$t.safe_tag</option>
+            </select>       
+            </div>
+
+        <div>
+            $if ((topic and "triggers" in topic) and topic.triggers):
+                <small>$_("Info added here will also go to:")
+                $for t in topic.triggers:
+                    $t.description
+                </small>
+        </div>
+    <div class="submit">
+            <input type="hidden" name="op" style="display:none;" value="create" />
+            <input type="hidden" id="lon" name="lon" style="display:none;" value="$presets.repr_lon" />
+            <input type="hidden" id="lat" name="lat" style="display:none;" value="$presets.repr_lat" />
+            <input type="hidden" name="fixed_tags" style="display:none;" value="$presets.get('fixed_tags', '')" />
+            <input type="hidden" name="tags_for_menu" style="display:none;" value="$presets.get('tags_for_menu', '')" />
+            <input type="hidden" name="title_example" style="display:none;" value="$presets.get('title_example', '')" />
+            <input type="hidden" name="tags_example" style="display:none;" value="$presets.get('tags_example', '')" />
+            $if ("referer" in presets):
+                <input type="hidden" id="referer" name="referer" style="display:none;" value="$presets.referer" />
+            
+            <button type="submit">$_("submit")</button>
+    </div>
+    </fieldset>
+</form>

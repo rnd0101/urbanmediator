@@ -1,0 +1,14 @@
+$def with (context, presets)
+
+<div class="widget_header">
+$if "showlogo" in presets:
+    <h1><a href="$pc_links.base_url" $:context.linktarget>${config.instance_name[LANG()]}</a></h1>
+$if (presets.get('widget_context_url', '') or presets.get('widget_context_title', '') or presets.get('widget_title', '')):
+    <h2>
+    $if presets.get('widget_context_url', ''):
+        <a href="$presets.widget_context_url" $:context.linktarget>$presets.widget_context_title</a>: 
+    $elif presets.get('widget_context_title', ''):
+        $presets.widget_context_title
+    $presets.get('widget_title', '')
+</h2>
+</div>

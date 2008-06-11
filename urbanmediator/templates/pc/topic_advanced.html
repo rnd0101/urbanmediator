@@ -1,0 +1,45 @@
+$def with (context, topic, form, result=None)
+
+$:macro.header_desktop(context, 1, 1)
+
+	$:macro.header_topic(topic, level=1, link=1)
+		
+        <div id="container">
+    
+        <div id="page_header">
+            <h1>$context.title</h1>
+        </div>
+        
+        <div id="main">
+
+            <form name="main" id="topic_advanced" class="small_form" action="$context.action_link" method="post" enctype="multipart/form-data">
+            $if not form.valid: <p class="error">$_("Some fields were not entered correctly:")</p>
+            
+            $:form.render()
+            <div class="submit">
+                <button type="submit">$_("Submit")</button>
+            </div>
+            </form>
+            
+            $if form.valid and result:
+                &nbsp;
+
+        </div>
+        
+        <div id="aside">
+            $if acl.authorize.delete_topic(topic):
+                <ul class="controls">
+                <li class="delete_point"><a href="$pc_links('alert', message=_('You are about to permanently delete the topic %s. This action cannot be undone later.') % topic.title, url1=pc_links('topic_delete', topic.id), m1=_('DELETE'), url2=pc_links('topic', topic.id), m2=_('Cancel'))">$_("Delete topic")</a></li>
+                </ul>
+            $if acl.authorize.change_topic_settings(topic):
+                <ul class="controls">
+                <li class="set_map"><a href="$pc_links('topic_location', topic.id)">$_("Set topic map")</a></li>
+                <li class="advan_set"><a href="$pc_links('topic_settings', topic.id)">$_("Settings")</a></li>
+                <li class="help"><a href="$pc_links('guide', 'help_topic_advanced')" onclick="window.open('$pc_links('guide', 'help_topic_advanced')','Urban Mediator Help',
+'width=400,height=600,scrollbars=yes,toolbar=no,location=no'); return false">$_("Help")</a></li>
+                $if acl.authorize.change_um_settings():
+                    <li class="edit"><a href="$pc_links('topic_feedback', topic.id)">$_("make this topic feedback topic")</a></li>
+                </ul>
+        </div>
+        
+</div>

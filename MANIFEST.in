@@ -1,0 +1,6 @@
+recursive-include urbanmediator/ *.py *.ttf *.png
+recursive-include urbanmediator/static/ *
+recursive-include urbanmediator/locales/ *.mo *.po
+recursive-include urbanmediator/templates/ *.html *.xml
+recursive-include urbanmediator/sql/ *.sql
+recursive-include urbanmediator/docs/ *.html

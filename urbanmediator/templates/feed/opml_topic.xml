@@ -1,0 +1,13 @@
+$def with (context, project)
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1">
+<head>
+<title>${project.title}</title>
+</head>
+<body>
+<outline text="$project.title $_('notes')" type="include" url="${pc_links.base_url}atom/notes/board/$project.id"/>
+$for point in project.points:
+    <outline text="$point.title" type="link" url="${pc_links.base_url}point/$point.id"/>
+    <outline text="$point.title $_('attachments')" type="include" url="${pc_links.base_url}atom/notes/point/$point.id" />
+</body>
+</opml>

@@ -1,0 +1,25 @@
+$def with (page, context)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+$if context.title:
+    <title>$:context.title (${config.instance_name[LANG()]} ${config.instance_name2[LANG()]})</title>
+$else:
+    <title>${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}</title>
+<link rel="shortcut icon" href="${schema_base_url}/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="${schema_base_url}/css/mobile.css" type="text/css" media="all,handheld" />
+</head>
+
+<body id="home">
+  <div id="wrapper">
+<!-- (page content -->
+$:page
+<!-- page content) -->
+
+        $:macro.mobile_logout(context)
+  </div>
+</body>
+</html>

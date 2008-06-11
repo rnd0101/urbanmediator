@@ -1,0 +1,2050 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Andrea <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Language-code: en\n"
+"Language-name: English\n"
+"Preferred-encodings: utf-8\n"
+"Domain: urban_mediator\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+# MSGIDS FOR THE NEW UI STARTS
+# TRANSLATIONS FOR NEW UI
+msgid "um_version"
+msgstr "alpha"
+
+# index.html
+msgid ""
+"<strong>Urban Mediator</strong> is a tool for connecting people, places and "
+"information."
+msgstr ""
+"<strong>Urban Mediator</strong> es una herramienta para conectar lugares "
+"personas e información. Uselo para compartir sus conocimientos sobre su "
+"localidad y para conectar información proviniente de otros residentes, "
+"visitantes o fuentes oficiales. Usted tambien puede crear un tablero(?) para "
+"tratar asuntos locales con otros interesados."
+
+# tools.html
+msgid "Import points tool description"
+msgstr "Importe puntos provinientes de otros tableros y agreguelos a este. "
+
+msgid "Import newsfeed tool description"
+msgstr ""
+"Importe feeds (RSS/ATOM) y agreguelas a la seccion de notícias de este "
+"tablero."
+
+msgid "GeoRSS tool description"
+msgstr "Importe puntos desde una feed GeoRSS y agreguelos a este tablero."
+
+msgid "Scrape tool description"
+msgstr ""
+"Busque en un sitio web informacion con locación relevante a este tablero."
+
+msgid ""
+"Attachment added by <a class='author' href='%(link_base)s%(link_home)s'>%"
+"(user)s</a> at <span class='datetime'>%(time)s</span>"
+msgstr ""
+"Anexo agregado por <a class=\"author\" href=\"%(link_base)s%(link_home)s\">%"
+"(user)s</a> el <span class=\"datetime\">%(time)s</span>"
+
+msgid ""
+"1. Click a location on the map <strong>or</strong> give a street <a href=\"#"
+"\" onClick=\"ap()\">address...</a>"
+msgstr ""
+"1. Haga click en el mapa en la locación deseada <strong>o</strong> escriba "
+"la dirección <a href='#' onClick='ap()'>address...</a>"
+
+msgid ""
+"1. Click a location on the <a href='#' onClick='mp()'>map</a> <strong>or</"
+"strong> give a street address:</a>"
+msgstr ""
+"1. Haga click <a href=\"#\" onClick=\"mp()\">en el mapa</a> <strong>o</"
+"strong> escriba una dirección:</a>"
+
+# #-#-#-#-#  es.po (UrbanMediator-0-0-1)  #-#-#-#-#
+# MSGIDS FOR THE NEW UI ENDS
+msgid "example"
+msgstr "ejemplo"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Map"
+msgstr "Maap"
+
+msgid "Show points"
+msgstr "Mostrar puntos"
+
+msgid "Add new point"
+msgstr "Añade un punto nuevo"
+
+msgid "Flag as inappropriate"
+msgstr "Marque como inapropiado"
+
+msgid "Delete comment"
+msgstr "Borre el comentario"
+
+msgid "Inappropriate comments"
+msgstr "Commentatio inapropiado"
+
+msgid "Delete point"
+msgstr "Borre el punto"
+
+msgid "Inappropriate points"
+msgstr "Puntos inapropiados"
+
+msgid "Attach file"
+msgstr "anexe un archivo"
+
+msgid "Please enter your point title."
+msgstr "Porfavor de un título a su punto."
+
+msgid "Please enter your comment."
+msgstr "Por favor escriba su comentario."
+
+msgid "Close menu"
+msgstr "Cerrar el menu"
+
+msgid "Hide point"
+msgstr "Esconder punto"
+
+msgid "Restore point"
+msgstr "Restaurar el punto"
+
+msgid "Hide note"
+msgstr "Esconder el comentario"
+
+msgid "Edit note"
+msgstr "Editar el comentario"
+
+msgid "Choose place from the map"
+msgstr "Escoja un lugar en el mapa"
+
+msgid "New point"
+msgstr "Nuevo punto"
+
+msgid "Create new point"
+msgstr "Crear un punto nuevo"
+
+msgid "My points and comments"
+msgstr "Mis puntos y comentarios"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "user profile"
+msgstr "perfil del usuario"
+
+msgid "points and comments"
+msgstr "puntos y comentarios"
+
+msgid "Points"
+msgstr "Puntos"
+
+msgid "No points."
+msgstr "No hay puntos."
+
+msgid "Comments"
+msgstr "Comentarios"
+
+msgid "No comments."
+msgstr "No hay comentarios."
+
+msgid "Places"
+msgstr "Lugares"
+
+msgid "Messages"
+msgstr "Mensajes"
+
+msgid "m "
+msgstr "m "
+
+msgid "logout"
+msgstr "salir"
+
+msgid "Logout done."
+msgstr "salida confirmada."
+
+msgid "Mainpage"
+msgstr "Página principal"
+
+msgid "Browse points or add new point"
+msgstr "Navegar puntos o agregar uno nuevo"
+
+msgid "Recent points"
+msgstr "Puntos recientes"
+
+msgid "Recent comments"
+msgstr "Comentarios recietnes"
+
+msgid "Keywords"
+msgstr "plabras clave"
+
+msgid "Own points and comments"
+msgstr "Mis puntos y mis comentarios"
+
+msgid "Logout"
+msgstr "Salir"
+
+msgid "add keywords to all points"
+msgstr "agregar palabras claves a todos los puntos"
+
+msgid "Login"
+msgstr "Iniciar sesión"
+
+msgid "User manual"
+msgstr "Manual del usuario"
+
+msgid "Send feedback"
+msgstr "Retroalinentación"
+
+msgid "login"
+msgstr "iniciar sesión"
+
+msgid "Choose username"
+msgstr "Escoja un nombre de usuario"
+
+msgid "Begin session"
+msgstr "Comienza la funcion"
+
+msgid "Add keywords"
+msgstr "Agregue palabras clave (tags)"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Comment edit"
+msgstr "Comentar edición"
+
+msgid "Save comment"
+msgstr "grabar comentarios"
+
+msgid "Write comment"
+msgstr "Escribir un comentario"
+
+msgid "Fine! You have added keywords to all points."
+msgstr "Excelente! Ha adicionado palabras clave para todos los puntos."
+
+msgid "Show on the map"
+msgstr "Mostrar en el mapa"
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "datetime_format"
+msgstr "%d.%m.%y %H:%M"
+
+msgid "Nearest points"
+msgstr "Puntos mas cercanos"
+
+msgid "Comment suppressed by administrator."
+msgstr "Comentario moderado por el administrador."
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "Notes"
+msgstr "Notas"
+
+# MOBILE
+msgid "Sign in"
+msgstr "Login"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Main"
+msgstr "Inicio"
+
+msgid "Tag cloud"
+msgstr "Tag cloud"
+
+msgid "?"
+msgstr "?"
+
+msgid "X"
+msgstr "X"
+
+msgid "Help"
+msgstr "Ayuda"
+
+msgid "About"
+msgstr "Acerca"
+
+msgid "Recent entries"
+msgstr "Entradas recientes"
+
+msgid "Points by tag"
+msgstr "puntos pr tag"
+
+msgid "Newer"
+msgstr "Nuevo"
+
+msgid "Older"
+msgstr "Viejor"
+
+msgid "Comment"
+msgstr "Comentario"
+
+msgid "No tags"
+msgstr "No tags"
+
+msgid "Add"
+msgstr "Agregar"
+
+msgid "Your username"
+msgstr "Andrea"
+
+msgid "Tag(s)"
+msgstr "Tag(s)"
+
+msgid "Mobile"
+msgstr "Mobil"
+
+msgid "Considered inappropriate by someone"
+msgstr "Considerado inapropiado"
+
+msgid "Project"
+msgstr "Project"
+
+msgid "This site runs"
+msgstr "Esta web utiliza"
+
+msgid "%s from now"
+msgstr "En %s"
+
+msgid "%s ago"
+msgstr "Hace %s"
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s día"
+msgstr[1] "%s días"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s hora"
+msgstr[1] "%s horas"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minuto"
+msgstr[1] "%s minutos"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s segundo"
+msgstr[1] "%s segundos"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s millisecond"
+msgstr[1] "%s milliseconds"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s microsecond"
+msgstr[1] "%s microseconds"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s de %(monthname)s, %(year)s"
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s de %(monthname)s"
+
+msgid "1_month"
+msgstr "Enero"
+
+msgid "2_month"
+msgstr "Febrero"
+
+msgid "3_month"
+msgstr "Marzo"
+
+msgid "4_month"
+msgstr "Abril"
+
+msgid "5_month"
+msgstr "May0"
+
+msgid "6_month"
+msgstr "Junio"
+
+msgid "7_month"
+msgstr "Julio"
+
+msgid "8_month"
+msgstr "Agosto"
+
+msgid "9_month"
+msgstr "Septiembre"
+
+msgid "10_month"
+msgstr "Octobru"
+
+msgid "11_month"
+msgstr "Noviembre"
+
+msgid "12_month"
+msgstr "Diciembre"
+
+msgid "Add points to"
+msgstr "Agregar puntos a"
+
+msgid "Available points"
+msgstr "Puntos disponibles"
+
+msgid "Choose points to be added to the board:"
+msgstr "Seleccione los puntos para agregar al tablero:"
+
+msgid "subscribe"
+msgstr "suscribirse"
+
+msgid "tools"
+msgstr "herramientas"
+
+msgid "settings"
+msgstr "configuración"
+
+msgid "Point import"
+msgstr "Importar punto"
+
+msgid "keywords"
+msgstr "Palabras clave"
+
+msgid "1. Select a keyword"
+msgstr "1.Seleccione una palagra clave"
+
+msgid "Choose a keyword from the left to view points associated with it."
+msgstr ""
+"Seleccione una plabra clave de la izquierda para ver los puntos asociados "
+"cone ella."
+
+msgid "2. Select points to import"
+msgstr "2. Seleccione puntos para importar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "2. No new points"
+msgstr "2. No hay puntos nuevos"
+
+msgid ""
+"There is no new points to add to the board with this keyword. Please, select "
+"another keyword."
+msgstr ""
+"No hay puntos nuevos para agregar en este tablero que correspondan con esta "
+"palabra clave."
+
+msgid "register"
+msgstr "registrarse"
+
+msgid "Choose a username and password."
+msgstr "Seleccione un numero de usuario y una contraseña."
+
+msgid "Choose a username"
+msgstr "Elija un nombre de usuario"
+
+msgid "Enter a password"
+msgstr "Introduzca la contraseña"
+
+msgid "Repeat password"
+msgstr "Repetir contraseña"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "optional"
+msgstr "opcional"
+
+msgid "Security"
+msgstr "Seguridad"
+
+msgid "Register"
+msgstr "Registrese"
+
+msgid "Tools"
+msgstr "Herramientas"
+
+msgid "Toolbox"
+msgstr "Caja de Herramientas"
+
+msgid "Newsfeed import"
+msgstr "Importación de noticias feed"
+
+msgid "Post to Urban Mediator"
+msgstr "Llevar a Urban Mediator"
+
+msgid "Bookmark this link in order to post web pages as points to this board"
+msgstr ""
+"Guarde en sus favorits este vinculo para enviar otras páginas web a Urban "
+"Mediator"
+
+msgid "GeoRSS"
+msgstr "GeoRSS"
+
+msgid "Delete this board"
+msgstr "Borrar ete tablero"
+
+msgid "Scrape"
+msgstr "Scrape"
+
+msgid ""
+"Scrape %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Search "
+"Helsinki Virtual Village for relevant information and add it to this board."
+msgstr ""
+"Scrape %(site)s' % mapping={'site':'mysite.com'})</a> <span>$_('Search "
+"Helsinki Virtual Village for relevant information and add it to this board."
+
+msgid "Newsfeed import: news.bbc.co.uk"
+msgstr "Newsfeed import: news.bbc.co.uk"
+
+msgid "GeoRSS: hel.fi"
+msgstr "GeoRSS: hel.fi"
+
+msgid "Currently active tools"
+msgstr "Herramientas activas actualmente"
+
+msgid "Add point to Urban Mediator?"
+msgstr "Agregar el punto a Urban Mediator?"
+
+msgid "Your name:"
+msgstr "Suy nombre:"
+
+msgid ""
+"1. Click a location on the map <strong>or</strong> give a street address:"
+msgstr ""
+"1. Ponga el cursor ne le mapa y de click <strong>or</strong> de una "
+"dirección:"
+
+msgid "<em>example:</em> Arabiankatu 2"
+msgstr "<em>example:</em> La Rambla 69"
+
+msgid ""
+"1. Click a location on the <a href='javascript:mp()'>map</a> <strong>or</"
+"strong> give a street address:</a>"
+msgstr ""
+"1. De Click sobre el lugar en el <a href='javascript:mp()'>mapa</a> "
+"<strong>o</strong> de una dirección:</a>"
+
+msgid "Give it a name"
+msgstr "Título"
+
+msgid "<em>example:</em> Dangerous concrete blocks"
+msgstr "<em>example:</em> Basura en la calle"
+
+msgid "External url"
+msgstr "URL externo"
+
+msgid "Tag it"
+msgstr "Tags"
+
+msgid "<em>example:</em> dangerous ugly disturbing question complaint"
+msgstr "<em>example:</em> queja basura calle"
+
+msgid "Select location >>"
+msgstr "Select location >>"
+
+msgid "Newsfeed of points from this board"
+msgstr "Feed de este punto"
+
+msgid "Add feed"
+msgstr "Egregar feed"
+
+msgid "New feed for"
+msgstr "Nueva feed para"
+
+msgid "Select type of feed"
+msgstr "Selecicone tipo de feed"
+
+msgid "RSS Feed"
+msgstr "RSS Feed"
+
+msgid "Type the URL of the Feed"
+msgstr "Escriba el URL de la Feed"
+
+msgid "Enter the feed adress (URL):"
+msgstr "De la dirección (URL):"
+
+msgid "help"
+msgstr "ayuda"
+
+msgid "Write a description of the link"
+msgstr "Escriba una descripción par ael vinculo"
+
+msgid "Please type the text in the picture"
+msgstr "Porfavor escriba el texto que aparece en al ventana"
+
+msgid "attached to:"
+msgstr "anexados a:"
+
+msgid "Really delete "
+msgstr "Desae borrarlo "
+
+msgid "Filter points by keyword:"
+msgstr "Filtre pintos por palabra clave:"
+
+msgid "all"
+msgstr "todas"
+
+msgid "none"
+msgstr "ninguna"
+
+msgid "show on map"
+msgstr "mostrar en el mapa"
+
+msgid "point page"
+msgstr "pagina del punto"
+
+msgid "attachments"
+msgstr "anexos"
+
+msgid "map"
+msgstr "mapa"
+
+msgid "link"
+msgstr "vinvulo"
+
+msgid "tags"
+msgstr "etiquetas"
+
+msgid "m"
+msgstr "m"
+
+msgid "No boards"
+msgstr "No hay tableros asociados"
+
+msgid "External URL"
+msgstr "URL externa"
+
+msgid "Last update"
+msgstr "actualizado"
+
+msgid "Created by"
+msgstr "Creado por"
+
+msgid "Associated boards"
+msgstr "Tableros asociados"
+
+msgid "show position on map"
+msgstr "mostrar posicion en el mapa"
+
+msgid "External Website"
+msgstr "Sitio web externo"
+
+msgid "Attachments"
+msgstr "Anexos"
+
+msgid "Add attachment"
+msgstr "Agregar anexos"
+
+msgid "show all points"
+msgstr "muestra todos los puntos"
+
+msgid "hide points"
+msgstr "esconder los puntos"
+
+msgid "<strong>+</strong> new note"
+msgstr "<strong>+</strong> nueva nota"
+
+msgid "<strong>+</strong> new note in here"
+msgstr "<strong>+</strong> nueda nota aca"
+
+msgid "Points on this board"
+msgstr "Puntos en este tablero"
+
+msgid "on:"
+msgstr "en:"
+
+msgid "No Points"
+msgstr "No hay puntos"
+
+msgid "website"
+msgstr "sitio web"
+
+msgid "new news feed"
+msgstr "nueva feed"
+
+msgid "Give your username"
+msgstr "De su nombre de usuario"
+
+msgid "Select location"
+msgstr "Lugar"
+
+msgid ""
+"Click a location on the map <strong>or</strong> give a street <a "
+"href='javascript:ap()'>address...</a>"
+msgstr ""
+"De click en un lugar en el mapa <strong>o</strong> de la dirección <a "
+"href='javascript:ap()'>address...</a>"
+
+msgid ""
+"Click a location on the map <a href='javascript:mp()'>map</a> <strong>or</"
+"strong> give a street address:"
+msgstr ""
+"De click en un lugar en el <a href='javascript:mp()'>map</a> <strong>o</"
+"strong> de una dirección:"
+
+msgid "Give it a name:"
+msgstr "Titulo:"
+
+msgid "Tag it:"
+msgstr "Tags:"
+
+msgid "keywords:"
+msgstr "palabras clave:"
+
+msgid "view on full map"
+msgstr "vea en el mapa completo"
+
+msgid "Delete this point"
+msgstr "Borre este punto"
+
+msgid "Search Urban Mediator"
+msgstr "Buscar en Urban Mediator"
+
+msgid "Write words you want to use for search in here"
+msgstr "Escriba las palabras de busqueda"
+
+msgid "Search results for"
+msgstr "Busqueda para"
+
+msgid "Boards"
+msgstr "Tableros"
+
+msgid "No boards found"
+msgstr "No se encontro ningun tablero"
+
+msgid "No points found"
+msgstr "No se encontro nuingun punto"
+
+msgid "New attachment for the point"
+msgstr "Nuevo anexo para el punto"
+
+msgid "New note for the board"
+msgstr "Nueva nota pare el tablero"
+
+msgid "1. Choose type"
+msgstr "1. Seleccione el tipo"
+
+msgid "Text Comment"
+msgstr "Comentario de texto"
+
+msgid "Web Link"
+msgstr "Vinculo web"
+
+msgid "Picture"
+msgstr "Imagen"
+
+msgid "2. Write a text comment"
+msgstr "2. Escriba un comentario"
+
+msgid "2. Add a web link"
+msgstr "2. Adicione un vinculo"
+
+msgid "Enter the website adress (URL)"
+msgstr "De la dirección (URL)"
+
+msgid "2. Upload a picture"
+msgstr "2. Subir una imagen"
+
+msgid "Choose a file to upload"
+msgstr "Seleccione un archivo para subir"
+
+msgid "Browse..."
+msgstr "Navegue..."
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Show all points"
+msgstr "Mostrar todos los puntos"
+
+msgid "Hide points"
+msgstr "Esconder los puntos"
+
+msgid "Newest points"
+msgstr "Nuevos puntos"
+
+msgid "Create a new board"
+msgstr "Crear un nuevo tablero"
+
+msgid "1. Name"
+msgstr "1. Titulo"
+
+msgid "Name your bulletin board"
+msgstr "De un nombre a su tablero"
+
+msgid "<em>example:</em> kindergartens"
+msgstr "<em>example:</em> Lugares maravillosos"
+
+msgid "2. Category"
+msgstr "2. Categoria"
+
+msgid "Choose the category that your board will appear in:"
+msgstr "Seleccione una categoria para su tablero:"
+
+msgid "category"
+msgstr "categoria"
+
+msgid "3. Keywords"
+msgstr "3. Palabras clave"
+
+msgid "Write some keywords to identify your board, separated by spaces:"
+msgstr "Escriba las palabras clave que identifique el tablero:"
+
+msgid "<em>example:</em> kids children kindergarten preschool"
+msgstr "<em>example:</em> niños pre-escolar infancia"
+
+msgid "4. Description"
+msgstr "4. Descripción"
+
+msgid "Write a short text describing your Bulletin Board:"
+msgstr "Escriba un texto corto describiendo su tablero:"
+
+msgid ""
+"<em>example:</em> A place for parents to share information about "
+"Kindergartens in Arabianranta."
+msgstr ""
+"<em>example:</em> Un espacio para que los padres de familia compartan "
+"información sobre lugares para niños."
+
+msgid "Find by address"
+msgstr "Busca por dirección"
+
+msgid "Find"
+msgstr "Busca"
+
+msgid "Dangerous concrete blocks"
+msgstr "Bloques de hormigón peligrosos"
+
+msgid "Link to related website"
+msgstr "Enlaces a webs relacionadas"
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "peligroso feo molesto pregunta queja"
+
+msgid "Search Urban Mediator:"
+msgstr "Buscar en Urban Mediator:"
+
+msgid "What do you want to do?"
+msgstr "Que desea hacer?"
+
+msgid "View map"
+msgstr "Ver el mapa"
+
+msgid "View points"
+msgstr "Ver puntos"
+
+msgid "Browse boards"
+msgstr "Navegar tableras"
+
+msgid "Personalize"
+msgstr "Personalizar"
+
+msgid "What's happening?"
+msgstr "Qué esta ocurriendo?"
+
+msgid "Active boards"
+msgstr "Tableros activos"
+
+msgid "Add points to this board"
+msgstr "Agregar puntos a este tablero"
+
+msgid "Add feed to this board"
+msgstr "Agregar una feed a este tablero"
+
+msgid "No feeds."
+msgstr "No ahy feeds."
+
+msgid "keyword"
+msgstr "palabras clave"
+
+msgid "Newsfeed of points with this keyword"
+msgstr "Feed con puntos de este tablero"
+
+msgid "You are being logged out."
+msgstr "Terminando la sesión."
+
+msgid "You are being logged out..."
+msgstr "Terminando la sesión..."
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Front page"
+msgstr "Página principal"
+
+msgid "My UM"
+msgstr "Mi UM"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Privacy policy"
+msgstr "Pólitica de privacidad"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Terms of use"
+msgstr "Condiciones de uso"
+
+msgid "Use of this feature requires registration and log in."
+msgstr "El uso de esta función requiere estar registrado."
+
+msgid "Guest Login"
+msgstr "Entrar como visitante"
+
+msgid "Your username will appear as:"
+msgstr "Su nombre de usuario será:"
+
+msgid ""
+"This username will be valid until you log out or shut  down your browser."
+msgstr ""
+"Este nombre de usuario será valido hasta cuando usted salga de UM o cierre "
+"su navegador."
+
+msgid "or"
+msgstr "o"
+
+msgid "Normal Login"
+msgstr "Inicio de sesión normal"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "New users"
+msgstr "Usuarios nuevos"
+
+msgid "sign up here"
+msgstr "registrese aquí"
+
+msgid "Write your username"
+msgstr "Escriba su nombre de usuario"
+
+msgid "My boards"
+msgstr "Mis tableros"
+
+msgid "boards"
+msgstr "tableros"
+
+msgid "My notes"
+msgstr "Mis notas"
+
+msgid "notes"
+msgstr "notes"
+
+msgid "My points"
+msgstr "Mis puntos"
+
+msgid "points"
+msgstr "puntos"
+
+msgid "My attachments"
+msgstr "Mis anexoz"
+
+msgid "Not implemented"
+msgstr "en construcción"
+
+msgid "This feature has not been implemented yet."
+msgstr "Esta funcionalidad no ha sido implementada aun."
+
+msgid "Desktop version"
+msgstr "version de PC"
+
+msgid "Your feedback"
+msgstr "Envie retroalimentación"
+
+msgid "Earlier feedback"
+msgstr "Retroalimentación anterior"
+
+msgid "No points"
+msgstr "No hay puntos"
+
+msgid "Please specify location on the map which will appear shortly."
+msgstr "Porfavor especifique una locación en el mapa que aparecera pronto."
+
+msgid "Urban Mediator"
+msgstr "Urban Mediator"
+
+msgid "Recent projects"
+msgstr "Projectos recientes"
+
+msgid "Batch edit"
+msgstr "Edición en grupo"
+
+msgid "Post to UrbanMediator"
+msgstr "Enviar a UrbanMediator"
+
+msgid "Categories"
+msgstr "Categorias"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Read once"
+msgstr "Leer una vez"
+
+msgid "Login as"
+msgstr "Entrar como"
+
+msgid "Describe resource"
+msgstr "Describir recurso"
+
+msgid "Place on the map"
+msgstr "Ubicar en el map"
+
+msgid "OR"
+msgstr "O"
+
+msgid "Give address"
+msgstr "De uan dirección"
+
+msgid "example: koreankatu 2"
+msgstr "example: Las Ramblas 69"
+
+msgid "Street and number"
+msgstr "Calle y número"
+
+msgid "Submit point"
+msgstr "Enviar punto"
+
+msgid "Give street and house number"
+msgstr "De calle y número"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Add new point at star position"
+msgstr "Agregar un punto nuevo en al posicion de la estrella"
+
+msgid "Attachment"
+msgstr "Anexos"
+
+msgid "New attachment for"
+msgstr "Nuevo anexo para"
+
+msgid "points found for"
+msgstr "puntos encontrados para"
+
+msgid "ERROR: point has no title."
+msgstr "ERROR: el punto no tiene título."
+
+msgid "ERROR: point has no coordinates."
+msgstr "ERROR: el punto no tiene coordinadas."
+
+msgid "ERROR: Unknown map action."
+msgstr "ERROR: acción no reconocida para el mapa."
+
+msgid "Not found"
+msgstr "No encontrado"
+
+msgid "Visual code is wrong"
+msgstr "Codigo visual es inadecuado"
+
+msgid "Passwords do not match"
+msgstr "La contraseñas no son iguales "
+
+msgid "No such user - error occured"
+msgstr "No existe el usuario - error"
+
+msgid "Login failed"
+msgstr "Inicio de sesión fallido"
+
+msgid "Visual code is wrong. Try again"
+msgstr "Código visual incorrecto. Pruebe otra vez"
+
+msgid "No description"
+msgstr "Sin descripción"
+
+msgid "ERROR: Board has no title."
+msgstr "ERROR: Tablero no tiene titúlo."
+
+msgid "ERROR: Board has no description."
+msgstr "ERROR: tablero no tiene descripción."
+
+msgid "No summary"
+msgstr "Sin resumen"
+
+msgid "ERROR: Point has no title."
+msgstr "ERROR: Punto no tiene título."
+
+msgid "No such point. Update your bookmarks."
+msgstr "No exist eeste punto, favor actualize sus marquillas."
+
+msgid "Point"
+msgstr "Puntos"
+
+msgid "Add point"
+msgstr "Crear punto"
+
+msgid "ERROR: Location not specified."
+msgstr "ERROR: Lugar no especificado."
+
+msgid "Address is wrong"
+msgstr "Dirección equivocada"
+
+msgid "Point name not given"
+msgstr "No s ele dio título al punto"
+
+msgid "No such board. Update your bookmarks."
+msgstr "No exoste este tablero, actualize sus marquillas."
+
+msgid "Add points to the board"
+msgstr "Agregue puntos al tablero"
+
+msgid "Add news feed to the board"
+msgstr "Agregue una feed al tablero"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Subscribe"
+msgstr "Suscripción"
+
+msgid "Added points to the board"
+msgstr "Puntos agregados al tablero"
+
+msgid "Thank you for adding the point!"
+msgstr "Gracias por agregar el punto!"
+
+msgid "Search results"
+msgstr "Resultados de busqueda"
+
+msgid "ERROR: No user."
+msgstr "ERROR: No existe este usuario."
+
+msgid "ERROR: Point has no description."
+msgstr "ERROR: Punto no tiene descripción."
+
+msgid "Attachment addition cancelled."
+msgstr "Cancelada la adición del anexo."
+
+msgid "Note addition cancelled."
+msgstr "Cancelada la adición de la nota."
+
+msgid "User name is reserved or forbidden"
+msgstr "Nombre de usuario reservado o no disponible"
+
+msgid "Bad user name"
+msgstr "nombre de usuario incorrecto"
+
+msgid "Feedback"
+msgstr "Retroalimentación"
+
+msgid "Attachments from this point"
+msgstr "Anexos a este punto"
+
+msgid "all contributions"
+msgstr "todas las contribuciones"
+
+msgid "Please login prior to attaching files."
+msgstr "Por favor entre anted de anexar archivos."
+
+# MSGIDS FOR THE NEW UI STARTS
+# TRANSLATIONS FOR NEW UI
+msgid "Point addition disabled."
+msgstr "Creación de puntos desactivada."
+
+msgid "Note"
+msgstr "Nota"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "No existe el tópico. Actualiza tus marcadores."
+
+msgid "Links"
+msgstr "Enlaces"
+
+msgid "Setting database"
+msgstr "Configurando base de datos"
+
+msgid "Enter some values to start with the database setup"
+msgstr ""
+"Introduzca algunos valores para empezar la configuración de la base de datos"
+
+msgid "Widget appearance"
+msgstr "Aspecto del Widget"
+
+msgid "Show header?"
+msgstr "Mostrar cabecera?"
+
+msgid "Show logo?"
+msgstr "Mostrar logotipo?"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Link for title (URL)"
+msgstr "Enlace para el título(URL)"
+
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+msgid "Must be a number"
+msgstr "Debe ser un número"
+
+msgid "Height (pixels)"
+msgstr "Alto (píxeles)"
+
+msgid "Width (pixels)"
+msgstr "Ancho (píxeles)"
+
+msgid "Widget Basic Settings"
+msgstr "Configuración básica del Widget"
+
+msgid "Must be filled"
+msgstr "Debe rellenarse adecuadamente"
+
+msgid "Text that will show on button"
+msgstr "Texto a mostrar en el botón"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Texto a mostrar cuando la creación de puntos este desactivada"
+
+msgid "Adding point disabled"
+msgstr "Crear punto desactivado"
+
+msgid "Add Point page Basic Settings"
+msgstr "Configuración básica: crear punto"
+
+msgid "Point title example"
+msgstr "Ejemplo del título de punto"
+
+msgid "List of fixed hidden tags"
+msgstr "Etiquetas fijas ocultas"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "Etiquetas predefinidas (dejar vacio si ninguna)"
+
+msgid "Allow"
+msgstr "Permitir"
+
+msgid "Disallow"
+msgstr "Prohibir"
+
+msgid "Free tags (user's own)"
+msgstr "Etiquetas libres (propias del usuario)"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Vacío la mayoria de los casos. Puede ser:autorizado"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Ejemplo de etiquetas para puntos (para etiquetas libres)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Configuración avanzada: crear punto (opcional)"
+
+msgid "Form title"
+msgstr "Forma del título"
+
+msgid "Latitude"
+msgstr "Latitud"
+
+msgid "Longitude"
+msgstr "Longitud"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Debe ser un número del 1-20 o automático"
+
+msgid "Must be 1-20"
+msgstr "Debe estar entre 1 y 20"
+
+msgid "Zoom level"
+msgstr "Nivel de zoom"
+
+msgid "Must be a number or empty"
+msgstr "Debe ser un número o estar vacío"
+
+msgid "Template point ID"
+msgstr "ID de plantilla de punto"
+
+msgid "Note widget information"
+msgstr "Información sobre Widget de nota"
+
+msgid "Note title (not shown)"
+msgstr "Título de nota (no se muestra)"
+
+msgid "Note text"
+msgstr "Texto de la nota"
+
+msgid "Container widget information"
+msgstr "Contenido de la información del widget"
+
+msgid "Submit widget information"
+msgstr "Presentar información del widget"
+
+msgid "Must be a number 1-20"
+msgstr "Debe ser un número del 1-20"
+
+msgid "Number of points to show"
+msgstr "Número de puntos a mostrar"
+
+msgid "Point information display in point list"
+msgstr "Mostrar información de los puntos en la lista"
+
+msgid "Width of the map"
+msgstr "Ancho del mapa"
+
+msgid "Height of the map"
+msgstr "Altura del mapa"
+
+msgid "Number of links to show"
+msgstr "Número de enlaces a mostrar"
+
+msgid "Widget Editor"
+msgstr "Editor de widget"
+
+msgid "newest"
+msgstr "más recientes"
+
+msgid "oldest"
+msgstr "más angtiguos"
+
+msgid "recently updated"
+msgstr "actualizados recientemente"
+
+msgid "most points"
+msgstr "contenga más puntos"
+
+msgid "This information is stored at:"
+msgstr "Información almacenada en:"
+
+msgid "Also stored at"
+msgstr "También almacenado en"
+
+msgid "from external sources"
+msgstr "de fuentes externas"
+
+msgid "Topic points"
+msgstr "Puntos del tópico"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "No existe el tópico. Eliminelo de sus marcadoes "
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "No existe el punto. Eliminelo de sus marcadores "
+
+msgid "Point: "
+msgstr "Punto: "
+
+msgid "Topics"
+msgstr "Tópicos"
+
+msgid "Search for '%s'"
+msgstr "Busca '%s'"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "Login page"
+msgstr "Página de inicio de sesión"
+
+msgid "Front Page"
+msgstr "Página principal"
+
+msgid "Advanced search: "
+msgstr "Busqueda avanzada: "
+
+msgid "User: "
+msgstr "Usuario: "
+
+msgid "Old password"
+msgstr "Contraseña antigua"
+
+msgid "You do not have rights to access user information."
+msgstr "No tiene derechos para acceder a información de usuario."
+
+msgid "Change settings"
+msgstr "Cambiar configuración"
+
+msgid "You do not have rights to change user information."
+msgstr "No tiene derechos para modificar información de usuario."
+
+msgid ""
+"You do not have rights to change user information. Old password not given."
+msgstr ""
+"No tiene derechos para modificar información de usuario. Contraseña antigua "
+"no introducida."
+
+msgid "Password mismatch or empty password."
+msgstr "La contraseña no coincide o no ha sido introducida."
+
+msgid "Password changed."
+msgstr "La contraseña ha sido modificada."
+
+msgid "Profile updated."
+msgstr "El perfil ha sido actualizado."
+
+msgid "Set user location"
+msgstr "Localización del usuario"
+
+msgid "Topic: "
+msgstr "Tópico: "
+
+msgid "New Topic"
+msgstr "Tópico nuevo"
+
+msgid "a topic"
+msgstr "un tópico"
+
+msgid "Point created! "
+msgstr "Punto creado! "
+
+msgid "Add comment"
+msgstr "Añadir comentario"
+
+msgid "Comment text"
+msgstr "Comentar el texto"
+
+msgid "Related website URL"
+msgstr "URL de web relacionada"
+
+msgid "Related website description"
+msgstr "Descripción de web relacionada"
+
+msgid "You do not have rights to edit the comment."
+msgstr "No tiene derechos para editar el comentario."
+
+msgid "Edit comment"
+msgstr "Editar comentario"
+
+msgid "You do not have rights to delete the comment."
+msgstr "No tiene derechos para eliminar el comentario:"
+
+msgid "Edit point settings"
+msgstr "Configuración de la edición de puntos"
+
+msgid "You do not have rights for that."
+msgstr "No tienes derechos para eso."
+
+msgid "Set topic map"
+msgstr "Fijar el mapa del tópico"
+
+msgid "Add Point"
+msgstr "Añadir puntos"
+
+msgid "Topic tools"
+msgstr "Herramientas para tópico"
+
+msgid "Topic widgets"
+msgstr "Widgets para tópico"
+
+msgid "Subscription"
+msgstr "Suscripción"
+
+msgid "Active"
+msgstr "Activo"
+
+msgid "Topic subscription"
+msgstr "Suscripción a tópico"
+
+msgid "Topic settings"
+msgstr "Configuración del tópico"
+
+msgid "Administrator's extras"
+msgstr "Funcionalidades extra del administrador"
+
+msgid "Topic origin"
+msgstr "Origen del tópico"
+
+msgid "Topic tags"
+msgstr "Etiquetas del tópico"
+
+msgid "Topic only"
+msgstr "Solo tópicos"
+
+msgid "Topics and points"
+msgstr "Tópicos y puntos"
+
+msgid "Topic owners management rights"
+msgstr "Derechos de gestión del creador del tópico"
+
+msgid "Topic page elements"
+msgstr "Elementos a mostrar en el tópico"
+
+msgid "Point information display on point list"
+msgstr "Información del punto a mostrar en la lista de puntos"
+
+msgid "list"
+msgstr "lista"
+
+msgid "Default view mode"
+msgstr "Modo de visualización por defecto"
+
+msgid "Default view order for point list"
+msgstr "Orden de visualización por defecto de la lista de puntos"
+
+msgid "Who can add points"
+msgstr "Usuarios que pueden añadir puntos"
+
+msgid "Advanced topic settings"
+msgstr "Configuración avanzada del tópico"
+
+msgid "Sign up"
+msgstr "Registrese"
+
+msgid "Visual code is wrong."
+msgstr "El código visual es incorrecto."
+
+msgid "Passwords do not match."
+msgstr "Las contraseñas no coinciden."
+
+msgid "Error occured. User not added."
+msgstr "Ha ocurrido un error. El usuario no ha podido ser creado."
+
+msgid "User created."
+msgstr "Usuario creado con éxito."
+
+msgid "Add user role in this topic"
+msgstr "Añade el rol de usuario en este tópico"
+
+msgid "Username of a registered user"
+msgstr "Nombre de usuario ya registrado"
+
+msgid "Manager?"
+msgstr "Administrador?"
+
+msgid "User manager?"
+msgstr "Usuario administrador?"
+
+msgid "Subscriber?"
+msgstr "Suscriptor?"
+
+msgid "List of administrators for "
+msgstr "Lista de administradores para "
+
+msgid "User managed successfully."
+msgstr "El usuario ha sido asignado satisfactoriamente."
+
+msgid "Enter feed for importing"
+msgstr "Introducir feed a importar"
+
+msgid "Feed address (URL)"
+msgstr "Dirección del feed (URL)"
+
+msgid "Describe the feed"
+msgstr "Descripción del feed"
+
+msgid "Feed for issues?"
+msgstr "Feed para publicaciones?"
+
+msgid "Check interval in seconds"
+msgstr "Intervalo de inspección en segundos"
+
+msgid "New feed for "
+msgstr "Nuevo feed para "
+
+msgid "external"
+msgstr "externo"
+
+msgid "Edit feed "
+msgstr "Editar feed "
+
+msgid "Edit feed for "
+msgstr "Editar feed para "
+
+msgid "Enter configuration parameter"
+msgstr "Introducir parámetro de configuración"
+
+msgid "Parameter name"
+msgstr "Nombre del parámetro"
+
+msgid "Value"
+msgstr "Valor"
+
+msgid "Language not supported"
+msgstr "Idioma no admitido"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "You do not have rights to edit settings."
+msgstr "No tiene derechos para editar la configuración."
+
+msgid "Urban Mediator Settings"
+msgstr "Configuración de Urban Mediator"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Algún campo no ha sido introducido correctamente:"
+
+msgid "You do not have rights to delete the widget."
+msgstr "No tiene derechos para eliminar el widget."
+
+msgid "You do not have rights to change the widget."
+msgstr "No tiene derechos para modificar el widget."
+
+msgid "Enter trigger information"
+msgstr "Introducir información de reacción"
+
+msgid "Describe the trigger"
+msgstr "Descripción de la reacción"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Condición (p.ej. añadir punto)"
+
+msgid "Action"
+msgstr "Acción"
+
+msgid "Adapter"
+msgstr "Adaptador"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (como parámetro para el adaptador)"
+
+msgid "Edit trigger "
+msgstr "Editar reacción "
+
+msgid "Edit trigger for "
+msgstr "Editar reacción para "
+
+msgid "New trigger for "
+msgstr "Nueva reacción para "
+
+msgid "Error adding trigger"
+msgstr "Error al añadir la reacción"
+
+msgid "UM Front Page"
+msgstr "Página principal de UM"
+
+# ignore label_ in translation!
+msgid "label_Add"
+msgstr "label_Añadir"
+
+msgid "label_Place"
+msgstr "label_Situar"
+
+msgid "label_Home"
+msgstr "label_Inicio"
+
+msgid "label_Search"
+msgstr "label_Buscar"
+
+msgid "label_Info"
+msgstr "label_Información"
+
+msgid "List of points"
+msgstr "Lista de puntos"
+
+msgid "Number verification:"
+msgstr "Verificación de números:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr ""
+"Por favor introduzca los caracteres que se observan en la imagen superior."
+
+msgid "Text:"
+msgstr "Texto:"
+
+msgid "Name & description"
+msgstr "Nombre y descripción"
+
+msgid "Topic Name"
+msgstr "Nombre del tópico"
+
+msgid "The name of your topic."
+msgstr "El nombre de su tópico."
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "La descripción no debe ocupar más de 3-4 líneas."
+
+msgid "Topic Description"
+msgstr "Descripción del tópico"
+
+msgid ""
+"A brief description of your topic. You can edit this later, and add photos "
+"or links to it."
+msgstr ""
+"Breve descripción de su tópico. Puede editarlo más tarde, y añadir imagenes "
+"o enlaces."
+
+msgid "Appearance"
+msgstr "Aspecto"
+
+msgid "Colour Scheme"
+msgstr "Combinación de colores"
+
+msgid "Topic Colour Scheme"
+msgstr "Combinación de colores del tópico"
+
+msgid "Colours used to give your topic a unique appearance."
+msgstr "Use colores para dar a su tópico un aspecto único."
+
+msgid "Choose an icon"
+msgstr "Elija un icono"
+
+msgid "Icons"
+msgstr "Iconos"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr ""
+"Un icono se visualiza en la página principal y en las páginas de los tópicos"
+
+msgid "upload a picture"
+msgstr "subir una imagen"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "La imagen (~ 60x60 péxeles) será usada como icono del tópico"
+
+msgid "Latest addition"
+msgstr "Última actualización"
+
+msgid "posted by:"
+msgstr "publicado por:"
+
+msgid "No points yet."
+msgstr "Aun no hay puntos."
+
+msgid "No topics"
+msgstr "No hay tópicos"
+
+msgid "Topic Icon"
+msgstr "Icono del tópico"
+
+msgid "official"
+msgstr "oficial"
+
+msgid "more"
+msgstr "más"
+
+msgid "posted by"
+msgstr "publicado por"
+
+msgid "comments: "
+msgstr "comentarios: "
+
+msgid "User:"
+msgstr "Usuario:"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr ""
+"Por favor, inicie sesión almenos como invitado para añadir comentarios:"
+
+msgid "log in"
+msgstr "registrarse"
+
+msgid "Order by:"
+msgstr "Ordenar por:"
+
+msgid "sign up"
+msgstr "inscribirse"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "delete"
+msgstr "borrar"
+
+msgid "New user?"
+msgstr "Usuario nuevo?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Lo sentimos. La busqueda de la dirección ha fallado."
+
+msgid "Add a new point"
+msgstr "Añade un punto nuevo"
+
+msgid "1. Location:"
+msgstr "1. Posición:"
+
+msgid "Category:"
+msgstr "Categoría:"
+
+msgid "Info added here will also go to:"
+msgstr "La información que se añada aqui también irá a:"
+
+msgid "submit"
+msgstr "enviar"
+
+msgid "You do not have permission to edit this comment."
+msgstr "No tiene permiso para editar este comentario."
+
+msgid "search this topic"
+msgstr "busca este tópico"
+
+msgid "Only tags"
+msgstr "Solo etiquetas"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "El tópico no permite añadir puntos nuevos en este momento."
+
+msgid "Connection:"
+msgstr "Conexión:"
+
+# do not translate inside %()
+msgid ""
+"Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr ""
+"Busca resultados para '%%s', página %(current_page)s de %(total_num_of_pages)"
+"s"
+
+msgid "Showing all points in topic"
+msgstr "mostrando todos los puntos en el tópico"
+
+msgid "Search result for "
+msgstr "Busca resultados para "
+
+msgid "Open a new topic"
+msgstr "Abre un tópico nuevo"
+
+msgid ""
+"You are about to permanently delete the topic %s. This action cannot be "
+"undone later."
+msgstr "El tópico %s se elminará permanentemente. No podrá volver atrás."
+
+msgid "DELETE"
+msgstr "ELIMINA"
+
+msgid "delete topic"
+msgstr "elmina el tópico"
+
+msgid "set topic map"
+msgstr "establecer el mapa del tópico"
+
+msgid "Set/update topic's central location"
+msgstr "Actualizar/establecer la posición central del tópico"
+
+msgid "Location:"
+msgstr "Posición:"
+
+msgid "Automatic zoom"
+msgstr "Zoom automático"
+
+msgid "yes"
+msgstr "si"
+
+msgid "no"
+msgstr "no"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr ""
+"calcular el nivel de zoom automáticamente a partir de los puntos disponibles"
+
+msgid "Topic subscription."
+msgstr "Suscripción a tópico."
+
+msgid "Change subscription"
+msgstr "Cambiar suscripción"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "le gustaría marcarlo como inapropiado %s"
+
+msgid "MARK"
+msgstr "MARCAR"
+
+msgid "mark as inapproapriate"
+msgstr "marcar como inapropiado"
+
+msgid "Would you like to delete %s"
+msgstr "Quiere eliminar %s"
+
+msgid "Other topics with this point"
+msgstr "Otros tópicos con este punto"
+
+msgid "Nearby points"
+msgstr "Puntos cercanos"
+
+msgid "tags:"
+msgstr "etiquetas:"
+
+msgid "Add Tag"
+msgstr "Añadir etiqueta"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Lo sentimos. El tópico no permite nuevos puntos en este momento."
+
+msgid "Set/update user's location"
+msgstr "Establece/actualiza la posición de usuario"
+
+msgid "set location"
+msgstr "establecer posición"
+
+msgid "forget location"
+msgstr "olvidar posición"
+
+msgid "Widgets for topic."
+msgstr "Widgets para  el tópico."
+
+msgid "Currently shown widgets"
+msgstr "Widgets mostrados actualmente"
+
+msgid "Would you like to delete the widget?"
+msgstr "Le gustaría eliminar el widget?"
+
+msgid ""
+"The following widgetizers let you create Urban Mediator web widgets for your "
+"topic. These web widgets can be added to the topic page itself and can be "
+"imbedded in other websites' pages."
+msgstr ""
+"Los siguientes constructores de widgets le permiten crear widgets web de "
+"Urban Mediator para su tópico. Estos widgets web pueden ser añadidos al la "
+"página del tópico y insertados en otras webs."
+
+msgid "Add point button"
+msgstr "Botón de añadir punto"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Hacer que un widget envie puntos a este tópico"
+
+msgid "Topic's point list"
+msgstr "Lista de puntos del tópico"
+
+msgid "Widget to show topic's points"
+msgstr "Widget para mostrar los puntos del tópico"
+
+msgid "Topic's list of links"
+msgstr "Lista de enlaces del tópico"
+
+msgid "Widget to show topic's links"
+msgstr "Widget para mostrar los enlaces del tópico"
+
+msgid "A map"
+msgstr "Un mapa"
+
+msgid "Widget to show topic on the map"
+msgstr "Widget para mostrar el tópico en el mapa"
+
+msgid "Make combo widget"
+msgstr "Crear widget combo"
+
+msgid ""
+"Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr ""
+"Crear un widget que contenga varios widgets (prepare las urls para los "
+"widgets en primer lugar)"
+
+msgid "Make note"
+msgstr "Crear una nota"
+
+msgid "Make a widget to show a note"
+msgstr "Crear un widget para que muestre una nota"
+
+msgid "Please, confirm your action"
+msgstr "Por favor, confirme su acción"
+
+msgid "Sign up."
+msgstr "Registrarse."
+
+msgid "Choose a username and password"
+msgstr "Elija un nombre de usuario y una contraseña"
+
+msgid "Tools for topic."
+msgstr "Herramienta para el tópico."
+
+msgid "Add trigger"
+msgstr "Añadir reacción"
+
+msgid "Manage topic administrators"
+msgstr "Gestionar los administradores del tópico"
+
+msgid "CSV Export"
+msgstr "Exportar CSV"
+
+msgid "Export points as CSV"
+msgstr "Exportar puntos como CSV"
+
+msgid "Currently active triggers"
+msgstr "Reacciones activas actualmente"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Quiere eliminar la reacción?"
+
+msgid "Redirecting"
+msgstr "Redireccionando"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "Si su navegador no redirecciona automáticamente:"
+
+msgid "search"
+msgstr "busca"
+
+msgid "Add new topic"
+msgstr "Añade un tópico nuevo"
+
+msgid "edit settings"
+msgstr "editar configuración"
+
+msgid "Highlighted Topics"
+msgstr "Tópicos destacados"
+
+msgid "Recently updated Topics"
+msgstr "Tópicos actualizados recientemente"
+
+msgid "Make HTML"
+msgstr "Crear HTML"
+
+msgid "Update on the topic page"
+msgstr "Actualizar en la página del tópico"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr ""
+"Acuerdese de crear el HTML en primer lugar para que los cambios sean "
+"efectivos"
+
+msgid "Add to the topic page"
+msgstr "Añadir a la página del tópico"
+
+msgid "The widget will look like:"
+msgstr "El widget tendrá el siguiente aspecto:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr ""
+"La siguiente URL puede ser usada para crear un combo widget (Copiar/Pegar):"
+
+msgid "Key"
+msgstr "Llave"
+
+msgid "default"
+msgstr "por defecto"
+
+msgid "Change value"
+msgstr "Cambiar valor"
+
+msgid "Manage user"
+msgstr "Gestionar usuario"
+
+msgid "advanced settings"
+msgstr "configuración avanzada"
+
+msgid "OR: Guest Login"
+msgstr "O: Iniciar sesión como invitado"
+
+msgid ""
+"This username will be valid until you log out or shut  down your browser."
+msgstr ""
+"Este nombre de usuario será valido hasta que termine la sesión o cierre su "
+"navegador."
+
+msgid "my location"
+msgstr "mi posición"
+
+msgid "Topics created or moderated by %s"
+msgstr "Tópicos creados o moderados por %s"
+
+msgid "Topics the user has been subscribed to"
+msgstr "Tópicos a los que el usuario se ha suscrito"
+
+msgid "Contributions by %s"
+msgstr "Contribuciones por %s"
+
+msgid "whole map"
+msgstr "mapa entero"
+
+msgid "My topics"
+msgstr "Mis tópicos"
+
+msgid "No such user."
+msgstr "No existe el usuario."
+
+msgid "No such user"
+msgstr "No existe el usuario"

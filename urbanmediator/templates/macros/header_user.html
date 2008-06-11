@@ -1,0 +1,26 @@
+$def with (user, level=0, link=1)
+
+
+<div id="context_header_holder">
+
+	<div id="context_header" \
+		$if level == 1:
+     	class="collapsed" \
+		>
+    
+    <ul class="topic_buttons">
+        $if acl.authorize.view_user_settings(user):
+            <li><a href="$pc_links('user_settings', user.username)">$_("Settings")</a></li>
+            <li><a href="$pc_links('user_tools', user.username)">$_("Tools")</a></li>
+    </ul>
+    
+    <h1>\
+    $if link == 1:
+        $_("User:") <a href="$pc_links('user', user.username)">$user.username</a>\
+    $else:
+        $_("User:") $user.username
+    </h1>
+    
+	</div>
+    
+</div>

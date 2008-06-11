@@ -1,0 +1,77 @@
+$def with (context, topic, form, result=None)
+
+$:macro.header_desktop(context, 1, 1)
+
+    $:macro.header_topic(topic, level=1, link=1)
+    
+    	<div id="container">
+        
+        <div id="page_header">
+        <h1>$context.title</h1>
+        </div>
+        
+        <div id="main">
+
+			<form name="main" class="small_form" action="$context.widgetizer_link" method="post" enctype="multipart/form-data">
+            $if not form.valid: <p class="error">$_("Some fields were not entered correctly:")</p>
+            
+            $:form.render()
+            <div class="submit">
+            <button type="submit">$_('Make HTML')</button>
+            </div>
+            </form>
+            
+            
+            $if form.valid and result:
+                <div class="widget_preview">
+                $_("The widget will look like:")
+                <br/>
+                <iframe src="$result.link"
+                style="height:${result.height}px;width:${result.width}px;border:none;"></iframe>
+                <br />
+                <form class="small_form" name="main" action="$pc_links('topic_addwidget', topic.id)" method="post" enctype="multipart/form-data">
+                $_("You can:")
+                $if acl.authorize.change_topic_settings(topic):
+                    $if (("id" in result) and result.id):
+                        <input type="hidden" id="id" name="id" style="display:none;" value="$result.id" />
+                        <input type="submit" value="$_('Update on the topic page')"/>
+                        <small>$_("Remember to Make HTML first for the changes to be effective")</small>
+                    $else:
+                        <input type="submit" value="$_('Add to the topic page')"/>
+                <br />
+                <br />
+                $_("or")
+                <br />
+                <br />
+                $_("Copy the resulting HTML and insert it into your page's HTML code:")
+                <div class="widgetize_textarea" style="margin:10px;"><textarea name="widget_code" onclick="this.select();" cols="60" rows="3">
+                &lt;iframe src="$result.link" style="height:${result.height}px;width:${result.width}px;border:none;"&gt;&lt;/iframe&gt;
+                </textarea>
+                </div>
+                </form>
+                <br />
+                $_("The following URL can be used for creating combo widget (Copy/Paste):")
+                <br /> 
+                <form class="small_form">
+                <textarea name="widget_code" onclick="this.select();" cols="60" rows="1">$result.link</textarea>
+                </form>
+                <p>$_("Characters:") $result.link_len</p>
+                $if result.link_len > 2010:
+                    <p>$_("Warning:") $_("the resulting URL is too long for some browsers (IE 6 / 7).")</p>
+                </div>
+         
+        	</div>
+            
+        
+            <div id="aside">
+               
+                <ul class="controls">
+    
+                    <li class="help"><a href="$:context.help_link" onclick="window.open('$context.help_link','Urban Mediator Help',
+    'width=400,height=600,scrollbars=yes,toolbar=no,location=no'); return false">$_("Help")</a></li>
+    
+                </ul>
+               
+            </div>
+            
+		</div>

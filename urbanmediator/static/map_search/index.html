@@ -1,0 +1,70 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>UM Map Search Beta</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/um_base.css" type="text/css" /><!--UM styles -->
+	<link rel="stylesheet" href="../css/desktop.css" type="text/css" /><!--UM styles -->
+	
+    
+    <meta http-equiv="Cache-Control" content="private; no-store; must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+	<meta name="ROBOTS" content="NOINDEX" />
+	<meta name="ROBOTS" content="NOFOLLOW" />
+
+	<!--MAP SEARCH ENGINE STUFF START-->
+	<script type="text/javascript" src="../ol/lib/OpenLayers.js"></script>
+	<script type="text/javascript" src="js/components/MapEngine.js" ></script>
+	<link rel="stylesheet" href="styles/map.css" type="text/css" />
+	<!--MAP SEARCH ENGINE STUFF END-->
+	
+</head>
+
+<body onload="init();" class="view_map">
+
+<div id="um_header" class="map_search_header" >
+		
+		<br />
+        <h1><a href="http://um.uiah.fi/final/">Urban Mediator</a></h1><h2>Map Search Beta</h2>
+        </ol>
+        <div id="user_status">
+            <p><a href="http://um.uiah.fi/final/login.html">log in</a> | <a href="http://um.uiah.fi/final/signup.html">sign up</a></p>
+        </div>
+</div>
+<div id="container">
+
+		<div id="col1">
+			<div class="search_form">
+				<div id="searchform">
+					<div style="width: 100%; height: 26px;"><!--empty--></div>
+					<div class="search_form_background"><!--search_form--></div>
+				</div>
+			</div>
+			<br /><h3 class="title_search_results">Topic filter</h3><br />
+			<div class="checkbox_list" id="list_of_topics">
+				<div id="topiclist"><!--the list of topics--></div>
+			</div>			
+		</div>
+		<div id="col2">
+			<div id="map">
+				<!--the map-->
+			</div>
+		</div>
+		<div id="col3">
+			<h3 class="title_search_results">Search results</h3><br />		
+			<div class="point_list">
+				<div id="list_of_points">
+					<!--the list of points-->				
+				</div>
+			</div>					
+		</div>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,136 @@
+#widget_head {
+	padding-left: 48px;
+}
+
+#widget_text {
+	padding-left: 48px;
+	text-align: center;
+}
+
+.new_point_buttons h1 {
+	font-size: 12px;
+}
+
+
+.widget {
+	text-align: left;
+	background: #FFF;
+}
+
+.widget_header {
+	background: #359;
+	color: #8DA;
+}
+
+.widget_header h1 {
+	padding-left: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: url("../img/umlogo.small.gif") no-repeat 4px 10px;
+	font-size: 20px;
+	text-align: left;
+	color: #8da;
+}
+
+.widget_header h2 {
+	background: #46A;
+	font-size: 14px;
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: left;
+	color: #FFF;
+}
+
+.widget_header h1 a {
+	color: #8DA;
+}
+
+.widget_header h2 a {
+	color: #9EC4EC;
+}
+
+/* ---------------------------- */
+/*		NEW POINT BUTTON		*/
+/* ---------------------------- */
+
+
+ul.widget_point_buttons {
+	list-style: none;
+}
+
+.widget_point_buttons li {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.widget_point_buttons a {
+	display: block;
+	font-size: 0.9em;
+	padding: 0.3em;
+	padding-left: 30px;
+	border-bottom: 1px solid #359;
+	text-decoration: none;
+	min-height: 22px;
+	line-height: 22px;
+	background: url("../img/point.gold.png") #ddd no-repeat 0.6em 0.6em;
+}
+
+.widget_point_buttons a:visited {
+	display: block;
+	font-size: 0.9em;
+	padding: 0.3em;
+	padding-left: 30px;
+	border-bottom: 1px solid #359;
+	text-decoration: none;
+	min-height: 22px;
+	line-height: 22px;
+	background: url("../img/point.gold.png") #ddd no-repeat 0.6em 0.6em;
+}
+
+.widget_point_buttons a:hover {
+	border-color: #B40;
+}
+
+
+/* ---------------------------- */
+/*		POINT WIDGET LIST		*/
+/* ---------------------------- */
+
+.point_list_widget {
+	padding: 4px;
+	list-style: none;
+	text-align: left;
+	background: #EAEEF5;
+	border-left: 2px solid #359;
+	border-right: 2px solid #359;
+	border-bottom: 2px solid #359;
+}
+
+.point_list_widget li {
+	background: url("../img/point.blue.tiny.png") no-repeat 4px 4px;
+	padding-left: 1.5em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+.point_list_widget h3 {
+	display: inline;
+	font-size: 15px;
+	padding: 4px;
+	padding-left: 0;
+}
+
+.point_list_widget .update_time {
+	color: #778;
+	font-size: 11px;
+}
+
+.point_list_widget .point_description {
+	font-size: 14px;
+}
+
+.point_list_widget .point_user {
+	font-size: 11px;
+}

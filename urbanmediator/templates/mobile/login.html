@@ -1,0 +1,27 @@
+$def with (context, come_back='')
+
+<div id="header">
+  <div id="header-inner">
+
+        <div id="content">
+
+  <div id="welcome">
+  
+  </div>
+  
+            <div id="page_header">
+              <strong>${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}</strong>
+            </div>
+            <hr />
+
+          <div id="content-inner">
+          </div>
+
+        $if acl.recommend.show_login():
+            $:macro.login(context, "", come_back=come_back)
+
+        $:macro.mobile_logout(context)
+        </div>
+
+  </div>
+</div>

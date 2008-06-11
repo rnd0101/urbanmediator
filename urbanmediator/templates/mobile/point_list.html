@@ -1,0 +1,80 @@
+$def with (context, points, topics_points, topic=None)
+
+<div id="header">
+  <div id="header-inner">
+    <div id="nav">
+    $:macro.mobile_nav(context)
+    </div>
+
+    <div id="content">
+      <div id="content-inner">
+    $if context.get("search_nearby", '') and not topic:
+              <hr />
+              <div class="add_point">
+                <a href="$mobile_links('add_point')">+ $_("ADD POINT")</a>
+                <a href="$mobile_links('add_point')"></a>
+              </div>
+	<div id="page_header">
+          <strong>$_("Point list")</strong>
+	</div>
+
+        <div id="list_wrapper">
+          <hr />
+          <ul class="list_header">
+            $if context.get("search_nearby", '') and context.nearby_radius:
+                $if topic:
+                    <li><a href="$mobile_links.point_list">$(_("All Points in %s") % dist_meters(context.nearby_radius))</a></li>
+                $else:
+                    <li class="selected">$(_("All Points in %s") % dist_meters(context.nearby_radius))</li>
+            $else:
+                $if topic:
+                    <li><a href="$mobile_links.point_list">$_("All Points")</a></li>
+                $else:
+                    <li class="selected">$_("All Points")</li>
+          </ul>
+          $if topic:
+              <hr />
+              <ul class="list_header">
+                <li class="selected">$topic.title</li>
+              </ul>
+
+          $for n, point in enumerate(points):
+              <hr />
+              <a \
+              $if n % 2: class="list_item_even" \
+              $else: class="list_item_odd" \
+              $if point.first_project:
+                  $if context.search:
+                      href="$mobile_links('point', t_id=point.first_project.id, p_id=point.id, search=context.search)"
+                  $elif topic:
+                      href="$mobile_links('point', t_id=point.first_project.id, p_id=point.id, topic_id=topic.id)"
+                  $else:
+                      href="$mobile_links('point', t_id=point.first_project.id, p_id=point.id)"
+              >
+              
+              <span class="list_thumb"><img  class="list_point_icon" src="${schema_base_url}/img/mob/marker_bw.png" alt="*" /></span>
+              <span class="list_text">
+                <span class="li_head"><strong>$point.title</strong></span> <span class="li_dist">
+                $if point.distance:
+                    $dist_meters(point.distance)\
+                </span>
+                <br/><span class="li_desc">$:first_line(point.first.text)
+                </span><br/><span class="li_date">$rel_date(point.added)</span> <span class="li_name">$point.author</span>
+              </span>
+              </a>
+
+          $for t in topics_points:
+                  <ul class="list_header">
+                    <li><a href="$mobile_links('point_list', topic_id=t.id)">$t.title</a></li>
+                  </ul>
+                  <hr />
+        </div>
+      </div>
+
+    </div>
+
+    <div id="nav2" class="group">
+    $:macro.mobile_nav(context)
+    </div>
+  </div>
+</div>

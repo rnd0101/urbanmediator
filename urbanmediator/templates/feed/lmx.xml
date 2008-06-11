@@ -1,0 +1,30 @@
+$def with (context, items)
+<?xml version="1.0" encoding="UTF-8"?>
+<lm:lmx xmlns:lm="http://www.nokia.com/schemas/location/landmarks/1/0" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.nokia.com/schemas/location/landmarks/1/0/ lmx.xsd">
+<lm:landmarkCollection>
+$for item in items:
+    $if item.visible:
+        <lm:landmark>
+        <lm:name>$item.title</lm:name>
+        <lm:description>
+        <![CDATA[
+           $item.summary
+        ]]>
+        </lm:description>
+        <lm:coordinates>
+        <lm:latitude>$item.lat</lm:latitude>
+        <lm:longitude>$item.lon</lm:longitude>
+        </lm:coordinates>
+        <lm:mediaLink>
+        <lm:url>$item.url</lm:url>
+        </lm:mediaLink>
+        $if item.tags:
+            $for tg in item.tags:
+                <lm:category>
+                <lm:name>${tg.tag}</lm:name>
+                </lm:category>
+        </lm:landmark>
+</lm:landmarkCollection>
+</lm:lmx>

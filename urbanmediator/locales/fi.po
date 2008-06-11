@@ -1,0 +1,1409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Language-code: fi\n"
+"Language-name: Finnish\n"
+"Preferred-encodings: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Domain: urban_mediator\n"
+
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s päivä"
+msgstr[1] "%s päivää"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s tunti"
+msgstr[1] "%s tuntia"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minuutti"
+msgstr[1] "%s minuuttia"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s sekunti"
+msgstr[1] "%s sekuntia"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s tuhannesosasekunti"
+msgstr[1] "%s tuhannesosasekuntia"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s miljoonasosasekunti"
+msgstr[1] "%s miljoonasosasekuntia"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s. %(monthname)s %(year)s"
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s. %(monthname)s"
+
+msgid "1_month"
+msgstr "tammikuuta"
+
+msgid "2_month"
+msgstr "helmikuuta"
+
+msgid "3_month"
+msgstr "maaliskuuta"
+
+msgid "4_month"
+msgstr "huhtikuuta"
+
+msgid "5_month"
+msgstr "toukokuuta"
+
+msgid "6_month"
+msgstr "kesäkuuta"
+
+msgid "7_month"
+msgstr "heinäkuuta"
+
+msgid "8_month"
+msgstr "elokuuta"
+
+msgid "9_month"
+msgstr "syyskuuta"
+
+msgid "10_month"
+msgstr "lokakuuta"
+
+msgid "11_month"
+msgstr "marraskuuta"
+
+msgid "12_month"
+msgstr "joulukuuta"
+
+msgid "%s from now"
+msgstr "%s from now"
+# needs translation
+
+msgid "%s ago"
+msgstr "%s sitten"
+
+msgid "point"
+msgid_plural "points"
+msgstr[0] "kohde"
+msgstr[1] "kohdetta"
+
+msgid "Point addition disabled."
+msgstr "Kohteen lisääminen estetty"
+
+msgid "Add point"
+msgstr "Lisää kohde"
+
+msgid "Note"
+msgstr "Lisää tekstiä"
+
+msgid "Points"
+msgstr "Kohteet"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "Aihetta ei olemassa. Päivitä kirjanmerkkisi."
+
+msgid "Links"
+msgstr "Linkit"
+
+msgid "Setting database"
+msgstr "Tietokannan asetukset"
+# "Aseta tietokanta"
+
+msgid "Enter some values to start with the database setup"
+msgstr "Aloita tietokannan luominen antamalla joitakin arvoja"
+
+msgid "Widget appearance"
+msgstr "Vempaimen ulkonäkö"
+
+msgid "Show header?"
+msgstr "Näytä ylätunniste?"
+
+msgid "Show logo?"
+msgstr "Näytä logo?"
+
+msgid "Title"
+msgstr "Otsikko"
+
+msgid "Link for title (URL)"
+msgstr "Linkki otsikolle (URL)"
+
+msgid "Subtitle"
+msgstr "Alaotsikko"
+
+msgid "Must be a number"
+msgstr "Merkin täytyy olla numero"
+
+msgid "Height(pixels)"
+msgstr "Korkeus (pixeliä)"
+
+msgid "Width (pixels)"
+msgstr "Leveys(pixeliä)"
+
+msgid "Widget Basic Settings"
+msgstr "Vempaimen perusasetukset"
+
+msgid "Must be filled"
+msgstr "Kohta on täytettävä"
+
+msgid "Text that will show on button"
+msgstr "Teksti, joka näkyy nappulassa"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Teksti, joka näkyy kun kohteen luominen on estetty"
+
+msgid "Adding point disabled"
+msgstr "Kohteen luominen estetty"
+
+msgid "Add Point page Basic Settings"
+msgstr "Lisää kohde sivun perusasetukset"
+
+msgid "Point title example"
+msgstr "Kohteen otsikko esimerkkejä"
+
+msgid "List of fixed hidden tags"
+msgstr "Lista valmiista piilotetuista avainsanoista"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "Lista valmiiksi annetuista avainsanoista (jos ei ole niin jätä tyhjäksi)"
+
+msgid "Allow"
+msgstr "Mahdollista"
+
+msgid "Disallow"
+msgstr "Estä"
+
+msgid "Free tags (user's own)"
+msgstr "Vapaat avainsanat(käyttäjän omat)"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Yleensä tyhjä. Voi olla: virallinen"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Kohteen avainsana esimerkki (vapaille avainsanoille)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Lisää kohde sivun Lisäasetukset  (optional)"
+
+msgid "Form title"
+msgstr "Luo otsikko"
+#(does this mean to create?)
+
+msgid "Latitude"
+msgstr "Leveysaste"
+
+msgid "Longitude"
+msgstr "Pituusaste"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Täytyy olla numero 1-20 tai automaattinen"
+
+msgid "Must be 1-20"
+msgstr "Täytyy olla väliltä 1-20"
+
+msgid "Zoom level"
+msgstr "Zuumaustaso"
+
+msgid "Must be a number or empty"
+msgstr "Täytyy olla numero tai tyhjä"
+
+msgid "Template point ID"
+msgstr "Pohjakohteen ID"
+
+msgid "Note widget information"
+msgstr "Lisätieto-vempain tietoa"
+#iDoes this mean notice widget infromation or that there is additional information?
+#if first then huomaa nappulaan liittyvää tietoa. second: Nappulaan liittyvää lisätietoa
+
+msgid "Note title (not shown)"
+msgstr "Lisätiedon otsikko (ei näy)"
+
+msgid "Note text"
+msgstr "Lisätiedon teksti"
+
+msgid "Container widget information"
+msgstr "Yhdistelmä vempaimen tiedot"
+
+msgid "Submit widget information"
+msgstr "Nappulan tiedot"
+
+msgid "Must be a number 1-20"
+msgstr "Täytyy olla numero väliltä 1-20"
+
+msgid "Number of points to show"
+msgstr "Kuinka monta kohdetta näytetään"
+
+msgid "Point information display in point list"
+msgstr "Kohteen tieto kohdeluettelossa"
+
+msgid "Width of the map"
+msgstr "Kartan leveys"
+
+msgid "Height of the map"
+msgstr "Kartan korkeus"
+
+msgid "Number of links to show"
+msgstr "Kuinka monta linkkiä näytetään?"
+
+msgid "Widget Editor"
+msgstr "Vempaimen muokkaaminen"
+
+msgid "newest"
+msgstr "uusin"
+
+msgid "oldest"
+msgstr "vanhin"
+
+msgid "recently updated"
+msgstr "päivitetty lähiaikoina"
+# or uusimmat päivitetyt
+
+msgid "most points"
+msgstr "eniten kohteita"
+
+msgid "title"
+msgstr "nimi"
+
+msgid "File"
+msgstr "Tiedosto"
+
+msgid "This information is stored at:"
+msgstr "Tämä tieto on varastoituna:"
+
+msgid "Also stored at"
+msgstr "Varastoituna myös:"
+
+msgid "No description"
+msgstr "Ei kuvausta"
+
+msgid "No summary"
+msgstr "Ei yhteenvetoa"
+
+msgid "from external sources"
+msgstr "ulkoisista lähteistä"
+
+msgid "Topic points"
+msgstr "Aiheen kohteet"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "Aihetta ei olemassa. Poista kirjanmerkeistäsi: "
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "Kohdetta  ei olemassa. Poista kirjanmerkeistäsi: "
+
+msgid "Point: "
+msgstr "Kohde: "
+
+msgid "Topics"
+msgstr "Aiheet"
+
+msgid "Search for '%s'"
+msgstr "Etsi '%s'"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "Cancel"
+msgstr "Peru"
+
+msgid "Login failed"
+msgstr" Sisäänkirjautuminen epäonnistui"
+
+msgid "Visual code is wrong. Try again"
+msgstr "Visuaalinen koodi on väärä. Yritä uudelleen"
+
+msgid "No such user - error occured"
+msgstr "Käyttäjää ei ole -virhe"
+
+msgid "Login page"
+msgstr "Sisäänkirjautumissivu"
+
+msgid "Front Page"
+msgstr "Etusivu"
+
+msgid "Advanced search: "
+msgstr "Tarkennettu haku: "
+
+msgid "User: "
+msgstr "Käyttäjä: "
+
+msgid "Old password"
+msgstr "Vanha salasana"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Repeat password"
+msgstr "Toista salasana"
+
+msgid "Email"
+msgstr "Sähköposti"
+
+msgid "You do not have rights to access user information."
+msgstr "Sinulla ei ole oikeuksia käyttäjätietoihin"
+
+msgid "Change settings"
+msgstr "Vaihda asetuksia"
+
+msgid "You do not have rights to change user information."
+msgstr "Sinulla ei ole oikeuksia muuttaa käyttäjätietoja."
+
+msgid "You do not have rights to change user information. Old password not given."
+msgstr "Sinulla ei ole oikeuksia muuttaa käyttäjätietoja. Vanhaa salasanaa ei anneta"
+
+msgid "Password mismatch or empty password."
+msgstr "Salasana väärä tai tyhjä salasana"
+
+msgid "Password changed."
+msgstr "Salasana vaihdettu."
+
+msgid "Profile updated."
+msgstr "Profiili päivitetty."
+
+msgid "Set user location"
+msgstr "Aseta käyttäjän sijainti"
+
+msgid "Topic: "
+msgstr "Aihe: "
+
+msgid "New Topic"
+msgstr "Uusi aihe"
+
+msgid "a topic"
+msgstr "aihe"
+
+msgid "Point created! "
+msgstr "Kohde luotu! "
+
+msgid "Add comment"
+msgstr "Lisää kommentti"
+
+msgid "Comment text"
+msgstr "Kommentti"
+
+msgid "Picture"
+msgstr "Kuva (alle 2Mt)"
+
+msgid "Related website URL"
+msgstr "(Asiaan) liittyvän webbisivun URL"
+
+msgid "Related website description"
+msgstr "(Asiaan) liittyvän webbisivun kuvaus"
+
+msgid "You do not have rights to edit the comment."
+msgstr "Sinulla ei ole oikeuksia lisätä kommenttia."
+
+msgid "Edit comment"
+msgstr "Editoi kommenttia"
+
+msgid "You do not have rights to delete the comment."
+msgstr "Sinulla ei ole oikeuksia poistaa kommenttia."
+
+msgid "Edit point settings"
+msgstr "Editoi kohteen asetuksia"
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "vaarallinen ruma häiritsevä kysymys valitus"
+
+msgid "Dangerous concrete blocks"
+msgstr "Vaarallisia betonielementtejä"
+
+msgid "You do not have rights for that."
+msgstr "Sinulla ei ole oikeuksia tehdä tätä."
+
+msgid "Set topic map"
+msgstr "Aseta aiheen kartta"
+
+msgid "Add Point"
+msgstr "Lisää kohde"
+
+msgid "Topic tools"
+msgstr "Aiheen työkalut"
+
+msgid "Topic widgets"
+msgstr "Aiheen vempaimet"
+
+msgid "Subscription"
+msgstr "Tilaus"
+
+msgid "Active"
+msgstr "Aktiivinen "
+
+msgid "Topic subscription"
+msgstr "Aiheen tilaus"
+
+msgid "Topic settings"
+msgstr "Aiheen asetukset"
+
+msgid "Administrator's extras"
+msgstr "Hallinnoijan lisäasetukset"
+
+msgid "Topic origin"
+msgstr "Aiheen alkuperä"
+
+msgid "Topic tags"
+msgstr "Aiheen asiasanat"
+
+msgid "Topic only"
+msgstr "Vain aihe"
+
+msgid "Topics and points"
+msgstr "Aiheet ja kohteet"
+
+msgid "Topic owners management rights"
+msgstr "Aiheen omistajan hallinnointioikeudet"
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Topic page elements"
+msgstr "Aihesivun elementit"
+
+msgid "Point information display on point list"
+msgstr "Kohteen infon näyttö kohdelistassa"
+
+msgid "list"
+msgstr "lista"
+
+msgid "map"
+msgstr "kartta"
+
+msgid "Default view mode"
+msgstr "Oletusnäkymätila"
+
+msgid "Default view order for point list"
+msgstr "Kohdelistan oletysnäkymäjärjestys "
+
+msgid "Who can add points"
+msgstr "Kuka saa lisätä kohteita"
+
+msgid "Advanced topic settings"
+msgstr "Kohteen lisäasetukset "
+
+msgid "Not found"
+msgstr "Ei löydy"
+
+msgid "Sign up"
+msgstr "Rekisteröidy"
+
+msgid "Visual code is wrong."
+msgstr "Visuaalinen koodi on väärä."
+
+msgid "Passwords do not match."
+msgstr "Väärä salasana."
+
+msgid "Error occured. User not added."
+msgstr "Virhe tapahtui. Käyttäjää ei lisätty."
+
+msgid "User created."
+msgstr "Käyttäjä luotu."
+
+msgid "Add user role in this topic"
+msgstr "Lisää käyttäjä tähän aiheeseen"
+
+msgid "Username of a registered user"
+msgstr "Rekisteröidyn käyttäjän käyttäjätunnus"
+
+msgid "Manager?"
+msgstr "Manageri?"
+
+msgid "User manager?"
+msgstr "Käyttäjämanageri?"
+
+msgid "Subscriber?"
+msgstr "Tilaaja?"
+
+msgid "List of administrators for "
+msgstr "Lista hallinnoijista "
+
+msgid "User managed successfully."
+msgstr "Käyttäjää hallinnoitu onnistuneesti."
+
+msgid "Enter feed for importing"
+msgstr "Lisää syöte tuontia (import) varten)"
+
+msgid "Feed address (URL)"
+msgstr "Syötteen osoite (URL)"
+
+msgid "Describe the feed"
+msgstr "Kuvaile syötettä"
+
+msgid "Feed for issues?"
+msgstr "Syöte asioita varten?"
+
+msgid "Check interval in seconds"
+msgstr "Tarkasta intervalli sekunneissa"
+
+msgid "New feed for "
+msgstr "Uusi syöte "
+
+msgid "external"
+msgstr "ulkoinen"
+
+msgid "Edit feed "
+msgstr "editoi syötettä"
+
+msgid "Edit feed for "
+msgstr "Editoi syötettä "
+
+msgid "Enter configuration parameter"
+msgstr "Lisää konfigurointiparametrit"
+
+msgid "Parameter name"
+msgstr "Parametrin nimi"
+
+msgid "Value"
+msgstr "Arvo"
+
+msgid "Language not supported"
+msgstr "Kieltä ei tuettu"
+
+msgid "Language"
+msgstr "Kieli"
+
+msgid "You do not have rights to edit settings."
+msgstr "Sinulla ei ole oikeuksia editoida asetuksia."
+
+msgid "Urban Mediator Settings"
+msgstr "Urban mediaattorin asetukset"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Joitakin kenttiä ei ole täytetty oikein"
+
+msgid "You do not have rights to delete the widget."
+msgstr "Sinulla ei ole oikeuksia poistaa vempainta."
+
+msgid "You do not have rights to change the widget."
+msgstr "Sinulla ei ole oikeuksia vaihtaa vempainta."
+
+msgid "Enter trigger information"
+msgstr "Lisää laukaisininformaatiota"
+
+msgid "Describe the trigger"
+msgstr "Kuvaile laukaisinta"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Ehto (esim. addpoint)"
+
+msgid "Action"
+msgstr "Toiminto"
+
+msgid "Adapter"
+msgstr "Adapteri"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (adapterin parametrinä)"
+
+msgid "Edit trigger "
+msgstr "Muokkaa laukaisinta"
+
+msgid "Edit trigger for "
+msgstr "Muokkaa laukaisinta: "
+
+msgid "New trigger for "
+msgstr "Uusi laukaisin"
+
+msgid "Error adding trigger"
+msgstr "Virhe lisättäessä laukaisinta"
+
+msgid "UM Front Page"
+msgstr "UM etusivu"
+
+msgid "label_Add"
+msgstr "Lisää"
+
+msgid "label_Place"
+msgstr "Paikka"
+
+msgid "label_Home"
+msgstr "Koti"
+
+msgid "label_Search"
+msgstr "Haku"
+
+msgid "label_Info"
+msgstr "Info"
+
+msgid "List of points"
+msgstr "Lista kohteista"
+
+msgid "Number verification:"
+msgstr "Numeron varmistus:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr "Kirjoita merkit jotka näet ylläolevassa kuvassa."
+
+msgid "Text:"
+msgstr "Teksti:"
+
+msgid "Name & description"
+msgstr "Nimi & Kuvaus"
+
+msgid "Topic Name"
+msgstr "Aiheen nimi "
+
+msgid "The name of your topic."
+msgstr "Aiheesi nimi."
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "Kuvaus ei saa olla 3-4 riviä pidempi."
+
+msgid "Topic Description"
+msgstr "Aiheen kuvaus"
+
+msgid "A brief description of your topic. You can edit this later, and add photos or links to it."
+msgstr "Lyhyt kuvaus aiheestasi. Voit editoida tätä myöhemmin tai lisätä kuvia tai linkkejä."
+
+msgid "Appearance"
+msgstr "Ulkonäkö"
+
+msgid "Colour Scheme"
+msgstr "Värivalinta"
+
+msgid "Topic Colour Scheme"
+msgstr "Aiheen värivalinta"
+
+msgid "Colours used to give your topic a unique appearance."
+msgstr "Värit, joilla voit saada aiheellesi omaperäisen ulkonäön."
+
+msgid "Choose an icon"
+msgstr "Valitse ikoni"
+
+msgid "Icons"
+msgstr "ikonit"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr "Ikoni näkyy pääsivulla ja aiheen sivuilla"
+
+msgid "or"
+msgstr "tai"
+
+msgid "upload a picture"
+msgstr "lataa kuva"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "Kuvaa(~ 60x60 pixeliä) käytetään aiheen ikonina"
+
+msgid "Latest addition"
+msgstr "Viimeisin lisäys"
+
+msgid "posted by:"
+msgstr "laittanut:"
+
+msgid "No points yet."
+msgstr "Ei kohteita vielä."
+
+msgid "No topics"
+msgstr "Ei aiheita"
+
+msgid "Topic Icon"
+msgstr "Aiheen ikoni"
+
+msgid "official"
+msgstr "virallinen "
+
+msgid "more"
+msgstr "lisää"
+
+msgid "m"
+msgstr "m"
+
+msgid "posted by"
+msgstr "laittanut"
+
+msgid "comments: "
+msgstr "kommentit: "
+
+msgid "tags"
+msgstr "asiasanat"
+
+msgid "User:"
+msgstr "Käyttäjä:"
+
+msgid "Submit"
+msgstr "Lisää"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr "kirjaudu sisään vieraana jättääksesi kommentin tänne:"
+
+msgid "log in"
+msgstr "kirjaudu sisään"
+
+msgid "Order by:"
+msgstr "Järjestä:"
+
+msgid "sign up"
+msgstr "rekisteröidy"
+
+msgid "logout"
+msgstr "kirjaudu ulos"
+
+msgid "edit"
+msgstr "editoi"
+
+msgid "delete"
+msgstr "poista"
+
+msgid "New user?"
+msgstr "Uusi käyttäjä?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Valitamme, osoitteen etsintä ei onnistunut."
+
+msgid "Find by address"
+msgstr "Etsi osoitteella"
+
+msgid "example"
+msgstr "esimerkki"
+
+msgid "Find"
+msgstr "Etsi"
+
+msgid "Add a new point"
+msgstr "Lisää uusi kohde"
+
+msgid "1. Location:"
+msgstr "1. Sijainti:"
+
+msgid "Link to related website"
+msgstr "Linkki websivulle"
+
+msgid "Description"
+msgstr "Kuvaus"
+
+msgid "Tags"
+msgstr "Asiasanat"
+
+msgid "Category:"
+msgstr "Kategoria:"
+
+msgid "Info added here will also go to:"
+msgstr "Tänne lisätty info menee myös:"
+
+msgid "You do not have permission to edit this comment."
+msgstr "Sinulla ei ole lupaa muokata tätä kommenttia."
+
+msgid "Search this topic"
+msgstr "Etsi tässä aiheessa"
+
+msgid "Only tags"
+msgstr "Vain asiasanat"
+
+msgid "Add new point"
+msgstr "Lisää uusi kohde"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "Aiheeseen ei voi lisätä uusia kohteita."
+
+msgid "Connection:"
+msgstr "Yhteys:"
+
+#do not translate inside %()
+msgid "Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr "Etsintätulos '%%s', sivu %(current_page)s / %(total_num_of_pages)s"
+
+msgid "show all points"
+msgstr "näytä kaikki kohteet"
+
+msgid "Showing all points in topic"
+msgstr "Näyttää aiheen kaikki kohteet"
+
+msgid "Search result for "
+msgstr "Etsintätulokset "
+
+msgid "Open a new topic"
+msgstr "Avaa uusi aihe"
+
+msgid "You are about to permanently delete the topic %s. This action cannot be undone later."
+msgstr "Olet aikeissa tuhota aiheen %s lopullisesti. Toimintoa ei voi perua myöhemmin."
+
+msgid "DELETE"
+msgstr "POISTA"
+
+msgid "delete topic"
+msgstr "poista aihe"
+
+msgid "set topic map"
+msgstr "aseta aihekartta"
+
+msgid "settings"
+msgstr "asetukset"
+
+msgid "Set/update topic's central location"
+msgstr "Aseta aiheen keskisijainti"
+
+msgid "Location:"
+msgstr "Sijainti"
+
+msgid "Automatic zoom"
+msgstr "Automaattinen zuumaus"
+
+msgid "yes"
+msgstr "kyllä"
+
+msgid "no"
+msgstr "ei"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr "Lasketaanko zuumaustaso automaattisesti olemassaolevista pisteistä"
+
+msgid "Topic subscription."
+msgstr "Aiheen tilaus"
+
+msgid "Change subscription"
+msgstr "Vaihda tilaus"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "Haluatko merkitä sopimattomaksi: %s"
+
+msgid "MARK"
+msgstr "MERKITSE"
+
+msgid "mark as inapproapriate"
+msgstr "merkitse sopimattomaksi"
+
+
+msgid "Other topics with this point"
+msgstr "Tämän kohteen muut aiheet"
+
+msgid "External URL"
+msgstr "Ulkoinen URL"
+
+msgid "Nearby points"
+msgstr "Lähimmät kohteet"
+
+msgid "tags:"
+msgstr "asiasanat:"
+
+msgid "Add Tag"
+msgstr "Lisää asiasana"
+
+msgid "Comments"
+msgstr "Kommentit"
+
+msgid "Search"
+msgstr "Haku"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Pahoittelut, aiheeseen ei voi lisätä kohteita tällä hetkellä."
+
+msgid "Set/update user's location"
+msgstr "Aseta käyttäjän sijainti"
+
+msgid "set location"
+msgstr "aseta sijainti"
+
+msgid "forget location"
+msgstr "Unohda sijainti"
+
+msgid "Widgets for topic."
+msgstr "Aiheen vempaimet."
+
+msgid "Currently shown widgets"
+msgstr "Tällä hetkellä näkyvät vempaimet"
+
+msgid "Would you like to delete the widget?"
+msgstr "Haluatko poistaa vempaimen?"
+
+msgid "The following widgetizers let you create Urban Mediator web widgets for your topic. These web widgets can be added to the topic page itself and can be imbedded in other websites' pages."
+msgstr "Seuraavat vempaimesaattorit antavat sinun tehdä Urban Mediator -verkkovempania aiheeseesi. Nämä widgetit voidaan lisätä itse aihesivulle ja sisällyttää muille verkkosivuille."
+
+msgid "Add point button"
+msgstr "Lisää kohde -nappula"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Luo nappula lisätäksesi kohteita tähän aiheeseen"
+
+msgid "Topic's point list"
+msgstr "Aiheen kohdelista"
+
+msgid "Widget to show topic's points"
+msgstr "Vempain, jolla aiheen kohteet näytetään"
+
+msgid "Topic's list of links"
+msgstr "Aiheen linkkilista"
+
+msgid "Widget to show topic's links"
+msgstr "Vempain, jolla aiheen linkit näytetään"
+
+msgid "A map"
+msgstr "Kartta"
+
+msgid "Widget to show topic on the map"
+msgstr "Vempain, jolla näytetään aihe kartalla"
+
+msgid "Make combo widget"
+msgstr "Luo yhdistelmä vempain"
+
+msgid "Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr "Luo vempain, joka sisältää useita vempaimia (varmista vempaimien url-osoitteet ensin)"
+
+msgid "Make note"
+msgstr "Lisää huomio"
+
+msgid "Make a widget to show a note"
+msgstr "Luo vempain, jolla näytetään huomioita"
+
+msgid "Please, confirm your action"
+msgstr "Ole hyvä ja varmista toimintosi"
+
+msgid "Sign up."
+msgstr "Rekisteröidy."
+
+msgid "Choose a username and password"
+msgstr "Valitse käyttäjänimi ja salasana"
+
+msgid "Choose a username"
+msgstr "Valitse käyttäjänimi"
+
+msgid "Enter a password"
+msgstr "Kirjoita salasana"
+
+msgid "optional"
+msgstr "vapaaehtoinen"
+
+msgid "Tools for topic."
+msgstr "Aiheen työkalut"
+
+msgid "Newsfeed import"
+msgstr "Uutissyötteen tuonti"
+
+msgid "Add trigger"
+msgstr "Lisää laukaisin"
+
+msgid "Manage topic administrators"
+msgstr "Hallinnoi aiheen valvojia"
+
+msgid "CSV Export"
+msgstr "CSV Vienti"
+
+msgid "Export points as CSV"
+msgstr "Vie kohteet CSV:nä"
+
+msgid "Currently active tools"
+msgstr "Aktiiviset työkalut"
+
+msgid "Would you like to delete %s"
+msgstr "Tahtoisitko poistaa %s"
+
+msgid "Currently active triggers"
+msgstr "Aktiiviset laukaisimet"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Tahtoisitko poistaa laukaisimen?"
+
+msgid "Redirecting"
+msgstr "Uudelleenohjaa"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "Jos selaimesi ei automaattisesti uudelleenohjaa:"
+
+msgid "search"
+msgstr "etsi"
+
+msgid "Add new topic"
+msgstr "Lisää aihe"
+
+msgid "edit settings"
+msgstr "muokkaa asetuksia"
+
+msgid "Highlighted Topics"
+msgstr "Korostetut aiheet"
+
+msgid "Recently updated Topics"
+msgstr "Viimeksi päivitetyt aiheet"
+
+msgid "Make HTML"
+msgstr "Luo HTML"
+
+msgid "Update on the topic page"
+msgstr "Päivitys aihesivulla"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr "Muista tehdä HTML ensin, jotta muutokset jäisivät voimaan"
+
+msgid "Add to the topic page"
+msgstr "Lisää aihesivulle"
+
+msgid "The widget will look like:"
+msgstr "Vempaimesi tulee näyttämään tältä:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr "Seuraavaa URLia voi käyttää yhdistelmävempaimen luontiin (Kopioi/Liitä):"
+
+msgid "Key"
+msgstr "Avain"
+
+msgid "Actions"
+msgstr "Toiminnot"
+
+msgid "default"
+msgstr "oletus"
+
+msgid "Change value"
+msgstr "Muuta arvoa"
+
+msgid "Manage user"
+msgstr "Hallinnoi käyttäjää"
+
+msgid "You are being logged out."
+msgstr "Sinua kirjataan ulos."
+
+msgid "You are being logged out..."
+msgstr "Sinua kirjataan ulos..."
+
+msgid "This site runs"
+msgstr "Tämä sivu ajaa"
+
+msgid "Terms of use"
+msgstr "Käyttöehdot"
+
+msgid "Contact"
+msgstr "Ota yhteyttä"
+
+msgid "advanced settings"
+msgstr "lisäasetukset"
+
+msgid "login"
+msgstr "kirjaudu sisään"
+
+msgid "Use of this feature requires registration and log in."
+msgstr "Tämän ominaisuuden käyttäminen vaatii rekisteröitymistä ja sisäänkirjautumista."
+
+msgid "Normal Login"
+msgstr "Normaali sisäänkirjautuminen"
+
+msgid "New users"
+msgstr "Uudet käyttäjät"
+
+msgid "sign up here"
+msgstr "rekisteröidy täällä"
+
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+msgid "Login"
+msgstr "Sisäänkirjautuminen"
+
+msgid "OR: Guest Login"
+msgstr "TAI: Vieraiden sisäänkirjautuminen"
+
+msgid "Guest Login"
+msgstr "Vieraiden sisäänkirjautuminen"
+
+msgid "Your username will appear as:"
+msgstr "Käyttäjänimesi tulee näkymään näin:"
+
+msgid "This username will be valid until you log out or shut  down your browser."
+msgstr "Tämä käyttäjänimi on voimassa kunnes kirjaudut ulos tai suljet selaimesi."
+
+msgid "my location"
+msgstr "sijaintini"
+
+msgid "Topics created or moderated by %s"
+msgstr "%s:n luomat tai hallinnoimat aiheet."
+
+msgid "Topics the user has been subscribed to"
+msgstr "Käyttäjän tilaamat aiheet"
+
+msgid "Contributions by %s"
+msgstr "%s:n lisäykset"
+
+msgid "whole map"
+msgstr "koko kartta"
+
+msgid "My topics"
+msgstr "Minun aiheeni"
+
+msgid "This feature has not been implemented yet."
+msgstr "Tätä ominaisuutta ei ole vielä toteutettu."
+
+
+######################
+
+msgid "Height (pixels)"
+msgstr "Korkeus (pixeliä)"
+
+msgid "Topic Points widget information"
+msgstr "Aiheen kohteet-vempaimen tiedot"
+
+msgid "Point order"
+msgstr "Kohteiden järjestys"
+
+msgid "Map widget information"
+msgstr "Kartta vempaimen tiedot"
+
+msgid "Topic Links widget information"
+msgstr "Aiheen linkit-vempaimen tiedot"
+
+msgid "No such user"
+msgstr "Käyttäjää ei löytynyt"
+
+msgid "User"
+msgstr "Käyttäjä"
+
+msgid "Point: details"
+msgstr "Kohte: tiedot"
+
+msgid "User location"
+msgstr "Käyttäjän sijainti"
+
+msgid "Add a new point to the current location"
+msgstr "Lisää kohde"
+
+msgid "change"
+msgstr "muuta"
+
+msgid "Topic"
+msgstr "Aihe"
+
+msgid "Topic:"
+msgstr "Aihe:"
+
+msgid "Title:"
+msgstr "Nimi:"
+
+
+msgid "Description:"
+msgstr "Kuvaus:"
+
+msgid "Tags:"
+msgstr "Asiasanat:"
+
+msgid "submit"
+msgstr "lähetä"
+
+msgid "cancel"
+msgstr "peruuta"
+
+msgid "POINT: DETAILS"
+msgstr "KOHDE: TIEDOT"
+
+msgid "Distance"
+msgstr "Etäisyys"
+
+msgid "Created "
+msgstr "Luotu "
+
+msgid "by"
+msgstr " "
+# !!!
+
+msgid "Please, login to be able to comment."
+msgstr "Kirjaudu sisään voidaksesi kommentoida."
+
+msgid "New comment"
+msgstr "Uusi kommenti"
+
+msgid "Add a comment"
+msgstr "Lisää kommentti"
+
+msgid "Search local area points"
+msgstr "Paikallisien kohteiden haku"
+
+msgid "Search terms"
+msgstr "Hakusanat"
+
+msgid "MAP: SET LOCATION"
+msgstr "KARTTA: MÄÄRITTELE SIJAINTI"
+
+msgid "GPS location not available."
+msgstr "GPS tietoa ei ole saatavilla."
+
+msgid "Choose the location on the map or lookup a street address:"
+msgstr "Valita sijaintisi kartasta tai anna katuosoite:"
+
+msgid "> Address lookup failed."
+msgstr "> Katuosoitteen haku epäonnistui."
+
+msgid "Street address"
+msgstr "Katuosoite"
+
+msgid "Lookup"
+msgstr "Haku"
+
+msgid "Continue"
+msgstr "Jatka"
+
+msgid "Clear position"
+msgstr "Unohda sijainti"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Point list"
+msgstr "Kohteiden lista"
+
+msgid "All Points in %s m"
+msgstr "Kaikki kohteet %s m säteellä"
+
+msgid "Color Scheme"
+msgstr "Värit"
+
+msgid "Use colors to give your topic a unique appearance."
+msgstr "Käytä värit koristamaan aiheesi."
+
+msgid "Tools"
+msgstr "Työkalut"
+
+msgid "Widgets"
+msgstr "Vempaimet"
+
+msgid "Logged in as %s"
+msgstr "Kirjattu sisään %s:na"
+
+msgid "mobile"
+msgstr "mobiiliversio"
+
+msgid "desktop"
+msgstr "selainversio"
+
+msgid "about"
+msgstr "info"
+#!!!
+
+msgid "help"
+msgstr "ohjeet"
+
+msgid "feedback"
+msgstr "palaute"
+
+msgid "Page:"
+msgstr "Sivu:"
+
+msgid "Location"
+msgstr "Sijainti"
+
+msgid "Details of the new point"
+msgstr "Uuden kohteen tiedot"
+
+msgid "Setup DB"
+msgstr "Setup DB"
+
+msgid "Subscribe to the newsfeed"
+msgstr "Tilaa uutissyöte"
+
+msgid "About this topic"
+msgstr "Tästä aiheesta"
+
+msgid "Delete topic"
+msgstr "Poista aihe"
+
+msgid "Help"
+msgstr "Ohjeet"
+
+msgid "make this topic feedback topic"
+msgstr "tehdä tämä palautteen aiheeksi"
+
+msgid "Choose a center point and zoom level."
+msgstr "Valita keskipist ja zoomaustaso."
+
+msgid "Thank you for your contribution!"
+msgstr "Kiitos lisäyksestä!"
+
+msgid "See other contributions to this topic"
+msgstr "Katso muiden lisäyksiä tähän aiheeseen"
+
+msgid "Return to the site you came from"
+msgstr "Siirry sivulle, josta tulit"
+
+msgid "By"
+msgstr " "
+#!!!
+
+msgid "New tag:"
+msgstr "Uusi asiasana:"
+
+msgid "Edit point"
+msgstr "Editoi kohde"
+
+msgid "Delete point"
+msgstr "Poista kohde"
+
+msgid "Toolbox"
+msgstr "Työkalulaatikko"
+
+msgid "Edit settings"
+msgstr "Editoi asetukset"
+
+msgid "You can:"
+msgstr "Voit:"
+
+msgid "Copy the resulting HTML and insert it into your page's HTML code:"
+msgstr "Kopioi allaoleva HTML-koodi ja liitä sivusi HTML-lähdekoodiin:"
+
+msgid "Advanced settings"
+msgstr "Lisäasetukset"
+
+msgid "Set location"
+msgstr "Määrittele sijainti"
+
+msgid "km"
+msgstr "km"
+
+msgid "No such user."
+msgstr "Käyttäjää ei löytynyt."
+
+msgid "Point page content"
+msgstr "Kohde sivun sisältö"
+
+msgid "Point page comment section elements"
+msgstr "Kohde sivun kommentit"
+
+msgid "This point is marked as inapropriate"
+msgstr "Tämä kohde on merkitty sopimattomaksi"
+
+msgid "Posted by"
+msgstr "Laittanut:"
+
+msgid "Characters:"
+msgstr "Merkit:"
+
+msgid "Warning:"
+msgstr "Huom:"
+
+msgid "the resulting URL is too long for some browsers (IE 6 / 7)."
+msgstr "liian pitkä URL."
+
+msgid "Picture:"
+msgstr "Kuva:"
+
+msgid "BACK TO SEARCH RESULTS"
+msgstr "Takaisin hakutuloksille"
+
+msgid "BACK TO TOPIC"
+msgstr "Takaisin aiheeseen"
+
+msgid "BACK TO POINT LIST"
+msgstr "Takaisin kohde listalle"
+
+msgid "go there"
+msgstr "sinne"
+
+msgid "Search points"
+msgstr "Etsi kohteista"
+
+msgid "GPS"
+msgstr "GPS"
+
+msgid "ADD POINT"
+msgstr "LISÄÄ KOHDE"
+
+msgid "All Points in %s"
+msgstr "Kaikki kohteet %s säteillä"
+
+msgid "All Points"
+msgstr "Kaikki kohteet"
+

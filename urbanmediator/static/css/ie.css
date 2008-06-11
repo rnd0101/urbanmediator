@@ -1,0 +1,32 @@
+form.find_adress button {
+	margin-top: 0;
+}
+
+form.edit_topic div.div_newtopic {
+	margin: 0;
+	padding: 0;
+}
+
+#point_header {
+	height: 28px;
+}
+
+.widget_point_buttons a {
+	height: 22px;
+}
+
+.new_point_buttons a {
+	height: 28px;
+}
+
+.new_topic_button a {
+	height: 28px;
+}
+
+.widget_point_buttons a {
+	height: 22px;
+}
+
+.widget_point_buttons a:visited {
+	height: 22px;
+}

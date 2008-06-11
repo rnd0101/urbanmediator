@@ -1,0 +1,11 @@
+$def with (context, topic, presets=None)
+
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+$if acl.authorize.show_add_point(topic):
+    <ul class="widget_point_buttons">
+    <li><a href="$context.desturl" id="NOTwidget_fillframe" $:context.linktarget>$context.title</a></li>
+    </ul>
+$else:
+    <p>$presets.disabled_text</p>

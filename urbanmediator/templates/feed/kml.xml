@@ -1,0 +1,30 @@
+$def with (context, items)
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" 
+     xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>$context.title</name>
+<atom:link rel="self" href="${context.self_url}" />
+<atom:updated>2003-12-13T18:30:02Z</atom:updated>
+<atom:id>${base_url}/</atom:id>
+$for item in items:
+    $if item.visible:
+        <Placemark>      
+        <name>$item.title</name>      
+        <atom:author><atom:name>${item.author}</atom:name></atom:author>
+        <atom:link href="$item.url"/>
+        <atom:updated>$render_date(item.added, label="rfc3339")</atom:updated>
+        $if item.tags:
+            $for tg in item.tags:
+                <atom:category term="${tg.tag}" scheme="${tg.tag_system_id}" />
+        <description>
+        <![CDATA[
+           $item.summary
+        ]]>
+        </description>
+        <Point>        
+        <coordinates>$item.lon,$item.lat</coordinates>
+        </Point>    
+        </Placemark>    
+</Document> 
+</kml>

@@ -1,0 +1,34 @@
+$def with (page, context)
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="${schema_base_url}/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="${schema_base_url}/css/master.css" />
+<!-- Override the master css because there are widgets -->
+<link rel="stylesheet" href="${schema_base_url}/css/widgets.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="${schema_base_url}/css/ie.css" type="text/css" media="screen,projection" />
+<![endif]-->
+<!-- Override the master css because there are widgets -->
+<script type="text/javascript" src="${schema_base_url}/widget.js"></script>
+<title>$context.get('title', 'widget')</title>
+$if context.page_specific_js:
+    $:context.page_specific_js
+$else:
+    $:macro.fill_js(context)
+</head>
+$if context.framed:
+    <body onload="runOnLoad()" class="framed">
+$else:
+    <body onload="runOnLoad()">
+
+<div id="widget">
+
+$:page
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+$def with (context, topics=[])
+$if topics:
+    <ul class="topic_list">
+    $for topic in topics:
+        <li>\
+            $if ("icon" in config.topic_list_show):
+                <a href="$pc_links('topic', topic.id)" class="topic_icon">\
+                <img src="$topic.profile.topic_icon" alt="[]" />\
+                </a>\
+            <h3>
+            $if ("origin" in config.topic_list_show):
+                $if topic.origin == 'official':
+                    <img src="$official_icon()" class="official" width="16px" height="16px" alt="Official"/>
+            $if ("title" in config.topic_list_show):
+                <a href="$pc_links('topic', topic.id)">$topic.title</a></h3>
+            $if ("topic-description" in config.topic_list_show):
+                $:first_line(topic.first.text)
+            <p class="latest_contribution">
+            $if topic.latest_point:
+                $if ("count-points" in config.topic_list_show):
+                    $if context.count_points:
+                        <span class="points_count">$topic.points_count</span> $n_('point', 'points', topic.points_count).
+                $if ("latest-description" in config.topic_list_show):
+                    $_('Latest addition'): \
+                    <span class="description"><a href="$pc_links('point', topic.id, topic.latest_point.id)">$topic.latest_point.title</a></span>, \
+                    $if ("latest-author" in config.topic_list_show):
+                        $_('posted by:') <span class="username"><a href="$pc_links('user', topic.latest_point.author)">$topic.latest_point.author</a></span>, \
+                $if ("latest-added" in config.topic_list_show):
+                    <span class="time">$rel_date(topic.latest_point.added)</span>
+            $else:
+                $if ("count-points" in config.topic_list_show):
+                    $_('No points yet.')
+                &nbsp;
+            </p>
+        </li>
+    </ul>
+$else:
+    <p>$_('No topics')</p>

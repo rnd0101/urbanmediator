@@ -1,0 +1,39 @@
+$def with (context, topic, form)
+
+$:macro.header_desktop(context, 1, 1)
+
+	$:macro.header_topic(topic, level=1, link=1)
+	
+    	<div id="container">
+        
+            <div id="page_header">
+                <h1>$context.title</h1>
+            </div>
+        
+        	<div id="main">
+    
+                <form name="main" class="small_form" action="" method="post" enctype="multipart/form-data">
+                $if not form.valid: <p class="error">$_("Some fields were not entered correctly:")</p>
+                
+                $:form.render()
+                
+                <div class="submit">
+                    <button type="submit">$_('Submit')</button>
+                </div>
+                
+                </form>
+                
+        	</div>
+            
+            <div id="aside">
+               
+                <ul class="controls">
+    
+                    <li class="help"><a href="" onclick="window.open('','Urban Mediator Help',
+    'width=400,height=600,scrollbars=yes,toolbar=no,location=no'); return false">$_("Help")</a></li>
+    
+                </ul>
+               
+            </div>
+        
+</div>

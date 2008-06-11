@@ -1,0 +1,22 @@
+$def with (page, context)
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>$:context.title</title>
+<meta http-equiv="Cache-Control" content="private; no-store; must-revalidate" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="ROBOTS" content="NOINDEX" />
+<meta name="ROBOTS" content="NOFOLLOW" />
+
+<body>
+    <div id="content">
+        <div id="container">
+        $:page
+            <div class="clear">&nbsp;</div>
+        </div>
+    </div>
+</body>
+</html>

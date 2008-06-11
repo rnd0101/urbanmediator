@@ -1,0 +1,57 @@
+$def with (page, context)
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    
+    $if context.title:
+        <title>$:context.title (${config.instance_name[LANG()]} ${config.instance_name2[LANG()]})</title>
+    $else:
+        <title>${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}</title>
+    <link rel="shortcut icon" href="${schema_base_url}/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="${schema_base_url}/css/master.css" type="text/css" media="screen,projection" />
+    $if ("page_skin" in context):
+        <link rel="stylesheet" media="screen,projection" href="$pc_links('page_skin', context.page_skin)" type="text/css" />
+    <!--[if IE 6]>
+   	<link rel="stylesheet" href="${schema_base_url}/css/ie.css" type="text/css" media="screen,projection" />
+    <![endif]-->
+    <!-- Override the master css because there are widgets -->
+	<link rel="stylesheet" href="${schema_base_url}/css/widgets.css" />
+    <meta http-equiv="Cache-Control" content="private; no-store; must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+$for feed in context.feeds:
+    <link rel="alternate" type="$feed.type" href="$feed.url" title="$feed.title" />
+
+$if context.disallow_robots:
+    <meta name="ROBOTS" content="NOINDEX" />
+    <meta name="ROBOTS" content="NOFOLLOW" />
+
+$if context.page_specific_js:
+    $:context.page_specific_js
+$else:
+    <script type="text/javascript" ><!--
+    function runOnLoad() {}
+    //-->
+    </script>
+</head>
+
+<body onload="runOnLoad()">
+<div class="wrapper">
+$if context.message:
+    <div class="message">$context.message</div>
+<!-- (page content -->
+$:page
+<!-- page content) -->
+    <div class="push"></div>
+    </div>
+<div class="footer">
+    <div id="footer-inside">
+        <p>$_('This site runs') <a href="http://um.uiah.fi">Urban Mediator Software</a> 2007 <a href="$pc_links.privacy">$_('Terms of use')</a> | <a href="$pc_links.contact">$_('Contact')</a></p>
+        <p><a href="http://www.fp6-project-icing.eu/index.html" target="_blank">Innovative Cities for the Next Generation - 2006-2008</a> | <img name="Icing" src="${schema_base_url}/img/icing_logo.png" alt="Icing Logo" /></p>
+    </div>
+</div>
+</body>
+</html>

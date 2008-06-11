@@ -1,0 +1,46 @@
+$def with (context, points)
+
+$:macro.header_desktop(context, 0, 1)
+
+<div id="container">
+
+	<div id="page_header">
+    	<h1>$_('Search')</h1>
+    </div>
+    
+    <div id="main_one_col">
+
+            $if context.display_type == "list":
+
+                <form id="search" action="" method="get">
+                    $if ("mode" in context.nav_data):
+                        <input type="hidden" name="mode" style="display:none;" value="$context.nav_data.mode" />
+                    $if context.nav_data.search:
+                        <input id="search-text" class="search-text-input" type="text" name="search" value="$context.nav_data.search" /><input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search"><br />
+                    $else:
+                        <input id="search-text" class="search-text-input" type="text" name="search" value="" onfocus="this.value=''" /><input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search"><br />
+                    $if context.nav_data.search_tags:
+                        <input type="checkbox" checked="checked" id="search_tags" name="search_tags" /><label for="search_tags">$_("Only tags")</label>
+                    $else:
+                        <input type="checkbox" id="search_tags" name="search_tags" /><label for="search_tags">$_("Only tags")</label>
+                </form>
+                $#:macro.topic_tag_cloud(context, topic, tags)
+                    <div id="display_controls_search">
+                        $#:macro.mode_bar(context)
+                        $if context.nav_data.search:
+                            <h2>$((_("Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s") % context) % context.nav_data.search)
+                            </h2>
+                        $else:
+                            <h2>$_("Showing all points in topic")</h2>
+                    </div><!-- /display_controls -->
+                    $:macro.ordering_bar(context)
+                    $:macro.list_points2(context, points)
+                    $:macro.pagination_bar(context)
+                    $for feed in context.feeds:
+                    <ul class="rss_holder">
+                        <li><a href="$feed.url">$_("Subscribe to the newsfeed")</a></li>
+                    </ul>
+                    
+	
+    </div>
+</div>

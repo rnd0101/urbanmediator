@@ -1,0 +1,7 @@
+$def with (context, presets, points, topic)
+<div class="wmain">
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+$:macro.list_points(context, points, topic, presets.get('point_list_show', 'title'), widget=True)
+</div>

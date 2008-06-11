@@ -1,0 +1,9 @@
+$def with (context)
+
+$if not acl.recommend.show_login():
+    <div class="logout-wrapper"> 
+    <span class="login-info">$(_("Logged in as %s") % context.user.username)</span> 
+    <form id="logout_form" method="get" action="$mobile_links.logout">
+    <input type="submit" name="button" class="button_logout" value="$_('logout')" />
+    </form>
+    </div>

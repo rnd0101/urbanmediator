@@ -1,0 +1,75 @@
+$def with (context, topic, point)
+
+<div id="header">
+  <div id="header-inner">
+    <div id="nav">
+    $:macro.mobile_nav(context)
+    </div>
+
+        <div id="content">
+        	<ul class="list_header_back">
+            $if context.search:
+                <li><a href="$mobile_links('point_list', search=context.search)"><strong>&larr; $_("BACK TO SEARCH RESULTS")</strong></a></li>
+            $elif context.topic_id:
+                <li><a href="$mobile_links('point_list', topic_id=context.topic_id)"><strong>&larr; $_("BACK TO TOPIC")</strong></a></li>
+            $else:
+                <li><a href="$mobile_links('point_list')"><strong>&larr; $_("BACK TO POINT LIST")</strong></a></li>
+          </ul>
+          <hr />
+          <div id="page_header">
+            <strong>$_("POINT: DETAILS")</strong>
+          </div>
+       <div id="list_wrapper">
+          
+          <hr />
+          <ul class="list_header">
+            <li><a href="$mobile_links('point_list', topic_id=topic.id)">$topic.title</a></li>
+          </ul>
+
+          <div class="point_upper">
+            <span class="list_thumb"><img align="right" class="list_point_icon" src="${schema_base_url}/img/mob/marker_bw.png" alt="*" /></span>
+            <span class="point_text"><span class="point_head"><strong>$point.title</strong></span><br />
+            <span class="point_firstrow">$_("Distance"): $dist_meters(point.distance)</span><br />
+            <span class="point_secondrow">$_("Created ") $rel_date(point.added) $_("by") $point.author</span></span>
+          </div><span class="point_desc">$:point.first.text</span><br />
+       </div>
+          <div id="map-wrapper" style="width:${context.map_context.map_width}px;height:${context.map_context.map_height}px;">
+            <img class="full_map" src="${mobile_links('locationmaprepr', zoom=context.map_context.zoom, repr_lat=point.repr_lat, repr_lon=point.repr_lon, mapx=context.map_context.map_width, mapy=context.map_context.map_height, draft=0)}" alt="[map]" width="${context.map_context.map_width}px" height="${context.map_context.map_height}px"/>
+          </div>
+          <a href="${mobile_links('map', lat=point.lat, lon=point.lon)}"><small>$_("go there")</small></a>
+          <hr />
+
+          <div id="comments_wrapper">
+            <div id="comments_header">
+              <strong>$_("Comments")</strong>
+            </div>
+            $for comment in point.comments:
+                $if comment.id != point.first.id:
+                    <span class="com_wrapper"><span class="com_name">$comment.author</span>
+                    <span class="com_date">$rel_date(comment.added)</span><br />
+                    <span class="com_body">$:render_text(comment.text)</span></span>
+                    <hr />
+          </div>
+          $if acl.recommend.show_login():
+              $:macro.login(context, _("Please, login to be able to comment."), come_back=mobile_links('point', t_id=topic.id, p_id=point.id))
+          $else:
+              <div class="input-wrapper">
+              <form id="form1" name="form1" method="post" action="$mobile_links('point', t_id=topic.id, p_id=point.id)">
+                <label><span class="input_field_label">$_("New comment")</span> 
+                <textarea name="text" class="textarea_full" cols="45" rows="3" 
+                onfocus="this.value='';this.onfocus=function(){}">$_("Add a comment")</textarea></label><br />
+                <input name="t_id" style="display:none;" type="hidden" value="$topic.id" />
+                <input name="p_id" style="display:none;" type="hidden" value="$point.id" />
+                <input name="topic_id" style="display:none;" type="hidden" value="$context.topic_id" />
+                <input name="search" style="display:none;" type="hidden" value="$context.search" />
+                <label><input type="submit" name="comment" class="button_full" value="$_('submit')" /></label>
+              </form>
+              </div>
+
+      </div>
+
+    <div id="nav2" class="group">
+    $:macro.mobile_nav(context)
+    </div>
+  </div>
+</div>

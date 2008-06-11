@@ -1,0 +1,11 @@
+$def with (topic, point, level=0, link=0)
+
+$if ("special:inappropriate" in point.tags.set()):
+    <div class="inapropriate">$_("This point is marked as inapropriate")</div>
+
+<div id="point_header">
+$if link:
+    <h2><a href="$pc_links('point', topic.id, point.id)">$point.title</a></h2>
+$else:
+    <h2>$point.title</h2>
+</div>

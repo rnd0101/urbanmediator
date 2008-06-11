@@ -1,0 +1,8 @@
+$def with (context, topic, presets=None)
+
+$if ("showhome" in presets):
+    $:macro.widget_header(context, presets)
+
+<div id="map" style="width:${presets.mapwidth}px;height:${presets.mapheight}px;background-color:#ccc"></div>
+<input type="hidden" id="lon" name="lon" style="display:none;"/>
+<input type="hidden" id="lat" name="lat" style="display:none;"/>

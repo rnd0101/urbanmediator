@@ -1,0 +1,7 @@
+$def with (context, topic, tags)
+
+<ul class="tag_cloud">
+<li></li>
+$for t in tags:
+    <li class="tag level_$t.tag_level"><a title="$t.count_locations" href="$pc_links('topic', topic.id, search=t.safe_tag, search_tags='on', mode=context.nav_data.mode)">$t.tag</a></li>
+</ul>
