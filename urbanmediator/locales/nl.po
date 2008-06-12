@@ -1,0 +1,1367 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UrbanMediator-0-0-1\n"
+"POT-Creation-Date: Tue Nov 01 10:04:16 2005\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mark van der Putten <EMAIL@ADDRESS>\n"
+"Language-Team: <people@arki.uiah.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: manually\n"
+"Preferred-encodings: utf-8\n"
+"Domain: urban_mediator\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s dag"
+msgstr[1] "%s dagen"
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s uur"
+msgstr[1] "%s uren"
+
+msgid "%s minute"
+msgid_plural "%s minutes"
+msgstr[0] "%s minuut"
+msgstr[1] "%s minuten"
+
+msgid "%s second"
+msgid_plural "%s seconds"
+msgstr[0] "%s seconde"
+msgstr[1] "%s seconden"
+
+msgid "%s millisecond"
+msgid_plural "%s milliseconds"
+msgstr[0] "%s milliseconde"
+msgstr[1] "%s milliseconden"
+
+msgid "%s microsecond"
+msgid_plural "%s microseconds"
+msgstr[0] "%s microseconde"
+msgstr[1] "%s microseconden"
+
+msgid "%(day)s.%(month)s.%(year)s"
+msgstr "%(day)s. %(monthname)s %(year)s"
+
+msgid "%(day)s.%(month)s"
+msgstr "%(day)s. %(monthname)s"
+
+msgid "1_month"
+msgstr "Januari"
+
+msgid "2_month"
+msgstr "Februari"
+
+msgid "3_month"
+msgstr "Maart"
+
+msgid "4_month"
+msgstr "April"
+
+msgid "5_month"
+msgstr "Mei"
+
+msgid "6_month"
+msgstr "Juni"
+
+msgid "7_month"
+msgstr "Juli"
+
+msgid "8_month"
+msgstr "Augustus"
+
+msgid "9_month"
+msgstr "September"
+
+msgid "10_month"
+msgstr "Oktober"
+
+msgid "11_month"
+msgstr "November"
+
+msgid "12_month"
+msgstr "December"
+
+msgid "%s from now"
+msgstr "%s vanaf nu"
+# needs translation
+
+msgid "%s ago"
+msgstr "%s geleden"
+
+msgid "point"
+msgid_plural "points"
+msgstr[0] "plaats"
+msgstr[1] "plaatsen"
+
+
+
+msgid "Point addition disabled."
+msgstr "Plaats toevoegen vergrendeld."
+
+msgid "Add point"
+msgstr "Plaats toevoegen"
+
+msgid "Note"
+msgstr "Note"
+
+msgid "Points"
+msgstr "Plaatsen"
+
+msgid "No such topic. Update your bookmarks."
+msgstr "Dit topic bestaat niet. Update uw bladwijzers."
+
+msgid "Links"
+msgstr "Links"
+
+msgid "Setting database"
+msgstr "Setting database"
+
+msgid "Enter some values to start with the database setup"
+msgstr "Voer enige waarden in om de database op te starten"
+
+msgid "Widget appearance"
+msgstr "Widget lay-out"
+
+msgid "Show header?"
+msgstr "Laat header zien?"
+
+msgid "Show logo?"
+msgstr "Laat logo zien?"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Link for title (URL)"
+msgstr "Link voor titel (URL)"
+
+msgid "Subtitle"
+msgstr "Subtitel"
+
+msgid "Must be a number"
+msgstr "Moet een nummer zijn"
+
+msgid "Height (pixels)"
+msgstr "Hoogte (pixels)"
+
+msgid "Width (pixels)"
+msgstr "Breedte (pixels)"
+
+msgid "Widget Basic Settings"
+msgstr "Widget basis instellingen"
+
+msgid "Must be filled"
+msgstr "Moet ingevuld worden"
+
+msgid "Text that will show on button"
+msgstr "Tekst die wordt weergegeven op de knop"
+
+msgid "Text to show when point creation is disabled"
+msgstr "Tekst om te laten zien wanneer plaats toevoegen niet mogelijk is"
+
+msgid "Adding point disabled"
+msgstr "Plaats toevoegen vergrendeld"
+
+msgid "Add Point page Basic Settings"
+msgstr "Plaats toevoegen pagina basis instellingen"
+
+msgid "Point title example"
+msgstr "Plaats titel voorbeeld"
+
+msgid "List of fixed hidden tags"
+msgstr "Lijst van vaste verstopte tags"
+
+msgid "List of predefined tags (leave empty for none)"
+msgstr "Lijst van vooraf ingestelde tags (Laat leeg voor geen tags)"
+
+msgid "Allow"
+msgstr "Toestaan"
+
+msgid "Disallow"
+msgstr "Niet toestaan"
+
+msgid "Free tags (user's own)"
+msgstr "Vrije tags (gebruikers eigen)"
+
+msgid "Empty for most cases. May be: official"
+msgstr "Meetsal leeg. misschien: officieel"
+
+msgid "Point Tags example (for free tags)"
+msgstr "Plaats tags voorbeeld (voor vrije tags)"
+
+msgid "Add Point page Advanced Settings (optional)"
+msgstr "Plaats toevoegen pagina geavanceerde instellingen (optioneel)"
+
+msgid "Form title"
+msgstr "Formulier titel"
+
+msgid "Latitude"
+msgstr "Latitude"
+
+msgid "Longitude"
+msgstr "Longitude"
+
+msgid "Must be a number 1-20 or auto"
+msgstr "Moet een getal zijn tussen 1-20 of auto"
+
+msgid "Must be 1-20"
+msgstr "Moet een getal zijn tussen de 1-20"
+
+msgid "Zoom level"
+msgstr "Zoom level"
+
+msgid "Must be a number or empty"
+msgstr "Moet een getal zijn of leeg"
+
+msgid "Template point ID"
+msgstr "Layout plaats ID"
+
+msgid "Note widget information"
+msgstr "Note widget informatie"
+
+msgid "Note title (not shown)"
+msgstr "Note titel (wordt niet weergegeven)"
+
+msgid "Note text"
+msgstr "Note tekst"
+
+msgid "Container widget information"
+msgstr "Container widget informatie"
+
+msgid "URL1"
+msgstr "URL1"
+
+msgid "URL2"
+msgstr "URL2"
+
+msgid "URL3"
+msgstr "URL3"
+
+msgid "URL4"
+msgstr "URL4"
+
+msgid "URL5"
+msgstr "URL5"
+
+msgid "URL6"
+msgstr "URL6"
+
+msgid "URL7"
+msgstr "URL7"
+
+msgid "URL8"
+msgstr "URL8"
+
+msgid "Topic Points widget information"
+msgstr "Topic plaatsen widget informatie"
+
+msgid "Must be a number 1-20"
+msgstr "Moet een nummer zijn tussen de 1-20"
+
+msgid "Number of points to show"
+msgstr "Aantal plaatsen laten zien"
+
+msgid "Point information display in point list"
+msgstr "Plaats informatie laten zien in plaatsen lijst"
+
+msgid "Point order"
+msgstr "Plaats volgorde"
+
+msgid "Map widget information"
+msgstr "Map widget informatie"
+
+msgid "Width of the map"
+msgstr "Breedte van de map"
+
+msgid "Height of the map"
+msgstr "Hoogte van de map"
+
+msgid "Topic Links widget information"
+msgstr "Topic Links widget informatie"
+
+msgid "Number of links to show"
+msgstr "Aantal links om te laten zien"
+
+msgid "Widget Editor"
+msgstr "Widget Editor"
+
+msgid "newest"
+msgstr "nieuwste"
+
+msgid "oldest"
+msgstr "oudste"
+
+msgid "recently updated"
+msgstr "laatst geupdate"
+
+msgid "most points"
+msgstr "meeste plaatsen"
+
+msgid "title"
+msgstr "titel"
+
+msgid "m"
+msgstr "m"
+
+msgid "km"
+msgstr "km"
+
+msgid "File"
+msgstr "Bestand"
+
+msgid "This information is stored at:"
+msgstr "Deze informatie is opgeslagen op:"
+
+msgid "Also stored at"
+msgstr "Ook opgeslagen op"
+
+msgid "No description"
+msgstr "Geen beschrijving"
+
+msgid "No summary"
+msgstr "Geen samenvatting"
+
+msgid "from external sources"
+msgstr "Van een externe bron"
+
+msgid "Topic points"
+msgstr "Topic plaatsen"
+
+msgid "No such topic. Delete from your bookmarks: "
+msgstr "Dit topic bestaat niet. Verwijder uit uw favorieten:"
+
+msgid "No such point. Delete from your bookmarks: "
+msgstr "Deze plaats bestaat niet. Verwijder uit uw favorieten:"
+
+msgid "Point: "
+msgstr "Plaats: "
+
+msgid "Topics"
+msgstr "Topics"
+
+msgid "No such user"
+msgstr "Deze gebruiker bestaat niet"
+
+msgid "User"
+msgstr "Gebruiker"
+
+msgid "Search for '%s'"
+msgstr "Zoek naar '%s'"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Login failed"
+msgstr "Login mislukt"
+
+msgid "Visual code is wrong. Try again"
+msgstr "Visuele code is verkeerd. Probeer opnieuw"
+
+msgid "No such user - error occured"
+msgstr "Deze gebruiker bestaat niet - Fout heeft zich voor gedaan"
+
+msgid "Login page"
+msgstr "Login pagina"
+
+msgid "Front Page"
+msgstr "Voorpagina"
+
+msgid "Advanced search: "
+msgstr "Geavanceerd zoeken: "
+
+msgid "User: "
+msgstr "Gebruiker: "
+
+msgid "No such user."
+msgstr "Deze gebruiker bestaat niet."
+
+msgid "Old password"
+msgstr "Oud paswoord"
+
+msgid "Password"
+msgstr "Paswoord"
+
+msgid "Repeat password"
+msgstr "Herhaal paswoord"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "You do not have rights to access user information."
+msgstr "U heeft geen rechten om gebruikers informatie te zien."
+
+msgid "Change settings"
+msgstr "Verander instellingen"
+
+msgid "You do not have rights to change user information."
+msgstr "U heeft geen rechten om gebruikers informatie te bewerken."
+
+msgid "You do not have rights to change user information. Old password not given."
+msgstr "U heeft geen rechten om gebruikers informatie te bewerken. Oude paswoord niet gegeven."
+
+msgid "Password mismatch or empty password."
+msgstr "Paswoorden niet gelijk of leeg."
+
+msgid "Password changed."
+msgstr "Paswoord veranderd."
+
+msgid "Profile updated."
+msgstr "Profiel geupdate."
+
+msgid "Set user location"
+msgstr "Stel gebruikers locatie in."
+
+msgid "Topic: "
+msgstr "Topic: "
+
+msgid "New Topic"
+msgstr "Nieuw Topic"
+
+msgid "a topic"
+msgstr "een topic"
+
+msgid "Point created! "
+msgstr "Plaats aangemaakt! "
+
+msgid "Add comment"
+msgstr "Commentaar toevoegen."
+
+msgid "Comment text"
+msgstr "Commentaar tekst"
+
+msgid "Picture"
+msgstr "Afbeeldingen"
+
+msgid "Related website URL"
+msgstr "Gerelateerde website URL"
+
+msgid "Related website description"
+msgstr "Gerelateerde website beschrijving"
+
+msgid "You do not have rights to edit the comment."
+msgstr "U heeft geen rechten om het commentaar te bewerken."
+
+msgid "Edit comment"
+msgstr "Commentaar bewerken."
+
+msgid "You do not have rights to delete the comment."
+msgstr "U heeft geen rechten om het comentaar te verwijderen."
+
+msgid "Edit point settings"
+msgstr "Bewerk plaats instellingen"
+
+msgid "dangerous ugly disturbing question complaint"
+msgstr "Gevaarlijk lelijk verstorende vraag"
+
+msgid "Dangerous concrete blocks"
+msgstr "Gevaarlijk concrete blocks"
+
+msgid "You do not have rights for that."
+msgstr "U heeft hier geen rechten voor."
+
+msgid "Set topic map"
+msgstr "Stel de map in voor het topic"
+
+msgid "Add Point"
+msgstr "Plaats toevoegen"
+
+msgid "Topic tools"
+msgstr "Topic tools"
+
+msgid "Topic widgets"
+msgstr "Topic widgets"
+
+msgid "Subscription"
+msgstr "Abonnement"
+
+msgid "Active"
+msgstr "Actief"
+
+msgid "Topic subscription"
+msgstr "Topic abonnement"
+
+msgid "Topic settings"
+msgstr "Topic instellingen"
+
+msgid "Administrator's extras"
+msgstr "Administratie extras"
+
+msgid "Topic origin"
+msgstr "Topic origineel"
+
+msgid "Topic tags"
+msgstr "Topic tags"
+
+msgid "Topic only"
+msgstr "Alleen topic"
+
+msgid "Topics and points"
+msgstr "Topics en plaatsen"
+
+msgid "Topic owners management rights"
+msgstr "Topic eigenaren management rechten"
+
+msgid "getmap_layers"
+msgstr "getmap_layers"
+
+msgid "getmap_layers1"
+msgstr "getmap_layers1"
+
+msgid "getmap_layers2"
+msgstr "getmap_layers2"
+
+msgid "getmap_zoom1"
+msgstr "getmap_zoom1"
+
+msgid "getmap_zoom2"
+msgstr "getmap_zoom2"
+
+msgid "getmap_zoomshift"
+msgstr "getmap_zoomshift"
+
+msgid "getmap_params"
+msgstr "getmap_params"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Topic page elements"
+msgstr "Topic pagina elementen"
+
+msgid "Point page content"
+msgstr "Plaats pagina inhoud"
+
+msgid "Point page comment section elements"
+msgstr "Plaats pagina commentaar sectie elementen"
+
+msgid "Point information display on point list"
+msgstr "Laat plaats informatie zien op plaatsen lijst"
+
+msgid "list"
+msgstr "lijst"
+
+msgid "map"
+msgstr "map"
+
+msgid "Default view mode"
+msgstr "Standaard mode"
+
+msgid "Default view order for point list"
+msgstr "Standaard volgorde voor plaatsen lijst"
+
+msgid "Who can add points"
+msgstr "Wie kan plaatsen toevoegen"
+
+msgid "Advanced topic settings"
+msgstr "Geavanceerde topic instellingen"
+
+msgid "Not found"
+msgstr "Niet gevonden"
+
+msgid "Sign up"
+msgstr "Aanmelden"
+
+msgid "Visual code is wrong."
+msgstr "Visuele code is fout."
+
+msgid "Passwords do not match."
+msgstr "De paswoorden zijn niet gelijk."
+
+msgid "Error occured. User not added."
+msgstr "Fout! Gebruiker is niet aangemaakt."
+
+msgid "User created."
+msgstr "Gebruiker aangemaakt."
+
+msgid "Add user role in this topic"
+msgstr "Voeg gebruikers rol toe in dit topic"
+
+msgid "Username of a registered user"
+msgstr "Gebruikersnaam van een geregistreerde gebruiker"
+
+msgid "Manager?"
+msgstr "Manager?"
+
+msgid "User manager?"
+msgstr "Gebruiker manager?"
+
+msgid "Subscriber?"
+msgstr "Subscriber?"
+
+msgid "List of administrators for "
+msgstr "Lijst van administratie leden voor "
+
+msgid "User managed successfully."
+msgstr "Gebruiker succesvol aangepast."
+
+msgid "Enter feed for importing"
+msgstr "Vul een feed in om te importeren"
+
+msgid "Feed address (URL)"
+msgstr "Feed adres (URL)"
+
+msgid "Describe the feed"
+msgstr "Beschrijving van de feed"
+
+msgid "Feed for issues?"
+msgstr "Feed voor problemen?"
+
+msgid "Check interval in seconds"
+msgstr "Check interval in seconden"
+
+msgid "New feed for "
+msgstr "Nieuwe feed voor "
+
+msgid "external"
+msgstr "extern"
+
+msgid "Edit feed "
+msgstr "bewerk feed "
+
+msgid "Edit feed for "
+msgstr "Bewerk feed voor "
+
+msgid "Enter configuration parameter"
+msgstr "Vul configuratie parameter in"
+
+msgid "Parameter name"
+msgstr "Parameter naam"
+
+msgid "Value"
+msgstr "Waarde"
+
+msgid "Language not supported"
+msgstr "Taal wordt niet ondersteund"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "You do not have rights to edit settings."
+msgstr "U heeft geen rechten om instellingen te bewerken."
+
+msgid "Urban Mediator Settings"
+msgstr "Urban Mediator Instellingen"
+
+msgid "Some fields were not entered correctly:"
+msgstr "Sommige velden zijn niet correct ingevoerd:"
+
+msgid "You do not have rights to delete the widget."
+msgstr "U heeft geen rechten om widgets te verwijderen."
+
+msgid "You do not have rights to change the widget."
+msgstr "U heeft geen rechten om widgets te veranderen."
+
+msgid "Enter trigger information"
+msgstr "Vul trigger informatie in"
+
+msgid "Describe the trigger"
+msgstr "Beschrijf de trigger"
+
+msgid "Condition (e.g. addpoint)"
+msgstr "Conditie (e.g. plaats toevoegen)"
+
+msgid "Action"
+msgstr "Actie"
+
+msgid "Adapter"
+msgstr "Adapter"
+
+msgid "URL (as a parameter for the adapter)"
+msgstr "URL (als een parameter voor de adapter)"
+
+msgid "Edit trigger "
+msgstr "Bewerk trigger "
+
+msgid "Edit trigger for "
+msgstr "Bewerk trigger voor "
+
+msgid "New trigger for "
+msgstr "Nieuwe trigger voor "
+
+msgid "Error adding trigger"
+msgstr "Fout bij het toevoegen van trigger"
+
+msgid "iisys.users"
+msgstr "iisys.gebruikers"
+
+msgid "UM Front Page"
+msgstr "UM Voorpagina"
+
+msgid "label_Add"
+msgstr "label_Toevoegen"
+
+msgid "label_Place"
+msgstr "label_Plaats"
+
+msgid "label_Home"
+msgstr "label_Home"
+
+msgid "label_Search"
+msgstr "label_Zoeken"
+
+msgid "label_Info"
+msgstr "label_Informatie"
+
+msgid "List of points"
+msgstr "Lijst van plaatsen"
+
+msgid "Point: details"
+msgstr "Plaats: details"
+
+msgid "User location"
+msgstr "Gebruikers locatie"
+
+msgid "Number verification:"
+msgstr "Nummer verificatie:"
+
+msgid "Please type the characters you see in the picture above."
+msgstr "Vul alstublieft de karakters in die u ziet in het plaatje hierboven."
+
+msgid "Text:"
+msgstr "Tekst:"
+
+msgid "Name & description"
+msgstr "Naam & beschrijving"
+
+msgid "Description should not be longer than 3-4 lines."
+msgstr "Beschrijving zou niet langer moeten zijn dan 3-4 regels."
+
+msgid "Topic Name"
+msgstr "Topic Naam"
+
+msgid "The name of your topic."
+msgstr "De naam voor jouw topic."
+
+msgid "Topic Description"
+msgstr "Topic beschrijving"
+
+msgid "A brief description of your topic. You can edit this later, and add photos or links to it."
+msgstr "Een kleine beschrijving van jouw topic.  Je kan dit later nog bewerken en foto's en links toevoegen."
+
+msgid "Color Scheme"
+msgstr "Kleurenschema"
+
+msgid "Use colors to give your topic a unique appearance."
+msgstr "Gebruik verschillende kleuren om je topic een unieke uitstraling te geven."
+
+msgid "Choose an icon"
+msgstr "Selecteer een icoon"
+
+msgid "An icon displayed on the front page and on the topic's pages"
+msgstr "Een icoon wordt weergegeven op de voorpagina en op de topic pagina's."
+
+msgid "or"
+msgstr "of"
+
+msgid "upload a picture"
+msgstr "upload een foto"
+
+msgid "The image (~ 60x60 pixels) will be used as the topic's icon"
+msgstr "De afbeelding (~ 60x60 pixels) zal gebruikt worden als het icoon van het topic"
+
+msgid "Latest addition"
+msgstr "Laatste additie"
+
+msgid "posted by:"
+msgstr "Geplaatst door:"
+
+msgid "No points yet."
+msgstr "Nog geen plaatsen."
+
+msgid "No topics"
+msgstr "Geen topics"
+
+msgid "Topic Icon"
+msgstr "Topic Icoon"
+
+msgid "official"
+msgstr "Officieel"
+
+msgid "Tools"
+msgstr "Tools"
+
+msgid "Widgets"
+msgstr "Widgets"
+
+msgid "Logged in as %s"
+msgstr "Ingelogd als %s"
+
+msgid "logout"
+msgstr "Uitloggen"
+
+msgid "This point is marked as inapropriate"
+msgstr "Deze plaats is aangegeven als ongewenst"
+
+msgid "more"
+msgstr "meer"
+
+msgid "posted by"
+msgstr "Geplaatst door"
+
+msgid "comments: "
+msgstr "commentaar: "
+
+msgid "User:"
+msgstr "Gebruiker:"
+
+msgid "Submit"
+msgstr "Verzend"
+
+msgid "Please, login at least as guest to add comments here:"
+msgstr "U moet minstens als gast inloggen om hier commentaar te plaatsen:"
+
+msgid "log in"
+msgstr "log in"
+
+msgid "Order by:"
+msgstr "Sorteer op:"
+
+msgid "mobile"
+msgstr "mobiel"
+
+msgid "desktop"
+msgstr "desktop"
+
+msgid "sign up"
+msgstr "aanmelden"
+
+msgid "about"
+msgstr "over"
+
+msgid "help"
+msgstr "help"
+
+msgid "feedback"
+msgstr "feedback"
+
+msgid "edit"
+msgstr "bewerk"
+
+msgid "delete"
+msgstr "verwijder"
+
+msgid "tags"
+msgstr "tags"
+
+msgid "Page:"
+msgstr "Pagina:"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+msgid "login"
+msgstr "login"
+
+msgid "New user?"
+msgstr "Nieuwe gebruiker?"
+
+msgid "Sorry. Address lookup failed."
+msgstr "Sorry.  Zoeken van het adres mislukt."
+
+msgid "Find by address"
+msgstr "Zoek naar een adres"
+
+msgid "Find"
+msgstr "Vind"
+
+msgid "example"
+msgstr "voorbeeld"
+
+msgid "Location"
+msgstr "Locatie"
+
+msgid "1. Location:"
+msgstr "1. Locatie:"
+
+msgid "Details of the new point"
+msgstr "Details van de nieuwe plaats"
+
+msgid "Link to related website"
+msgstr "Links is gerelateerd aan website"
+
+msgid "Description"
+msgstr "Beschrijving"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Category:"
+msgstr "Categorie:"
+
+msgid "Info added here will also go to:"
+msgstr "Informatie die u hier toevoegd wordt ook toegevoegd aan:"
+
+msgid "submit"
+msgstr "verzend"
+
+msgid "Setup DB"
+msgstr "Installeer DB"
+
+msgid "You do not have permission to edit this comment."
+msgstr "U heeft geen rechten om dit commentaar te bewerken."
+
+msgid "Search result for "
+msgstr "Zoek resultaat voor "
+
+msgid "show all points"
+msgstr "Laat alle plaatsen zien"
+
+msgid "Showing all points in topic"
+msgstr "Alle plaatsen in topic"
+
+msgid "Subscribe to the newsfeed"
+msgstr "Abonneren op de nieuwdsfeed"
+
+msgid "Search result for '%%s', page %(current_page)s of %(total_num_of_pages)s"
+msgstr "Zoek resultaat voor '%%s', pagina %(current_page)s van %(total_num_of_pages)s"
+
+msgid "Search"
+msgstr "Zoek"
+
+msgid "Only tags"
+msgstr "Alleen tags"
+
+msgid "Add new point"
+msgstr "Plaats toevoegen"
+
+msgid "Topic doesn't allow new points at the moment."
+msgstr "Dit topic staat het aanmaken van nieuwe plaatsen op dit moment niet toe."
+
+msgid "Connection:"
+msgstr "Connectie:"
+
+msgid "About this topic"
+msgstr "Over dit topic"
+
+msgid "Open a new topic"
+msgstr "Open een nieuw topic"
+
+msgid "You are about to permanently delete the topic %s. This action cannot be undone later."
+msgstr "U staat op het punt om het topic %s permanent te verwijderen. U kunt dit later niet ongedaan maken."
+
+msgid "DELETE"
+msgstr "Verwijder"
+
+msgid "Delete topic"
+msgstr "Verwijder topic"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "make this topic feedback topic"
+msgstr "Maak van dit topic het feedback topic"
+
+msgid "Set/update topic's central location"
+msgstr "Selecteer/update een centrale locatie voor het topic"
+
+msgid "Choose a center point and zoom level."
+msgstr "Selecteer een centraal punt en zoom level."
+
+msgid "Location:"
+msgstr "Locatie:"
+
+msgid "Automatic zoom"
+msgstr "Automatische zoom"
+
+msgid "no"
+msgstr "nee"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "Whether to calculate zoom level automatically from available points"
+msgstr "Bereken zoom level automatisch van beschikbare punten"
+
+msgid "Topic subscription."
+msgstr "Topic abonnement."
+
+msgid "Change subscription"
+msgstr "Verander abonnement"
+
+msgid "Thank you for your contribution!"
+msgstr "Bedankt voor uw contributie!"
+
+msgid "Return to the site you came from"
+msgstr "Ga terug naar de site waar u vandaan kwam"
+
+msgid "See other contributions to this topic"
+msgstr "Bekijk andere contributies voor dit topic"
+
+msgid "Posted by"
+msgstr "Toegevoegd door"
+
+msgid "External URL"
+msgstr "Externe URL"
+
+msgid "tags:"
+msgstr "tags:"
+
+msgid "Add Tag"
+msgstr "Voeg tag toe"
+
+msgid "Comments"
+msgstr "Commentaar"
+
+msgid "Edit point"
+msgstr "Bewerk plaats"
+
+msgid "Would you like to mark as inappropriate %s"
+msgstr "Wild u dit punt markeren als ongewenst %s"
+
+msgid "MARK"
+msgstr "Markeer"
+
+msgid "mark as inapproapriate"
+msgstr "Markeer als ongewenst"
+
+msgid "Would you like to delete %s"
+msgstr "Wilt u %s verwijderen"
+
+msgid "Delete point"
+msgstr "Verwijder plaats"
+
+msgid "Other topics with this point"
+msgstr "Andere topics die deze plaats bevatten"
+
+msgid "Nearby points"
+msgstr "Plaatsen in de omgeving"
+
+msgid "Sorry. The topic doesn't allow new points at the moment."
+msgstr "Sorry. Dit topic staat het toevoegen van plaatsen op dit moment niet toe."
+
+msgid "Set/update user's location"
+msgstr "Selecteer/update locatie van de gebruiker"
+
+msgid "set location"
+msgstr "selecteer locatie"
+
+msgid "forget location"
+msgstr "Vergeet locatie"
+
+msgid "Widgets for topic."
+msgstr "Widgets voor topic."
+
+msgid "Add point button"
+msgstr "Knop plaats toevoegen"
+
+msgid "Make a widget to submit points to this topic"
+msgstr "Maak een widget om plaatsen toe te voegen aan dit topic"
+
+msgid "Topic's point list"
+msgstr "Topic plaatsen lijst"
+
+msgid "Widget to show topic's points"
+msgstr "Widget om topic's plaatsen wee te geven"
+
+msgid "Topic's list of links"
+msgstr "Topic's lijst met links"
+
+msgid "Widget to show topic's links"
+msgstr "Widget om topic's links weer te geven"
+
+msgid "A map"
+msgstr "Een map"
+
+msgid "Widget to show topic on the map"
+msgstr "Widget om het topic op de map weer te geven"
+
+msgid "Make combo widget"
+msgstr "Maak een combinatie widget"
+
+msgid "Make a widget which contains several widgets (prepare urls for widgets first)"
+msgstr "Maak een widget dat meerdere widgets bevat (prepareer urls voor de widgets eerst)"
+
+msgid "Make note"
+msgstr "Maak note"
+
+msgid "Make a widget to show a note"
+msgstr "Maak een widget om een note weer te geven"
+
+msgid "Currently shown widgets"
+msgstr "Widgets die momenteel worden weergegeven"
+
+msgid "Would you like to delete the widget?"
+msgstr "Wilt u deze widget verwijderen?"
+
+msgid "Please, confirm your action"
+msgstr "Bevestig uw actie"
+
+msgid "Sign up."
+msgstr "Aanmelden."
+
+msgid "Choose a username and password"
+msgstr "Bedenk een gebruikersnaam en wachtwoord"
+
+msgid "Choose a username"
+msgstr "Bedenk een gebruikersnaam"
+
+msgid "Enter a password"
+msgstr "Bedenk een wachtwoord"
+
+msgid "optional"
+msgstr "optioneel"
+
+msgid "Tools for topic."
+msgstr "Tools voor topic."
+
+msgid "Toolbox"
+msgstr "Toolbox"
+
+msgid "Newsfeed import"
+msgstr "Nieuwsfeed importeren"
+
+msgid "Add trigger"
+msgstr "Voeg trigger toe"
+
+msgid "Manage topic administrators"
+msgstr "Manage topic administrators"
+
+msgid "CSV Export"
+msgstr "CSV Exporteren"
+
+msgid "Export points as CSV"
+msgstr "Exporteer plaatsen als CSV"
+
+msgid "Currently active tools"
+msgstr "Momenteel actieve tools"
+
+msgid "Currently active triggers"
+msgstr "Momenteel actieve triggers"
+
+msgid "Would you like to delete the trigger?"
+msgstr "Wilt u deze trigger verwijderen?"
+
+msgid "Redirecting"
+msgstr "Doorverwijzen"
+
+msgid "If your browser does not automatically re-direct:"
+msgstr "Als u een browser gebruikt die niet vanzelf doorverwijst:"
+
+msgid "Highlighted Topics"
+msgstr "Highlighted Topics"
+
+msgid "Recently updated Topics"
+msgstr "Laatst bewerkte Topics"
+
+msgid "search"
+msgstr "zoeken"
+
+msgid "Add new topic"
+msgstr "Voeg een nieuw topic toe"
+
+msgid "Edit settings"
+msgstr "Bewerk instellingen"
+
+msgid "Make HTML"
+msgstr "Maak HTML"
+
+msgid "The widget will look like:"
+msgstr "De widget komt er als volgt uit te zien:"
+
+msgid "You can:"
+msgstr "U kan:"
+
+msgid "Update on the topic page"
+msgstr "Update op de topic pagina"
+
+msgid "Remember to Make HTML first for the changes to be effective"
+msgstr "Onthoud om eerst de html te genereren voordat uw veranderingen zichtbaar zijn"
+
+msgid "Add to the topic page"
+msgstr "Toevegen aan de topic pagina"
+
+msgid "Copy the resulting HTML and insert it into your page's HTML code:"
+msgstr "Kopieer html en voeg toe aan uw pagina's html code:"
+
+msgid "The following URL can be used for creating combo widget (Copy/Paste):"
+msgstr "De volgende URL kan gebruikt worden for een combinatie widget:"
+
+msgid "Characters:"
+msgstr "Karakters:"
+
+msgid "Warning:"
+msgstr "Fout:"
+
+msgid "the resulting URL is too long for some browsers (IE 6 / 7)."
+msgstr "deze URL is te lang for sommige browsers (IE 6 / 7)."
+
+msgid "Actions"
+msgstr "Acties"
+
+msgid "Key"
+msgstr "Sleutel"
+
+msgid "default"
+msgstr "Standaard"
+
+msgid "Change value"
+msgstr "Verander waarde"
+
+msgid "This feature has not been implemented yet."
+msgstr "Deze optie is nog niet geïnstalleerd."
+
+msgid "Manage user"
+msgstr "Manage gebruiker"
+
+msgid "You are being logged out."
+msgstr "U wordt uitgelogd."
+
+msgid "You are being logged out..."
+msgstr "U wordt uitgelogd..."
+
+msgid "This site runs"
+msgstr "Deze site gebruikt"
+
+msgid "Terms of use"
+msgstr "Terms of use"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Advanced settings"
+msgstr "Geavanceerde instellingen"
+
+msgid "Use of this feature requires registration and log in."
+msgstr "Voor gebruik van deze optie moet u geregistreerd zijn en ingelogd zijn."
+
+msgid "Normal Login"
+msgstr "Normale login"
+
+msgid "New users"
+msgstr "Nieuwe gebruikers"
+
+msgid "sign up here"
+msgstr "Registreren"
+
+msgid "Guest Login"
+msgstr "Gasten login"
+
+msgid "Your username will appear as:"
+msgstr "Uw gebruikersnaam wordt weergegeven als:"
+
+msgid "This username will be valid until you log out or shut  down your browser."
+msgstr "Deze gebruikersnaam zal actief zijn als u uitlogt of uw browser afsluit."
+
+msgid "Topics created or moderated by %s"
+msgstr "Topics aangemaakt of bewerkt door %s"
+
+msgid "Topics the user has been subscribed to"
+msgstr "Topics waar de gebruiker op is geabonneerd"
+
+msgid "Contributions by %s"
+msgstr "Contributie door %s"
+
+msgid "my location"
+msgstr "Mijn locatie"
+
+msgid "Set location"
+msgstr "Locatie instellen"
+
+msgid "Topic"
+msgstr "Topic"
+
+msgid "Topic:"
+msgstr "Topic:"
+
+msgid "Title:"
+msgstr "Titel:"
+
+msgid "Description:"
+msgstr "Beschrijving:"
+
+msgid "Tags:"
+msgstr "Tags:"
+
+msgid "Picture:"
+msgstr "Afbeelding:"
+
+msgid "BACK TO SEARCH RESULTS"
+msgstr "Terug naar de zoekresultaten"
+
+msgid "BACK TO TOPIC"
+msgstr "Terug naar het topic"
+
+msgid "BACK TO POINT LIST"
+msgstr "Terug naar de plaats lijst"
+
+msgid "POINT: DETAILS"
+msgstr "Plaats: details"
+
+msgid "Distance"
+msgstr "Aftsand"
+
+msgid "Created "
+msgstr "Aangemaakt "
+
+msgid "by"
+msgstr "door"
+
+msgid "go there"
+msgstr "ga er naar toe"
+
+msgid "Please, login to be able to comment."
+msgstr "Log alstublieft in om commentaar te plaatsen."
+
+msgid "New comment"
+msgstr "Nieuw commentaar"
+
+msgid "Add a comment"
+msgstr "Commentaar toevoegen"
+
+msgid "Search points"
+msgstr "Zoek plaatsen"
+
+msgid "Search terms"
+msgstr "Zoek voorwaarden"
+
+msgid "MAP: SET LOCATION"
+msgstr "Map: Stel locatie in"
+
+msgid "GPS"
+msgstr "GPS"
+
+msgid "Choose the location on the map or lookup a street address:"
+msgstr "Selecteer een locatie voor de map of zoek een straat adres:"
+
+msgid "> Address lookup failed."
+msgstr "> Fout bij het zoeken van het adres."
+
+msgid "Street address"
+msgstr "Straat adres"
+
+msgid "Lookup"
+msgstr "Zoek"
+
+msgid "Continue"
+msgstr "Ga door"
+
+msgid "Clear position"
+msgstr "Verwijder positie"
+
+msgid "Info"
+msgstr "Informatie"
+
+msgid "ADD POINT"
+msgstr "Plaats toevoegen"
+
+msgid "Point list"
+msgstr "Plaats lijst"
+
+msgid "All Points in %s"
+msgstr "Alle plaatsen in %s"
+
+msgid "All Points"
+msgstr "Alle plaatsen"
+
+
