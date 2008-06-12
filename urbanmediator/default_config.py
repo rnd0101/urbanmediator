@@ -40,13 +40,14 @@ max_nearby_points = 24
 
 topic_zoom = 15
 
-LANGUAGES = "en", "fi", "es", "ca", "ru"
+LANGUAGES = "en", "fi", "es", "nl", "ca", "ru"
 
 instance_name = dict(en="Urban Mediator",
                      fi="Urban Mediator",
                      es="Urban Mediator",
                      ca="Urban Mediator",
                      ru="Urban Mediator",
+                     nl="Urban Mediator",
                     )
 
 instance_name2 = dict(en="-",
@@ -54,6 +55,7 @@ instance_name2 = dict(en="-",
                       es="-",
                       ca="-",
                       ru="-",
+                      nl="-",
                     )
 
 official_icon = "img/icon.official.png"
@@ -63,6 +65,7 @@ instance_owner = dict(en="University of Art and Design Helsinki",
                      es="University of Art and Design Helsinki",
                      ca="University of Art and Design Helsinki",
                      ru="University of Art and Design Helsinki",
+                     nl="University of Art and Design Helsinki",
                     )
 
 issue_trigger_parameter = "dac://Dublin/issues/UM"
