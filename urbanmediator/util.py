@@ -131,7 +131,7 @@ def normalize_url(url, to_del=''):
     return url1 + "?" + query
 
 def sanitize_html(html):
-    return html
+    # return html
     return feedparser._sanitizeHTML(html, 'utf-8')
 
 NOT_SID_RE = "[^_0-9a-zA-Z]"
