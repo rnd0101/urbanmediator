@@ -48,6 +48,7 @@ setup(
         "Natural Language :: Finnish",
         "Natural Language :: Russian",
         "Natural Language :: Spanish",
+        "Natural Language :: Dutch",
         "Programming Language :: Python",
         "Programming Language :: SQL",
         "Programming Language :: JavaScript",
