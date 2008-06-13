@@ -29,7 +29,7 @@ except:
 
 setup(
     name = "urbanmediator",
-    version = "2.0" + revision,
+    version = "2.0.0" + revision,
     description = """Sharing urban information in location-aware way.""",
     long_description = """
     Urban Mediator (UM) web-server is a software project of Icing
@@ -40,7 +40,6 @@ setup(
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
         "Environment :: Handhelds/PDA's",
-        "Framework :: web.py",
         "Intended Audience :: Developers",
         "Intended Audience :: Information Technology",
         "Operating System :: OS Independent",

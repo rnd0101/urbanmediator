@@ -61,9 +61,9 @@ function MapEngine()
 	
 		//SEARCH FORM
 		this.search_form_template  	= 	"<form id=\"searchform\" action=\"" + this.search_url + "\" method=\"get\"><div style=\"width: 100%; height: 16px;\"><!--empty--></div>";
-		this.search_form_template  	+= 	"<input type=\"text\" name=\"search\" class=\"input_text\" id=\"search_query\" value=\"<!--search_words-->\" /><div style=\"width: 100%; height: 6px;\"><!--empty--></div><button type=\"submit\">search</button><div style=\"width: 100%; height: 6px;\"><!--empty--></div>";
-		this.search_form_template  	+= 	"<p><input type=\"radio\" name=\"search_tags\" id=\"searchtype_tags\" value=\"true\" checked=\"checked\" />tags&nbsp;&nbsp;";
-		this.search_form_template  	+= 	"<input type=\"radio\" name=\"search_tags\" id=\"searchtype_text\" value=\"false\" />all text</p>";
+		this.search_form_template  	+= 	"<input type=\"text\" name=\"search\" class=\"search-text-input\" id=\"search-text-map\" value=\"<!--search_words-->\" /><input id=\"search-button\" type=\"image\" src=\"static/img/search_send_form.jpg\" alt=\"Search\"><br /><br />";
+		this.search_form_template  	+= 	"<input type=\"radio\" name=\"search_tags\" id=\"searchtype_tags\" value=\"true\" checked=\"checked\" />tags&nbsp;&nbsp;";
+		this.search_form_template  	+= 	"<input type=\"radio\" name=\"search_tags\" id=\"searchtype_text\" value=\"false\" />all text";
 		this.search_form_template  	+= 	"</form>";
 	
 	//OpenLayers Map variables

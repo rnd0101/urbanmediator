@@ -107,6 +107,45 @@ div.search_form {
 }
 
 
+#search {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.search-text-input {
+	border: 1px solid #CCC;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+
+#search-text-map {
+	height: 18px;
+	padding: 0;
+	padding-left: 2px;
+	margin: 0;
+}
+
+#search-text {
+	width: 198px;
+	height: 18px;
+	padding: 0;
+	padding-left: 2px;
+	margin: 0;
+}
+
+#search-button {
+	vertical-align: middle;
+	margin-left: -5px;
+	padding: 0;
+}
+
+#search label {
+	text-align: left;
+	font-size: 0.75em;
+}
+
 
 /* POPUP THINGS */
 .map_popup_title {	
