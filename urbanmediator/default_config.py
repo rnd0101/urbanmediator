@@ -11,7 +11,6 @@ Values to lookup configuration parameters' type and default values.
 
 debug_mode = False
 offline_mode = False
-rerun = False
 default_aging = 10
 
 show_language_selector = False

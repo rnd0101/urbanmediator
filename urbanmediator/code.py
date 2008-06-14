@@ -56,7 +56,6 @@ urls = folder('mobile') \
     '/', 'Index',
     '/media', 'Media',
     '/(favicon.ico)', 'StaticMedia',
-    '/rerun', 'Rerun',  #!!!
     '/Static/(.*)', 'StaticMedia',
     '/index.html', 'Index',
     '/search.html', 'Search',
@@ -124,21 +123,6 @@ urls = folder('mobile') \
     '/redirect.html', 'Redirect',
     '/alert.html', 'Alert',
 )
-
-class Rerun:
-    def GET(self):
-        if config.rerun:
-            import os
-            os.system("cd ..; /usr/local/bin/svn update")
-            print open("../revision.txt").read()
-            #os.system("cd ..; sleep 1; ./runme.sh &")
-            os.chdir("..")
-            os.spawnlp(os.P_NOWAIT, "./killme.sh", "./killme.sh")
-            #import signal, os
-            #os.kill(os.getpid(), signal.SIGINT)
-            print "rerunning..."
-        else:
-            print "Rerun not possible"
 
 class Redirect:
     def GET(self, *args, **kwargs):
