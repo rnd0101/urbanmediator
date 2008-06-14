@@ -453,22 +453,16 @@ class Index:
         i = web.input(page="1", order="", search="", search_tags="")
         page = int(i.page)
 
-        PPPP = util.SimpleTimer()
         topics = model.Projects()
 
         total_num_of_pages = topics.num_of_pages(length=config.topics_per_page)
-        PPPP.P('order')
         model.order_helper(topics, i.order)
 
-        PPPP.P('limit')
         topics.limit_by_page(page, length=config.topics_per_page)
         topics.annotate_by_comments()
-        PPPP.P('latest')
         topics.annotate_by_latest_points()  #!!!
-        PPPP.P('profiles')
         topics.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
 
-        PPPP.P('navda')
         page_nav_data = page_nav_pack(i,
                   total_num_of_pages,
                   linkstr="index", orders=TOPIC_ORDERS)
@@ -481,7 +475,6 @@ class Index:
 
         context.update(page_nav_data)
 
-        PPPP.P('highlight')
         topics_highlighted = model.Projects(
             tags=model.Tags("official:highlighted"))
         topics_highlighted.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
@@ -489,19 +482,15 @@ class Index:
         topics_highlighted.annotate_by_comments()
         model.order_helper(topics_highlighted, config.main_page_highlighted_order)
 
-        PPPP.P('feeds')
         context.feeds = [
             Storage(type="application/atom+xml",
                 url=feed_links.topics,
                 title="Atom Feed of Topics")
             ]
 
-        PPPP.P('tags')
         tags = model.tags_helper()
 
-        PPPP.P('get_page')
         get_page('index', context, topics, topics_highlighted, tags)
-        print "<!--", PPPP.R('END'), "-->"
 
     def POST(self):
         """default login handler"""
@@ -842,8 +831,6 @@ class Topic:
                 mode=None)
         page = int(i.page)
 
-        PPPP = util.SimpleTimer("helper")
-
         topics, topic = model.t_helper(topic_id)
 
         if not topics:
@@ -857,14 +844,11 @@ class Topic:
             i.order = topic.profile.default_view_order
 
 
-        PPPP.P("get_user")
         user = get_user()
 
-        PPPP.P("annot dss and triggers")
         topics.annotate_by_datasources()
         topics.annotate_by_triggers()
 
-        PPPP.P("feed topic ds")
         feeds = []    
         for feed in topic.datasources:
             if feed.type in ("autofeed", "autoissuefeed"):
@@ -872,27 +856,20 @@ class Topic:
                 feed_user = auto_author_user(feed.description.strip(), None)
                 model.add_points_from_feed(topic, feed, feed_user)   #!!! user?!
 
-        PPPP.P("search points")
         points = model.search_helper(i, topic=topic)
 
         total_num_of_pages = points.num_of_pages(length=config.points_per_page)
 
-        PPPP.P("tags")
         tags = model.tags_helper(topic=topic)
 
-        PPPP.P("user loc")
         user_location = session.get_user_location()
 
-        PPPP.P("annot by dist")
         if user_location:
             points.annotate_by_distance(user_location.lat, user_location.lon)
 
-        PPPP.P("order")
         if i.mode != "map":  # map shows all points, not just one page
             model.order_helper(points, i.order)
             points.limit_by_page(page, length=config.points_per_page)
-
-        PPPP.P("annotate_more")
 
         points.annotate_by_comments()
         points.annotate_by_tags()
@@ -946,9 +923,7 @@ class Topic:
                     title="Atom Feed of Points"),
                 ]
 
-        PPPP.P("get_page")
         get_page('topic', context, topic, points, tags)
-        print "<!--", PPPP.R("annotate_more"), "-->"
 
 
 class NewTopic:
@@ -1040,7 +1015,6 @@ class Point:
         i = web.input(page="1", order="", search="", search_tags="")
         page = int(i.page)
 
-        PPPP = util.SimpleTimer("helper")
         topics, topic, points, point = model.t_p_helper(topic_id, point_id)
         if not topics:
             redirect(5, _("No such topic. Delete from your bookmarks: ") + request_uri(), 
@@ -1065,10 +1039,8 @@ class Point:
                 links("topic", topic.id))
             return
 
-        PPPP.P("ann by comm")
         points.annotate_by_comments()
 
-        PPPP.P("comms ann by profiles")
         comments = point.comments
         comments.annotate_by_profiles(default=DEFAULT_COMMENT_PROFILE)
 
@@ -1078,8 +1050,6 @@ class Point:
 
 
         comments.limit_by_page(page, length=config.comments_per_page)
-
-        PPPP.P("nav data")
 
         page_nav_data = page_nav_pack(i,
                   total_num_of_pages,
@@ -1098,11 +1068,9 @@ class Point:
 
         context.update(page_nav_data)
 
-        PPPP.P("related topics")
         related_topics = model.Projects(point=point)
         related_topics.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
 
-        PPPP.P("nearby points")
         if 1:
             context.nearby_points = model.Points(
                 nearby=(point.lat, point.lon, 
@@ -1111,16 +1079,11 @@ class Point:
         else:
             context.nearby_points = model.Points()
 
-        PPPP.P("nearby points: filter by dist")
         context.nearby_points.filter_by_distance(point.lat, point.lon,
                 max_distance=config.nearby_radius)
-        PPPP.P("nearby points: sort by dist")
         context.nearby_points.sort_by_distance()
-        PPPP.P("nearby points: limit")
         context.nearby_points.limit_by(config.max_nearby_points)
-        PPPP.P("nearby points: ann by proj")
         context.nearby_points.annotate_by_projects()
-        PPPP.P("nearby points: main proj")
         for p in context.nearby_points:
             if p.projects_count > 0:
                 p.main_topic = p.projects.list()[0]
@@ -1134,7 +1097,6 @@ class Point:
                     url=feed_links("point_comments", topic.id, point.id),
                     title="Atom Feed of Comments")
                 ]
-        PPPP.P("nearby points: get page")
 
         session_info = session.session()
         point_referer = session_info.get("point_referer", "")
@@ -1143,7 +1105,6 @@ class Point:
         context.point_referer = point_referer
 
         get_page('point', context, topic, point, comments, related_topics)
-        print "<!--", PPPP.R("result"), "-->"
 
 
 class Point_addtag:
