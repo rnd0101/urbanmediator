@@ -414,21 +414,21 @@ class IncomingFile:
             media_url = None
             fc = web.webapi.data()
 
-            mb = open("TESTENV", "a")
-            mb.write(str(web.ctx.env) + "\n")
-            mb.write(get_slug() + "\n")
-            mb.close()
-
-
             if fc:
+                try:
+                    ct = web.ctx.env.get("CONTENT_TYPE", "application/octet-stream").split(",")[-1].strip()
+                except:
+                    ct = "image/jpeg"
 
-                media_url = config.base_url +\
+                try:
+                    fn = get_slug()
+                except:
+                    fn = "aaa.jpg"
+
+                media_url = config.base_url + \
                     media.uploadMediaFile(fc,
-                        filename="aaa.jpg",
-                        content_type="image/jpeg",
-#                        filename=get_slug(),
-#                        content_type=web.ctx.env.get("CONTENT_TYPE", "application/octet-stream")
-
+                        filename=fn,
+                        content_type=ct,
                     )
         except:
             pass

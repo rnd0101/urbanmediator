@@ -1,3 +1,14 @@
+2008-06-14
+    - Some cleanups
+
+2008-06-12
+    - Dutch translation
+
+2008-06-11
+    - initial entry on sourceforge and PyPI
+
+OLDER CHANGES:
+
 2007-11-12 (rev. )
     - UM final dir structure create to start UI efforts from scratch
 

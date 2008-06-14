@@ -94,7 +94,7 @@ def parseFeed(url, aged=None):
         tags = []
         for td in e.get("tags", []):
             try:
-                if td["scheme"] == 'http://comma-separated.tags.icing.eu':  # ismart hack!!!
+                if td["scheme"] == 'http://comma-separated.tags.icing.eu':  # !!! special case
                     if td["term"].startswith(u"tags:"):
                         term = td["term"].split(u":", 1)[1]
                     else:

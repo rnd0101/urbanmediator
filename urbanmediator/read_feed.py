@@ -25,12 +25,6 @@ file_storage = FSStorage("file://" + STORAGE_DIR, STORAGE_DIR)
 # XXX !!! move to config
 ##########################
 
-def tolog(w): # XXX
-    fh = open(STORAGE_DIR + "/umlog", "a")
-    fh.write(str(w) +"\n")
-    fh.close()
-
-
 def request_digest(url):
     return sha.new(url).hexdigest()
 
@@ -148,8 +142,6 @@ except:
     custom_timeout = TIMEOUT
 
 url = sys.stdin.read().strip()
-tolog(url)
 t1 = time.time()
 data = readFeed(url, cache_dir=cache_dir, aged=aged, custom_timeout=custom_timeout)
 # sys.stdout.write(data.read())
-tolog("%s %s" % (time.time() - t1, url))
