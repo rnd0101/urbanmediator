@@ -169,6 +169,12 @@ class Collection:
             return self._contents[:n]
         return self._contents
 
+    def first_item(self):
+        try:
+            return self._contents[0]
+        except:
+            return None
+
     def page(self, n, length=24):
         """Give a page number n with a given length. Integer 1, 2, ...
         """

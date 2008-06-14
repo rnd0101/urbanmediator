@@ -321,7 +321,7 @@ class Points(Collection):
 
         if project_id is not None:
             projects = Projects(id=int(project_id))
-            project = projects.list()[0]
+            project = projects.first_item()
             Points.store(point, user, project)
             point.description = description + POINT_ID_FORMAT % (config.base_url, project_id, point.id)
         point.tags = tags
@@ -530,7 +530,7 @@ class Points(Collection):
             p.comments_count = len(p.comments)
             if p.comments:
                 p.last_comment = p.comments.list()[-1].added
-                p.first = p.comments.list()[0]
+                p.first = p.comments.first_item()
             else:
                 p.first = Comment(text="", id=0)
 
@@ -621,10 +621,7 @@ class Points(Collection):
             p.projects = Projects(point=p)
             p.projects.sort_by_added()
             p.projects_count = len(p.projects)
-            try:
-                p.first_project = p.projects.list()[0]
-            except:
-                p.first_project = None
+            p.first_project = p.projects.first_item()
 
     def annotate_by_users(self):
         for p in self._contents:
@@ -1007,7 +1004,7 @@ def _receipt_stamp(point, feed, user):
 def _receipt_stamp_if_needed(points, feed, user):
     points.annotate_by_comments()
     points.annotate_by_comments_indicators()
-    point = points.list()[0]
+    point = points.first_item()
     try:
         if not (point.comments_indicators 
               and "sources" in point.comment_indicators 
@@ -1183,20 +1180,14 @@ class Projects(Points):
             p.points = Points(project=p)
             p.points.sort_by_added()
             p.points_count = len(p.points)
-            try:
-                p.latest_point = p.points.list()[0]
-            except:
-                p.latest_point = None
+            p.latest_point = p.points.first_item()
 
     def annotate_by_latest_points(self):
         #self.annotate_by_points_count()
         for p in self._contents:
             p.points = Points(project=p, limit=1)
             #p.points_count = len(p.points)            #!!! XXX
-            try:
-                p.latest_point = p.points.list()[0]
-            except:
-                p.latest_point = None
+            p.latest_point = p.points.first_item()
 
     def annotate_by_points_count(self):
         for p in self._contents:
@@ -1228,7 +1219,7 @@ class Projects(Points):
             except:
                 pass
             try:
-                last_activity = max(last_activity, p.points.list()[0].added)
+                last_activity = max(last_activity, p.points.first_item().added)
             except:
                 pass
             p.vitality = last_activity  #100 / ((now - last_activity).days + 1)
@@ -1250,7 +1241,7 @@ class Projects(Points):
             except:
                 pass
             try:
-                last_activity = max(last_activity, p.points.list()[0].added)
+                last_activity = max(last_activity, p.points.first_item().added)
             except:
                 pass
         self.last_active = last_activity
@@ -1306,7 +1297,7 @@ class Categories(Tags):
         """
         self._contents = \
             [Category(t) for t in database.tags_by_namespace(tag_namespace="category")] \
-            + [Category(Tags("category:").list()[0])]
+            + [Category(Tags("category:").first_item())]
         self._add_titles()
         self.make_safe()
 
@@ -1454,7 +1445,7 @@ def store_message_to_point_and_comments(message, acl_rule):  #!!! should check a
         try:
             project_id = pnt._recepients[0]["board_id"]
             projects = Projects(id=int(project_id))
-            project = projects.list()[0]
+            project = projects.first_item()
 
             # access rights check
             if user_is_default:
@@ -1617,9 +1608,8 @@ def t_helper(topic_id):
     topics.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
     if not topics:
         return topics, None
-    try:
-        topic = topics.list()[0]
-    except:
+    topic = topics.first_item()
+    if not topic:
         raise ValueError, "No such topic"
 
     return topics, topic
@@ -1634,7 +1624,7 @@ def t_p_helper(topic_id, point_id):
     points.annotate_by_profiles(default=DEFAULT_POINT_PROFILE)
     points.annotate_by_tags()
     points.annotate_by_projects()
-    point = points.list()[0]
+    point = points.first_item()
 
     #: check that the point really belongs to the topic
     if topic.id not in [t.id for t in point.projects]:
@@ -1649,7 +1639,7 @@ def t_p_c_helper(topic_id, point_id, comment_id):
     if not comments:
         return topics, topic, points, point, comments, None
 
-    comment = comments.list()[0]
+    comment = comments.first_item()
 
     comments.annotate_by_points()
     
@@ -1666,7 +1656,7 @@ def t_c_helper(topic_id, comment_id):
     for c in topic.comments:
         if int(c.id) == int(comment_id):
             comments = Comments(id=int(comment_id))
-            comment = comments.list()[0]
+            comment = comments.first_item()
             return topics, topic, comments, comment
 
     return topics, topic, Comments(id=0), None
@@ -1678,7 +1668,7 @@ def t_d_helper(topic_id, ds_id):
     if not dss:
         return topics, topic, dss, None
 
-    ds = dss.list()[0]
+    ds = dss.first_item()
 
     #: check that the datasource really belongs to the topic
     if ds.id not in [p.id for p in Datasources(project_id=topic.id)]:
@@ -1693,7 +1683,7 @@ def t_tr_helper(topic_id, trigger_id):
     if not triggers:
         return topics, topic, triggers, None
 
-    trigger = triggers.list()[0]
+    trigger = triggers.first_item()
 
     #: check that the datasource really belongs to the topic
     if trigger.id not in [p.id for p in Triggers(project_id=topic.id)]:

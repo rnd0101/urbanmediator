@@ -183,7 +183,7 @@ def process_login_result(i):
     if not users:
         return None, _("No such user - error occured")
 
-    user = users.list()[0]
+    user = users.first_item()
     model.update_user_description(user, "guests")
     return user, "logged in"
 
@@ -244,7 +244,7 @@ def login_through(*args, **kwargs):
         credentials = Storage(username=userbase.get_visitor_username(),
             password=None, description=captcha_key)
 
-        group = model.Groups("guests").list()[0]  #!!!
+        group = model.Groups("guests").first_item()
 
         user = userbase.add_user(credentials, None, group=group)  # no profile yet
 
@@ -260,9 +260,9 @@ def auto_author_user(feed_author, user):
     username = userbase.get_feed_username(feed_author)
     users = model.Users(username=username)
     if users:
-        feed_user = users.list()[0]
+        feed_user = users.first_item()
     else:
-        group = model.Groups("guests").list()[0]  #!!!
+        group = model.Groups("guests").first_item()
         credentials = Storage(username=username, password=None, description="externals")
         feed_user = userbase.add_user(credentials, None, group=group)
     if feed_user is None:
@@ -277,7 +277,7 @@ def auto_anonymous_user():
 
     credentials = Storage(username=username, password=None, description="auto")
 
-    group = model.Groups("guests").list()[0]  #!!!
+    group = model.Groups("guests").first_item()
 
     return userbase.add_user(credentials, None, group=group)  # no profile yet
 
@@ -557,7 +557,7 @@ class User:
         users.annotate_by_points()
 
         users.annotate_by_comments()
-        user = users.list()[0]
+        user = users.first_item()
 
         user.points.annotate_by_comments()
         user.points.annotate_by_projects()
@@ -609,7 +609,7 @@ class User_settings:
         )
         users = model.Users(username=username)
         users.annotate_by_profiles(default=DEFAULT_USER_PROFILE)
-        user = users.list()[0]
+        user = users.first_item()
 
         if not acl.authorize.view_user_settings(user):
             redirect(5, _("You do not have rights to access user information."), 
@@ -624,7 +624,7 @@ class User_settings:
     def POST(self, username):
 
         users = model.Users(username=username)
-        user = users.list()[0]
+        user = users.first_item()
 
         if not acl.authorize.change_user_settings(user):
             redirect(5, _("You do not have rights to change user information."), 
@@ -697,7 +697,7 @@ class User_tools:
         )
         users = model.Users(username=username)
         users.annotate_by_profiles(default=DEFAULT_USER_PROFILE)
-        user = users.list()[0]
+        user = users.first_item()
 
         if not acl.authorize.view_user_settings(user):
             redirect(5, _("You do not have rights to access user information."), 
@@ -715,7 +715,7 @@ class User_location:
 
         users = model.Users(username=username)
         users.annotate_by_profiles(default=DEFAULT_USER_PROFILE)
-        user = users.list()[0]
+        user = users.first_item()
 
         if not acl.authorize.view_user_settings(user):
             redirect(5, _("You do not have rights to access user information."), 
@@ -1069,10 +1069,7 @@ class Point:
         context.nearby_points.limit_by(config.max_nearby_points)
         context.nearby_points.annotate_by_projects()
         for p in context.nearby_points:
-            if p.projects_count > 0:
-                p.main_topic = p.projects.list()[0]
-            else:
-                p.main_topic = None
+            p.main_topic = p.projects.first_item()
 
         context.addcomment_form = point_addcomment_form(_("Add comment"))
 
@@ -1300,7 +1297,7 @@ class Point_settings:
             lat=point.lat or "",
             name=point.title,
             tags=point.tags.for_str(),
-            description=point.comments.list()[0].text,
+            description=point.comments.first_item().text,
         ))
         if not presets.lat:
             presets.repr_lat, presets.repr_lon = '', ''
@@ -1544,7 +1541,7 @@ class Topic_newpoint:
         if "template" in presets and presets.template:
             points = model.Points(id=int(presets.template))
             if points:
-                point = points.list()[0]
+                point = points.first_item()
                 points.annotate_by_comments()
                 points.annotate_by_tags()
                 presets.c_lat = str(point.lat)
@@ -2214,7 +2211,7 @@ class Signup:
                 links("signup", came_from=i.came_from))
             return
 
-        group = model.Groups("users").list()[0]  #!!!
+        group = model.Groups("users").first_item()
 
         profile = None
         if i.get("email", None) and "@" in i.email:
@@ -2325,7 +2322,7 @@ class Topic_adminlist:
             redirect(5, _("Failure: no such user " + i.username), 
                 links("topic_adminlist", topic.id))
 
-        managed_user = managed_users.list()[0]
+        managed_user = managed_users.first_item()
 
         for v in var_to_role:
             if i.get(v, ""):
