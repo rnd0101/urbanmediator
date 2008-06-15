@@ -249,7 +249,6 @@ def login_through(*args, **kwargs):
         user = userbase.add_user(credentials, None, group=group)  # no profile yet
 
     del i.username, i.user_word, i.captcha_key, i.password
-    #!!!
     if "file" in i:
         del i.file
 
@@ -2818,7 +2817,6 @@ class Trigger_edit:
             description=i.description,
             adapter=i.adapter,
         )
-        #!!! todo in model:
         model.Triggers.update(trigger, topic, user)
         web.seeother(links("topic_tools", topic_id))
         return
@@ -2940,7 +2938,6 @@ class Selftest:
         print "Timings"
         self.test_page("Main", links.index)
         self.test_page("Mobile", mobile_links.map)
-        # !!! add more
 
         print "*" * 80
 
