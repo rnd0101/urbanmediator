@@ -762,12 +762,6 @@ class Tags(Collection):
     def item_id(self, item):
         return item["ns_tag"]
 
-    def for_url(self):
-        s = self.set()
-        if not s:
-            return ""
-        return "/".join(s) + "/"
-
     def for_str(self):
         return " ".join([x.lstrip(":") for x in self.set()])
 
