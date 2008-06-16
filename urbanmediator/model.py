@@ -153,6 +153,11 @@ def need_to_load_ds(url, aged):
     return url_handler.needToReloadURL(url, aged=aged)  # cache_dir?
 
 def external_points(tags=None, urls=None, aged=None, origin='external'):
+    """
+    Making a list of points from a feed. Points are not 
+    completely equivalent to the points from the database,
+    e.g. id is 0.
+    """
     feed_points = []
     if tags:
         tags = Tags(tags)
@@ -166,7 +171,7 @@ def external_points(tags=None, urls=None, aged=None, origin='external'):
                 e[k] = e[k].encode("utf-8")
 
         if not e.has_key("url"):
-            e["url"] = ''    # !!!!
+            e["url"] = ''
         e["id"] = 0
         e["ranking"] = 1
         e["distance"] = 0

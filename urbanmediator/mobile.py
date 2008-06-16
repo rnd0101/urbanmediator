@@ -72,42 +72,6 @@ def autologin(i):
     return None, "no login or invalid login"
 
 
-class Index:
-
-    def GET(self):
-        user = get_user()
-        points = model.Points()
-        points.sort_by_added()
-        points.filter_by_ranking(-199, 200)
-        points.limit_by(RECENTLY_ADDED_POINTS_LIMIT)
-        points.annotate_by_tags()
-        points.annotate_by_comments()
-
-        context = Storage(
-            title = _("UM Front Page"),
-            count_points = 1,
-            count_views = 0,
-        )
-
-
-        topics_highlighted = model.Projects(
-            tags=model.Tags("official:highlighted"))
-        topics_highlighted.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
-        topics_highlighted.annotate_by_points()
-        topics_highlighted.annotate_by_comments()
-
-        if user:
-            topics_subs = model.Projects(
-                by_user_role=(user, "subscribed"))
-            topics_subs.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
-            topics_subs.annotate_by_points()
-            topics_subs.annotate_by_comments()
-        else:
-            topics_subs = None
-
-        get_page("index", context, points, topics_highlighted, topics_subs)
-
-
 class MobileScript:
 
     def GET(self, script_name):
