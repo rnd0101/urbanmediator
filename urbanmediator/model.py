@@ -250,9 +250,6 @@ class Points(Collection):
             else:
                 externals = []
             self._contents = internals + externals
-            # !!! 
-            if "filter:inappropriate" in instructions:
-                self.filter_by_ranking(low_limit=-199, high_limit=-99)
             if "filter:radius" in instructions:
                 try:
                     radius = float(instructions["filter:radius"])
@@ -264,9 +261,7 @@ class Points(Collection):
                 except:
                     pass  # silently ignore
 
-        self.annotate_by_repr_coordinates()   #overkill??? !!!
-        # !!! only_visible parameter not taken into account
-        #self.filter_by_visibility()   # special cases?
+        self.annotate_by_repr_coordinates()
 
     @staticmethod
     def store(point, user, project=None):
@@ -344,8 +339,7 @@ class Points(Collection):
                 attachment=attachment,
             )
 
-        #requires project also !!!
-        if project_id and url:   #!!! experimantal
+        if project_id and url:
             datasource = Datasource(
                 type="link",
                 adapter="",
@@ -594,7 +588,7 @@ class Points(Collection):
                 d = geo_support.dist((c_lat, c_lon), (float(p.lat), float(p.lon)))
                 if d > maxdist:
                     maxdist = d
-        zoom = geo_support.zoom_from_dist(maxdist)        
+        zoom = geo_support.zoom_from_dist(maxdist)  #!!! function is not generic
         return c_lat, c_lon, zoom
 
     def item_tags(self):
@@ -692,7 +686,7 @@ class Tags(Collection):
         elif isinstance(tags, basestring):
             self._contents = string_to_tags(tags)
         elif isinstance(tags, Tags):
-            self._contents = tags.list()[:]    # !!! copy is not efficient, but safer
+            self._contents = tags.list()[:]    # copy is not efficient, but safer
         elif isinstance(tags, type([])) or hasattr(tags, "next"):
             self._contents = [Tag(t) for t in tags]
         else:                # if tags is None or not Tags:
@@ -801,13 +795,13 @@ class Comments(Collection):
 
     @staticmethod
     def store(comment, point, user):
-        comment.text = util.sanitize_html(comment.text)   #!!!
+        comment.text = util.sanitize_html(comment.text)
         comment.setdefault("type", "comment")
         comment.id = database.comment_insert(comment, point, user)
 
     @staticmethod
     def update(comment, point, user):
-        comment.text = util.sanitize_html(comment.text)   #!!!
+        comment.text = util.sanitize_html(comment.text)
         database.comment_update(comment, point, user)
 
     def store_order(self):

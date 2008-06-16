@@ -52,6 +52,7 @@ def meters_per_deg(lat, lon):
     y = dist((lat, lon), (lat+0.01, lon)) / 0.01   #meters/degree
     return x, y
 
+#!!! the following function is very wrong
 def zoom_from_dist(d):
     """Guess OL zoom level based on the distance """
     return max(8, min(20, int(20 - log(d))))
