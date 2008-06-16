@@ -1,8 +1,14 @@
+# -*- coding: utf-8 -*-
 
 """
-This module contains the domain model of the Urban Mediator,
-abstracting "controllers"  and "views" from datasource queries,
-merging data, etc.
+    This file is part of Urban Mediator software.
+
+    Copyright (c) 2008 University of Art and Design Helsinki
+    See the file LICENSE.txt for copying permission.
+
+    This module contains the domain model of the Urban Mediator,
+    abstracting "controllers"  and "views" from datasource queries,
+    merging data, etc.
 """
 
 from model_data import Entity, Point, Comment, Tag, User, Group, Trigger, Indicators, \
