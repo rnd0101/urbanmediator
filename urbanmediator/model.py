@@ -1182,10 +1182,8 @@ class Projects(Points):
             p.latest_point = p.points.first_item()
 
     def annotate_by_latest_points(self):
-        #self.annotate_by_points_count()
         for p in self._contents:
             p.points = Points(project=p, limit=1)
-            #p.points_count = len(p.points)            #!!! XXX
             p.latest_point = p.points.first_item()
 
     def annotate_by_points_count(self):
@@ -1734,7 +1732,6 @@ def order_helper(objects, order, **kwargs):
     elif order == "title":
         objects.sort_by_title()
     elif order == "most points":
-        #objects.annotate_by_points_count()
         objects.sort_by_points_count()
     elif order == "recently updated":
         objects.sort_by_vitality()
