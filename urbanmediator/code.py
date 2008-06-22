@@ -3018,11 +3018,11 @@ web.template.Template.globals.update(dict(
 def get_dynamic_profile():
     if not hasattr(config, "dynamic_profile"):
         import um_profile
-        # !!! kind of not so good hack...
         config.dynamic_profile = um_profile.Profile()
     return config.dynamic_profile
 
 def set_config_item(lang, key, value):
+    """ Set item for the use from config """
     newvalue = value
     oldvalue = getattr(config, key, None)
     if oldvalue is None:
@@ -3042,6 +3042,12 @@ def set_config_item(lang, key, value):
             raise ValueError, "Language specifier not needed"
 
 def settings_defaults():
+    """ Iterator for default config values. 
+        Even if the concrete value is not used,
+        key is used to indicate that there should be such a 
+        key-value pair in the config and value has the type
+        specified in default_config.
+    """
     import default_config
     for k in dir(default_config):
         if not k.startswith("_"):

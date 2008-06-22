@@ -1601,6 +1601,7 @@ def encode_bbox(lo1, la1, lo2, la2):
 # helper functions to get reasonably annotated objects
 # by id. Intended for use from controller.
 def t_helper(topic_id):
+    """Topic by id """
     topics = Projects(id=int(topic_id))
     topics.annotate_by_profiles(default=DEFAULT_TOPIC_PROFILE)
     if not topics:
@@ -1612,6 +1613,7 @@ def t_helper(topic_id):
     return topics, topic
 
 def t_p_helper(topic_id, point_id):
+    """Topic point by id """
     topics, topic = t_helper(topic_id)
 
     points = Points(id=int(point_id))
@@ -1630,6 +1632,7 @@ def t_p_helper(topic_id, point_id):
     return topics, topic, points, point
 
 def t_p_c_helper(topic_id, point_id, comment_id):
+    """Topic point's comment by id """
     topics, topic, points, point = t_p_helper(topic_id, point_id) 
 
     comments = Comments(id=int(comment_id))
@@ -1647,6 +1650,7 @@ def t_p_c_helper(topic_id, point_id, comment_id):
     return topics, topic, points, point, comments, comment
 
 def t_c_helper(topic_id, comment_id):
+    """Topic note by id """
     topics, topic = t_helper(topic_id) 
 
     topics.annotate_by_comments()
@@ -1659,6 +1663,7 @@ def t_c_helper(topic_id, comment_id):
     return topics, topic, Comments(id=0), None
 
 def t_d_helper(topic_id, ds_id):
+    """Topic datasource by id """
     topics, topic = t_helper(topic_id)
 
     dss = Datasources(id=int(ds_id))
@@ -1674,6 +1679,7 @@ def t_d_helper(topic_id, ds_id):
     return topics, topic, dss, ds
 
 def t_tr_helper(topic_id, trigger_id):
+    """Topic trigger by id"""
     topics, topic = t_helper(topic_id)
 
     triggers = Triggers(id=int(trigger_id))
@@ -1689,6 +1695,7 @@ def t_tr_helper(topic_id, trigger_id):
     return topics, topic, triggers, trigger
 
 def search_helper(i, topic=None):
+    """Points according to the search criteria i """
     # sanitazing?!!!
     if i.search:
         if i.search_tags:
@@ -1816,6 +1823,7 @@ def geocoding_helper(address, onfail=(0.0, 0.0), metadata=None):
     return res
 
 def enable_point_by_id(point_id, topic, user):
+    """Point already in the database but hidden. Makes it visible """
     point = point_by_id_hard(point_id)
     database.enable_point_by_id(point_id, user)
     database.replace_and_delete_user(point[0].user_id, user.id)
