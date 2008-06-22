@@ -378,12 +378,8 @@ class WidgetMove:
 
         context = Storage(title=_("Widget Editor"))
 
-        print topic.comments
-
         topic.comments.filter_by_type(comment_type="widget")
         topic.comments.sort_by_order()
-
-        print topic.comments
 
         # Making new order
         cnt = 0
