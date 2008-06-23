@@ -1,0 +1,17 @@
+$def with (context)
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>$_("Search")</ShortName>
+<Description>${config.instance_name[LANG()]} $_("Search")</Description>
+<Contact>urbanmediator@arki.uiah.fi</Contact>
+<InputEncoding>UTF-8</InputEncoding>
+<OutputEncoding>UTF-8</OutputEncoding>
+<Developer>
+Roman Susi 
+</Developer>
+<Attribution>(C) 2006-2008 TAIK,  All Rights Reserved </Attribution>
+<AdultContent>true</AdultContent>
+<SyndicationRight>limited</SyndicationRight>
+<Language>*</Language>
+<Url type="text/html" template="$:{pc_links.search}?search={searchTerms}" />
+</OpenSearchDescription>
