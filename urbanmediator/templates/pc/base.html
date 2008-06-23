@@ -13,6 +13,7 @@ $def with (page, context)
         <title>${config.instance_name[LANG()]} ${config.instance_name2[LANG()]}</title>
     <link rel="shortcut icon" href="${schema_base_url}/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="${schema_base_url}/css/master.css" type="text/css" media="screen,projection" />
+    <link title="$_('Search in UM')" type="application/opensearchdescription+xml" href="$feed_links.opensearch" rel="search"/>
     $if ("page_skin" in context):
         <link rel="stylesheet" media="screen,projection" href="$pc_links('page_skin', context.page_skin)" type="text/css" />
     <!--[if IE 6]>

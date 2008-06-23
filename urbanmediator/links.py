@@ -114,6 +114,7 @@ feed_links = util.Links({
     'point_comments': base + "topic/%s/point/%s/comments",
     'topic_as_csv': base + "topic/%s.csv",
     'json_search': base + "json/search",
+    'opensearch': base + "opensearch.xml",
 })
 
 

@@ -39,6 +39,7 @@ urls = (
     '/opml.xml', 'OPML',
     '(?:/?)(kml|lmx|)/topics', 'Topics',
     '(?:/?)(kml|lmx|json|)/search', 'Search',
+    '/opensearch.xml', 'OpenSearch',
     '(?:/?)(kml|lmx|)/topic/(\d+)/points', 'Topic_points',
     '(?:/?)(kml|lmx|)/topic/(\d+)/point/(\d+)/comments', 'Point_comments',
     '/user/([^/]+)/topics', 'User_topics',
@@ -105,6 +106,13 @@ class Sitemap:
 
         context = Storage()
         print render.sitemap(context, categories)
+
+class OpenSearch:
+
+    def GET(self):
+        context = Storage()
+        web.header("content-type", 'application/opensearchdescription+xml')
+        print render.opensearch(context)
 
 class OPML:
 
