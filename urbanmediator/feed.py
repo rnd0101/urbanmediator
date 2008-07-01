@@ -64,18 +64,16 @@ feed_content_type = Storage(
 def get_feed_helper(context, objects, summary, link, format='', with_content=None):
     i = web.input(ol='')  # if this parameter set, it means OpenLayers
     format = format or 'atom'
-    technical_feed = (i.ol == "1")
+    technical_feed = (i.ol == "1")  # feed, needed for the openlayers to show points
     if with_content is None:
         with_content = not technical_feed  # and openlayers get HTML in summary
     web.header("content-type", feed_content_type[format])
     for p in objects:
         p.url = link(p)
         if technical_feed:
-            # !!! multicoordinate hack
             model.encode_coordinates(p)
-            p.lat = p.repr_lat
-            p.lon = p.repr_lon
-            #
+            p.lat = p.repr_lat   # !!! because feed template uses lat, lon
+            p.lon = p.repr_lon   # refactor into separate template
         try:
             p.summary = summary(p)
             p.summary = view.render_text(p.summary)
