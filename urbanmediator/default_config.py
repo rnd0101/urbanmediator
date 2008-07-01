@@ -11,6 +11,7 @@ Values to lookup configuration parameters' type and default values.
 
 debug_mode = False
 offline_mode = False
+rerun = False
 default_aging = 10
 
 show_language_selector = False
@@ -91,6 +92,7 @@ getmap_server = "http://labs.metacarta.com/wms/vmap0?"
 getmap_layers = 'basic'
 getmap_layers1 = 'basic'
 getmap_layers2 = 'basic'
+getmap_js = ''
 
 # thresholds for the layer switcher:
 getmap_zoom1 = 13
@@ -126,3 +128,5 @@ doc_about = dict(en="")
 doc_privacy = dict(en="")
 doc_contact = dict(en="")
 doc_help = dict(en="")
+doc_main = dict(en="")
+doc_sidenote = dict(en="")

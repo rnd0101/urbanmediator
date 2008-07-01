@@ -1,6 +1,10 @@
 $def with (context)
 
 <script type="text/javascript" src="${schema_base_url}/ol/OpenLayers.js"></script>
+$if config.getmap_js.strip():
+    $:config.getmap_js
+$else:
+    <!-- set getmap_js parameter to load more javascripts here -->
 <script type="text/javascript"><!--
 var NEW_POINT_ICON_URL="${schema_base_url}/img/point.gold.png",
 NEW_POINT_ICON_X=21, 
