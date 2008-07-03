@@ -2,6 +2,9 @@ TODOs
 -----
 
 - fix known issues (see README.txt)
+
+- arrange files stored on the filesystem (logs, docstorage, etc)
+
 - refactor map portrayal configuration:
 
   - use one piece of user-defined javascript to show the map
