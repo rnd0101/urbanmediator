@@ -2066,7 +2066,11 @@ class SetLanguage:
     def GET(self):
         i = web.input(lang="en")
         i18n.set_language_cookie(i.lang)
-        web.seeother(web.ctx.environ["HTTP_REFERER"])
+        try:
+            web.seeother(web.ctx.environ["HTTP_REFERER"])
+        except:
+            web.seeother(links.index)
+
 
 class Doc:
     def GET(self, doc_name):
