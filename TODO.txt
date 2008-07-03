@@ -1,0 +1,16 @@
+TODOs
+-----
+
+- fix known issues (see README.txt)
+- refactor map portrayal configuration:
+
+  - use one piece of user-defined javascript to show the map
+  - small set of hooks and callbacks (for loading/storing lat,lon,zoom, etc)
+    which are needed to interact with UM
+  - factor feed-related things into separate js and abstract from them
+    by having a layer (later markers will be used instead of feeds)
+  - some configuration parameters are still needed in UM backend
+    (srsname, map server URI, resolutions, etc). 
+  - when this is done, map_search can get use of OSM and also there will be no
+    need for the separate getmap_custom_* 
+

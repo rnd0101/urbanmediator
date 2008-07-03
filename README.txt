@@ -105,13 +105,14 @@ Important: (for web install) get hold of MySQL root password or password of a us
 capable of creating new databases and users. In the example below:
 root and SeCrEt respectively.
 
-Hint: To setup root password for first time, use mysqladmin command at shell prompt as follows:
-$ mysqladmin -u root password SeCrEt
+Hint: To setup root password for first time, use mysqladmin command at shell prompt as follows::
+    $ mysqladmin -u root password SeCrEt
+
 (you may need to specify the full path to the mysqladmin executable, like
 /usr/local/mysql/bin/mysqladmin )
 
 Installing from tar.gz or zip
-.............................
+-----------------------------
 
 Untar and or unzip the package to the place where it will be run from.
 (UM doesn't have ready start/stop scripts.)
@@ -120,11 +121,11 @@ Choose the port number (say, 9080) and the domain the UM will run
 (e.g. localhost).
 
 Go to the um root directory (of just untarred archive)
-and run:
+and run::
 
     python webinstall.py 9080
 
-Go to the browser:
+Go to the browser::
 
     http://localhost:9080
 
@@ -134,16 +135,16 @@ databse. If not, webinstall can't be made - manual install is required. (Please,
 before doing webinstall).
 
 Visit local/config.py and add your changes. Most likely,
-these will be needed:
+these will be needed::
 
-base_url="http://my.server.org:9080"
-schema_base_url = base_url + "/static"
+    base_url="http://my.server.org:9080"
+    schema_base_url = base_url + "/static"
 
 WMS server also needs to be specified: metacarta.com is
 just to quickly show UM.
 
-Look into config.py for more configuration parameters: 
-local/config.py override config.py settings.
+Look into `config.py` for more configuration parameters: 
+`local/config.py` override `config.py` settings.
 
 Note about manual installation.
 
@@ -151,17 +152,17 @@ Instead of running webinstall:
 
 - create a MySQL database and user with privileges to that DB
 
-- put the latest sql/*-base.sql and sql/*-patch.sql with numbers greater than those of base.sql.
+- put the latest `sql/*-base.sql` and `sql/*-patch.sql` with numbers greater than those of base.sql.
 
-- put connection into local/config.py as follows (example only):
+- put connection into `local/config.py` as follows (example only)::
 
-  db_parameters = dict(dbn='mysql', db='um_db', user='um', pw='*secret*')
+      db_parameters = dict(dbn='mysql', db='um_db', user='um', pw='*secret*')
 
 - other configuration parameters
 
-Running: can be done (in screen, for example):
+Running: can be done (in screen, for example)::
 
-  python code.py 9080
+    python code.py 9080
 
 UM instance variable data is stored in the ~/.urban_mediator
 (files as well as cached feeds and map tiles), docs, local
@@ -170,39 +171,37 @@ one should copy them all to the new place.). Logs are writted
 to stderr/stdout..
 
 Installing from the egg
-.......................
+-----------------------
 
 When UrbanMediator will be available in the PyPI, it
-should be as easy as
+should be as easy as::
 
-east_install urban_mediator
+    east_install urban_mediator
 
 Before that, download the egg file (the name is something like
 urbanmediator-2.0_6409-py2.5.egg)
 
 To install UM in the user space, setup PYTHONPATH to the
 directory of choice (for example, in shell configuration file
-like this:
+like this::
 
-export PYTHONPATH=/my/um/directory;other posible pathes
+    export PYTHONPATH=/my/um/directory;other posible pathes
 
-easy_install --install-dir=/my/um/directory urbanmediator-2.0_6409-py2.5.egg
+    easy_install --install-dir=/my/um/directory urbanmediator-2.0_6409-py2.5.egg
 
 After that, 
 
-create a directory
-
-/my/um/directory/local
+create a directory `/my/um/directory/local`
 
 and put config.py, plugins.py and other possible files.
 
-To start web installer:
+To start web installer::
 
-/my/um/directory/install_urbanmediator_server 9080
+    /my/um/directory/install_urbanmediator_server 9080
 
-To start the server:
+To start the server::
 
-/my/um/directory/start_urbanmediator_server 9080
+    /my/um/directory/start_urbanmediator_server 9080
 
 There is no way to stop the server but killing it.
 file called PID with the server's process id
@@ -212,21 +211,38 @@ Known issues
 ============
 
 UrbanMediator software is designed to be a tool-kit for creation of specific city-citizens and/or citizens-citizens interactions. The main value is not software itself but the services it provides. The software itself is, however, not void of certain problems, bugs and limitations. Those are listed below in know specific order. (Issues, marked with "--" were solved)
+
 1. Some glitches are possible with OpenLayers map portrayal depending on the browser. For example, click point shift may occur in some relatively rare cases.
+
 2. Starting and stopping software is not automated. At the moment, on some platforms process should be explicitly killed to be stopped, especially, if there are active users fetching pages
+
 --3. Search engines do not index UM pages due to some meta tags.
+
 --4. Restarting UM back-end makes users logout
+
 --5. No paging of comments, points, list in 1.0 beta(solved in the new UI)
+
 --6. No way to add tags after point has been created (solved in the new UI)
+
 --7. Sign-up disrupts user contribution (thus, user should sign up with UM beforehand or use Visitor account)
+
 8. Problems with uploading large files on some platforms (limit about 2Mb)
+
 9. Web installer is not user-friendly
+
 10. When switching language, form entries are lost
+
 --11. No way to relocate a point once created
+
 12. Out-of-extent locations are not properly handled
-13. Comments HTML is not sanitized enough at the moment (this may be security problem for the users with vulnerable browsers is malicious JavaScript is included by another user)
+
+13. Comments HTML is not sanitized enough at the moment (this may be security problem for the users with vulnerable browsers is malicious JavaScript is 
+included by another user)
+
 --14. Deletions from the database are not journalled
+
 --15. Delay in loading Front page (and maybe other pages) caused by MySQL query on Mac OS X 10.4 (works fine on Linux Ubuntu/Debian)
+
 16. New point policy "registered" is not enforced enough - visitors can still add points
 
 
