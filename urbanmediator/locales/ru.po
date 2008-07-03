@@ -1418,3 +1418,5 @@ msgstr "Все точки в радиусе %s"
 msgid "All Points"
 msgstr "Все точки"
 
+msgid "Widgetizers"
+msgstr "Создание виджетов"
