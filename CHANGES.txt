@@ -7,47 +7,6 @@
 2008-06-11
     - initial entry on sourceforge and PyPI
 
-OLDER CHANGES:
-
-2007-11-12 (rev. )
-    - UM final dir structure create to start UI efforts from scratch
-
-2007-08-10 (rev. 3774)
-    - search stub
-
-2007-08-08 (rev. 3728)
-    - external feed entries can be shown on the map by clicking green circle
-
-
-2007-06-20 (rev. ?)
-    - refactored url ("pc" removed)
-    - use code_old.py to use previous version 
-      (and/or roll-back if necessary; 
-       see also exp.py: "pc" commented from add_feed, POST)
-
-2007-06-20 (rev. 3465)
-    - shown to Icing partners
-
-2007-05-31 (rev. 3220)
- - refactored part of the configurable things into local/ directory
- (more specific city things need to be put there: geocoding, geo, map_view, etc)
-
-2007-02-27 (rev. 2581):
- - UI
- - menu refactored
-
-2007-02-22 (rev. 2452):
- - tag view
- - ATOM feed for UM (not for individual points yet)
-
-2007-02-08 (rev. 2452):
- - refactoring map engine out started
- - Map separated into Map and MapAction
-
-...
-
-2006-11-09 (rev. 2120):
- - LEFT JOIN used so points wihout notes also show up
 
 ....
 
