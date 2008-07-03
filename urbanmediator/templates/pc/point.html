@@ -17,7 +17,7 @@ $#title,description,author,tags,addtag,comments
     $:macro.header_point(topic, point, level=1, link=0)
     <div class="point_description">
     $if ("author" in topic.profile.topic_point_page_contents):
-        <p class="point_by">$_("Posted by") <a href="$pc_links('user', point.author)">$point.author</a>,
+        <p class="point_by">$_("Posted by") <a href="$pc_links('user', point.author)">$point.author</a>
     $if ("added" in topic.profile.topic_point_page_contents):
         <span class="time">$rel_date(point.added)</span></p>
     $if ("description" in topic.profile.topic_point_page_contents):

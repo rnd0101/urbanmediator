@@ -2,7 +2,7 @@ $def with (context, topic, point, comment, show_actions=False)
 
 <div class="comment">
 <a name="comment$comment.id"></a>$:render_text(comment.text)
-<p class="comment_metadata">By <a href="$pc_links('user', comment.author)">$comment.author</a>, Posted: <span class="time">$rel_date(comment.added)</span></p>
+<p class="comment_metadata">$_("Posted by") <a href="$pc_links('user', comment.author)">$comment.author</a> <span class="time">$rel_date(comment.added)</span></p>
 $if (show_actions and acl.authorize.edit_comment(topic, point, comment)):
     <a href="$pc_links('point_editcomment', topic.id, point.id, comment.id)">$_("edit")</a>
 $if (show_actions and acl.authorize.delete_comment(topic, point, comment)):
