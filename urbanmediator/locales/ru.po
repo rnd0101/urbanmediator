@@ -258,7 +258,7 @@ msgid "Number of points to show"
 msgstr "Сколько точек показывать"
 
 msgid "Point information display in point list"
-msgstr "Какиу данные о точке показывать в списке точек"
+msgstr "Какие данные о точке показывать в списке точек"
 
 msgid "Width of the map"
 msgstr "Ширина карты"

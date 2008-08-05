@@ -86,7 +86,7 @@ To use OSM map, UM needs "custom" way of setting up the map. To switch that on,
 edit the UM settings (login as admin first)::
 
     getmap_custom: 1
-    getmap_custom_server: http://tah.openstreetmap.org/Tiles/tile.php/
+    getmap_custom_server: http://tah.openstreetmap.org/Tiles/tile/
     getmap_custom_wms: osm
     getmap_zoomshift: 0
     srsname: epsg:900913
@@ -113,7 +113,7 @@ getmap_custom_init::
             // create OSM layer
             var graphic = new OpenLayers.Layer.TMS(
                 "OpenStreetMap (Tiles@Home)",
-                "http://tah.openstreetmap.org/Tiles/tile.php/",
+                "http://tah.openstreetmap.org/Tiles/tile/",
                 {
                     type: 'png', getURL: osm_getTileURL,
                     displayOutsideMaxExtent: true,

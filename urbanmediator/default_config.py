@@ -101,7 +101,7 @@ getmap_zoom2 = 12
 getmap_custom = 0
 getmap_custom_init = "\n"
 getmap_custom_wms = "wms"
-getmap_custom_server = "http://tah.openstreetmap.org/Tiles/tile.php/"
+getmap_custom_server = "http://tah.openstreetmap.org/Tiles/tile/"
 
 getmap_resolutions = "[32,16,8,4,2,1]"
 
