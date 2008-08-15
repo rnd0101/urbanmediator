@@ -12,6 +12,7 @@ import os, shutil, pickle, glob
 class FSStorage:
 
     METADATA_DIR_NAME = '.metadata'
+    SPARE_ROOT = "ROOT"
 
     def __init__(self, storage_uri, work_dir, wrap_absolute_pathes=True):
         self.storage_uri = storage_uri
@@ -19,10 +20,12 @@ class FSStorage:
         self.wrap_absolute_pathes = wrap_absolute_pathes
 
     def _keyToPath(self, key):
+        if key == "":
+            key = "." + self.SPARE_ROOT
         path = os.path.abspath(os.path.join(self.work_dir, key))
         if not path.startswith(self.work_dir):
             if self.wrap_absolute_pathes:
-                new_key = "ROOT" + \
+                new_key = self.SPARE_ROOT + \
                     os.path.abspath(os.path.join(self.work_dir, key))
                 return self._keyToPath(new_key)
             else:
@@ -39,6 +42,8 @@ class FSStorage:
         # this doesn check path!
         if self.isMetadata(key):
             return None
+        if key == "":
+            key = "." + self.SPARE_ROOT
         path_parts = list(os.path.split(key))
         path_parts.insert(1, self.METADATA_DIR_NAME)
         return os.path.join(*path_parts)
@@ -72,6 +77,14 @@ class FSStorage:
 
     def _initMetadata(self, key, default_data={}):
         metadata_key = self.metadata(key)
+
+        # check if .metadata is file - not dir (for some reason)
+        path_parts = list(os.path.split(key))
+        path_parts.insert(1, self.METADATA_DIR_NAME)
+        metadata_dir_key = os.path.join(*path_parts[:-1])
+
+        if not self.isContainer(metadata_dir_key):
+            self.delItem(metadata_dir_key)  # remove .metadata file - should be dir
         if metadata_key and not self.hasItem(metadata_key):
             self.setItem(metadata_key, default_data.copy())
 
@@ -87,6 +100,7 @@ class FSStorage:
         path = self._keyToPath(key)
         self._makeDirs(path)
         f = None
+
         if hasattr(value, "read"):
             try:
                 f = open(path, "wb")
@@ -156,22 +170,25 @@ class FSStorage:
                     for fn in glob.glob(path+"/*")]
 
 if __name__ == "__main__":
+  fss = FSStorage("file:///home/rnduser/tmp/fs", "/home/rnduser/tmp/fs") 
   if 0:
-    fss = FSStorage("file:///home/rnd/tmp/fs", "/home/rnd/tmp/fs") 
     for it in fss.listItems("104_0802"):
         print fss.getItem(fss.metadata(it)), it
         fss.updateItem(fss.metadata(it), {'d': 234})
   if 0:
-    fss = FSStorage("file:///home/rnd/tmp/fs", "/home/rnd/tmp/fs") 
     fss.setItem("dfdf2", "VALUE")
-    fss.setItem("../../dfdf1", "VALUE")
+    fss.setItem("../../dfdf33333", "VALUE")
     fss.setItem("dfdf1", (1,2,3))
     print fss.hasItem("dfdf1")
     print fss.getItem("dfdf1", mode="pickle")
     print fss.delItem("dfdf1")
     print fss.hasItem("dfdf1")
     print fss.listItems("")
-    print fss.delItem("ROOT")
+    #print fss.delItem("ROOT")
     for it in fss.listItems(""):
-        print fss.getItem(fss.metadata(it)), it
+        if not fss.isContainer(it):
+            print fss.getItem(fss.metadata(it)), it
+
+  if 0:
+    fss.setItem("", "VALUE")
 
