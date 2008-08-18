@@ -42,6 +42,8 @@ topic_zoom = 15
 
 LANGUAGES = "en", "fi", "es", "nl", "ca", "ru"
 
+LANGUAGE_FORCED = ""
+
 instance_name = dict(en="Urban Mediator",
                      fi="Urban Mediator",
                      es="Urban Mediator",

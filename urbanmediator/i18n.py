@@ -16,6 +16,7 @@ import gettext
 
 LOCALES_DIR = config.LOCALES_DIR
 LANGUAGES = config.LANGUAGES
+LANGUAGE_FORCED = config.LANGUAGE_FORCED
 
 # From zope/publisher/browser.py
 
@@ -83,6 +84,9 @@ def getLanguage():
         lang = get_language_cookie()
         if lang:
             return lang
+
+    if LANGUAGE_FORCED:
+        return LANGUAGE_FORCED
 
     accepts = getPreferredLanguages(web.ctx.environ)
     try:
