@@ -1070,7 +1070,7 @@ class Point:
         for p in context.nearby_points:
             p.main_topic = p.projects.first_item()
 
-        context.addcomment_form = point_addcomment_form(_("Add comment"))
+        context.addcomment_form = point_addcomment_form(_("Comment"))
 
         context.feeds = [
                 Storage(type="application/atom+xml",
@@ -1212,7 +1212,7 @@ class Point_editcomment:
             title = _("Edit comment"),
             page_skin=topic.profile.topic_colour_scheme,
         )
-        context.addcomment_form = point_addcomment_form(_("Edit comment"))
+        context.addcomment_form = point_addcomment_form(_("Comment"))
         context.addcomment_form.fill(
             text=comment.text,
             )  #!!!

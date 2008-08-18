@@ -9,5 +9,5 @@ $if acl.authorize.add_comment(topic, point):
     </div>
     </form>
 $else:
-    <br />
+    <a name="comment_form"><br /></a>
     <p class="comment_login">$_("Please, login at least as guest to add comments here:") <a href="${pc_links.login}">$_("log in")</a></p>
