@@ -1239,6 +1239,7 @@ a.link:active {
 
 .topic_list li h3 {
 	display:inline;
+	font-size: 1em;
 }
 
 .topic_list li p.latest_contribution {
