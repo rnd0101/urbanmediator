@@ -1,5 +1,0 @@
-#
-# created by: svn propset svn:externals -F ./EXTERNALS.txt .
-#
-
-src/urbanmediator               https://urbanmediator.svn.sourceforge.net/svnroot/urbanmediator
