@@ -17,3 +17,4 @@ TODOs
   - when this is done, map_search can get use of OSM and also there will be no
     need for the separate getmap_custom_* 
 
+- buildout ?
