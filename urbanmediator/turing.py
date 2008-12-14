@@ -11,10 +11,10 @@
 
 import md5, mimetypes, time, rfc822, tempfile, StringIO, random, re
 
-import Image
-import ImageFont
-import ImageDraw
-import ImageFilter
+import PIL.Image as Image
+import PIL.ImageFont as ImageFont
+import PIL.ImageDraw as ImageDraw
+import PIL.ImageFilter as ImageFilter
 
 import web
 

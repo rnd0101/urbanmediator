@@ -57,7 +57,7 @@ def check_prereqs():
     try: import MySQLdb
     except: missing.append("MySQLdb")
 
-    try: import Image
+    try: import PIL.Image as Image
     except: missing.append("PIL")
     return missing
 

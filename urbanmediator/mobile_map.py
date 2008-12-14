@@ -24,7 +24,7 @@
 
 import urllib, StringIO, math, os
 
-import Image
+import PIL.Image as Image
 
 import web
 from web.utils import Storage

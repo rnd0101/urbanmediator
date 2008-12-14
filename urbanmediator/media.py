@@ -11,7 +11,7 @@
 
 import md5, mimetypes, time, rfc822, tempfile, StringIO, os, datetime
 import web
-import Image
+import PIL.Image as Image
 
 import config
 from config import file_storage
