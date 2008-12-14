@@ -71,8 +71,9 @@ setup(
                     ]},
     include_package_data = True,
     zip_safe = False,
-    install_requires = ['web.py >= 0.21',
-                        'PIL >= 1.1.5',
+    install_requires = ['web.py == 0.22',
+#                        'PIL >= 1.1.5',
+                        'mysql-python',
                         'setuptools'] + install_also_requires,
     entry_points="""
         [console_scripts]
