@@ -466,7 +466,7 @@ msgid "Topic origin"
 msgstr "Происхождение темы"
 
 msgid "Topic tags"
-msgstr "Aiheen asiasanat"
+msgstr "Теги слова темы"
 
 msgid "Topic only"
 msgstr "Только тема"
@@ -520,7 +520,7 @@ msgid "Error occured. User not added."
 msgstr "Случилась ошибка. Пользователь не добавлен."
 
 msgid "User created."
-msgstr "Käyttäjä luotu."
+msgstr "Пользователь создан."
 
 msgid "Add user role in this topic"
 msgstr "Добавить роль пользователя к этой теме"
@@ -562,7 +562,7 @@ msgid "New feed for "
 msgstr "Новый фид "
 
 msgid "external"
-msgstr "ulkoinen"
+msgstr "внешний"
 
 msgid "Edit feed "
 msgstr "Редактировать фид"
