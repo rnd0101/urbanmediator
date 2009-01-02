@@ -26,9 +26,7 @@ INITIAL_ZOOM=$context.zoom,
 INITIAL_FEED="$context.initial_feed";
 var HAS_NEW_POINT=$context.has_new_point;
 $if (("getmap_custom" in context) and context.getmap_custom):
-    function custom_init() {
     $:context.getmap_custom_init
-    };
     var GETMAP_CUSTOM = "1";
 $else:
     var GETMAP_CUSTOM = "0";
