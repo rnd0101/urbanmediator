@@ -43,7 +43,7 @@ DEFAULT_TOPIC_ADVANCED_PROFILE = Storage(
     getmap_zoomshift="",
     getmap_zoom2="",
     getmap_params="",
-    getmap_custom="",
+    getmap_custom_init="",
 )
 
 DEFAULT_TOPIC_PROFILE = Storage()

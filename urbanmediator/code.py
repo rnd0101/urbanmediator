@@ -325,8 +325,8 @@ def set_map_context(context, center, zoom, initial_feed='',
             and topic.profile.getmap_params:
         topic_profile = topic.profile
         map_context = Storage(
-            getmap_custom=0,   #!!!
-            getmap_custom_init=config.getmap_custom_init,
+            getmap_custom=1,   #!!!
+            getmap_custom_init=topic_profile.getmap_custom_init,
             getmap_url=links.getmap,
             getmap_layers=topic_profile.getmap_layers,
             getmap_layers1=topic_profile.getmap_layers1,
@@ -1958,6 +1958,7 @@ def topic_advanced_form():
             form.Textbox("getmap_zoom2", description=_("getmap_zoom2"),),
             form.Textbox("getmap_zoomshift", description=_("getmap_zoomshift"),),
             form.Textarea("getmap_params", description=_("getmap_params"),),
+            form.Textarea("getmap_custom_init", description=_("getmap_custom_init"), cols=50, rows=10),
 
             form.Fieldset('end_of_fieldset'),
         ]
