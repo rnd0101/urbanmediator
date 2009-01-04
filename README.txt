@@ -207,6 +207,31 @@ There is no way to stop the server but killing it.
 file called PID with the server's process id
 can be found in the /my/um/directory
 
+Working with buildout
+---------------------
+
+Developers may prefer to use buildout provided now with UM.
+Setuputils should be installed before bootstrapping buildout first
+(easy_install setuputils or other way)
+Go to urbanmediator.buildout dir and run:
+
+python bootstrap.py
+
+if everything goes well, then run:
+
+bin/buildout
+
+All forgotten prerequisites will cause errors at this step. Install appropriate
+development libraries according to your OS procedures.
+
+E.g. on Linux Ubuntu 8.10 these packages may be needed:
+
+setuptools, zlib1g-dev, libfreetype6-dev, libmysqlclient15-dev, gettext
+
+(please note, that buildout downloads sources and compiles its own Python and some libraries.
+That is why list of prerequisites is different from what is needed to just run UM.)
+
+
 Known issues
 ============
 
@@ -245,4 +270,5 @@ included by another user)
 
 16. New point policy "registered" is not enforced enough - visitors can still add points
 
+17. There maybe some rough edges do to switch to OpenLayers 2.7
 
