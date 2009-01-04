@@ -65,8 +65,8 @@ def get_feed_helper(context, objects, summary, link, format='', with_content=Non
     i = web.input(ol='')  # if this parameter set, it means OpenLayers
     format = format or 'atom'
     technical_feed = (i.ol == "1")  # feed, needed for the openlayers to show points
-    if with_content is None:
-        with_content = not technical_feed  # and openlayers get HTML in summary
+#    if with_content is None:
+    with_content = True  # not technical_feed  # and openlayers get HTML in summary
     web.header("content-type", feed_content_type[format])
     for p in objects:
         p.url = link(p)

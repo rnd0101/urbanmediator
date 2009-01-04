@@ -18,7 +18,7 @@ $for item in items:
         $if item.lat != 0.0 or item.lon != 0.0:
             <geo:lat>$item.lat</geo:lat>
             <geo:long>$item.lon</geo:long>
-        <summary>$item.summary</summary>
+        <summary type="html">$item.summary</summary>
         $if item.tags:
             $for tg in item.tags:
                 <category term="${tg.tag}" scheme="${tg.tag_system_id}" />
