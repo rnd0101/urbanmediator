@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Default config for the Urban Mediator
-#
+# Uses OpenStreetMap
 
 """
 
@@ -14,14 +14,14 @@ offline_mode = False
 rerun = False
 default_aging = 10
 
-show_language_selector = False
+show_language_selector = True
 
 #mail_base_domain = "example.org"
 mail_base_domain = ".+"
 
 topics_per_page = 20
-points_per_page = 20
-links_per_page = 5
+points_per_page = 30
+links_per_page = 15
 comments_per_page = 20
 main_page_elements = "search,tagcloud,hr,add new topic,edit settings,about"
 main_page_topic_orders = "recently updated", "newest",  "most points", "title"
@@ -70,8 +70,6 @@ instance_owner = dict(en="University of Art and Design Helsinki",
                      nl="University of Art and Design Helsinki",
                     )
 
-issue_trigger_parameter = "dac://Dublin/issues/UM"
-
 datetime_format = "%d.%m.%Y %H:%M:%S"
 
 origin = ''
@@ -83,8 +81,8 @@ mobile_gps_zoom = 15
 mobile_zoom = 14
 mobile_point_zoom = 16
 
-mobile_map_width = 200
-mobile_map_height = 200
+mobile_map_width = 256
+mobile_map_height = 256
 
 disallow_robots = True
 
@@ -100,9 +98,57 @@ getmap_js = ''
 getmap_zoom1 = 13
 getmap_zoom2 = 12
 
-getmap_custom = 0
-getmap_custom_init = "\n"
-getmap_custom_wms = "wms"
+getmap_custom = 1
+getmap_custom_init = """
+function choose_layer(z) {};  //not in use
+
+function custom_init() {
+  var map_options = {
+    projection: "EPSG:900913",
+    units: "m",
+    maxResolution: 156543.0339,
+    maxExtent: new OpenLayers.Bounds(-20037508, -20037508,
+                                     20037508, 20037508.34)
+  };
+
+  map = new OpenLayers.Map('map', map_options);
+
+  var options = {numZoomLevels: 20};
+
+  // create OSM layer
+  var graphic = new OpenLayers.Layer.TMS(
+     "OpenStreetMap (Tiles@Home)",
+     "http://tah.openstreetmap.org/Tiles/tile/",
+     {
+       type: 'png', getURL: osm_getTileURL,
+       displayOutsideMaxExtent: true,
+       attribution: '<a href="http://www.openstreetmap.org/">OpenStreetMap</a>'
+     }
+  );
+
+  map.addLayers([graphic]);
+  map.addControl(new OpenLayers.Control.LayerSwitcher());
+
+  map.addControl(new OpenLayers.Control.MousePosition());
+  // map.zoomToMaxExtent();
+}
+
+function osm_getTileURL(bounds) {
+  var res = this.map.getResolution();
+  var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
+  var y = Math.round((this.maxExtent.top - bounds.top) / (res * this.tileSize.h));
+  var z = this.map.getZoom();
+  var limit = Math.pow(2, z);
+
+  if (y < 0 || y >= limit) {
+    return OpenLayers.Util.getImagesLocation() + "404.png";
+  } else {
+    x = ((x % limit) + limit) % limit;
+    return this.url + z + "/" + x + "/" + y + "." + this.type;
+  }
+};
+"""
+getmap_custom_wms = "osm"
 getmap_custom_server = "http://tah.openstreetmap.org/Tiles/tile/"
 
 getmap_resolutions = "[32,16,8,4,2,1]"
@@ -110,7 +156,7 @@ getmap_resolutions = "[32,16,8,4,2,1]"
 feedback_topic_id = 1
 default_user_id_for_mail = 1
 
-getmap_zoomshift = -5
+getmap_zoomshift = 0
 
 getmap_untiled = 0
 use_pyproj = 1
@@ -124,7 +170,7 @@ getmap_tile_aged_in_cache = 3600*24
 
 point_map_zoom = 14.
 
-srsname = "EPSG:4326"
+srsname = "ESRI.extra:900913"
 
 doc_about = dict(en="")
 doc_privacy = dict(en="")
