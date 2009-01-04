@@ -2,6 +2,16 @@
 Setting up the map
 ------------------
 
+Update: This version uses getmap_custom_init parameter
+all the way (getmap_custom_init format has been changed!).
+Examples of javascript to put there can be found in the urbanmediator/static directory.
+Two functions: choose_layer and custom_init are required.
+In the UM parameters getmap_custom should be 1. In the topic parameters (if the topic
+has its own map config) getmap_params should be not empty (put {}) and zoom should be numerical
+values. Even though they aren't used by all maps any more.
+
+The information below is somewhat outdated but may still be useful.
+
 WMS
 ===
 
