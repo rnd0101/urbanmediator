@@ -1,2 +1,0 @@
-To save Urban Mediator package size, tests, doc and examples directories
-from OpenLayers are not included.
