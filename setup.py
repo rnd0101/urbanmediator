@@ -29,7 +29,7 @@ except:
 
 setup(
     name = "urbanmediator",
-    version = "2.0.0" + revision,
+    version = "2.0.2" + revision,
     description = """Sharing urban information in location-aware way.""",
     long_description = """
     Urban Mediator (UM) web-server is a software project of Icing
