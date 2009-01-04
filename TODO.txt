@@ -7,7 +7,7 @@ TODOs
 
 - refactor map portrayal configuration:
 
-  - use one piece of user-defined javascript to show the map
+  - (done) use one piece of user-defined javascript to show the map
   - small set of hooks and callbacks (for loading/storing lat,lon,zoom, etc)
     which are needed to interact with UM
   - factor feed-related things into separate js and abstract from them
@@ -17,4 +17,4 @@ TODOs
   - when this is done, map_search can get use of OSM and also there will be no
     need for the separate getmap_custom_* 
 
-- buildout ?
+- (done) buildout
