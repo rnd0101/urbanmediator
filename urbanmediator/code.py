@@ -3081,7 +3081,7 @@ def settings_defaults():
 
 def update_config():
     """Update config from profile but
-    also profile is some parameter is missing.
+    also profile if some parameter is missing.
     default_config.py has default values.
     """
     profile = get_dynamic_profile()
