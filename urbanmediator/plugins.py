@@ -2,7 +2,8 @@
 # Module import-base plugin registry
 
 #import geocoding.helsinki as geocoding
-import geocoding_common as geocoding
+#import geocoding_common as geocoding
+import geocoding_osm as geocoding
 
 #import geo.helsinki as geo
 import geo_common as geo
