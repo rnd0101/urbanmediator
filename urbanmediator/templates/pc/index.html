@@ -34,8 +34,8 @@ $:macro.header_desktop(context, level=0, link=0)
         $if page_el == "search":
             <form action="$pc_links.search" method="get" name="search" id="search">
 				<p>
-				<input id="search-text-home" name="search" type="text" value="$_('search')" class="search-text-input" onfocus="this.value='';this.onfocus=function (){}">
-				<input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search">
+				<input id="search-text-home" name="search" type="text" value="$_('search')" class="search-text-input" onfocus="this.value='';this.onfocus=function (){}" />
+				<input id="search-button" type="image" src="${schema_base_url}/img/search_send_form.jpg" alt="Search" />
 				<input type="hidden" name="mode" style="display:none;" value="list" />
                 </p>
             </form>
